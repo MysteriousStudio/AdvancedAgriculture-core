@@ -1,4 +1,4 @@
-package xyz.icedtech.advAgri.item
+package xyz.icedtech.advAgri.agri
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
 import net.minecraft.item.Item

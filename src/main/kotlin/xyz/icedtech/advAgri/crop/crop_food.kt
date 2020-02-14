@@ -1,4 +1,4 @@
-package xyz.icedtech.advAgri.food
+package xyz.icedtech.advAgri.crop
 
 class CropFood {
 

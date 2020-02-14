@@ -2,7 +2,7 @@ package xyz.icedtech.advAgri.register
 
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
-import xyz.icedtech.advAgri.item.BambooGroupItem
+import xyz.icedtech.advAgri.bamboo.BambooItem
 import xyz.icedtech.advAgri.modata.Modata
 
 
@@ -10,7 +10,7 @@ class BambooRegister {
     fun registerBambooItem() {
         var modid = Modata().modid
 
-        var itemList = BambooGroupItem()
+        var itemList =BambooItem()
         Registry.register(
             Registry.ITEM,
             Identifier(modid, "bamboo_leaves"),
@@ -50,11 +50,6 @@ class BambooRegister {
             Registry.ITEM,
             Identifier(modid, "fine_bamboo_cutter"),
             itemList.FINE_BAMBOO_CUTTER
-        )
-        Registry.register(
-            Registry.ITEM,
-            Identifier(modid, "bamboo_fence"),
-            itemList.BAMBOO_FENCE
         )
         Registry.register(
             Registry.ITEM,

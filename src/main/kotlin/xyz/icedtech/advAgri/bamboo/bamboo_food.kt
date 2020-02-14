@@ -1,7 +1,7 @@
-package xyz.icedtech.advAgri.food
+package xyz.icedtech.advAgri.bamboo
 
 import net.minecraft.item.FoodComponent
 
-class BambooGroupFood {
+class BambooFood {
 
 }

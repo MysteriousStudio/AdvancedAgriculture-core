@@ -1,4 +1,6 @@
 package xyz.icedtech.advAgri.modata
 
-class modata {
+class Modata {
+    val modid = "adv_agri"
 }
+

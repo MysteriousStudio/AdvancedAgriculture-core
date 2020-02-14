@@ -1,4 +1,4 @@
-package xyz.icedtech.advAgri.item
+package xyz.icedtech.advAgri.bamboo
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
 import net.minecraft.item.Item
@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier
 import xyz.icedtech.advAgri.modata.Modata
 
 
-class BambooGroupItem {
+class BambooItem {
 
     var modid = Modata().modid
 
@@ -42,7 +42,5 @@ class BambooGroupItem {
     //砍竹刀
     var BAMBOO_KNIFE =
         Item(Item.Settings().group(this.BAMBOO_ITEM_GROUP).maxDamage(340))
-    //竹篱笆
-    var BAMBOO_FENCE =
-        Item(Item.Settings().group(this.BAMBOO_ITEM_GROUP).maxCount(64))
+
 }
