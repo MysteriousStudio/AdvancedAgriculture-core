@@ -2,9 +2,9 @@
 
 ### 矿石
 
-- 硫磺矿 (Sulphur ore)
-- 下界硫磺矿 (Nether Sulphur ore)
-- 蛭石土(Quarry)
+- 硫磺矿 (Sulphur ore) (材质OK)
+- 下界硫磺矿 (Nether Sulphur ore) (材质OK)
+- 蛭石土(Quarry) (材质OK)
 - 磷矿(Phur ore)
 
 ### 装饰性方块
@@ -18,31 +18,31 @@
 ### 功能性方块
 
 - 作物架(Crop racks)
-- 发酵罐(Ferment tank)
-- 淤泥(Silt)
-- 腐殖质(Humus)
-- 酸化土(Acidified Soil)
-- 板结土(Hardened soil)
+- 发酵罐(Ferment tank) (材质&模型OK)
+- 淤泥(Silt) (材质OK)
+- 腐殖质(Humus) (材质OK)
+- 酸化土(Acidified Soil) (材质OK)
+- 板结土(Hardened soil) (材质OK)
 
 ## 添加的物品
 
 ### 竹
 
-- 竹叶 (Bamboo leaves)
+- 竹叶 (Bamboo leaves) (材质OK)
 - 竹编 (Bamboo silk)
 - 竹编板 (Bamboo silk board)
 - 细致竹编板(Fine Bamboo silk board)
 - 桐油(Indus oil)
 - 竹炭(Bamboo charcoal)
 - 爆竹 (Firecrackers)
-- 硫磺 (Sulfur)
+- 硫磺 (Sulfur) (材质OK)
 
 ### 农用
 
 - 复合肥(Com fert)
 - 草木灰(Grass ash)
 - 磷(Phur)
-- 蛭石(Zircon)
+- 蛭石(Zircon) (材质OK)
 
 ### 作物类
 
@@ -119,7 +119,7 @@
 
 - 竹背篓 (Bamboo backpack)
 - 竹筐 (Bamboo baskets)
-- 竹筒 (Bamboo barrel)
+- 竹筒 (Bamboo cylinder) (材质OK)
 
 ## 添加新的载具
 
