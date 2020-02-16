@@ -5,7 +5,7 @@
 - 硫磺矿 (Sulphur ore) (材质OK)
 - 下界硫磺矿 (Nether Sulphur ore) (材质OK)
 - 蛭石土(Quarry) (材质OK)
-- 磷矿(Phur ore)
+- 磷矿(Phur ore)(材质OK)
 
 ### 装饰性方块
 
@@ -30,17 +30,17 @@
 
 - 竹叶 (Bamboo leaves) (材质OK)
 - 竹编 (Bamboo silk)
-- 竹编板 (Bamboo silk board)
+- 竹编板 (Bamboo silk board)(材质OK)
 - 细致竹编板(Fine Bamboo silk board)
 - 桐油(Indus oil)
-- 竹炭(Bamboo charcoal)
+- 竹炭(Bamboo charcoal)(材质OK)
 - 爆竹 (Firecrackers)
 - 硫磺 (Sulfur) (材质OK)
 
 ### 农用
 
 - 复合肥(Com fert)
-- 草木灰(Grass ash)
+- 草木灰(Grass ash)(材质OK)
 - 磷(Phur)
 - 蛭石(Zircon) (材质OK)
 
@@ -90,7 +90,7 @@
 - 砍竹刀 (Bamboo knife)
 - 竹编剪 (Bamboo silk Scissors)
 - 细致竹编切割器 (Fine bamboo cutter)
-- 竹钎 (Bamboo Braze)
+- 竹钎 (Bamboo drill rod)
 - 镰刀
 
 ## 添加新的装备
@@ -112,7 +112,7 @@
 
 ## 添加新的武器
 
-- 竹剑 (Bamboo Sword)
+- 竹剑 (Bamboo Sword)(材质OK)
 - 竹箭 (Bamboo Arrow)
 
 ## 添加新的容器
