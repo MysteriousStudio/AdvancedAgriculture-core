@@ -2,7 +2,7 @@ package xyz.icedtech.advAgri.agri
 
 import net.fabricmc.fabric.api.block.FabricBlockSettings.*
 import net.minecraft.block.Block
-import net.minecraft.block.CropBlock
+import net.minecraft.block.BlockState
 import net.minecraft.block.Material
 import xyz.icedtech.advAgri.agri.block.CropRacksBlock
 import xyz.icedtech.advAgri.agri.block.FermentTankBlock

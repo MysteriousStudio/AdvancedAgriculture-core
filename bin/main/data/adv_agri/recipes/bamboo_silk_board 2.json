@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "pattern": [
+    "SSS",
+    "SSS",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "adv_agri:bamboo_silk"
+    }
+  },
+  "result": {
+    "item": "adv_agri:bamboo_silk_board",
+    "count": 1
+  }
+}

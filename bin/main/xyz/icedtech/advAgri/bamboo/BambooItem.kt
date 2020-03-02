@@ -42,5 +42,4 @@ class BambooItem {
     //砍竹刀
     var BAMBOO_KNIFE =
         Item(Item.Settings().group(this.BAMBOO_ITEM_GROUP).maxDamage(340))
-
 }
