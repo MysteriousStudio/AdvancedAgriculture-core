@@ -2,6 +2,7 @@ plugins {
     id 'fabric-loom'
     id 'maven-publish'
     id "org.jetbrains.kotlin.jvm"
+    id "org.jetbrains.kotlin.plugin.allopen" version "1.3.61"
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -32,6 +33,8 @@ dependencies {
 
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.
+
+    //   modImplementation "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
 }
 
 processResources {
@@ -87,4 +90,8 @@ publishing {
     }
 }
 
+allOpen {
+    annotation("net.minecraft.block.Block")
+    // annotations("com.another.Annotation", "com.third.Annotation")
+}
 compileKotlin.kotlinOptions.jvmTarget = "1.8"

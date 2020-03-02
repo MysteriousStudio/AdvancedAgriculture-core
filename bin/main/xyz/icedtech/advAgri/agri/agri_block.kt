@@ -2,7 +2,9 @@ package xyz.icedtech.advAgri.agri
 
 import net.fabricmc.fabric.api.block.FabricBlockSettings.*
 import net.minecraft.block.Block
+import net.minecraft.block.CropBlock
 import net.minecraft.block.Material
+import xyz.icedtech.advAgri.agri.block.CropRacksBlock
 
 
 class AgriBlock {
@@ -11,7 +13,7 @@ class AgriBlock {
         Block(of(Material.STONE).hardness(3F).breakByHand(false).build())
     //作物架 材质&模型OK
     var CROP_RACKS =
-        Block(of(Material.WOOD).hardness(0.1F).breakByHand(true).build())
+        CropRacksBlock(of(Material.WOOD).hardness(0.1F).breakByHand(true).nonOpaque().noCollision().build())
     //蛭石土 材质OK
     var QUARRY =
         Block(of(Material.SAND).hardness(0.6F).breakByHand(true).build())
