@@ -14,6 +14,8 @@
 - 竹捆 (Bamboo Bundle)
 - 竹梯子 (Bamboo Ladder)
 - 竹篱笆 (Bamboo Fence)
+- 可放置的竹方块(Bamboo Rod)
+
 
 ### 功能性方块
 
@@ -23,6 +25,13 @@
 - 腐殖质(Humus) (材质OK)
 - 酸化土(Acidified Soil) (材质OK)
 - 板结土(Hardened soil) (材质OK)
+- 水井(Well)(暂停)
+- 挤压机(Extruder)
+- 竹编工作台(Bamboo Silk Crafting Table)  
+- 漂洗机(Washer)
+- 鱼栅(Fish trap)
+- 蒸发器(Evaporator)
+- 
 
 ## 添加的物品
 
@@ -36,7 +45,7 @@
 - 竹炭(Bamboo charcoal)(材质OK)
 - 爆竹 (Firecrackers)
 - 硫磺 (Sulfur) (材质OK)
-
+- 竹滤网
 ### 农用
 
 - 复合肥(Com fert)
