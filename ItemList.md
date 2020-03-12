@@ -47,10 +47,11 @@
 
 ### 农用
 
+- [ ] 木屑(Sawdust)
 - [ ] 复合肥(Com fert)
-- [ ] 草木灰(Grass ash)(材质 OK)
+- [x] 草木灰(Grass ash)(材质 OK)
 - [ ] 磷(Phur)
-- [ ] 蛭石(Zircon) (材质 OK)
+- [ ] 蛭石(Zircon)
 
 ### 作物类
 
