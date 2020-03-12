@@ -8,7 +8,6 @@ import net.minecraft.util.DefaultedList
 import java.util.function.Supplier
 
 open class FermentTankEntity : BlockEntity(FERMENT_TANK_ENTITY), FermentTankInventory, Supplier<FermentTankEntity> {
-
     override var items: DefaultedList<ItemStack?> = DefaultedList.ofSize(8, ItemStack.EMPTY)
     var process = 0
 
@@ -26,8 +25,6 @@ open class FermentTankEntity : BlockEntity(FERMENT_TANK_ENTITY), FermentTankInve
     override fun get(): FermentTankEntity {
         return this
     }
-
-
 }
 
 

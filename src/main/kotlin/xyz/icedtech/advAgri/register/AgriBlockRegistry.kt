@@ -9,7 +9,6 @@ import net.minecraft.util.registry.Registry
 import xyz.icedtech.advAgri.agri.AgriBlock
 import xyz.icedtech.advAgri.agri.AgriGroupItem
 import xyz.icedtech.advAgri.modata.Modata
-import xyz.icedtech.advAgri.extendTool.registryBlockItemTool
 
 
 class AgriRegister {

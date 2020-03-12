@@ -1,5 +1,4 @@
 package xyz.icedtech.advAgri.register
 
-class AgriEntityRegister {
-
+class AgriOreRegistry {
 }
