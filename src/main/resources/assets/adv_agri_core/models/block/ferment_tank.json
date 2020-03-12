@@ -2,10 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/block",
 	"textures": {
-		"1": "adv_agri:block/ferment_tank_side",
-		"2": "adv_agri:block/ferment_tank_top",
-		"6": "adv_agri:block/ferment_tank_bottom",
-		"particle": "adv_agri:block/ferment_tank_top"
+		"1": "adv_agri_core:block/ferment_tank_side",
+		"2": "adv_agri_core:block/ferment_tank_top",
+		"6": "adv_agri_core:block/ferment_tank_bottom",
+		"particle": "adv_agri_core:block/ferment_tank_top"
 	},
 	"elements": [
 		{

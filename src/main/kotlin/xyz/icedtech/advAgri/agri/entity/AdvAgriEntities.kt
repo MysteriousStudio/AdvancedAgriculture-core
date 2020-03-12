@@ -1,4 +1,4 @@
-package xyz.icedtech.advAgri.entity
+package xyz.icedtech.advAgri.agri.entity
 
 import net.minecraft.block.entity.BlockEntityType
 

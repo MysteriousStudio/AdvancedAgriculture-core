@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/block",
 	"textures": {
-		"0": "adv_agri:block/crop_racks",
-		"particle": "adv_agri:block/crop_racks"
+		"0": "adv_agri_core:block/crop_racks",
+		"particle": "adv_agri_core:block/crop_racks"
 	},
 	"elements": [
 		{

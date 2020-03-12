@@ -7,6 +7,9 @@ import net.fabricmc.api.Environment
 import net.fabricmc.fabric.api.block.FabricMaterialBuilder
 
 
-class CommonMaterial  {
-    val IRON_SHELL = FabricMaterialBuilder(MaterialColor.AIR).
+class AgriMaterial {
+    val IRON_SHELL =
+        FabricMaterialBuilder(MaterialColor.AIR).destroyedByPiston().requiresTool().build()
+    val PLANT_CROP =
+        FabricMaterialBuilder(MaterialColor.AIR).lightPassesThrough().allowsMovement().burnable().notSolid().build()
 }

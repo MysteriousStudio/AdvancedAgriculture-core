@@ -1,7 +1,7 @@
 {
     "variants": {
         "": {
-            "model": "adv_agri:block/quarry"
+            "model": "adv_agri_core:block/quarry"
         }
     }
 }

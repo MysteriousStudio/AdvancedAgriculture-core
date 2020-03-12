@@ -1,9 +1,7 @@
 package xyz.icedtech.advAgri.ore
 
 
-import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback
 import net.minecraft.block.Block
-import net.minecraft.util.Identifier
 import net.minecraft.world.biome.Biome
 import net.minecraft.world.gen.GenerationStep
 import net.minecraft.world.gen.decorator.Decorator
@@ -15,12 +13,12 @@ import xyz.icedtech.advAgri.agri.AgriBlock
 
 class AgriAddOre {
     private var agri = AgriBlock()
-    fun handleBiome(biome: Biome) {
+    fun handleBiome(biome: Biome): Unit {
         this.registryOreInMainWorldNormalBiome(biome, agri.SULPHUR_ORE, 8, 10, 0, 20, 10)
-        this.registryOreInMainWorldNormalBiome(biome,agri.PHOS_ORE,8,10,30,90,5)
+        this.registryOreInMainWorldNormalBiome(biome, agri.PHOS_ORE, 8, 10, 30, 90, 5)
         this.registryOreInMainWorldNormalBiome(biome, agri.QUARRY, 12, 8, 40, 90, 10)
         this.registryOreInMainWorldNormalBiome(biome, agri.SILT, 30, 2, 40, 70, 5)
-
+        return
     }
 
     private fun registryOreInMainWorldNormalBiome(

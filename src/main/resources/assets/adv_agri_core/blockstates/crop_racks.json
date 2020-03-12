@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "adv_agri:block/crop_racks"
+      "model": "adv_agri_core:block/crop_racks"
     }
   }
 }

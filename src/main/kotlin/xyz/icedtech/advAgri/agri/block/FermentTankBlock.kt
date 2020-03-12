@@ -8,7 +8,7 @@ import net.minecraft.block.entity.BlockEntity
 import net.minecraft.util.math.BlockPos
 import net.minecraft.world.BlockView
 import net.minecraft.world.World
-import xyz.icedtech.advAgri.entity.FermentTankEntity
+import xyz.icedtech.advAgri.agri.entity.FermentTankEntity
 
 
 class FermentTankBlock(settings: Settings) : BlockWithEntity(settings) {

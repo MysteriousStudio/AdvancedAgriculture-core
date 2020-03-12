@@ -1,7 +1,7 @@
 {
     "variants": {
         "": {
-            "model": "adv_agri:block/humus"
+            "model": "adv_agri_core:block/humus"
         }
     }
 }

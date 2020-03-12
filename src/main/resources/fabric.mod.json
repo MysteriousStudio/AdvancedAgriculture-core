@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "adv_agri",
+  "id": "adv_agri_core",
   "version": "${version}",
-  "name": "AdvancedAgriculture",
+  "name": "AdvancedAgriculture-Core",
   "description": "Let the plants live.",
   "authors": [
     "SUIBING112233"

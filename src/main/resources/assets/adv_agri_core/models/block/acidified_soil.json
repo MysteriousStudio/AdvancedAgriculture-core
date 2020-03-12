@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "adv_agri:block/acidified_soil"
+        "all": "adv_agri_core:block/acidified_soil"
     }
 }

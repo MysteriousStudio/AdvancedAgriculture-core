@@ -1,13 +1,16 @@
-package xyz.icedtech.advAgri.entity
+package xyz.icedtech.advAgri.register
 
-import net.minecraft.block.entity.BlockEntity
 import net.minecraft.block.entity.BlockEntityType
 import net.minecraft.util.registry.Registry
 import xyz.icedtech.advAgri.agri.AgriBlock
+import xyz.icedtech.advAgri.agri.entity.CROP_RACKS_ENTITY
+import xyz.icedtech.advAgri.agri.entity.CropRacksEntity
+import xyz.icedtech.advAgri.agri.entity.FERMENT_TANK_ENTITY
+import xyz.icedtech.advAgri.agri.entity.FermentTankEntity
 
 
 class RegistryEntity {
-    fun RegisterAll() {
+    fun RegistryAll() {
         var itemListOfAgri = AgriBlock()
         FERMENT_TANK_ENTITY =
             Registry.register(

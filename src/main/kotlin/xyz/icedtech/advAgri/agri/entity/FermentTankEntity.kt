@@ -1,4 +1,4 @@
-package xyz.icedtech.advAgri.entity
+package xyz.icedtech.advAgri.agri.entity
 
 import net.minecraft.block.entity.BlockEntity
 import net.minecraft.inventory.Inventories
@@ -7,7 +7,8 @@ import net.minecraft.nbt.CompoundTag
 import net.minecraft.util.DefaultedList
 import java.util.function.Supplier
 
-open class FermentTankEntity : BlockEntity(FERMENT_TANK_ENTITY), FermentTankInventory, Supplier<FermentTankEntity> {
+open class FermentTankEntity : BlockEntity(FERMENT_TANK_ENTITY),
+    FermentTankInventory, Supplier<FermentTankEntity> {
     override var items: DefaultedList<ItemStack?> = DefaultedList.ofSize(8, ItemStack.EMPTY)
     var process = 0
 

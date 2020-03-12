@@ -1,7 +1,7 @@
 {
     "variants": {
         "": {
-            "model": "adv_agri:block/ferment_tank"
+            "model": "adv_agri_core:block/ferment_tank"
         }
     }
 }
