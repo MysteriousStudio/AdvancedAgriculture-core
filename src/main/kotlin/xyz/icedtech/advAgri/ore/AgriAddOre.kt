@@ -13,11 +13,11 @@ import xyz.icedtech.advAgri.agri.AgriBlock
 
 class AgriAddOre {
     private var agri = AgriBlock()
-    fun handleBiome(biome: Biome): Unit {
-        this.registryOreInMainWorldNormalBiome(biome, agri.SULPHUR_ORE, 8, 10, 0, 20, 10)
-        this.registryOreInMainWorldNormalBiome(biome, agri.PHOS_ORE, 8, 10, 30, 90, 5)
-        this.registryOreInMainWorldNormalBiome(biome, agri.QUARRY, 12, 8, 40, 90, 10)
-        this.registryOreInMainWorldNormalBiome(biome, agri.SILT, 30, 2, 40, 70, 5)
+    fun GenerateMainWorldOre(biome: Biome): Unit {
+        this.registryOreInMainWorldNormalBiome(biome, agri.SULPHUR_ORE, 8, 10, 0, 0, 40)
+        this.registryOreInMainWorldNormalBiome(biome, agri.PHOS_ORE, 8, 10, 0, 0, 50)
+        this.registryOreInMainWorldNormalBiome(biome, agri.QUARRY, 16, 6, 0, 0, 50)
+        this.registryOreInMainWorldNormalBiome(biome, agri.SILT, 18, 2, 0, 0, 80)
         return
     }
 
