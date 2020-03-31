@@ -7,10 +7,10 @@ import xyz.icedtech.advAgri.modata.Modata
 
 
 class BambooRegister {
+    private var modid = Modata().modid
     fun registerBambooItem() {
-        var modid = Modata().modid
 
-        var itemList =BambooItem()
+        var itemList = BambooItem()
         Registry.register(
             Registry.ITEM,
             Identifier(modid, "bamboo_leaves"),
