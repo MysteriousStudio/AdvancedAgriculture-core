@@ -10,17 +10,17 @@ import xyz.icedtech.advAgri.agri.entity.FermentTankEntity
 
 
 class RegistryEntity {
-    fun RegistryAll() {
+    fun registryAllEntity() {
         var itemListOfAgri = AgriBlock()
         FERMENT_TANK_ENTITY =
             Registry.register(
-                Registry.BLOCK_ENTITY,
+                Registry.BLOCK_ENTITY_TYPE,
                 "adv_agri:ferment_tank",
                 BlockEntityType.Builder.create(FermentTankEntity(), itemListOfAgri.FERMENT_TANK).build(null)
             )
         CROP_RACKS_ENTITY =
             Registry.register(
-                Registry.BLOCK_ENTITY,
+                Registry.BLOCK_ENTITY_TYPE,
                 "adv_agri:crop_racks",
                 BlockEntityType.Builder.create(CropRacksEntity(), itemListOfAgri.CROP_RACKS).build(null)
             )

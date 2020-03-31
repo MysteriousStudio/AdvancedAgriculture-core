@@ -13,9 +13,6 @@ class AgriGroupItem {
     var AGRI_ITEM_GROUP =
         FabricItemGroupBuilder.create(Identifier(modid, "agriculture"))
             .icon { ItemStack(Items.BONE_MEAL) }.build()
-    //镰刀
-    var SICKLE =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP))
     //蛭石
     var ZIRCON =
         Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))

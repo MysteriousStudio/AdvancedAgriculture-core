@@ -8,7 +8,6 @@ import net.minecraft.world.biome.Biome
 import net.minecraft.world.biome.Biomes
 import xyz.icedtech.advAgri.ore.AgriAddOre
 import xyz.icedtech.advAgri.register.AgriBlockRegistry
-import xyz.icedtech.advAgri.register.BambooRegistry
 import xyz.icedtech.advAgri.register.RegistryEntity
 
 
@@ -17,25 +16,9 @@ class Main : ModInitializer {
         var agriRegister = AgriBlockRegistry()
         agriRegister.RegistryAllAgriBlockItem()
 
-        var bambooRegister = BambooRegistry()
-        bambooRegister.RegistryBambooItem()
-        bambooRegister.RegistryBambooFood()
-
         var registryEntity = RegistryEntity()
-        registryEntity.RegistryAll()
+        registryEntity.registryAllEntity()
 
         AgriAddOre().GenerateMainWorldOre(Biomes.DEFAULT)
-        RegistryEntryAddedCallback.event(Registry.BIOME).register(
-            RegistryEntryAddedCallback { _: Int, _: Identifier?, biome: Biome? ->
-                if (biome != null) {
-                    AgriAddOre().GenerateMainWorldOre(
-                        biome
-                    )
-                }
-
-            }
-        )
     }
-
-
 }

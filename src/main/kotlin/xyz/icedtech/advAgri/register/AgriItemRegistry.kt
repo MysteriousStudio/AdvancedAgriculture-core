@@ -15,13 +15,12 @@ class AgriItemRegistry {
 
     }
 
-    fun registerAgriItem(): ItemGroup {
+    fun registerAgriItem() {
         this.registryItemTool("com_fert", itemList.COM_FERT)
         this.registryItemTool("grass_ash", itemList.GRASS_ASH)
         this.registryItemTool("phos", itemList.PHOS)
         this.registryItemTool("sulfur", itemList.SULFUR)
         this.registryItemTool("zircon", itemList.ZIRCON)
-        return itemList.AGRI_ITEM_GROUP
     }
 
     private fun registryItemTool(blockName: String, item: Item) {
