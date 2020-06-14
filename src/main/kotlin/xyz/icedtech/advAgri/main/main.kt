@@ -1,24 +1,23 @@
 package xyz.icedtech.advAgri.main
 
 import net.fabricmc.api.ModInitializer
-import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback
-import net.minecraft.util.Identifier
-import net.minecraft.util.registry.Registry
-import net.minecraft.world.biome.Biome
-import net.minecraft.world.biome.Biomes
-import xyz.icedtech.advAgri.ore.AgriAddOre
-import xyz.icedtech.advAgri.register.AgriBlockRegistry
-import xyz.icedtech.advAgri.register.RegistryEntity
+import xyz.icedtech.advAgri.register.*
 
 
 class Main : ModInitializer {
+    private val addOre = AgriOreRegistry()
     override fun onInitialize() {
-        var agriRegister = AgriBlockRegistry()
-        agriRegister.RegistryAllAgriBlockItem()
-
-        var registryEntity = RegistryEntity()
-        registryEntity.registryAllEntity()
-
-        AgriAddOre().GenerateMainWorldOre(Biomes.DEFAULT)
+        //注册物品
+        var agriItemRegistry = AgriItemRegistry()
+        agriItemRegistry.registryAll()
+        //注册方块
+        var agriBlockRegister = AgriBlockRegistry(agriItemRegistry.itemList)
+        agriBlockRegister.registryAllAgriBlockItem()
+        //注册实体
+        var agriEntityRegister = AgriEntityRegistry()
+        agriEntityRegister.registryAllEntity()
+        //注册矿物
+        var agriOreRegister = AgriOreRegistry()
+        agriOreRegister.registryAll()
     }
 }

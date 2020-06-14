@@ -9,7 +9,7 @@ import xyz.icedtech.advAgri.agri.entity.FERMENT_TANK_ENTITY
 import xyz.icedtech.advAgri.agri.entity.FermentTankEntity
 
 
-class RegistryEntity {
+class AgriEntityRegistry {
     fun registryAllEntity() {
         var itemListOfAgri = AgriBlock()
         FERMENT_TANK_ENTITY =
