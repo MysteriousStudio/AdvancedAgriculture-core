@@ -1,7 +1,10 @@
 package xyz.icedtech.advAgri.main
 
 import net.fabricmc.api.ModInitializer
-import xyz.icedtech.advAgri.register.*
+import xyz.icedtech.advAgri.register.AgriBlockRegistry
+import xyz.icedtech.advAgri.register.AgriEntityRegistry
+import xyz.icedtech.advAgri.register.AgriItemRegistry
+import xyz.icedtech.advAgri.register.AgriOreRegistry
 
 
 class Main : ModInitializer {

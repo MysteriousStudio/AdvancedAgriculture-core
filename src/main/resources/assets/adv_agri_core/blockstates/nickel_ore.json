@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": {"model": "adv_agri_core:block/nickel_ore"}
+    "": {
+      "model": "adv_agri_core:block/nickel_ore"
+    }
   }
 }

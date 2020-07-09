@@ -12,7 +12,7 @@ import xyz.icedtech.advAgri.agri.entity.FermentTankEntity
 
 
 class FermentTankBlock(settings: Settings) : BlockWithEntity(settings) {
-    override fun onBlockAction(
+    override fun onSyncedBlockEvent(
         blockState: BlockState?,
         world: World?,
         blockPos: BlockPos?,

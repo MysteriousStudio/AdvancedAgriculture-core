@@ -53,7 +53,7 @@ class AgriBlockRegistry {
         this.registryBlockItemTool("lead_block", blockItemList.LEAD_BLOCK)
         this.registryBlockItemTool("tungsten_block", blockItemList.TUNGSTEN_BLOCK)
         this.registryBlockItemTool("nickel_block", blockItemList.NICKEL_BLOCK)
-        this.registryBlockItemTool("aluminium_ore", blockItemList.ALUMINIUM_BLOCK)
+        this.registryBlockItemTool("aluminium_block", blockItemList.ALUMINIUM_BLOCK)
     }
 
 

@@ -1,25 +1,26 @@
 package xyz.icedtech.advAgri.agri.entity
 
+import net.minecraft.block.BlockState
 import net.minecraft.block.entity.BlockEntity
 import net.minecraft.nbt.CompoundTag
 import java.util.function.Supplier
 
 class CropRacksEntity : BlockEntity(CROP_RACKS_ENTITY), Supplier<CropRacksEntity> {
 
-    var level = 0
-    var crop = ""
-    var using = false
+    private var age = 0
+    private var crop = ""
+    private var using = false
 
     override fun toTag(tag: CompoundTag?): CompoundTag {
-        tag?.putInt("level", level)
+        tag?.putInt("age", age)
         tag?.putString("crop", crop)
         tag?.putBoolean("using", false)
         return super.toTag(tag)
     }
 
-    override fun fromTag(tag: CompoundTag?) {
-        super.fromTag(tag)
-        level = tag?.getInt("level") ?: 0
+    override fun fromTag(state: BlockState?, tag: CompoundTag?) {
+        super.fromTag(state, tag)
+        age = tag?.getInt("age") ?: 0
         crop = tag?.getString("crop") ?: ""
         using = tag?.getBoolean("using") ?: false
     }

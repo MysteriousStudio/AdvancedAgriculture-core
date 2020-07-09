@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": {"model": "adv_agri_core:block/lead_ore"}
+    "": {
+      "model": "adv_agri_core:block/lead_ore"
+    }
   }
 }

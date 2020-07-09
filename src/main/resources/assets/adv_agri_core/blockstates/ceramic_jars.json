@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": {"model": "adv_agri_core:block/ceramic_jars"}
+    "": {
+      "model": "adv_agri_core:block/ceramic_jars"
+    }
   }
 }

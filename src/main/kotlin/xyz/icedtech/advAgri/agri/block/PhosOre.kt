@@ -36,7 +36,7 @@ class PhosOre : Block {
         return ActionResult.SUCCESS
     }
 
-    override fun getHardness(state: BlockState?, world: BlockView?, pos: BlockPos?): Float {
+    fun getHardness(state: BlockState?, world: BlockView?, pos: BlockPos?): Float {
         val hardened = state?.get(HARDENED)
         return if (hardened!!) 2.0f else 0.5f
     }

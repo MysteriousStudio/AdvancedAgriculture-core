@@ -17,3 +17,5 @@ run/
 minecraft/
 .DS_Store
 model/
+*.png~
+*.png~

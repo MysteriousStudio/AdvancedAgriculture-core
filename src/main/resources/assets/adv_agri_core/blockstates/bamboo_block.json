@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": {"model": "adv_agri_core:block/bamboo_block"}
+    "": {
+      "model": "adv_agri_core:block/bamboo_block"
+    }
   }
 }

@@ -3,7 +3,6 @@ package xyz.icedtech.advAgri.agri
 import net.fabricmc.fabric.api.block.FabricBlockSettings.of
 import net.minecraft.block.Block
 import net.minecraft.block.Material
-import net.minecraft.tag.Tag
 import xyz.icedtech.advAgri.agri.block.*
 import xyz.icedtech.advAgri.material.AgriMaterial
 
@@ -20,7 +19,7 @@ class AgriBlock {
 
     //蛭石土 材质OK
     var QUARRY =
-        Block(of(Material.SAND).hardness(0.7F).breakByHand(true).build())
+        Block(of(Material.SOIL).hardness(0.7F).breakByHand(true).build())
 
     //发酵罐 材质&模型OK
     var FERMENT_TANK =
@@ -32,7 +31,7 @@ class AgriBlock {
 
     //腐殖质 材质OK
     var HUMUS =
-        Block(of(Material.SAND).hardness(0.7F).breakByHand(true).build())
+        Block(of(Material.SOIL).hardness(0.7F).breakByHand(true).build())
 
     //酸化土 材质OK
     var ACIDIFIED_SOIL =
@@ -59,10 +58,6 @@ class AgriBlock {
 
     var CERAMIC_JARS =
         CeramicJars(of(Material.STONE).hardness(2.0F).breakByHand(true).build())
-
-    var ORE_BLOCK =
-        Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
-    var BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
 
     var COPPER_ORE = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
     var TUNGSTEN_ORE = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())

@@ -4,5 +4,5 @@ import net.minecraft.block.Block
 
 
 class HighTemperatureElectrolyticFurnace : Block {
-    constructor(settings: Settings) : super(settings) {}
+    constructor(settings: Settings) : super(settings)
 }
