@@ -1,17 +1,18 @@
 on: [push, pull_request]
 jobs:
   build:
+    name: Build AdvAgri_core
     runs-on: ubuntu-latest
     steps:
       - name: Check out
         uses: actions/checkout@v1
         with:
           submodules: true
-      - name: Prepare environment
+      - name: Test sources code
         uses: OrangeLabs-moe/gradle-actions@v5.0-openjdk-8
         with:
-          args: init
-      - name: Build
+          args: test
+      - name: Build from sources code
         uses: OrangeLabs-moe/gradle-actions@v5.0-openjdk-8
         with:
           args: build
