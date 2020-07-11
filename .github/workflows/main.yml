@@ -8,7 +8,7 @@ jobs:
         with:
           submodules: true
       - name: Prepare environment
-        uses: OrangeLabs-moe/gradle-actions@v5.0-openjdk-14
+        uses: OrangeLabs-moe/gradle-actions@v5.0-openjdk-8
         with:
           args: init
       - name: Build
