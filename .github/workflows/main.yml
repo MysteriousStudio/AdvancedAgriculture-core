@@ -12,4 +12,6 @@ jobs:
         with:
           args: init
       - name: Build
-        uses: build
+        uses: OrangeLabs-moe/gradle-actions@v5.0-openjdk-8
+        with:
+          args: build
