@@ -3,10 +3,7 @@ package xyz.icedtech.advAgri.register
 import net.minecraft.block.entity.BlockEntityType
 import net.minecraft.util.registry.Registry
 import xyz.icedtech.advAgri.agri.AgriBlock
-import xyz.icedtech.advAgri.agri.entity.CROP_RACKS_ENTITY
-import xyz.icedtech.advAgri.agri.entity.CropRacksEntity
-import xyz.icedtech.advAgri.agri.entity.FERMENT_TANK_ENTITY
-import xyz.icedtech.advAgri.agri.entity.FermentTankEntity
+import xyz.icedtech.advAgri.agri.entity.*
 
 
 class AgriEntityRegistry {
@@ -23,6 +20,28 @@ class AgriEntityRegistry {
                 Registry.BLOCK_ENTITY_TYPE,
                 "adv_agri:crop_racks",
                 BlockEntityType.Builder.create(CropRacksEntity(), itemListOfAgri.CROP_RACKS).build(null)
+            )
+        HIGH_TEMPERATURE_ELECTROLYTIC_FURNACE_ENTITY =
+            Registry.register(
+                Registry.BLOCK_ENTITY_TYPE,
+                "adv_agri:high_temperature_electrolytic_furnace",
+                BlockEntityType.Builder.create(
+                    HighTemperatureElectrolyticFurnaceEntity(),
+                    itemListOfAgri.HIGH_TEMPERATURE_ELECTROLYTIC_FURNACE
+                ).build(null)
+            )
+        PRIMARY_MANAGEMENT_BOX_ENTITY =
+            Registry.register(
+                Registry.BLOCK_ENTITY_TYPE,
+                "adv_agri:primary_management_box",
+                BlockEntityType.Builder.create(PrimaryManagementBoxEntity(), itemListOfAgri.PRIMARY_MANAGEMENT_BLOCK)
+                    .build(null)
+            )
+        PRIMARY_PUMPS_ENTITY =
+            Registry.register(
+                Registry.BLOCK_ENTITY_TYPE,
+                "adv_agri:primary_pumps",
+                BlockEntityType.Builder.create(PrimaryPumpsEntity(), itemListOfAgri.PRIMARY_PUMPS).build(null)
             )
     }
 }

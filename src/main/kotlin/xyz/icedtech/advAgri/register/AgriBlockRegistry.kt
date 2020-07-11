@@ -54,6 +54,15 @@ class AgriBlockRegistry {
         this.registryBlockItemTool("tungsten_block", blockItemList.TUNGSTEN_BLOCK)
         this.registryBlockItemTool("nickel_block", blockItemList.NICKEL_BLOCK)
         this.registryBlockItemTool("aluminium_block", blockItemList.ALUMINIUM_BLOCK)
+
+        this.registryBlockItemTool(
+            "high_temperature_electrolytic_furnace",
+            blockItemList.HIGH_TEMPERATURE_ELECTROLYTIC_FURNACE
+        )
+        this.registryBlockItemTool("primary_well_block", blockItemList.PRIMARY_WELL_BLOCK)
+        this.registryBlockItemTool("primary_pumps", blockItemList.PRIMARY_PUMPS)
+        this.registryBlockItemTool("primary_management_box", blockItemList.PRIMARY_MANAGEMENT_BLOCK)
+
     }
 
 

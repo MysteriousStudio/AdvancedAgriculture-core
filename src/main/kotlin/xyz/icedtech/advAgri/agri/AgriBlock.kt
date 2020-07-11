@@ -78,5 +78,11 @@ class AgriBlock {
 
 
     var HIGH_TEMPERATURE_ELECTROLYTIC_FURNACE =
-        HighTemperatureElectrolyticFurnace(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+        HighTemperatureElectrolyticFurnace(of(Material.STONE).hardness(3.5F).breakByHand(true).build())
+    var PRIMARY_WELL_BLOCK =
+        PrimaryWellBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+    var PRIMARY_MANAGEMENT_BLOCK =
+        PrimaryManagementBox(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+    var PRIMARY_PUMPS =
+        PrimaryPumps(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
 }
