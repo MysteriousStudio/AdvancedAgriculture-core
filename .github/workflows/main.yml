@@ -1,9 +1,15 @@
 on: [push, pull_request]
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: OrangeLabs-moe/gradle-actions@v5.0-openjdk-14
+      - name: Check out
+        uses: actions/checkout@v1
         with:
-          args: test
+          submodules: true
+      - name: Prepare environment
+        uses: OrangeLabs-moe/gradle-actions@v5.0-openjdk-14
+        with:
+          args: init
+      - name: Build
+        uses: build
