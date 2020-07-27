@@ -3,6 +3,7 @@ package xyz.icedtech.advAgri.agri
 import net.fabricmc.fabric.api.block.FabricBlockSettings.of
 import net.minecraft.block.Block
 import net.minecraft.block.Material
+import net.minecraft.block.OreBlock
 import xyz.icedtech.advAgri.agri.block.*
 import xyz.icedtech.advAgri.material.AgriMaterial
 
@@ -43,11 +44,11 @@ class AgriBlock {
 
     //硫磺矿石 材质OK
     val SULPHUR_ORE =
-        Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+        OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
 
     //地狱硫磺矿石 材质OK
     val NETHER_SULPHUR_ORE =
-        Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+        OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
 
     //竹篱笆
     var BAMBOO_FENCE =
@@ -59,13 +60,14 @@ class AgriBlock {
     var CERAMIC_JARS =
         CeramicJars(of(Material.STONE).hardness(2.0F).breakByHand(true).build())
 
-    var COPPER_ORE = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
-    var TUNGSTEN_ORE = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
-    var ZINC_ORE = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
-    var TIN_ORE = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
-    var LEAD_ORE = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
-    var NICKEL_ORE = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
-    var ALUMINIUM_ORE = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+    var COPPER_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+    var TUNGSTEN_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+    var ZINC_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+    var TIN_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+    var LEAD_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+    var NICKEL_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+    var ALUMINIUM_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+    var SILVER_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
 
 
     var COPPER_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
@@ -75,6 +77,8 @@ class AgriBlock {
     var LEAD_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
     var NICKEL_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
     var ALUMINIUM_BLOCK = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+    var SILVER_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
+    var STEEL_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
 
 
     var HIGH_TEMPERATURE_ELECTROLYTIC_FURNACE =

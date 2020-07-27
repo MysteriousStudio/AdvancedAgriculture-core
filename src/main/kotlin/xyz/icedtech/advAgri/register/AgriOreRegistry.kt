@@ -26,7 +26,7 @@ class AgriOreRegistry {
     }
 
     private fun registryUnderGroundOre(biome: Biome) {
-        //  registryOreToMainWorldUnderground(biome as Biome, blockItemList.PHOS_ORE, 17, 20, 0, 0, 64)
+        registryOreToMainWorldUnderground(biome, blockItemList.PHOS_ORE, 17, 20, 0, 0, 64)
         registryOreToMainWorldUnderground(biome, blockItemList.SULPHUR_ORE, 8, 10, 0, 0, 32)
     }
 

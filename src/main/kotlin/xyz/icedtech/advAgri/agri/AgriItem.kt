@@ -117,4 +117,9 @@ class AgriGroupItem {
 
     //钢锭
     var STEEL_INGOT = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
+    var STEEL_DUST = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
+
+    //银锭
+    var SILVER_INGOT = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
+    var SILVER_DUST = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
 }

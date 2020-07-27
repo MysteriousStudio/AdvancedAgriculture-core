@@ -29,13 +29,13 @@ interface FermentTankInventory : Inventory {
         return items[slot]
     }
 
-  /*  override fun takeInvStack(slot: Int, count: Int): ItemStack {
-        val result = Inventories.splitStack(items, slot, count)
-        if (!result.isEmpty) {
-            this.markDirty()
-        }
-        return result
-    }*/
+    /*  override fun takeInvStack(slot: Int, count: Int): ItemStack {
+          val result = Inventories.splitStack(items, slot, count)
+          if (!result.isEmpty) {
+              this.markDirty()
+          }
+          return result
+      }*/
 
     override fun removeStack(slot: Int): ItemStack {
         return Inventories.removeStack(items, slot)

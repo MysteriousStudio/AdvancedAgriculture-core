@@ -18,9 +18,10 @@ minecraft {
 
 repositories {
     maven {
+        url = "http://127.0.0.1:8081/repository/maven-public/"
         url = "http://maven.fabricmc.net/"
         name = "Cotton"
-        url = "https://server.bbkr.space:8081/artifactory/libs-release/"
+        // url = "https://server.bbkr.space:8081/artifactory/libs-release/"
     }
 }
 

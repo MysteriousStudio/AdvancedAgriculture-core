@@ -46,6 +46,7 @@ class AgriBlockRegistry {
         this.registryBlockItemTool("tungsten_ore", blockItemList.TUNGSTEN_ORE)
         this.registryBlockItemTool("nickel_ore", blockItemList.NICKEL_ORE)
         this.registryBlockItemTool("aluminium_ore", blockItemList.ALUMINIUM_ORE)
+        this.registryBlockItemTool("silver_ore", blockItemList.SILVER_ORE)
 
         this.registryBlockItemTool("copper_block", blockItemList.COPPER_BLOCK)
         this.registryBlockItemTool("tin_block", blockItemList.TIN_BLOCK)
@@ -54,6 +55,8 @@ class AgriBlockRegistry {
         this.registryBlockItemTool("tungsten_block", blockItemList.TUNGSTEN_BLOCK)
         this.registryBlockItemTool("nickel_block", blockItemList.NICKEL_BLOCK)
         this.registryBlockItemTool("aluminium_block", blockItemList.ALUMINIUM_BLOCK)
+        this.registryBlockItemTool("silver_block", blockItemList.SILVER_BLOCK)
+        this.registryBlockItemTool("steel_block", blockItemList.STEEL_BLOCK)
 
         this.registryBlockItemTool(
             "high_temperature_electrolytic_furnace",

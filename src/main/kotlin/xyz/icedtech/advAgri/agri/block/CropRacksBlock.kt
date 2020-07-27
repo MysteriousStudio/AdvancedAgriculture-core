@@ -11,7 +11,7 @@ import xyz.icedtech.advAgri.agri.entity.CropRacksEntity
 class CropRacksBlock(settings: Settings) : BlockWithEntity(settings) {
     var SHAPE1 = Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 16.0, 13.0)
 
-  override fun getOutlineShape(
+    override fun getOutlineShape(
         state: BlockState?,
         view: BlockView?,
         pos: BlockPos?,
@@ -19,7 +19,6 @@ class CropRacksBlock(settings: Settings) : BlockWithEntity(settings) {
     ): VoxelShape {
         return this.SHAPE1
     }
-
 
 
     override fun getRenderType(state: BlockState?): BlockRenderType {

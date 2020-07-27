@@ -30,7 +30,7 @@ class AgriItemRegistry {
         this.registryItemTool("bamboo_silk_board", itemList.BAMBOO_SILK_BOARD)
         this.registryItemTool("indus_oil", itemList.INDUS_OIL)
         this.registryItemTool("firecrackers", itemList.FIRECRACKERS)
-//        this.registryItemTool("fine_bamboo_cutter", itemList.FINE_BAMBOO_CUTTER)
+
         this.registryItemTool("copper_ingot", itemList.COPPER_INGOT)
         this.registryItemTool("tin_ingot", itemList.TIN_INGOT)
         this.registryItemTool("zinc_ingot", itemList.ZINC_INGOT)
@@ -39,13 +39,18 @@ class AgriItemRegistry {
         this.registryItemTool("nickel_ingot", itemList.NICKEL_INGOT)
         this.registryItemTool("tungsten_ingot", itemList.TUNGSTEN_INGOT)
         this.registryItemTool("steel_ingot", itemList.STEEL_INGOT)
+        this.registryItemTool("silver_ingot", itemList.SILVER_INGOT)
         this.registryItemTool("copper_dust", itemList.COPPER_DUST)
+
         this.registryItemTool("tin_dust", itemList.TIN_DUST)
         this.registryItemTool("zinc_dust", itemList.ZINC_DUST)
         this.registryItemTool("lead_dust", itemList.LEAD_DUST)
         this.registryItemTool("aluminium_dust", itemList.ALUMINIUM_DUST)
         this.registryItemTool("nickel_dust", itemList.NICKEL_DUST)
         this.registryItemTool("tungsten_dust", itemList.TUNGSTEN_DUST)
+        this.registryItemTool("silver_dust", itemList.SILVER_DUST)
+        this.registryItemTool("steel_dust", itemList.STEEL_DUST)
+
     }
 
     private fun registryItemTool(blockName: String, item: Item) {
