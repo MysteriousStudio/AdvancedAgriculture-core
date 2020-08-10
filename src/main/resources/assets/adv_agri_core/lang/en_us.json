@@ -49,6 +49,8 @@
   "ore.adv_agri_core.sulphur_ore.tooltip": "散发着刺鼻的味道...闻起来像是要爆炸",
   "tool.adv_agri_core.bamboo_braze": "竹钎",
   "tool.adv_agri_core.bamboo_knife": "竹砍刀",
-  "item.adv_agri_core.tin_dust": "锡粉"
+  "item.adv_agri_core.tin_dust": "锡粉",
+  "item.adv_agri_core.com_fert": "化肥",
+  "item.adv_agri_core.phos": ""
 }
 
