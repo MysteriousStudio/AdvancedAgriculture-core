@@ -18,8 +18,8 @@ jobs:
           args: build
       - name: Remove file
         uses: jdickey/bash@v.1.1.1
-          with:
-            agrs: rm ./build/libs/AdvancedAgriculture-Core-1.0.0-dev.jar ./build/libs/AdvancedAgriculture-Core-1.0.0-sources-dev.jar
+        with:
+          agrs: rm ./build/libs/AdvancedAgriculture-Core-1.0.0-dev.jar ./build/libs/AdvancedAgriculture-Core-1.0.0-sources-dev.jar
       - name: Compress jar files into an artifacts file
         uses: edgarrc/action-7z@v1.0.4
           with:
