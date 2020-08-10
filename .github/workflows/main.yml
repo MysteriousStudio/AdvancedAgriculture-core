@@ -22,11 +22,10 @@ jobs:
           agrs: rm ./build/libs/AdvancedAgriculture-Core-1.0.0-dev.jar ./build/libs/AdvancedAgriculture-Core-1.0.0-sources-dev.jar
       - name: Compress jar files into an artifacts file
         uses: edgarrc/action-7z@v1.0.4
-          with:
-            args: 7z a -t7z -mx=9 AdvAgri.7z ./build/
+        with:
+          args: 7z a -t7z -mx=9 AdvAgri.7z ./build/
       - name: Upload Artifact
-          uses: actions/upload-artifact@master
-          with:
-            name: AdvAgri.7z
-            path: ./AdvAgri.7z
-
+        uses: actions/upload-artifact@master
+        with:
+          name: AdvAgri.7z
+          path: ./AdvAgri.7z
