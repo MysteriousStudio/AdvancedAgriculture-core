@@ -25,13 +25,14 @@ class AgriOreRegistry {
             })
     }
 
-    private fun registryUnderGroundOre(biome: Biome) {
-        registryOreToMainWorldUnderground(biome, blockItemList.PHOS_ORE, 17, 20, 0, 0, 64)
-        registryOreToMainWorldUnderground(biome, blockItemList.SULPHUR_ORE, 8, 10, 0, 0, 32)
+    private fun registryUnderGroundOre(biomes: Biome) {
+        registryOreToMainWorldUnderground(biomes, blockItemList.PHOS_ORE, 17, 20, 0, 0, 64)
+        registryOreToMainWorldUnderground(biomes, blockItemList.SULPHUR_ORE, 8, 10, 0, 0, 32)
+        registryOreToMainWorldUnderground(biomes, blockItemList.TUNGSTEN_ORE, 4, 2, 0, 0, 8)
     }
 
     private fun registryOreToMainWorldUnderground(
-        biome: Biome,
+        biomes: Biome,
         block: Block,
         size: Int,
         count: Int,
@@ -39,8 +40,8 @@ class AgriOreRegistry {
         topOffset: Int,
         maximum: Int
     ) {
-        if (biome.category != Biome.Category.NETHER && biome.category != Biome.Category.THEEND) {
-            biome.addFeature(
+        if (biomes.category != Biome.Category.NETHER && biomes.category != Biome.Category.THEEND) {
+            biomes.addFeature(
                 GenerationStep.Feature.UNDERGROUND_ORES,
                 Feature.ORE.configure(
                     OreFeatureConfig(

@@ -50,13 +50,19 @@ class AgriItemRegistry {
         this.registryItemTool("tungsten_dust", itemList.TUNGSTEN_DUST)
         this.registryItemTool("silver_dust", itemList.SILVER_DUST)
         this.registryItemTool("steel_dust", itemList.STEEL_DUST)
+        this.registryItemTool("iron_dust", itemList.IRON_DUST)
 
+        this.registryItemTool("copper_conductor_core", itemList.COPPER_CONDUCTOR_CORE)
+        this.registryItemTool("iron_conductor_core", itemList.IRON_CONDUCTOR_CORE)
+        this.registryItemTool("silver_conductor_core", itemList.SILVER_CONDUCTOR_CORE)
+        this.registryItemTool("titan_conductor_core", itemList.TITAN_CONDUCTOR_CORE)
+        this.registryItemTool("tungsten_conductor_core",itemList.TUNGSTEN_CONDUCTOR_CORE)
     }
 
-    private fun registryItemTool(blockName: String, item: Item) {
+    private fun registryItemTool(itemName: String, item: Item) {
         Registry.register(
             Registry.ITEM,
-            Identifier(modid, blockName),
+            Identifier(modid, itemName),
             item
         )
     }

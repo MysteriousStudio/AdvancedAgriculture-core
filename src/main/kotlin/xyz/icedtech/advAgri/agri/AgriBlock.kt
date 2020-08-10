@@ -1,5 +1,6 @@
 package xyz.icedtech.advAgri.agri
 
+
 import net.fabricmc.fabric.api.block.FabricBlockSettings.of
 import net.minecraft.block.Block
 import net.minecraft.block.Material
@@ -65,7 +66,6 @@ class AgriBlock {
     var ZINC_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
     var TIN_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
     var LEAD_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
-    var NICKEL_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
     var ALUMINIUM_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
     var SILVER_ORE = OreBlock(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
 

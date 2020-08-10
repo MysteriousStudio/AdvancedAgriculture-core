@@ -97,3 +97,6 @@ fun Registry<Any?>.registryOreToMainWorldUnderground(
     }
 }
 
+fun FastAddItem(ItemGroup: ItemGroup, Count: Int): Item {
+    return Item(Item.Settings().group(ItemGroup).maxCount(Count))
+}

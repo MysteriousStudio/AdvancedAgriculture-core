@@ -6,7 +6,10 @@ import net.minecraft.item.ItemStack
 import net.minecraft.item.Items
 import net.minecraft.util.Identifier
 import xyz.icedtech.advAgri.agri.item.FireCrackers
+import xyz.icedtech.advAgri.agri.item.Sulfur
 import xyz.icedtech.advAgri.modata.Modata
+import xyz.icedtech.advAgri.extenedTool.FastAddItem
+import kotlin.reflect.jvm.internal.impl.resolve.scopes.receivers.ThisClassReceiver
 
 class AgriGroupItem {
     var modid = Modata().modid
@@ -18,19 +21,19 @@ class AgriGroupItem {
 
     //复合肥
     var COM_FERT =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
+        FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //竹叶
     var BAMBOO_LEAVES =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
+        FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //竹编
     var BAMBOO_SILK =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
+        FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //竹编板
     var BAMBOO_SILK_BOARD =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
+        FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //桐油
     var INDUS_OIL =
@@ -38,7 +41,7 @@ class AgriGroupItem {
 
     //竹炭
     var BAMBOO_CHARCOAL =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
+        FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //爆竹
     var FIRECRACKERS =
@@ -58,68 +61,78 @@ class AgriGroupItem {
 
     //钾盐
     var POTASSIUM_SALT_POWDER =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
+        FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
 
     //草木灰
     var GRASS_ASH =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
+        FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //磷
     var PHOS =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
+        FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //硫
     var SULFUR =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
+        Sulfur(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
 
     //蛭石
     var ZIRCON =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
+        FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     var INGOT = 64
     var DUST = 128
 
     //钨锭
-    var TUNGSTEN_INGOT = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
-    var TUNGSTEN_DUST = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(DUST))
+    var TUNGSTEN_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    var TUNGSTEN_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //铜锭
-    var COPPER_INGOT = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
-    var COPPER_DUST = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(DUST))
+    var COPPER_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    var COPPER_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //锌锭
-    var ZINC_INGOT = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
-    var ZINC_DUST = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(DUST))
+    var ZINC_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    var ZINC_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //锡锭
-    var TIN_INGOT = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
-    var TIN_DUST = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(DUST))
+    var TIN_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    var TIN_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //铝锭
-    var ALUMINIUM_INGOT = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
-    var ALUMINIUM_DUST = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(DUST))
+    var ALUMINIUM_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    var ALUMINIUM_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //铅锭
-    var LEAD_INGOT = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
-    var LEAD_DUST = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(DUST))
+    var LEAD_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    var LEAD_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //镍锭
-    var NICKEL_INGOT = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
-    var NICKEL_DUST = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(DUST))
+    var NICKEL_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    var NICKEL_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //钢锭
-    var STEEL_INGOT = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
-    var STEEL_DUST = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
+    var STEEL_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    var STEEL_DUST = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
 
     //银锭
-    var SILVER_INGOT = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
-    var SILVER_DUST = Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(INGOT))
+    var SILVER_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    var SILVER_DUST = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+
+    var IRON_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+
+    var CORES = 64
+
+    var COPPER_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+    var IRON_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+    var SILVER_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+    var TITAN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+    var TUNGSTEN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
 }

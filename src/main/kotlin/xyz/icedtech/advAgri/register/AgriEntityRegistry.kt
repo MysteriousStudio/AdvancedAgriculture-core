@@ -8,7 +8,7 @@ import xyz.icedtech.advAgri.agri.entity.*
 
 class AgriEntityRegistry {
     fun registryAllEntity() {
-        var itemListOfAgri = AgriBlock()
+        val itemListOfAgri = AgriBlock()
         FERMENT_TANK_ENTITY =
             Registry.register(
                 Registry.BLOCK_ENTITY_TYPE,

@@ -44,7 +44,6 @@ class AgriBlockRegistry {
         this.registryBlockItemTool("zinc_ore", blockItemList.ZINC_ORE)
         this.registryBlockItemTool("lead_ore", blockItemList.LEAD_ORE)
         this.registryBlockItemTool("tungsten_ore", blockItemList.TUNGSTEN_ORE)
-        this.registryBlockItemTool("nickel_ore", blockItemList.NICKEL_ORE)
         this.registryBlockItemTool("aluminium_ore", blockItemList.ALUMINIUM_ORE)
         this.registryBlockItemTool("silver_ore", blockItemList.SILVER_ORE)
 
