@@ -11,6 +11,7 @@
   "block.adv_agri_core.lead_ore": "Lead Ore",
   "block.adv_agri_core.zinc_block": "Zinc Block",
   "block.adv_agri_core.aluminium_block": "Aluminum Block",
+  "block.adv_agri_core.aluminium_dust": "Aluminum Powder",
   "block.adv_agri_core.tungsten_block": "Tungsten Block",
   "block.adv_agri_core.tin_block": "Tin Block",
   "block.adv_agri_core.lead_block": "Lead_Block",
@@ -67,7 +68,7 @@
   "item.adv_agri_core.titan_ore": "Titanium Ore",
   "item.adv_agri_core.tungsten_dust": "Tungsten Powder",
   "item.adv_agri_core.tungsten_ingot": "Tungsten Ingot",
-  "itemGroup.adv_agri_core.bamboo": "Advanced Agriculture-Core Mod",
+  "itemGroup.adv_agri_core.agriculture": "AdvancedAgriculture-Core",
   "ore.adv_agri_core.sulphur_ore.tooltip": "Smells pungent, may explode in a second.",
   "tool.adv_agri_core.bamboo_braze": "Bamboo Drill Rod",
   "tool.adv_agri_core.bamboo_knife": "Bamboo Chopper",
@@ -79,7 +80,11 @@
   "item.adv_agri_core.zinc_ingot": "Zinc Ingot",
   "item.adv_agri_core.zinc_dust": "Zinc Powder",
   "item.adv_agri_core.lead_ingot": "Lead Ingot",
-  "item.adv_agri_core.iron_dust": "Iron Powder"
-
+  "item.adv_agri_core.iron_dust": "Iron Powder",
+  "item.adv_agri_core.copper_conductor_core": "Copper Conductor Core",
+  "item.adv_agri_core.iron_conductor_core": "Iron Conductor Core",
+  "item.adv_agri_core.silver_conductor_core": "Silver Conductor Core",
+  "item.adv_agri_core.titan_conductor_core": "Titan Conductor Core",
+  "item.adv_agri_core.tungsten_conductor_core": "Tungsten Conductor Core"
 }
 

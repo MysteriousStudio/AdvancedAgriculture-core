@@ -11,6 +11,7 @@
   "block.adv_agri_core.lead_ore": "铅矿",
   "block.adv_agri_core.zinc_block": "锌块",
   "block.adv_agri_core.aluminium_block": "铝块",
+  "block.adv_agri_core.aluminium_dust": "铝粉",
   "block.adv_agri_core.tungsten_block": "钨块",
   "block.adv_agri_core.tin_block": "锡块",
   "block.adv_agri_core.lead_block": "铅块",
@@ -67,10 +68,22 @@
   "item.adv_agri_core.titan_ore": "钛矿",
   "item.adv_agri_core.tungsten_dust": "钨粉",
   "item.adv_agri_core.tungsten_ingot": "钨锭",
-  "itemGroup.adv_agri_core.bamboo": "高级农业-核心",
+  "itemGroup.adv_agri_core.agriculture": "高级农业-核心",
   "ore.adv_agri_core.sulphur_ore.tooltip": "散发着刺鼻的味道...闻起来像是要爆炸",
   "tool.adv_agri_core.bamboo_braze": "竹钎",
   "tool.adv_agri_core.bamboo_knife": "竹砍刀",
-  "item.adv_agri_core.tin_dust": "锡粉"
-
+  "item.adv_agri_core.tin_dust": "锡粉",
+  "item.adv_agri_core.com_fert": "化肥",
+  "item.adv_agri_core.phos": "磷",
+  "item.adv_agri_core.zircon": "锌",
+  "item.adv_agri_core.potassium_salt_powder": "草木灰",
+  "item.adv_agri_core.zinc_ingot": "锌锭",
+  "item.adv_agri_core.zinc_dust": "锌粉",
+  "item.adv_agri_core.lead_ingot": "铅锭",
+  "item.adv_agri_core.iron_dust": "铁粉",
+  "item.adv_agri_core.copper_conductor_core": "铜导体核心",
+  "item.adv_agri_core.iron_conductor_core": "铁导体核心",
+  "item.adv_agri_core.silver_conductor_core": "银导体核心",
+  "item.adv_agri_core.titan_conductor_core": "钛导体核心",
+  "item.adv_agri_core.tungsten_conductor_core": "钨导体核心"
 }

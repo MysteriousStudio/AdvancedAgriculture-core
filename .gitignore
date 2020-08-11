@@ -15,11 +15,9 @@ run/
 
 # fabric
 
-run/
 minecraft/
 .DS_Store
 model/
-*.png~
 *.png~
 src/main/resources/assets/adv_agri_core/logo.xcf
 build.7z
