@@ -3,6 +3,8 @@
 .gradle/
 build/
 out/
+bin/
+run/
 
 # idea
 
