@@ -12,7 +12,6 @@
 ![CircleCI](https://circleci.com/gh/MysteriousStudio/AdvancedAgriculture-core.svg?style=svg) | ![License](https://img.shields.io/badge/License-GPLv3-brightgreen) | ![Language](https://img.shields.io/badge/Language-Kotlin&Java-blue)
 
 </center>
----
 
 ### 特别感谢
 
