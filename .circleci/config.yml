@@ -45,15 +45,14 @@ jobs:
       - run: gradle build
 
       # Compress output into a file
-      - run
+      - run:
           command: |
             rm ./build/*dev*;
             export TIME=$(date "+%Y-%m-%d_%H:%M:%S_dev");
             tar -cJf $TIME.tar.xz ./build/;
             tar -xJf $TIME.tar.xz;
-            mkdir output
-            mv *tar.xz output
+            mkdir output;
+            mv *tar.xz output;
 
       - store_artifacts:
           path: ./output
-
