@@ -43,3 +43,12 @@ jobs:
 
       # run build
       - run: gradle build
+
+      # Compress output into a file
+      - run:
+          command: |
+            echo "Move jars into output";
+            mv ./build/libs/ ./output/;
+
+      - store_artifacts:
+          path: ./output/
