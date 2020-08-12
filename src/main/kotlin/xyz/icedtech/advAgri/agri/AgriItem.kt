@@ -9,179 +9,178 @@ import xyz.icedtech.advAgri.agri.item.FireCrackers
 import xyz.icedtech.advAgri.agri.item.Sulfur
 import xyz.icedtech.advAgri.modata.Modata
 import xyz.icedtech.advAgri.extenedTool.FastAddItem
-import kotlin.reflect.jvm.internal.impl.resolve.scopes.receivers.ThisClassReceiver
 
 class AgriGroupItem {
-    var modid = Modata().modid
+    private val modid = Modata().modid
 
-    var AGRI_ITEM_GROUP =
+    val AGRI_ITEM_GROUP =
         FabricItemGroupBuilder.create(Identifier(modid, "agriculture"))
             .icon { ItemStack(Items.BAMBOO) }.build()
 
 
     //复合肥
-    var COM_FERT =
+    val COM_FERT =
         FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //竹叶
-    var BAMBOO_LEAVES =
+    val BAMBOO_LEAVES =
         FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //竹编
-    var BAMBOO_SILK =
+    val BAMBOO_SILK =
         FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //竹编板
-    var BAMBOO_SILK_BOARD =
+    val BAMBOO_SILK_BOARD =
         FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //桐油
-    var INDUS_OIL =
+    val INDUS_OIL =
         Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(32))
 
     //竹炭
-    var BAMBOO_CHARCOAL =
+    val BAMBOO_CHARCOAL =
         FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //爆竹
-    var FIRECRACKERS =
+    val FIRECRACKERS =
         FireCrackers(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
 
     //竹编剪
-    var BAMBOO_SILK_SCISSORS =
+    val BAMBOO_SILK_SCISSORS =
         Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxDamage(356))
 
     //细致竹编切割器
-    var FINE_BAMBOO_CUTTER =
+    val FINE_BAMBOO_CUTTER =
         Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxDamage(540))
 
     //砍竹刀
-    var BAMBOO_KNIFE =
+    val BAMBOO_KNIFE =
         Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxDamage(340))
 
     //钾盐
-    var POTASSIUM_SALT_POWDER =
+    val POTASSIUM_SALT_POWDER =
         FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
 
     //草木灰
-    var GRASS_ASH =
+    val GRASS_ASH =
         FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //磷
-    var PHOS =
+    val PHOS =
         FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
     //硫
-    var SULFUR =
+    val SULFUR =
         Sulfur(Item.Settings().group(this.AGRI_ITEM_GROUP).maxCount(64))
 
     //蛭石
-    var ZIRCON =
+    val ZIRCON =
         FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
-    var INGOT = 64
-    var DUST = 128
+    val INGOT = 64
+    val DUST = 128
 
     //钨锭
-    var TUNGSTEN_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    var TUNGSTEN_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val TUNGSTEN_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val TUNGSTEN_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //铜锭
-    var COPPER_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    var COPPER_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val COPPER_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val COPPER_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //锌锭
-    var ZINC_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    var ZINC_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val ZINC_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val ZINC_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //锡锭
-    var TIN_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    var TIN_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val TIN_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val TIN_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //铝锭
-    var ALUMINIUM_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    var ALUMINIUM_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val ALUMINIUM_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val ALUMINIUM_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //铅锭
-    var LEAD_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    var LEAD_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val LEAD_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val LEAD_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //镍锭
-    var NICKEL_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    var NICKEL_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val NICKEL_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val NICKEL_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
 
     //钢锭
-    var STEEL_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    var STEEL_DUST = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val STEEL_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val STEEL_DUST = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
 
     //银锭
-    var SILVER_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    var SILVER_DUST = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val SILVER_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val SILVER_DUST = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
 
     //青铜
-    var BRONZE_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    var BRONZE_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val BRONZE_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val BRONZE_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
-    var IRON_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val IRON_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
-    var CORES = 64
+    val CORES = 64
 
-    var COPPER_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
-    var IRON_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
-    var SILVER_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
-    var TITAN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
-    var TUNGSTEN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+    val COPPER_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+    val IRON_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+    val SILVER_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+    val TITAN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+    val TUNGSTEN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
 
-    var GEAR = 64
+    val GEAR = 64
 
-    var TIN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
-    var ZINC_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
-    var COPPER_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
-    var BRONZE_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
-    var IRON_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
-    var STEEL_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
-    var SILVER_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
-    var GOLD_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
-    var TITAN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
-    var TUNGSTEN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    val TIN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    val ZINC_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    val COPPER_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    val BRONZE_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    val IRON_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    val STEEL_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    val SILVER_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    val GOLD_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    val TITAN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    val TUNGSTEN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
 
-    var BROAD = 64
+    val PLATE = 64
 
-    var TIN_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
-    var ZINC_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
-    var COPPER_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
-    var BRONZE_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
-    var IRON_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
-    var STEEL_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
-    var SILVER_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
-    var GOLD_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
-    var TITAN_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
-    var TUNGSTEN_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
+    val TIN_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
+    val ZINC_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
+    val COPPER_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
+    val BRONZE_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
+    val IRON_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
+    val STEEL_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
+    val SILVER_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
+    val GOLD_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
+    val TITAN_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
+    val TUNGSTEN_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
 
-    var LINE = 64
+    val LINE = 64
 
-    var TIN_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
-    var COPPER_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
-    var SILVER_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
-    var GOLD_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
+    val TIN_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
+    val COPPER_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
+    val SILVER_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
+    val GOLD_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
 
-    var POWER_MODULE = 64
+    val POWER_MODULE = 64
 
-    var PASSIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
-    var ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
-    var ADVANCED_ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
+    val PASSIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
+    val ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
+    val ADVANCED_ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
 
-    var PUMP_CORE = 1
+    val PUMP_CORE = 1
 
-    var PASSIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, PUMP_CORE)
-    var ACTIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, PUMP_CORE)
-    var ADVANCED_ACTIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, PUMP_CORE)
+    val PASSIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, PUMP_CORE)
+    val ACTIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, PUMP_CORE)
+    val ADVANCED_ACTIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, PUMP_CORE)
 }

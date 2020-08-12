@@ -10,14 +10,10 @@ import xyz.icedtech.advAgri.agri.AgriGroupItem
 import xyz.icedtech.advAgri.modata.Modata
 
 
-class AgriBlockRegistry {
-
-    constructor(agi: AgriGroupItem) {
-        itemList = agi
-    }
+class AgriBlockRegistry(agi: AgriGroupItem) {
 
     private val modid = Modata().modid
-    private var itemList: AgriGroupItem
+    private var itemList: AgriGroupItem = agi
     private val blockItemList = AgriBlock()
     fun registryAllAgriBlockItem() {
         this.registerAgriBlockItem()
@@ -85,19 +81,4 @@ class AgriBlockRegistry {
         )
     }
 
-    private fun registryBlockItemTool(blockName: String, block: Block, maxCount: Int) {
-        Registry.register(
-            Registry.BLOCK,
-            Identifier(modid, blockName),
-            block
-        )
-        Registry.register(
-            Registry.ITEM,
-            Identifier(modid, blockName),
-            BlockItem(
-                block,
-                Item.Settings().group(itemList.AGRI_ITEM_GROUP).maxCount(maxCount)
-            )
-        )
-    }
 }
