@@ -166,6 +166,13 @@ class AgriGroupItem {
     var TITAN_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
     var TUNGSTEN_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
 
+    var LINE = 64
+
+    var TIN_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
+    var COPPER_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
+    var SILVER_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
+    var GOLD_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
+
     var POWER_MODULE = 64
 
     var PASSIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)

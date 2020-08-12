@@ -76,6 +76,11 @@ class AgriItemRegistry {
         this.registryItemTool("titan_broad", itemList.TITAN_BROAD)
         this.registryItemTool("tungsten_broad", itemList.TUNGSTEN_BROAD)
 
+        this.registryItemTool("tin_line", itemList.TIN_LINE)
+        this.registryItemTool("copper_line", itemList.COPPER_LINE)
+        this.registryItemTool("silver_line", itemList.SILVER_LINE)
+        this.registryItemTool("gold_line", itemList.GOLD_LINE)
+
         this.registryItemTool("passive_power_module", itemList.PASSIVE_POWER_MODULE)
         this.registryItemTool("active_power_module", itemList.ACTIVE_POWER_MODULE)
         this.registryItemTool("advanced_power_module", itemList.ADVANCED_ACTIVE_POWER_MODULE)
