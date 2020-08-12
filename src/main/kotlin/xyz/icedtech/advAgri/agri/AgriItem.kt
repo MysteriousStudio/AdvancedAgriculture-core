@@ -126,6 +126,10 @@ class AgriGroupItem {
     var SILVER_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
     var SILVER_DUST = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
 
+    //青铜
+    var BRONZE_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    var BRONZE_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+
     var IRON_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 
     var CORES = 64
@@ -135,4 +139,23 @@ class AgriGroupItem {
     var SILVER_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
     var TITAN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
     var TUNGSTEN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+
+    var TIN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var ZINC_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var COPPER_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var BRONZE_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var IRON_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var STEEL_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var SILVER_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var GOLD_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var TITAN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var TUNGSTEN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+
+    var PASSIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var ADVANCED_ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+
+    var PASSIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, 1)
+    var ACTIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, 1)
+    var ADVANCED_ACTIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, 1)
 }

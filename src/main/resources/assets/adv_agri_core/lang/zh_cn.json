@@ -76,7 +76,7 @@
   "item.adv_agri_core.com_fert": "化肥",
   "item.adv_agri_core.phos": "磷",
   "item.adv_agri_core.zircon": "锌",
-  "item.adv_agri_core.potassium_salt_powder": "草木灰",
+  "item.adv_agri_core.potassium_salt_powder": "钾盐",
   "item.adv_agri_core.zinc_ingot": "锌锭",
   "item.adv_agri_core.zinc_dust": "锌粉",
   "item.adv_agri_core.lead_ingot": "铅锭",
@@ -85,5 +85,6 @@
   "item.adv_agri_core.iron_conductor_core": "铁导体核心",
   "item.adv_agri_core.silver_conductor_core": "银导体核心",
   "item.adv_agri_core.titan_conductor_core": "钛导体核心",
-  "item.adv_agri_core.tungsten_conductor_core": "钨导体核心"
+  "item.adv_agri_core.tungsten_conductor_core": "钨导体核心",
+  "item.adv_agri_core.grass_ash": "草木灰"
 }

@@ -79,7 +79,7 @@ class AgriBlock {
     var ALUMINIUM_BLOCK = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
     var SILVER_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
     var STEEL_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
-
+    var BRONZE_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
 
     var HIGH_TEMPERATURE_ELECTROLYTIC_FURNACE =
         HighTemperatureElectrolyticFurnace(of(Material.STONE).hardness(3.5F).breakByHand(true).build())

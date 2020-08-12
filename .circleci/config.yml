@@ -47,6 +47,12 @@ jobs:
       # Compress output into a file
       - run:
           command: |
+            export TIME=$(date '+%Y-%m-%d_%H:%M:%S_%s') 
+            echo "Rename jars";
+            mv ./build/libs/AdvancedAgriculture-Core-1.0.0.jar ./build/libs/AdvancedAgriculture-Core-1.0.0_$TIME.jar
+            mv ./build/libs/AdvancedAgriculture-Core-1.0.0-dev.jar ./build/libs/AdvancedAgriculture-Core-1.0.0_dev_$TIME.jar
+            mv ./build/libs/AdvancedAgriculture-Core-1.0.0-sources.jar ./build/libs/AdvancedAgriculture-Core-1.0.0_sources_$TIME.jar
+            mv ./build/libs/AdvancedAgriculture-Core-1.0.0-sources-dev.jar ./build/libs/AdvancedAgriculture-Core-1.0.0_sources_dev_$TIME.jar
             echo "Move jars into output";
             mv ./build/libs/ ./output/;
 

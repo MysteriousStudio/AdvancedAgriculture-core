@@ -34,16 +34,18 @@ class AgriItemRegistry {
         this.registryItemTool("copper_ingot", itemList.COPPER_INGOT)
         this.registryItemTool("tin_ingot", itemList.TIN_INGOT)
         this.registryItemTool("zinc_ingot", itemList.ZINC_INGOT)
+        this.registryItemTool("bronze_ingot", itemList.BRONZE_INGOT)
         this.registryItemTool("lead_ingot", itemList.LEAD_INGOT)
         this.registryItemTool("aluminium_ingot", itemList.ALUMINIUM_INGOT)
         this.registryItemTool("nickel_ingot", itemList.NICKEL_INGOT)
         this.registryItemTool("tungsten_ingot", itemList.TUNGSTEN_INGOT)
         this.registryItemTool("steel_ingot", itemList.STEEL_INGOT)
         this.registryItemTool("silver_ingot", itemList.SILVER_INGOT)
-        this.registryItemTool("copper_dust", itemList.COPPER_DUST)
 
+        this.registryItemTool("copper_dust", itemList.COPPER_DUST)
         this.registryItemTool("tin_dust", itemList.TIN_DUST)
         this.registryItemTool("zinc_dust", itemList.ZINC_DUST)
+        this.registryItemTool("bronze_dust", itemList.BRONZE_DUST)
         this.registryItemTool("lead_dust", itemList.LEAD_DUST)
         this.registryItemTool("aluminium_dust", itemList.ALUMINIUM_DUST)
         this.registryItemTool("nickel_dust", itemList.NICKEL_DUST)
@@ -52,11 +54,31 @@ class AgriItemRegistry {
         this.registryItemTool("steel_dust", itemList.STEEL_DUST)
         this.registryItemTool("iron_dust", itemList.IRON_DUST)
 
+        this.registryItemTool("tin_gear", itemList.TIN_GEAR)
+        this.registryItemTool("zinc_gear", itemList.ZINC_GEAR)
+        this.registryItemTool("copper_gear", itemList.COPPER_GEAR)
+        this.registryItemTool("bronze_gear", itemList.BRONZE_GEAR)
+        this.registryItemTool("iron_gear", itemList.IRON_GEAR)
+        this.registryItemTool("steel_gear", itemList.STEEL_GEAR)
+        this.registryItemTool("iron_gear", itemList.IRON_GEAR)
+        this.registryItemTool("silver_gear", itemList.SILVER_GEAR)
+        this.registryItemTool("gold_gear", itemList.GOLD_GEAR)
+        this.registryItemTool("titan_gear", itemList.TITAN_GEAR)
+        this.registryItemTool("tungsten_gear", itemList.TUNGSTEN_GEAR)
+
+        this.registryItemTool("passive_power_module", itemList.PASSIVE_POWER_MODULE)
+        this.registryItemTool("active_power_module", itemList.ACTIVE_POWER_MODULE)
+        this.registryItemTool("advanced_power_module", itemList.ADVANCED_ACTIVE_POWER_MODULE)
+
+        this.registryItemTool("passive_pump_core", itemList.PASSIVE_PUMP_CORE)
+        this.registryItemTool("active_pump_core", itemList.ACTIVE_PUMP_CORE)
+        this.registryItemTool("advanced_active_pump_core", itemList.ADVANCED_ACTIVE_PUMP_CORE)
+
         this.registryItemTool("copper_conductor_core", itemList.COPPER_CONDUCTOR_CORE)
         this.registryItemTool("iron_conductor_core", itemList.IRON_CONDUCTOR_CORE)
         this.registryItemTool("silver_conductor_core", itemList.SILVER_CONDUCTOR_CORE)
         this.registryItemTool("titan_conductor_core", itemList.TITAN_CONDUCTOR_CORE)
-        this.registryItemTool("tungsten_conductor_core",itemList.TUNGSTEN_CONDUCTOR_CORE)
+        this.registryItemTool("tungsten_conductor_core", itemList.TUNGSTEN_CONDUCTOR_CORE)
     }
 
     private fun registryItemTool(itemName: String, item: Item) {
