@@ -140,22 +140,41 @@ class AgriGroupItem {
     var TITAN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
     var TUNGSTEN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
 
-    var TIN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
-    var ZINC_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
-    var COPPER_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
-    var BRONZE_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
-    var IRON_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
-    var STEEL_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
-    var SILVER_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
-    var GOLD_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
-    var TITAN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
-    var TUNGSTEN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var GEAR = 64
 
-    var PASSIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, 64)
-    var ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, 64)
-    var ADVANCED_ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, 64)
+    var TIN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    var ZINC_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    var COPPER_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    var BRONZE_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    var IRON_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    var STEEL_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    var SILVER_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    var GOLD_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    var TITAN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    var TUNGSTEN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
 
-    var PASSIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, 1)
-    var ACTIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, 1)
-    var ADVANCED_ACTIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, 1)
+    var BROAD = 64
+
+    var TIN_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
+    var ZINC_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
+    var COPPER_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
+    var BRONZE_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
+    var IRON_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
+    var STEEL_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
+    var SILVER_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
+    var GOLD_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
+    var TITAN_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
+    var TUNGSTEN_BROAD = FastAddItem(this.AGRI_ITEM_GROUP, BROAD)
+
+    var POWER_MODULE = 64
+
+    var PASSIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
+    var ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
+    var ADVANCED_ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
+
+    var PUMP_CORE = 1
+
+    var PASSIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, PUMP_CORE)
+    var ACTIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, PUMP_CORE)
+    var ADVANCED_ACTIVE_PUMP_CORE = FastAddItem(this.AGRI_ITEM_GROUP, PUMP_CORE)
 }
