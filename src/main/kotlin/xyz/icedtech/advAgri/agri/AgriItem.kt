@@ -55,7 +55,7 @@ class AgriGroupItem {
         Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxDamage(540))
 
     //砍竹刀
-    val BAMBOO_KNIFE =
+    val BAMBOO_CHOPPER =
         Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxDamage(340))
 
     //钾盐
@@ -134,10 +134,9 @@ class AgriGroupItem {
     val CORES = 64
 
     val COPPER_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
-    val IRON_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
     val SILVER_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
-    val TITAN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
-    val TUNGSTEN_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+    val TITANIUM_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
+
 
     val GEAR = 64
 
@@ -149,7 +148,7 @@ class AgriGroupItem {
     val STEEL_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
     val SILVER_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
     val GOLD_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
-    val TITAN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
+    val TITANIUM_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
     val TUNGSTEN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
 
     val PLATE = 64
@@ -162,7 +161,7 @@ class AgriGroupItem {
     val STEEL_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
     val SILVER_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
     val GOLD_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
-    val TITAN_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
+    val TITANIUM_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
     val TUNGSTEN_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
 
     val LINE = 64
@@ -172,11 +171,11 @@ class AgriGroupItem {
     val SILVER_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
     val GOLD_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
 
-    val POWER_MODULE = 64
+    val POWER_MODULE_COUNT = 64
 
-    val PASSIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
-    val ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
-    val ADVANCED_ACTIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE)
+    val PASSIVE_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE_COUNT)
+    val POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE_COUNT)
+    val ADVANCED_POWER_MODULE = FastAddItem(this.AGRI_ITEM_GROUP, POWER_MODULE_COUNT)
 
     val PUMP_CORE = 1
 
