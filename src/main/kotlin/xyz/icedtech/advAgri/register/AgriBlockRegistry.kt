@@ -58,7 +58,7 @@ class AgriBlockRegistry(agi: AgriGroupItem) {
             "high_temperature_electrolytic_furnace",
             blockItemList.HIGH_TEMPERATURE_ELECTROLYTIC_FURNACE
         )
-        this.registryBlockItemTool("primary_well_block", blockItemList.PRIMARY_WELL_BLOCK)
+        this.registryBlockItemTool("elementary_well_block", blockItemList.ELEMENTARY_WELL_BLOCK)
         this.registryBlockItemTool("primary_pumps", blockItemList.PRIMARY_PUMPS)
         this.registryBlockItemTool("primary_management_box", blockItemList.PRIMARY_MANAGEMENT_BLOCK)
 
