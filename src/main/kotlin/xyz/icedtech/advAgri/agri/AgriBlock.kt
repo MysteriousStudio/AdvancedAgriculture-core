@@ -79,6 +79,7 @@ class AgriBlock {
     var ALUMINIUM_BLOCK = Block(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
     var SILVER_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
     var STEEL_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
+    var TITANIUM_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
     var BRONZE_BLOCK = Block(of(Material.STONE).hardness(4.0F).breakByHand(false).build())
 
     var HIGH_TEMPERATURE_ELECTROLYTIC_FURNACE =
@@ -89,4 +90,10 @@ class AgriBlock {
         PrimaryManagementBox(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
     var PRIMARY_PUMPS =
         PrimaryPumps(of(Material.STONE).hardness(3.5F).breakByHand(false).build())
+
+    var MACHINE_CHASSIS = Block(of(Material.STONE).hardness(2.0F).breakByHand(true).build())
+    var ELEMENTARY_FLUID_TANK = Block(of(Material.STONE).hardness(2.0F).breakByHand(true).build())
+    var ELEMENTARY_SUNLIGHT_HARVESTER=Block(of(Material.STONE).hardness(2.0F).breakByHand(false).build())
+
+
 }

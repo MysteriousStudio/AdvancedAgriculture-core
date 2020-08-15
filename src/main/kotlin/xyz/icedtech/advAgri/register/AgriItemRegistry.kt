@@ -25,7 +25,7 @@ class AgriItemRegistry {
         this.registryItemTool("bamboo_silk", itemList.BAMBOO_SILK)
         this.registryItemTool("bamboo_silk_scissors", itemList.BAMBOO_SILK_SCISSORS)
         this.registryItemTool("bamboo_charcoal", itemList.BAMBOO_CHARCOAL)
-        this.registryItemTool("bamboo_knife", itemList.BAMBOO_KNIFE)
+        this.registryItemTool("bamboo_chopper", itemList.BAMBOO_CHOPPER)
         this.registryItemTool("fine_bamboo_cutter", itemList.FINE_BAMBOO_CUTTER)
         this.registryItemTool("bamboo_silk_board", itemList.BAMBOO_SILK_BOARD)
         this.registryItemTool("indus_oil", itemList.INDUS_OIL)
@@ -62,7 +62,7 @@ class AgriItemRegistry {
         this.registryItemTool("steel_gear", itemList.STEEL_GEAR)
         this.registryItemTool("silver_gear", itemList.SILVER_GEAR)
         this.registryItemTool("gold_gear", itemList.GOLD_GEAR)
-        this.registryItemTool("titan_gear", itemList.TITAN_GEAR)
+        this.registryItemTool("titanium_gear", itemList.TITANIUM_GEAR)
         this.registryItemTool("tungsten_gear", itemList.TUNGSTEN_GEAR)
 
         this.registryItemTool("tin_plate", itemList.TIN_PLATE)
@@ -73,7 +73,7 @@ class AgriItemRegistry {
         this.registryItemTool("steel_plate", itemList.STEEL_PLATE)
         this.registryItemTool("silver_plate", itemList.SILVER_PLATE)
         this.registryItemTool("gold_plate", itemList.GOLD_PLATE)
-        this.registryItemTool("titan_plate", itemList.TITAN_PLATE)
+        this.registryItemTool("titanium_plate", itemList.TITANIUM_PLATE)
         this.registryItemTool("tungsten_plate", itemList.TUNGSTEN_PLATE)
 
         this.registryItemTool("tin_line", itemList.TIN_LINE)
@@ -82,18 +82,16 @@ class AgriItemRegistry {
         this.registryItemTool("gold_line", itemList.GOLD_LINE)
 
         this.registryItemTool("passive_power_module", itemList.PASSIVE_POWER_MODULE)
-        this.registryItemTool("active_power_module", itemList.ACTIVE_POWER_MODULE)
-        this.registryItemTool("advanced_power_module", itemList.ADVANCED_ACTIVE_POWER_MODULE)
+        this.registryItemTool("power_module", itemList.POWER_MODULE)
+        this.registryItemTool("advanced_power_module", itemList.ADVANCED_POWER_MODULE)
 
         this.registryItemTool("passive_pump_core", itemList.PASSIVE_PUMP_CORE)
         this.registryItemTool("active_pump_core", itemList.ACTIVE_PUMP_CORE)
         this.registryItemTool("advanced_active_pump_core", itemList.ADVANCED_ACTIVE_PUMP_CORE)
 
         this.registryItemTool("copper_conductor_core", itemList.COPPER_CONDUCTOR_CORE)
-        this.registryItemTool("iron_conductor_core", itemList.IRON_CONDUCTOR_CORE)
         this.registryItemTool("silver_conductor_core", itemList.SILVER_CONDUCTOR_CORE)
-        this.registryItemTool("titan_conductor_core", itemList.TITAN_CONDUCTOR_CORE)
-        this.registryItemTool("tungsten_conductor_core", itemList.TUNGSTEN_CONDUCTOR_CORE)
+        this.registryItemTool("titanium_conductor_core", itemList.TITANIUM_CONDUCTOR_CORE)
     }
 
     private fun registryItemTool(itemName: String, item: Item) {
