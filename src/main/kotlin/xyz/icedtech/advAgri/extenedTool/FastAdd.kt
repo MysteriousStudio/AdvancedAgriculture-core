@@ -33,6 +33,7 @@ fun FastAddFood(hunger: Int, saturationModifier: Float, isSnake: Boolean, maxCou
         ).maxCount(maxCount)
     )
 }
+
 fun FastAddFood(hunger: Int, saturationModifier: Float, isSnake: Boolean): Item {
     if (isSnake) {
         return Item(
@@ -43,7 +44,7 @@ fun FastAddFood(hunger: Int, saturationModifier: Float, isSnake: Boolean): Item 
                     .hunger(hunger)
                     .saturationModifier(saturationModifier)
                     .build()
-            ).maxCount(64)
+            ).maxCount(64).group(ItemGroup.FOOD)
         )
     }
     return Item(
@@ -53,6 +54,6 @@ fun FastAddFood(hunger: Int, saturationModifier: Float, isSnake: Boolean): Item 
                 .hunger(hunger)
                 .saturationModifier(saturationModifier)
                 .build()
-        ).maxCount(64)
+        ).maxCount(64).group(ItemGroup.FOOD)
     )
 }
