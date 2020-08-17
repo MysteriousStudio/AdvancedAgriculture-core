@@ -1,26 +1,21 @@
 package xyz.icedtech.advAgri.main
 
 import net.fabricmc.api.ModInitializer
-import xyz.icedtech.advAgri.register.AgriBlockRegistry
-import xyz.icedtech.advAgri.register.AgriEntityRegistry
-import xyz.icedtech.advAgri.register.AgriItemRegistry
-import xyz.icedtech.advAgri.register.AgriOreRegistry
+import xyz.icedtech.advAgri.register.*
 
 
 class Main : ModInitializer {
     private val addOre = AgriOreRegistry()
     override fun onInitialize() {
         //注册物品
-        var agriItemRegistry = AgriItemRegistry()
-        agriItemRegistry.registryAll()
+        AgriItemRegistry().registryAll()
+        //注册食物
+        AgriFoodRegistry().registryAllFood()
         //注册方块
-        var agriBlockRegister = AgriBlockRegistry(agriItemRegistry.itemList)
-        agriBlockRegister.registryAllAgriBlockItem()
+        AgriBlockRegistry(AgriItemRegistry().itemList).registryAllAgriBlockItem()
         //注册实体
-        var agriEntityRegister = AgriEntityRegistry()
-        agriEntityRegister.registryAllEntity()
+        AgriEntityRegistry().registryAllEntity()
         //注册矿物
-        var agriOreRegister = AgriOreRegistry()
-        agriOreRegister.registryAll()
+        AgriOreRegistry().registryAll()
     }
 }
