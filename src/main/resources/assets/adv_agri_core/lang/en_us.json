@@ -88,12 +88,12 @@
   "item.adv_agri_core.tin_gear": "Tin Gear",
   "item.adv_agri_core.tin_ingot": "Tin Ingot",
   "item.adv_agri_core.tin_ore": "Tin Powder",
-  "item.adv_agri_core.titan_conductor_core": "Titan Conductor Core",
-  "item.adv_agri_core.titan_powder": "Titanium Powder",
-  "item.adv_agri_core.titan_gear": "Titanium Gear",
-  "item.adv_agri_core.titan_ingot": "Titanium Ingot",
-  "item.adv_agri_core.titan_ore": "Titanium Ore",
-  "item.adv_agri_core.titan_plate": "Titanium Plate",
+  "item.adv_agri_core.titanium_conductor_core": "Titan Conductor Core",
+  "item.adv_agri_core.titanium_powder": "Titanium Powder",
+  "item.adv_agri_core.titanium_gear": "Titanium Gear",
+  "item.adv_agri_core.titanium_ingot": "Titanium Ingot",
+  "item.adv_agri_core.titanium_ore": "Titanium Ore",
+  "item.adv_agri_core.titanium_plate": "Titanium Plate",
   "item.adv_agri_core.tungsten_powder": "Tungsten Powder",
   "item.adv_agri_core.tungsten_gear": "Tungsten Gear",
   "item.adv_agri_core.tungsten_ingot": "Tungsten Ingot",
@@ -106,6 +106,6 @@
   "itemGroup.adv_agri_core.agriculture": "AdvancedAgriculture-Core",
   "ore.adv_agri_core.sulphur_ore.tooltip": "Smells pungent, may explode in a second.",
   "tool.adv_agri_core.bamboo_drill_rod": "Bamboo Drill Rod",
-  "tool.adv_agri_core.bamboo_knife": "Bamboo Chopper"
+  "tool.adv_agri_core.bamboo_chopper": "Bamboo Chopper"
 }
 
