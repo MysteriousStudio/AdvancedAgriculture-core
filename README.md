@@ -22,8 +22,6 @@
 
 ### 注意!
 
-**开发暂停-开发人员遇到关键问题**
-
 _[Wiki](https://github.com/MysteriousStudio/AdvancedAgriculture-core/wiki)_ 正在施工中.
 
 [Commit消息规范](./markdowns/Commit.md)
