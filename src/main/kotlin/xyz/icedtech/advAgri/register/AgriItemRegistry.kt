@@ -3,13 +3,13 @@ package xyz.icedtech.advAgri.register
 import net.minecraft.item.Item
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
-import xyz.icedtech.advAgri.agri.AgriGroupItem
+import xyz.icedtech.advAgri.agri.AgriItem
 import xyz.icedtech.advAgri.modata.Modata
 
 class AgriItemRegistry {
 
     private val modid = Modata().modid
-    val itemList = AgriGroupItem()
+    val itemList = AgriItem
     fun registryAll() {
         registerAgriItem()
     }
@@ -39,6 +39,7 @@ class AgriItemRegistry {
         this.registryItemTool("aluminium_ingot", itemList.ALUMINIUM_INGOT)
         this.registryItemTool("nickel_ingot", itemList.NICKEL_INGOT)
         this.registryItemTool("tungsten_ingot", itemList.TUNGSTEN_INGOT)
+        this.registryItemTool("titanium_ingot", itemList.TITANIUM_INGOT)
         this.registryItemTool("steel_ingot", itemList.STEEL_INGOT)
         this.registryItemTool("silver_ingot", itemList.SILVER_INGOT)
 
@@ -51,6 +52,7 @@ class AgriItemRegistry {
         this.registryItemTool("nickel_dust", itemList.NICKEL_DUST)
         this.registryItemTool("tungsten_dust", itemList.TUNGSTEN_DUST)
         this.registryItemTool("silver_dust", itemList.SILVER_DUST)
+        this.registryItemTool("titanium_dust", itemList.TITANIUM_DUST)
         this.registryItemTool("steel_dust", itemList.STEEL_DUST)
         this.registryItemTool("iron_dust", itemList.IRON_DUST)
 

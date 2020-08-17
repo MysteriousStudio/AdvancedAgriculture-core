@@ -10,7 +10,7 @@ import xyz.icedtech.advAgri.agri.item.Sulfur
 import xyz.icedtech.advAgri.modata.Modata
 import xyz.icedtech.advAgri.extenedTool.FastAddItem
 
-class AgriGroupItem {
+object AgriItem {
     private val modid = Modata().modid
 
     val AGRI_ITEM_GROUP =
@@ -128,6 +128,11 @@ class AgriGroupItem {
     //青铜
     val BRONZE_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
     val BRONZE_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+
+    //钛
+    val TITANIUM_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val TITANIUM_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+
 
     val IRON_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
 

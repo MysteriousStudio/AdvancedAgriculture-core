@@ -6,14 +6,14 @@ import net.minecraft.item.Item
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
 import xyz.icedtech.advAgri.agri.AgriBlock
-import xyz.icedtech.advAgri.agri.AgriGroupItem
+import xyz.icedtech.advAgri.agri.AgriItem
 import xyz.icedtech.advAgri.modata.Modata
 
 
-class AgriBlockRegistry(agi: AgriGroupItem) {
+class AgriBlockRegistry(agi: AgriItem) {
 
     private val modid = Modata().modid
-    private var itemList: AgriGroupItem = agi
+    private var itemList: AgriItem = agi
     private val blockItemList = AgriBlock()
     fun registryAllAgriBlockItem() {
         this.registerAgriBlockItem()
