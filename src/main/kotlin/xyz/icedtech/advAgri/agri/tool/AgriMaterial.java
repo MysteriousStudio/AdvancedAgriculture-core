@@ -1,5 +1,6 @@
 package xyz.icedtech.advAgri.agri.tool;
 
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
@@ -20,8 +21,17 @@ public enum AgriMaterial implements ToolMaterial {
     TITANIUM(3, 1000, 6.0F, 3.5F, 15, () -> {
         return Ingredient.ofItems(AgriItem.INSTANCE.getTITANIUM_INGOT());
     }),
+    LEAD(2, 50, 3.0F, 4.5F, 9, () -> {
+        return Ingredient.ofItems(AgriItem.INSTANCE.getTITANIUM_INGOT());
+    }),
     BRONZE(2, 131, 5.5F, 3.0F, 14, () -> {
         return Ingredient.ofItems(AgriItem.INSTANCE.getBRONZE_INGOT());
+    }),
+    CHOPPER(1, 110, 4.5F, 4.0F, 5, () -> {
+        return Ingredient.ofItems(Items.IRON_INGOT);
+    }),
+    DRILL_ROD(1, 50, 4.5F, 1.0F, 5, () -> {
+        return Ingredient.ofItems(Items.BAMBOO);
     });
 
     private final int miningLevel;
