@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "adv_agri_core:item/silver_dust"
+    "layer0": "adv_agri_core:item/tin_powder"
   }
 }
