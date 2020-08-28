@@ -26,9 +26,15 @@ class AgriOreRegistry {
     }
 
     private fun registryUnderGroundOre(biomes: Biome) {
-        registryOreToMainWorldUnderground(biomes, blockItemList.PHOS_ORE, 17, 20, 0, 0, 64)
+        registryOreToMainWorldUnderground(biomes,blockItemList.ALUMINIUM_ORE,8,20,0,0,64)
+        registryOreToMainWorldUnderground(biomes, blockItemList.LEAD_ORE, 4, 15, 0, 0, 32)
+        registryOreToMainWorldUnderground(biomes, blockItemList.COPPER_ORE, 16, 20, 0, 0, 64)
+        registryOreToMainWorldUnderground(biomes, blockItemList.ZINC_ORE, 8, 20, 0, 0, 32)
+        registryOreToMainWorldUnderground(biomes, blockItemList.TIN_ORE, 16, 15, 0, 0, 64)
+        registryOreToMainWorldUnderground(biomes, blockItemList.SILVER_ORE, 6, 5, 0, 0, 16)
+        registryOreToMainWorldUnderground(biomes, blockItemList.PHOS_ORE, 16, 15, 0, 0, 64)
         registryOreToMainWorldUnderground(biomes, blockItemList.SULPHUR_ORE, 8, 10, 0, 0, 32)
-        registryOreToMainWorldUnderground(biomes, blockItemList.TUNGSTEN_ORE, 4, 2, 0, 0, 8)
+        registryOreToMainWorldUnderground(biomes, blockItemList.TUNGSTEN_ORE, 4, 2, 0, 0, 16)
     }
 
     private fun registryOreToMainWorldUnderground(
