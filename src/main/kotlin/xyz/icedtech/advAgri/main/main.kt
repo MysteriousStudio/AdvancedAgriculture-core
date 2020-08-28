@@ -11,6 +11,8 @@ class Main : ModInitializer {
         AgriItemRegistry().registryAll()
         //注册食物
         AgriFoodRegistry().registryAllFood()
+        //注册工具
+        AgriToolRegistry().registryTool()
         //注册方块
         AgriBlockRegistry(AgriItemRegistry().itemList).registryAllAgriBlockItem()
         //注册实体

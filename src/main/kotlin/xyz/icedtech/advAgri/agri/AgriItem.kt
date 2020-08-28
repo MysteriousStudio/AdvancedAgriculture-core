@@ -7,8 +7,8 @@ import net.minecraft.item.Items
 import net.minecraft.util.Identifier
 import xyz.icedtech.advAgri.agri.item.FireCrackers
 import xyz.icedtech.advAgri.agri.item.Sulfur
-import xyz.icedtech.advAgri.modata.Modata
 import xyz.icedtech.advAgri.extenedTool.FastAddItem
+import xyz.icedtech.advAgri.modata.Modata
 
 object AgriItem {
     private val modid = Modata().modid
@@ -54,9 +54,7 @@ object AgriItem {
     val FINE_BAMBOO_CUTTER =
         Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxDamage(540))
 
-    //砍竹刀
-    val BAMBOO_CHOPPER =
-        Item(Item.Settings().group(this.AGRI_ITEM_GROUP).maxDamage(340))
+
 
     //钾盐
     val POTASSIUM_SALT_POWDER =
@@ -79,71 +77,71 @@ object AgriItem {
     val ZIRCON =
         FastAddItem(this.AGRI_ITEM_GROUP, 64)
 
-    val INGOT = 64
-    val DUST = 128
+    private const val INGOT = 64
+    private const val POWDER = 128
 
     //钨锭
     val TUNGSTEN_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    val TUNGSTEN_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val TUNGSTEN_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, POWDER)
 
 
     //铜锭
     val COPPER_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    val COPPER_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val COPPER_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, POWDER)
 
 
     //锌锭
     val ZINC_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    val ZINC_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val ZINC_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, POWDER)
 
 
     //锡锭
     val TIN_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    val TIN_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val TIN_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, POWDER)
 
 
     //铝锭
     val ALUMINIUM_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    val ALUMINIUM_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val ALUMINIUM_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, POWDER)
 
 
     //铅锭
     val LEAD_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    val LEAD_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val LEAD_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, POWDER)
 
 
     //镍锭
     val NICKEL_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    val NICKEL_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val NICKEL_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, POWDER)
 
 
     //钢锭
     val STEEL_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    val STEEL_DUST = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val STEEL_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
 
     //银锭
     val SILVER_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    val SILVER_DUST = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
+    val SILVER_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
 
     //青铜
     val BRONZE_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    val BRONZE_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val BRONZE_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, POWDER)
 
     //钛
     val TITANIUM_INGOT = FastAddItem(this.AGRI_ITEM_GROUP, INGOT)
-    val TITANIUM_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val TITANIUM_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, POWDER)
 
 
-    val IRON_DUST = FastAddItem(this.AGRI_ITEM_GROUP, DUST)
+    val IRON_POWDER = FastAddItem(this.AGRI_ITEM_GROUP, POWDER)
 
-    val CORES = 64
+    private const val CORES = 64
 
     val COPPER_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
     val SILVER_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
     val TITANIUM_CONDUCTOR_CORE = FastAddItem(this.AGRI_ITEM_GROUP, CORES)
 
 
-    val GEAR = 64
+    private const val GEAR = 64
 
     val TIN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
     val ZINC_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
@@ -156,7 +154,7 @@ object AgriItem {
     val TITANIUM_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
     val TUNGSTEN_GEAR = FastAddItem(this.AGRI_ITEM_GROUP, GEAR)
 
-    val PLATE = 64
+    private const val PLATE = 64
 
     val TIN_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
     val ZINC_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
@@ -169,12 +167,12 @@ object AgriItem {
     val TITANIUM_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
     val TUNGSTEN_PLATE = FastAddItem(this.AGRI_ITEM_GROUP, PLATE)
 
-    val LINE = 64
+    private const val CABLE = 64
 
-    val TIN_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
-    val COPPER_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
-    val SILVER_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
-    val GOLD_LINE = FastAddItem(this.AGRI_ITEM_GROUP, LINE)
+    val TIN_CABLE = FastAddItem(this.AGRI_ITEM_GROUP, CABLE)
+    val COPPER_CABLE = FastAddItem(this.AGRI_ITEM_GROUP, CABLE)
+    val SILVER_CABLE = FastAddItem(this.AGRI_ITEM_GROUP, CABLE)
+    val GOLD_CABLE = FastAddItem(this.AGRI_ITEM_GROUP, CABLE)
 
     val POWER_MODULE_COUNT = 64
 

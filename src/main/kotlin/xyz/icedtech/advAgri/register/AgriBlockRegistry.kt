@@ -12,7 +12,7 @@ import xyz.icedtech.advAgri.modata.Modata
 
 class AgriBlockRegistry(agi: AgriItem) {
 
-    private val modid = Modata().modid
+    val modid = Modata().modid
     private var itemList: AgriItem = agi
     private val blockItemList = AgriBlock()
     fun registryAllAgriBlockItem() {
@@ -49,6 +49,7 @@ class AgriBlockRegistry(agi: AgriItem) {
         this.registryBlockItemTool("bronze_block", blockItemList.BRONZE_BLOCK)
         this.registryBlockItemTool("lead_block", blockItemList.LEAD_BLOCK)
         this.registryBlockItemTool("tungsten_block", blockItemList.TUNGSTEN_BLOCK)
+        this.registryBlockItemTool("titanium_block", blockItemList.TITANIUM_BLOCK)
         this.registryBlockItemTool("nickel_block", blockItemList.NICKEL_BLOCK)
         this.registryBlockItemTool("aluminium_block", blockItemList.ALUMINIUM_BLOCK)
         this.registryBlockItemTool("silver_block", blockItemList.SILVER_BLOCK)
@@ -62,6 +63,9 @@ class AgriBlockRegistry(agi: AgriItem) {
         this.registryBlockItemTool("primary_pumps", blockItemList.PRIMARY_PUMPS)
         this.registryBlockItemTool("primary_management_box", blockItemList.PRIMARY_MANAGEMENT_BLOCK)
 
+        this.registryBlockItemTool("machine_chassis", blockItemList.MACHINE_CHASSIS)
+        this.registryBlockItemTool("elementary_fluid_tank", blockItemList.ELEMENTARY_FLUID_TANK)
+        this.registryBlockItemTool("elementary_sunlight_harvester", blockItemList.ELEMENTARY_SUNLIGHT_HARVESTER)
     }
 
 
