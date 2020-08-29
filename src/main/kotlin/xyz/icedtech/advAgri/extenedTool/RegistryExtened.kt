@@ -64,36 +64,3 @@ fun Registry<Any?>.registryBlockItemTool(blockName: String, block: Block, maxCou
     )
 }
 
-fun Registry<Any?>.registryOreToMainWorldUnderground(
-    biome: Biome,
-    block: Block,
-    size: Int,
-    count: Int,
-    bottomOffset: Int,
-    topOffset: Int,
-    maximum: Int
-) {
-    if (biome.category != Biome.Category.NETHER && biome.category != Biome.Category.THEEND) {
-        biome.addFeature(
-            GenerationStep.Feature.UNDERGROUND_ORES,
-            Feature.ORE.configure(
-                OreFeatureConfig(
-                    OreFeatureConfig.Target.NATURAL_STONE,
-                    block.defaultState,
-                    size
-
-                )
-            ).createDecoratedFeature(
-                Decorator.COUNT_RANGE.configure(
-                    RangeDecoratorConfig(
-                        count,
-                        bottomOffset,
-                        topOffset,
-                        maximum
-                    )
-                )
-            )
-        )
-    }
-}
-

@@ -12,7 +12,7 @@
     "sources": "https://github.com/MysteriousStudio/BambooCraft"
   },
   "license": "CC0-1.0",
-  "icon": "assets/adv_agri/icon.png",
+  "icon": "assets/adv_agri_core/logo.png",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -30,5 +30,8 @@
   },
   "suggests": {
     "flamingo": "*"
-  }
+  },
+  "mixins": [
+    "adv_agri_core.mixins.json"
+  ]
 }
