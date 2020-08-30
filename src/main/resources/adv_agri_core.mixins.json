@@ -4,9 +4,10 @@
   "package": "xyz.icedtech.advAgri.mixin",
   "compatibilityLevel": "JAVA_8",
   "client": [
-    "DefaultBiomeFeaturesMixin"
   ],
   "server": [
+  ],
+  "mixins": [
     "DefaultBiomeFeaturesMixin"
   ],
   "injectors": {
