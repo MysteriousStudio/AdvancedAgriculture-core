@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "BSB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bamboo"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "adv_agri_core:bamboo_fence",
+    "count": 4
+  }
+}
+

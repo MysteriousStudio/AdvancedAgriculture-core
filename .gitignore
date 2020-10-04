@@ -3,8 +3,11 @@
 .gradle/
 build/
 out/
-bin/
-run/
+classes/
+
+# eclipse
+
+*.launch
 
 # idea
 
@@ -13,11 +16,14 @@ run/
 *.ipr
 *.iws
 
+# vscode
+
+.settings/
+.vscode/
+bin/
+.classpath
+.project
+
 # fabric
 
-minecraft/
-.DS_Store
-model/
-*.png~
-src/main/resources/assets/adv_agri_core/logo.xcf
-build.7z
+run/

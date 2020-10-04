@@ -32,7 +32,9 @@
   "block.adv_agri_core.zinc_ore": "锌矿石",
   "item.adv_agri_core.": "",
   "item.adv_agri_core.advanced_power_module": "高级动力组件",
+  "item.adv_agri_core.aluminium_gear": "铝齿轮",
   "item.adv_agri_core.aluminium_ingot": "铝锭",
+  "item.adv_agri_core.aluminium_plate": "铝板",
   "item.adv_agri_core.aluminium_powder": "铝粉",
   "item.adv_agri_core.bamboo_backpack": "竹背篓*",
   "item.adv_agri_core.bamboo_barrel": "竹筒*",
@@ -41,6 +43,7 @@
   "item.adv_agri_core.bamboo_cane": "竹手杖*",
   "item.adv_agri_core.bamboo_charcoal": "竹炭",
   "item.adv_agri_core.bamboo_chestplate": "竹胸甲*",
+  "item.adv_agri_core.bamboo_chopper": "砍竹刀",
   "item.adv_agri_core.bamboo_helmet": "竹头盔*",
   "item.adv_agri_core.bamboo_leaves": "竹叶",
   "item.adv_agri_core.bamboo_leggings": "竹护腿*",
@@ -70,7 +73,9 @@
   "item.adv_agri_core.iron_plate": "铁板",
   "item.adv_agri_core.iron_powder": "铁粉",
   "item.adv_agri_core.lead_ingot": "铅锭",
+  "item.adv_agri_core.nickel_gear": "镍齿轮",
   "item.adv_agri_core.nickel_ingot": "镍锭",
+  "item.adv_agri_core.nickel_plate": "镍板",
   "item.adv_agri_core.nickel_powder": "镍粉",
   "item.adv_agri_core.passive_power_module": "无源能量核心",
   "item.adv_agri_core.phos": "磷",
@@ -110,6 +115,5 @@
   "itemGroup.adv_agri_core.agriculture": "高级农业-核心",
   "ore.adv_agri_core.sulphur_ore.tooltip": "散发着刺鼻的味道...闻起来像是要爆炸",
   "tool.adv_agri_core.bamboo_chopper": "竹砍刀",
-  "tool.adv_agri_core.bamboo_drill_rod": "竹钎",
-  "item.adv_agri_core.bamboo_chopper": "砍竹刀"
+  "tool.adv_agri_core.bamboo_drill_rod": "竹钎"
 }

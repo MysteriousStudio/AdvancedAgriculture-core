@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_8",
+  "package": "xyz.icedtech.advAgri.mixin",
+  "client": [
+  ],
+  "server": [
+  ],
+  "mixins": [
+    "DefaultBiomeFeaturesMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
