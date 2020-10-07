@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        jcenter()
+        maven {
+            name = "Mirror"
+            url = "https://crystal.app.lss233.com/repositories/minecraft"
+        }
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        maven {
+            name = "Nexus"
+            url = "http://127.0.0.1:8081/repository/maven-public/"
+        }
+
+
+        gradlePluginPortal()
+    }
+}
