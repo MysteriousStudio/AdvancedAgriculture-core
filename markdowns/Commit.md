@@ -21,3 +21,5 @@ Type列表：
  - fix：修复之前的错误
  
  其中Operation选项为可选，用于补充Type的动作
+
+另外推荐git-commit-plugin插件
