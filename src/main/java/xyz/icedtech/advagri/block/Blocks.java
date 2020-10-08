@@ -71,6 +71,8 @@ public class Blocks {
     public Block SILVER_CABLE;
     public Block GOLD_CABLE;
 
+    public Block SULPHUR_ORE;
+
     public Block BAMBOO_BLOCK;
 
     //OverWorld ores
@@ -146,11 +148,21 @@ public class Blocks {
         this.AllInOneStep(SILVER_CABLE = this.FastAddTool(CABLE), "silver_cable");
         this.AllInOneStep(GOLD_CABLE = this.FastAddTool(CABLE), "gold_cable");
 
+
         this.AllInOneStep(BAMBOO_BLOCK = this.FastAddTool(BAMBOO_HARDNESS), "bamboo_block");
     }
 
     public void RegistryGenOres() {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_copper_overworld"), ORE_COPPER_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_tin_overworld"), ORE_TIN_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_zinc_overworld"), ORE_ZINC_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_aluminium_overworld"), ORE_ALUMINIUM_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_silver_overworld"), ORE_SILVER_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_lead_overworld"), ORE_LEAD_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_high_carbon_iron_overworld"), ORE_HIGH_CARBON_IRON_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_nickel_overworld"), ORE_NICKEL_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_titanium_overworld"), ORE_TITANIUM_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_tungsten_overworld"), ORE_TUNGSTEN_OVERWORLD);
     }
 
     private Block FastAddTool() {
