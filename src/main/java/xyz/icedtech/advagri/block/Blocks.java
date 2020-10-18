@@ -1,8 +1,10 @@
 package xyz.icedtech.advagri.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -25,25 +27,28 @@ public class Blocks {
     public static ItemGroup ITEM_GROUP;
 
     public static Integer MAX_COUNT = 64;
-    public static Float BAMBOO_HARDNESS = 2.0F;
-    public static Float CABLE = 1.0F;
+
+    public Float BAMBOO_HARDNESS = 2.0F;
+    public Float CABLE_HARDNESS = 1.0F;
+    public Float DIRT_TYPE_HARDNESS = 0.5F;
+
 
     public Integer BASE_ORE_GEN_LINE = 48;
     public Integer BASE_ORE_GEN_SIZE = 8;
     public Integer BASE_ORE_GEN_COUNT = 16;
 
     //Ore
-    public Block COPPER_ORE = this.FastAddTool();
-    public Block ZINC_ORE = this.FastAddTool();
-    public Block TIN_ORE = this.FastAddTool();
-    public Block ALUMINIUM_ORE = this.FastAddTool();
-    public Block LEAD_ORE = this.FastAddTool();
-    public Block SILVER_ORE = this.FastAddTool();
-    public Block HIGH_CARBON_IRON_ORE = this.FastAddTool();
-    public Block NICKEL_ORE = this.FastAddTool();
-    public Block TUNGSTEN_ORE = this.FastAddTool();
-    public Block TITANIUM_ORE = this.FastAddTool();
-    //Ore
+    public Block COPPER_ORE = this.FastAddStoneTypeBlock(1);
+    public Block ZINC_ORE = this.FastAddStoneTypeBlock(1);
+    public Block TIN_ORE = this.FastAddStoneTypeBlock(1);
+    public Block ALUMINIUM_ORE = this.FastAddStoneTypeBlock(2);
+    public Block LEAD_ORE = this.FastAddStoneTypeBlock(2);
+    public Block SILVER_ORE = this.FastAddStoneTypeBlock(2);
+    public Block HIGH_CARBON_IRON_ORE = this.FastAddStoneTypeBlock(2);
+    public Block NICKEL_ORE = this.FastAddStoneTypeBlock(2);
+    public Block TUNGSTEN_ORE = this.FastAddStoneTypeBlock(3);
+    public Block TITANIUM_ORE = this.FastAddStoneTypeBlock(3);
+    //WeatheredOre
     public Block WEATHERED_COPPER_ORE;
     public Block WEATHERED_ZINC_ORE;
     public Block WEATHERED_TIN_ORE;
@@ -58,6 +63,7 @@ public class Blocks {
     public Block COPPER_BLOCK;
     public Block ZINC_BLOCK;
     public Block TIN_BLOCK;
+    public Block BRONZE_BLOCK;
     public Block ALUMINIUM_BLOCK;
     public Block LEAD_BLOCK;
     public Block SILVER_BLOCK;
@@ -71,9 +77,11 @@ public class Blocks {
     public Block SILVER_CABLE;
     public Block GOLD_CABLE;
 
-    public Block SULPHUR_ORE;
+    public Block SULPHUR_ORE = this.FastAddStoneTypeBlock();
 
     public Block BAMBOO_BLOCK;
+
+    public Block QUARRY = this.FastAddStoneTypeBlock(DIRT_TYPE_HARDNESS);
 
     //OverWorld ores
     @NotNull
@@ -96,6 +104,10 @@ public class Blocks {
     public ConfiguredFeature<?, ?> ORE_TUNGSTEN_OVERWORLD = ConfiguredFeature(this.TUNGSTEN_ORE, BASE_ORE_GEN_SIZE - 4, BASE_ORE_GEN_LINE - 16, BASE_ORE_GEN_COUNT - 12);
     @NotNull
     public ConfiguredFeature<?, ?> ORE_TITANIUM_OVERWORLD = ConfiguredFeature(this.TITANIUM_ORE, BASE_ORE_GEN_SIZE - 6, BASE_ORE_GEN_LINE, BASE_ORE_GEN_COUNT - 15);
+    @NotNull
+    public ConfiguredFeature<?, ?> ORE_SULPHUR_OVERWORLD = ConfiguredFeature(this.SULPHUR_ORE, BASE_ORE_GEN_SIZE, BASE_ORE_GEN_LINE + 16, BASE_ORE_GEN_COUNT);
+    @NotNull
+    public ConfiguredFeature<?, ?> ORE_QUARRY_OVERWORLD = ConfiguredFeature(this.QUARRY, BASE_ORE_GEN_SIZE, BASE_ORE_GEN_LINE + 32, BASE_ORE_GEN_COUNT);
 
 
     private Blocks() {
@@ -120,36 +132,42 @@ public class Blocks {
         this.AllInOneStep(TUNGSTEN_ORE, "tungsten_ore");
         this.AllInOneStep(TITANIUM_ORE, "titanium_ore");
 
-        this.AllInOneStep(WEATHERED_COPPER_ORE = this.FastAddTool(), "weathered_copper_ore");
-        this.AllInOneStep(WEATHERED_ZINC_ORE = this.FastAddTool(), "weathered_zinc_ore");
-        this.AllInOneStep(WEATHERED_TIN_ORE = this.FastAddTool(), "weathered_tin_ore");
-        this.AllInOneStep(WEATHERED_ALUMINIUM_ORE = this.FastAddTool(), "weathered_aluminium_ore");
-        this.AllInOneStep(WEATHERED_LEAD_ORE = this.FastAddTool(), "weathered_lead_ore");
-        this.AllInOneStep(WEATHERED_SILVER_ORE = this.FastAddTool(), "weathered_silver_ore");
-        this.AllInOneStep(WEATHERED_HIGH_CARBON_IRON_ORE = this.FastAddTool(), "weathered_high_carbon_iron_ore");
-        this.AllInOneStep(WEATHERED_NICKEL_ORE = this.FastAddTool(), "weathered_nickel_ore");
-        this.AllInOneStep(WEATHERED_TUNGSTEN_ORE = this.FastAddTool(), "weathered_tungsten_ore");
-        this.AllInOneStep(WEATHERED_TITANIUM_ORE = this.FastAddTool(), "weathered_titanium_ore");
+        this.AllInOneStep(SULPHUR_ORE, "sulphur_ore");
+
+        this.AllInOneStep(WEATHERED_COPPER_ORE = this.FastAddStoneTypeBlock(), "weathered_copper_ore");
+        this.AllInOneStep(WEATHERED_ZINC_ORE = this.FastAddStoneTypeBlock(), "weathered_zinc_ore");
+        this.AllInOneStep(WEATHERED_TIN_ORE = this.FastAddStoneTypeBlock(), "weathered_tin_ore");
+        this.AllInOneStep(WEATHERED_ALUMINIUM_ORE = this.FastAddStoneTypeBlock(), "weathered_aluminium_ore");
+        this.AllInOneStep(WEATHERED_LEAD_ORE = this.FastAddStoneTypeBlock(), "weathered_lead_ore");
+        this.AllInOneStep(WEATHERED_SILVER_ORE = this.FastAddStoneTypeBlock(), "weathered_silver_ore");
+        this.AllInOneStep(WEATHERED_HIGH_CARBON_IRON_ORE = this.FastAddStoneTypeBlock(), "weathered_high_carbon_iron_ore");
+        this.AllInOneStep(WEATHERED_NICKEL_ORE = this.FastAddStoneTypeBlock(), "weathered_nickel_ore");
+        this.AllInOneStep(WEATHERED_TUNGSTEN_ORE = this.FastAddStoneTypeBlock(), "weathered_tungsten_ore");
+        this.AllInOneStep(WEATHERED_TITANIUM_ORE = this.FastAddStoneTypeBlock(), "weathered_titanium_ore");
 
 
-        this.AllInOneStep(COPPER_BLOCK = this.FastAddTool(), "copper_block");
-        this.AllInOneStep(ZINC_BLOCK = this.FastAddTool(), "zinc_block");
-        this.AllInOneStep(TIN_BLOCK = this.FastAddTool(), "tin_block");
-        this.AllInOneStep(ALUMINIUM_BLOCK = this.FastAddTool(), "aluminium_block");
-        this.AllInOneStep(LEAD_BLOCK = this.FastAddTool(), "lead_block");
-        this.AllInOneStep(SILVER_BLOCK = this.FastAddTool(), "silver_block");
-        this.AllInOneStep(STEEL_BLOCK = this.FastAddTool(), "steel_block");
-        this.AllInOneStep(NICKEL_BLOCK = this.FastAddTool(), "nickel_block");
-        this.AllInOneStep(TUNGSTEN_BLOCK = this.FastAddTool(), "tungsten_block");
-        this.AllInOneStep(TITANIUM_BLOCK = this.FastAddTool(), "titanium_block");
+        this.AllInOneStep(COPPER_BLOCK = this.FastAddStoneTypeBlock(), "copper_block");
+        this.AllInOneStep(ZINC_BLOCK = this.FastAddStoneTypeBlock(), "zinc_block");
+        this.AllInOneStep(TIN_BLOCK = this.FastAddStoneTypeBlock(), "tin_block");
+        this.AllInOneStep(BRONZE_BLOCK = this.FastAddStoneTypeBlock(), "bronze_block");
+        this.AllInOneStep(ALUMINIUM_BLOCK = this.FastAddStoneTypeBlock(), "aluminium_block");
+        this.AllInOneStep(LEAD_BLOCK = this.FastAddStoneTypeBlock(), "lead_block");
+        this.AllInOneStep(SILVER_BLOCK = this.FastAddStoneTypeBlock(), "silver_block");
+        this.AllInOneStep(STEEL_BLOCK = this.FastAddStoneTypeBlock(), "steel_block");
+        this.AllInOneStep(NICKEL_BLOCK = this.FastAddStoneTypeBlock(), "nickel_block");
+        this.AllInOneStep(TUNGSTEN_BLOCK = this.FastAddStoneTypeBlock(), "tungsten_block");
+        this.AllInOneStep(TITANIUM_BLOCK = this.FastAddStoneTypeBlock(), "titanium_block");
 
-        this.AllInOneStep(COPPER_CABLE = this.FastAddTool(CABLE), "copper_cable");
-        this.AllInOneStep(TIN_CABLE = this.FastAddTool(CABLE), "tin_cable");
-        this.AllInOneStep(SILVER_CABLE = this.FastAddTool(CABLE), "silver_cable");
-        this.AllInOneStep(GOLD_CABLE = this.FastAddTool(CABLE), "gold_cable");
+        this.AllInOneStep(COPPER_CABLE = this.FastAddStoneTypeBlock(CABLE_HARDNESS), "copper_cable");
+        this.AllInOneStep(TIN_CABLE = this.FastAddStoneTypeBlock(CABLE_HARDNESS), "tin_cable");
+        this.AllInOneStep(SILVER_CABLE = this.FastAddStoneTypeBlock(CABLE_HARDNESS), "silver_cable");
+        this.AllInOneStep(GOLD_CABLE = this.FastAddStoneTypeBlock(CABLE_HARDNESS), "gold_cable");
 
 
-        this.AllInOneStep(BAMBOO_BLOCK = this.FastAddTool(BAMBOO_HARDNESS), "bamboo_block");
+        this.AllInOneStep(BAMBOO_BLOCK = this.FastAddStoneTypeBlock(BAMBOO_HARDNESS), "bamboo_block");
+
+        this.AllInOneStep(QUARRY, "quarry");
+
     }
 
     public void RegistryGenOres() {
@@ -163,14 +181,27 @@ public class Blocks {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_nickel_overworld"), ORE_NICKEL_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_titanium_overworld"), ORE_TITANIUM_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_tungsten_overworld"), ORE_TUNGSTEN_OVERWORLD);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_sulphur_overworld"), ORE_SULPHUR_OVERWORLD);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_quarry_overworld"), ORE_QUARRY_OVERWORLD);
+
     }
 
-    private Block FastAddTool() {
-        return new Block(FabricBlockSettings.of(Material.STONE).hardness(3.0F));
+    private Block FastAddStoneTypeBlock() {
+        return new AdvAgriOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(3.0F));
     }
 
-    private Block FastAddTool(Float hardness) {
-        return new Block(FabricBlockSettings.of(Material.STONE).hardness(hardness));
+    private Block FastAddStoneTypeBlock(Float hardness) {
+        return new AdvAgriOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(hardness));
+    }
+
+    private Block FastAddStoneTypeBlock(Float hardness, Integer level) {
+        return new AdvAgriOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, level).hardness(hardness));
+    }
+
+    private Block FastAddStoneTypeBlock(Integer level) {
+        return new AdvAgriOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, level).hardness(3.0F));
     }
 
     private void AllInOneStep(Block block, String path) {
@@ -183,12 +214,12 @@ public class Blocks {
                 .configure(new OreFeatureConfig(
                         OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
                         block.getDefaultState(),
-                        size)) // vein size
+                        size))
                 .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
-                        0, // bottom offset
-                        0, // min y level
-                        maximum))) // max y level
+                        0,
+                        0,
+                        maximum)))
                 .spreadHorizontally()
-                .repeat(count); // number of veins per chunk
+                .repeat(count);
     }
 }

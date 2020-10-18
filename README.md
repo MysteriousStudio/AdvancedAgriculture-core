@@ -1,4 +1,4 @@
-![Logo](AdvAgri.png)
+![Logo](others/AdvAgri.png)
 
 <center> <h1> 高级农业 | Advanced_Agriculture</h1> </center>
 
@@ -9,15 +9,13 @@
 <center><h3>构建状态以及项目状态</h3></center>
 <center>
 
-![CircleCI](https://circleci.com/gh/MysteriousStudio/AdvancedAgriculture-core.svg?style=svg) | ![License](https://img.shields.io/badge/License-GPLv3-brightgreen) | ![Language](https://img.shields.io/badge/Language-Kotlin&Java-blue)
+![CircleCI](https://circleci.com/gh/MysteriousStudio/AdvancedAgriculture-core.svg?style=svg) | ![License](https://img.shields.io/badge/License-GPLv3-brightgreen) | ![Language](https://img.shields.io/badge/Language-Java-blue)
 
 </center>
 
 ### 特别感谢
 
 - Fabric
-- Fabric Language Kotlin
-- Kotlin Program Language
 - All the developer and who love this mod
 
 ### 注意!
