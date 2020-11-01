@@ -3,17 +3,17 @@
   "id": "adv_agri_core",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "AdvancedAgriculture",
+  "description": "A mod intended to improve agricultural experiences in Monecraft",
   "authors": [
-    "Me!"
+    "SUIBING112233"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/MysteriousStudio/AdvancedAgriculture-core",
+    "sources": "https://github.com/MysteriousStudio/AdvancedAgriculture-core"
   },
 
-  "license": "CC0-1.0",
+  "license": "GPL-3.0 License",
   "icon": "assets/adv_agri_core/icon.png",
 
   "environment": "*",
