@@ -30,6 +30,7 @@
   "block.adv_agri_core.tungsten_ore": "钨矿石",
   "block.adv_agri_core.zinc_block": "锌块",
   "block.adv_agri_core.zinc_ore": "锌矿石",
+  "block.adv_agri_core.advanced_crafting_table": "Advanced Crafting Table",
   "item.adv_agri_core.": "",
   "item.adv_agri_core.advanced_power_module": "高级动力组件",
   "item.adv_agri_core.aluminium_gear": "铝齿轮",
@@ -95,7 +96,7 @@
   "item.adv_agri_core.tin_gear": "锡齿轮",
   "item.adv_agri_core.tin_ingot": "锡锭",
   "item.adv_agri_core.tin_ore": "锡矿",
-  "item.adv_agri_core.tin_plate": "Tin Plate",
+  "item.adv_agri_core.tin_plate": "锡板",
   "item.adv_agri_core.tin_powder": "锡粉",
   "item.adv_agri_core.titanium_conductor_core": "钛导体核心",
   "item.adv_agri_core.titanium_gear": "钛齿轮",
@@ -149,5 +150,18 @@
   "block.adv_agri_core.copper_cable": "铜制导线",
   "block.adv_agri_core.tin_cable": "锡制导线",
   "block.adv_agri_core.silver_cable": "银质导线",
-  "block.adv_agri_core.gold_cable": "金质导线"
+  "block.adv_agri_core.gold_cable": "金质导线",
+  "block.adv_agri_core.bronze_block": "青铜块",
+  "item.adv_agri_core.crushed_copper_ore": "粉碎铜矿石",
+  "item.adv_agri_core.crushed_zinc_ore": "粉碎锌矿石",
+  "item.adv_agri_core.crushed_tin_ore": "粉碎锡矿石",
+  "item.adv_agri_core.crushed_aluminium_ore": "粉碎铝矿石",
+  "item.adv_agri_core.crushed_lead_ore": "粉碎铅矿石",
+  "item.adv_agri_core.crushed_silver_ore": "粉碎银矿石",
+  "item.adv_agri_core.crushed_high_carbon_iron_ore": "粉碎高碳铁矿石",
+  "item.adv_agri_core.crushed_nickel_ore": "粉碎锌矿石",
+  "item.adv_agri_core.crushed_tungsten_ore": "粉碎钨矿石",
+  "item.adv_agri_core.crushed_titanium_ore": "粉碎钛矿石",
+  "item.adv_agri_core.grinding_bowl": "研磨钵"
+  
 }

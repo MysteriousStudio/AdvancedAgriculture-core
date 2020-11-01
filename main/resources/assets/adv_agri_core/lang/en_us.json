@@ -30,6 +30,7 @@
   "block.adv_agri_core.tungsten_ore": "Tungsten Ore",
   "block.adv_agri_core.zinc_block": "Zinc Block",
   "block.adv_agri_core.zinc_ore": "Zinc Ore",
+  "block.adv_agri_core.advanced_crafting_table": "Advanced Crafting Table",
   "item.adv_agri_core.": "",
   "item.adv_agri_core.advanced_power_module": "Advanced Power Module",
   "item.adv_agri_core.aluminium_gear": "Aluminium Gear",
@@ -149,5 +150,17 @@
   "block.adv_agri_core.copper_cable": "Copper Cable",
   "block.adv_agri_core.tin_cable": "Tin Cable",
   "block.adv_agri_core.silver_cable": "Silver Cable",
-  "block.adv_agri_core.gold_cable": "Gold Cable"
+  "block.adv_agri_core.gold_cable": "Gold Cable",
+  "item.adv_agri_core.crushed_copper_ore": "Crushed Copper Ore",
+  "item.adv_agri_core.crushed_zinc_ore": "Crushed Zinc Ore",
+  "item.adv_agri_core.crushed_tin_ore": "Crushed Tin Ore",
+  "item.adv_agri_core.crushed_aluminium_ore": "Crushed Aluminium Ore",
+  "item.adv_agri_core.crushed_lead_ore": "Crushed Lead Ore",
+  "item.adv_agri_core.crushed_silver_ore": "Crushed Silver Ore",
+  "item.adv_agri_core.crushed_high_carbon_iron_ore": "Crushed High Carbon Iron Ore",
+  "item.adv_agri_core.crushed_nickel_ore": "Crushed Nickel Ore",
+  "item.adv_agri_core.crushed_tungsten_ore": "Crushed Tungsten Ore",
+  "item.adv_agri_core.crushed_titanium_ore": "Crushed Titanium Ore",
+  "item.adv_agri_core.grinding_bowl": "Grinding Bowl",
+  "": ""
 }
