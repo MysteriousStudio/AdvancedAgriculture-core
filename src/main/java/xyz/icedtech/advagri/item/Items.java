@@ -12,38 +12,42 @@ public class Items {
     public static Items thisItems = new Items();
 
     public static Integer MAX_ITEM_COUNT = 64;
+    //Other
     public Item COM_FERT;
+    public Item TUNG_OIL;
+    public Item POTASSIUM_SALT_POWDER;
+    public Item PLANT_ASH;
+    //Bamboo
     public Item BAMBOO_LEAVES;
     public Item BAMBOO_SILK;
     public Item BAMBOO_SILK_BOARD;
     public Item BAMBOO_CHARCOAL;
-    public Item TUNG_OIL;
-    public Item FIRECRACKER;
-    public Item POTASSIUM_SALT_POWDER;
-    public Item PLANT_ASH;
     public Item BAMBOO_SHOOT;
+    //Non-metal resources
     public Item PHOS;
     public Item ZIRCON;
     public Item SULFUR;
-
     //Copper
     public Item COPPER_SHARD;
     public Item COPPER_INGOT;
     public Item COPPER_POWDER;
     public Item COPPER_GEAR;
     public Item COPPER_PLATE;
+    public Item COPPER_DISSLOVER;
     //Zinc
     public Item ZINC_SHARD;
     public Item ZINC_INGOT;
     public Item ZINC_POWDER;
     public Item ZINC_GEAR;
     public Item ZINC_PLATE;
+    public Item ZINC_DISSLOVER;
     //Tin
     public Item TIN_SHARD;
     public Item TIN_INGOT;
     public Item TIN_POWDER;
     public Item TIN_GEAR;
     public Item TIN_PLATE;
+    public Item TIN_DISSLOVER;
     //Bronze
     public Item BRONZE_SHARD;
     public Item BRONZE_INGOT;
@@ -56,18 +60,21 @@ public class Items {
     public Item ALUMINIUM_POWDER;
     public Item ALUMINIUM_GEAR;
     public Item ALUMINIUM_PLATE;
+    public Item ALUMINIUM_DISSLOVER;
     //Lead
     public Item LEAD_SHARD;
     public Item LEAD_INGOT;
     public Item LEAD_POWDER;
     public Item LEAD_GEAR;
     public Item LEAD_PLATE;
+    public Item LEAD_DISSLOVER;
     //Silver
     public Item SILVER_SHARD;
     public Item SILVER_INGOT;
     public Item SILVER_POWDER;
     public Item SILVER_GEAR;
     public Item SILVER_PLATE;
+    public Item SILVER_DISSLOVER;
     //Steel
     public Item STEEL_SHARD;
     public Item STEEL_INGOT;
@@ -80,19 +87,21 @@ public class Items {
     public Item NICKEL_POWDER;
     public Item NICKEL_GEAR;
     public Item NICKEL_PLATE;
+    public Item NICKEL_DISSLOVER;
     //Tungsten
     public Item TUNGSTEN_SHARD;
     public Item TUNGSTEN_INGOT;
     public Item TUNGSTEN_POWDER;
     public Item TUNGSTEN_GEAR;
     public Item TUNGSTEN_PLATE;
+    public Item TUNGSTEN_DISSLOVER;
     //Titanium
     public Item TITANIUM_SHARD;
     public Item TITANIUM_INGOT;
     public Item TITANIUM_POWDER;
     public Item TITANIUM_GEAR;
     public Item TITANIUM_PLATE;
-
+    public Item TITANIUM_DISSLOVER;
 
     public ItemGroup ITEM_GROUP;
 
@@ -108,6 +117,13 @@ public class Items {
         return new Item(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(maxCount));
     }
 
+    //Announce your items there if you need extra things above FastAddItem.
+    //Class file of your items can be put under the same directory.
+    private static final Item FIRECRACKER = new FIRECRACKER(new Item.Settings());
+
+    //Announce a function to make item registering less time-consuming and code-heavy.
+    //Please notice that this function has some limitations.
+    //See the code above for solution.
     private Item FastAddItem() {
         return new Item(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
     }
@@ -190,6 +206,19 @@ public class Items {
         this.NICKEL_SHARD = this.FastAddItem();
         this.TUNGSTEN_SHARD = this.FastAddItem();
         this.TITANIUM_SHARD = this.FastAddItem();
+
+        //Metal Dissolver
+        this.COPPER_DISSLOVER = this.FastAddItem();
+        this.ZINC_DISSLOVER = this.FastAddItem();
+        this.TIN_DISSLOVER = this.FastAddItem();
+        this.ALUMINIUM_DISSLOVER = this.FastAddItem();
+        this.LEAD_DISSLOVER = this.FastAddItem();
+        this.SILVER_DISSLOVER = this.FastAddItem();
+        this.NICKEL_DISSLOVER = this.FastAddItem();
+        this.TUNGSTEN_DISSLOVER = this.FastAddItem();
+        this.TITANIUM_DISSLOVER = this.FastAddItem();
+
+
     }
 
     public void RegisteredItems() {
@@ -268,7 +297,20 @@ public class Items {
         this.RegistrationTool(this.NICKEL_SHARD, "nickel_shard");
         this.RegistrationTool(this.TUNGSTEN_SHARD, "tungsten_shard");
         this.RegistrationTool(this.TITANIUM_SHARD, "titanium_shard");
+
+        //Metal Disslover
+        this.RegistrationTool(this.COPPER_DISSLOVER, "copper_disslover");
+        this.RegistrationTool(this.ZINC_DISSLOVER, "zinc_disslover");
+        this.RegistrationTool(this.TIN_DISSLOVER, "tin_disslover");
+        this.RegistrationTool(this.ALUMINIUM_DISSLOVER, "aluminium_disslover");
+        this.RegistrationTool(this.LEAD_DISSLOVER, "lead_disslover");
+        this.RegistrationTool(this.SILVER_DISSLOVER, "silver_disslover");
+        this.RegistrationTool(this.NICKEL_DISSLOVER, "nickel_disslover");
+        this.RegistrationTool(this.TUNGSTEN_DISSLOVER, "tungsten_disslover");
+        this.RegistrationTool(this.TITANIUM_DISSLOVER, "titanium_disslover");
     }
+
+
 
     private void RegistrationTool(Item ITEM, String PATH) {
         Registry.register(Registry.ITEM, new Identifier(ModAta.ModID, PATH), ITEM);
