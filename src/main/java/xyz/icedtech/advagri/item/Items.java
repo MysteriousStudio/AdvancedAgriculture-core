@@ -6,6 +6,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import xyz.icedtech.advagri.ModAta;
+import xyz.icedtech.advagri.item_properties.FIRECRACKER;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemGroup;
 
 public class Items {
@@ -119,7 +120,7 @@ public class Items {
 
     //Announce your items there if you need extra things above FastAddItem.
     //Class file of your items can be put under the same directory.
-    private static final Item FIRECRACKER = new FIRECRACKER(new Item.Settings());
+    private static final Item FIRECRACKER = new FIRECRACKER(new Item.Settings() .group(AdvAgriItemGroup.ITEM_GROUP));
 
     //Announce a function to make item registering less time-consuming and code-heavy.
     //Please notice that this function has some limitations.
