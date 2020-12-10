@@ -1,10 +1,10 @@
-package xyz.icedtech.advagri.armor_materials;
+package xyz.icedtech.advagri.armormaterials;
 
-import net.minecraft.item.ArmorMaterial;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorMaterial;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.recipe.Ingredient;
 import xyz.icedtech.advagri.item.Items;
 
 public class LeatherBambooMixedArmor implements ArmorMaterial {
@@ -49,6 +49,7 @@ public class LeatherBambooMixedArmor implements ArmorMaterial {
     @Override
     public float getKnockbackResistance() {
         return 0.0F;
-    }}
+    }
+}
 
 

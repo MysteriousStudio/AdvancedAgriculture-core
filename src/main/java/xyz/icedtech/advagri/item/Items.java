@@ -6,8 +6,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import xyz.icedtech.advagri.ModAta;
-import xyz.icedtech.advagri.item_properties.FIRECRACKER;
-import xyz.icedtech.advagri.itemgroup.AdvAgriItemGroup;
+import xyz.icedtech.advagri.itemgroup.AdvAgriItemCoreGroup;
+import xyz.icedtech.advagri.itemproperties.Firecracker;
 
 public class Items {
     public static Items thisItems = new Items();
@@ -104,10 +104,13 @@ public class Items {
     public Item TITANIUM_PLATE;
     public Item TITANIUM_DISSLOVER;
 
+    //Firecracker
+    public Firecracker FIRECRACKERS;
+
     public ItemGroup ITEM_GROUP;
 
     private Items() {
-        ITEM_GROUP = AdvAgriItemGroup.getInstance().GetGroup();
+        ITEM_GROUP = AdvAgriItemCoreGroup.getInstance().GetGroup();
     }
 
     public static Items getInstance() {
@@ -118,13 +121,6 @@ public class Items {
         return new Item(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(maxCount));
     }
 
-    //Announce your items there if you need extra things above FastAddItem.
-    //Class file of your items can be put under the same directory.
-    private static final Item FIRECRACKER = new FIRECRACKER(new Item.Settings() .group(AdvAgriItemGroup.ITEM_GROUP));
-
-    //Announce a function to make item registering less time-consuming and code-heavy.
-    //Please notice that this function has some limitations.
-    //See the code above for solution.
     private Item FastAddItem() {
         return new Item(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
     }
@@ -219,7 +215,7 @@ public class Items {
         this.TUNGSTEN_DISSLOVER = this.FastAddItem();
         this.TITANIUM_DISSLOVER = this.FastAddItem();
 
-
+        this.FIRECRACKERS = new Firecracker(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
     }
 
     public void RegisteredItems() {
@@ -309,8 +305,9 @@ public class Items {
         this.RegistrationTool(this.NICKEL_DISSLOVER, "nickel_disslover");
         this.RegistrationTool(this.TUNGSTEN_DISSLOVER, "tungsten_disslover");
         this.RegistrationTool(this.TITANIUM_DISSLOVER, "titanium_disslover");
-    }
 
+        this.RegistrationTool(this.FIRECRACKERS, "firecrackers");
+    }
 
 
     private void RegistrationTool(Item ITEM, String PATH) {

@@ -4,14 +4,12 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
-import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
-
 import net.minecraft.world.gen.decorator.Decorator;
 import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
@@ -19,12 +17,14 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import org.jetbrains.annotations.NotNull;
 import xyz.icedtech.advagri.ModAta;
-import xyz.icedtech.advagri.itemgroup.AdvAgriItemGroup;
+import xyz.icedtech.advagri.itemgroup.AdvAgriItemCoreGroup;
+import xyz.icedtech.advagri.itemgroup.AdvAgriItemWorldGroup;
 
 public class Blocks {
     public static Blocks thisBlocks = new Blocks();
 
-    public static ItemGroup ITEM_GROUP;
+    public static ItemGroup CORE_ITEM_GROUP;
+    public static ItemGroup WORLD_ITEM_GROUP;
 
     public static Integer MAX_COUNT = 64;
 
@@ -111,7 +111,8 @@ public class Blocks {
 
 
     private Blocks() {
-        ITEM_GROUP = AdvAgriItemGroup.getInstance().GetGroup();
+        CORE_ITEM_GROUP = AdvAgriItemCoreGroup.getInstance().GetGroup();
+        WORLD_ITEM_GROUP = AdvAgriItemWorldGroup.getInstance().GetGroup();
     }
 
 
@@ -121,29 +122,29 @@ public class Blocks {
 
     public void InitAllBlocks() {
 
-        this.AllInOneStep(COPPER_ORE, "copper_ore");
-        this.AllInOneStep(ZINC_ORE, "zinc_ore");
-        this.AllInOneStep(TIN_ORE, "tin_ore");
-        this.AllInOneStep(ALUMINIUM_ORE, "aluminium_ore");
-        this.AllInOneStep(LEAD_ORE, "lead_ore");
-        this.AllInOneStep(SILVER_ORE, "silver_ore");
-        this.AllInOneStep(HIGH_CARBON_IRON_ORE, "high_carbon_iron_ore");
-        this.AllInOneStep(NICKEL_ORE, "nickel_ore");
-        this.AllInOneStep(TUNGSTEN_ORE, "tungsten_ore");
-        this.AllInOneStep(TITANIUM_ORE, "titanium_ore");
+        this.AllInOneStepForOre(COPPER_ORE, "copper_ore");
+        this.AllInOneStepForOre(ZINC_ORE, "zinc_ore");
+        this.AllInOneStepForOre(TIN_ORE, "tin_ore");
+        this.AllInOneStepForOre(ALUMINIUM_ORE, "aluminium_ore");
+        this.AllInOneStepForOre(LEAD_ORE, "lead_ore");
+        this.AllInOneStepForOre(SILVER_ORE, "silver_ore");
+        this.AllInOneStepForOre(HIGH_CARBON_IRON_ORE, "high_carbon_iron_ore");
+        this.AllInOneStepForOre(NICKEL_ORE, "nickel_ore");
+        this.AllInOneStepForOre(TUNGSTEN_ORE, "tungsten_ore");
+        this.AllInOneStepForOre(TITANIUM_ORE, "titanium_ore");
 
-        this.AllInOneStep(SULPHUR_ORE, "sulphur_ore");
+        this.AllInOneStepForOre(SULPHUR_ORE, "sulphur_ore");
 
-        this.AllInOneStep(WEATHERED_COPPER_ORE = this.FastAddStoneTypeBlock(), "weathered_copper_ore");
-        this.AllInOneStep(WEATHERED_ZINC_ORE = this.FastAddStoneTypeBlock(), "weathered_zinc_ore");
-        this.AllInOneStep(WEATHERED_TIN_ORE = this.FastAddStoneTypeBlock(), "weathered_tin_ore");
-        this.AllInOneStep(WEATHERED_ALUMINIUM_ORE = this.FastAddStoneTypeBlock(), "weathered_aluminium_ore");
-        this.AllInOneStep(WEATHERED_LEAD_ORE = this.FastAddStoneTypeBlock(), "weathered_lead_ore");
-        this.AllInOneStep(WEATHERED_SILVER_ORE = this.FastAddStoneTypeBlock(), "weathered_silver_ore");
-        this.AllInOneStep(WEATHERED_HIGH_CARBON_IRON_ORE = this.FastAddStoneTypeBlock(), "weathered_high_carbon_iron_ore");
-        this.AllInOneStep(WEATHERED_NICKEL_ORE = this.FastAddStoneTypeBlock(), "weathered_nickel_ore");
-        this.AllInOneStep(WEATHERED_TUNGSTEN_ORE = this.FastAddStoneTypeBlock(), "weathered_tungsten_ore");
-        this.AllInOneStep(WEATHERED_TITANIUM_ORE = this.FastAddStoneTypeBlock(), "weathered_titanium_ore");
+        this.AllInOneStepForOre(WEATHERED_COPPER_ORE = this.FastAddStoneTypeBlock(), "weathered_copper_ore");
+        this.AllInOneStepForOre(WEATHERED_ZINC_ORE = this.FastAddStoneTypeBlock(), "weathered_zinc_ore");
+        this.AllInOneStepForOre(WEATHERED_TIN_ORE = this.FastAddStoneTypeBlock(), "weathered_tin_ore");
+        this.AllInOneStepForOre(WEATHERED_ALUMINIUM_ORE = this.FastAddStoneTypeBlock(), "weathered_aluminium_ore");
+        this.AllInOneStepForOre(WEATHERED_LEAD_ORE = this.FastAddStoneTypeBlock(), "weathered_lead_ore");
+        this.AllInOneStepForOre(WEATHERED_SILVER_ORE = this.FastAddStoneTypeBlock(), "weathered_silver_ore");
+        this.AllInOneStepForOre(WEATHERED_HIGH_CARBON_IRON_ORE = this.FastAddStoneTypeBlock(), "weathered_high_carbon_iron_ore");
+        this.AllInOneStepForOre(WEATHERED_NICKEL_ORE = this.FastAddStoneTypeBlock(), "weathered_nickel_ore");
+        this.AllInOneStepForOre(WEATHERED_TUNGSTEN_ORE = this.FastAddStoneTypeBlock(), "weathered_tungsten_ore");
+        this.AllInOneStepForOre(WEATHERED_TITANIUM_ORE = this.FastAddStoneTypeBlock(), "weathered_titanium_ore");
 
 
         this.AllInOneStep(COPPER_BLOCK = this.FastAddStoneTypeBlock(), "copper_block");
@@ -206,7 +207,12 @@ public class Blocks {
 
     private void AllInOneStep(Block block, String path) {
         Registry.register(Registry.BLOCK, new Identifier(ModAta.ModID, path), block);
-        Registry.register(Registry.ITEM, new Identifier(ModAta.ModID, path), new BlockItem(block, new Item.Settings().group(ITEM_GROUP).maxCount(MAX_COUNT)));
+        Registry.register(Registry.ITEM, new Identifier(ModAta.ModID, path), new BlockItem(block, new Item.Settings().group(CORE_ITEM_GROUP).maxCount(MAX_COUNT)));
+    }
+
+    private void AllInOneStepForOre(Block block, String path) {
+        Registry.register(Registry.BLOCK, new Identifier(ModAta.ModID, path), block);
+        Registry.register(Registry.ITEM, new Identifier(ModAta.ModID, path), new BlockItem(block, new Item.Settings().group(WORLD_ITEM_GROUP).maxCount(MAX_COUNT)));
     }
 
     private static ConfiguredFeature<?, ?> ConfiguredFeature(Block block, Integer size, Integer maximum, Integer count) {

@@ -1,4 +1,4 @@
-package xyz.icedtech.advagri.item_properties;
+package xyz.icedtech.advagri.itemproperties;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.TntEntity;
@@ -10,8 +10,8 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
 
-public class FIRECRACKER extends Item {
-    public FIRECRACKER(Settings settings ) {
+public class Firecracker extends Item {
+    public Firecracker(Settings settings ) {
         super(settings .maxCount(64));
     }
 

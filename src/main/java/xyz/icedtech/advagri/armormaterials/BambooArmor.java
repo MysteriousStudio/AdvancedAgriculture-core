@@ -1,11 +1,11 @@
-package xyz.icedtech.advagri.armor_materials;
+package xyz.icedtech.advagri.armormaterials;
 
-import net.minecraft.item.ArmorMaterial;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.recipe.Ingredient;
 
 public class BambooArmor implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
