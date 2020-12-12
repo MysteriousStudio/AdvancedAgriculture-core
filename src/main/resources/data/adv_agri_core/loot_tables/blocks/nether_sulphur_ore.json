@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "adv_agri_core:sulphur_ore"
+              "name": "adv_agri_core:nether_sulphur_ore"
             },
             {
               "type": "minecraft:item",
@@ -32,8 +32,8 @@
                 {
                   "function": "minecraft:set_count",
                   "count": {
-                    "min": 1.0,
-                    "max": 4.0,
+                    "min": 2.0,
+                    "max": 6.0,
                     "type": "minecraft:uniform"
                   }
                 },
@@ -46,7 +46,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "adv_agri_core:sulfur"
+              "name": "adv_agri_core:nether_sulfur"
             }
           ]
         }

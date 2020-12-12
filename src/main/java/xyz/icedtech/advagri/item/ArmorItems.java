@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import xyz.icedtech.advagri.ModAta;
 import xyz.icedtech.advagri.armormaterials.LeatherBambooMixedArmor;
-import xyz.icedtech.advagri.itemgroup.AdvAgriItemArmorsGroup;
+import xyz.icedtech.advagri.itemgroup.AdvAgriItemToolAndArmorsGroup;
 
 
 public class ArmorItems {
@@ -68,16 +68,16 @@ public class ArmorItems {
     public ArmorItem FastAddTool(Integer Where, ArmorMaterial ArmorMaterial) {
         switch (Where) {
             case 2:
-                return new ArmorItem(ArmorMaterial, EquipmentSlot.CHEST, new Item.Settings().group(AdvAgriItemArmorsGroup.ITEM_GROUP));
+                return new ArmorItem(ArmorMaterial, EquipmentSlot.CHEST, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
 
             case 3:
-                return new ArmorItem(ArmorMaterial, EquipmentSlot.LEGS, new Item.Settings().group(AdvAgriItemArmorsGroup.ITEM_GROUP));
+                return new ArmorItem(ArmorMaterial, EquipmentSlot.LEGS, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
 
             case 4:
-                return new ArmorItem(ArmorMaterial, EquipmentSlot.FEET, new Item.Settings().group(AdvAgriItemArmorsGroup.ITEM_GROUP));
+                return new ArmorItem(ArmorMaterial, EquipmentSlot.FEET, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
             case 1:
             default:
-                return new ArmorItem(ArmorMaterial, EquipmentSlot.HEAD, new Item.Settings().group(AdvAgriItemArmorsGroup.ITEM_GROUP));
+                return new ArmorItem(ArmorMaterial, EquipmentSlot.HEAD, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
         }
     }
 }

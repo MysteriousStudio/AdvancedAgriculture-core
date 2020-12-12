@@ -1,12 +1,12 @@
 pluginManagement {
     repositories {
         maven {
-            name = "jcenter"
-            url = "https://maven.aliyun.com/repository/public/"
-        }
-        maven {
             name = "Nexus"
             url = "http://127.0.0.1:8081/repository/maven-public/"
+        }
+        maven {
+            name = "jcenter"
+            url = "https://maven.aliyun.com/repository/public/"
         }
         maven {
             name = "Mirror"

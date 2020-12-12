@@ -7,7 +7,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import xyz.icedtech.advagri.ModAta;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemCoreGroup;
-import xyz.icedtech.advagri.itemproperties.Firecracker;
 
 public class Items {
     public static Items thisItems = new Items();

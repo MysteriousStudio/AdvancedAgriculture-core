@@ -78,6 +78,7 @@ public class Blocks {
     public Block GOLD_CABLE;
 
     public Block SULPHUR_ORE = this.FastAddStoneTypeBlock();
+    public Block NETHER_SULPHUR_ORE = this.FastAddStoneTypeBlock();
 
     public Block BAMBOO_BLOCK;
 
@@ -108,6 +109,8 @@ public class Blocks {
     public ConfiguredFeature<?, ?> ORE_SULPHUR_OVERWORLD = ConfiguredFeature(this.SULPHUR_ORE, BASE_ORE_GEN_SIZE, BASE_ORE_GEN_LINE + 16, BASE_ORE_GEN_COUNT);
     @NotNull
     public ConfiguredFeature<?, ?> ORE_QUARRY_OVERWORLD = ConfiguredFeature(this.QUARRY, BASE_ORE_GEN_SIZE, BASE_ORE_GEN_LINE + 32, BASE_ORE_GEN_COUNT);
+    @NotNull
+    public ConfiguredFeature<?, ?> ORE_NETHER_SULPHUR_NETHER = NetherConfiguredFeature(this.NETHER_SULPHUR_ORE, BASE_ORE_GEN_SIZE, BASE_ORE_GEN_LINE + 32, BASE_ORE_GEN_COUNT + 16);
 
 
     private Blocks() {
@@ -134,6 +137,7 @@ public class Blocks {
         this.AllInOneStepForOre(TITANIUM_ORE, "titanium_ore");
 
         this.AllInOneStepForOre(SULPHUR_ORE, "sulphur_ore");
+        this.AllInOneStepForOre(NETHER_SULPHUR_ORE, "nether_sulphur_ore");
 
         this.AllInOneStepForOre(WEATHERED_COPPER_ORE = this.FastAddStoneTypeBlock(), "weathered_copper_ore");
         this.AllInOneStepForOre(WEATHERED_ZINC_ORE = this.FastAddStoneTypeBlock(), "weathered_zinc_ore");
@@ -184,6 +188,7 @@ public class Blocks {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_tungsten_overworld"), ORE_TUNGSTEN_OVERWORLD);
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_sulphur_overworld"), ORE_SULPHUR_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_nether_sulphur_nether"), ORE_NETHER_SULPHUR_NETHER);
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_quarry_overworld"), ORE_QUARRY_OVERWORLD);
 
@@ -197,7 +202,7 @@ public class Blocks {
         return new AdvAgriOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(hardness));
     }
 
-    private Block FastAddStoneTypeBlock(Float hardness, Integer level) {
+    private Block FastAddStoneTypeBlock(Integer level, Float hardness) {
         return new AdvAgriOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, level).hardness(hardness));
     }
 
@@ -219,6 +224,19 @@ public class Blocks {
         return Feature.ORE
                 .configure(new OreFeatureConfig(
                         OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
+                        block.getDefaultState(),
+                        size))
+                .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                        0,
+                        0,
+                        maximum)))
+                .spreadHorizontally()
+                .repeat(count);
+    }
+    private static ConfiguredFeature<?, ?> NetherConfiguredFeature(Block block, Integer size, Integer maximum, Integer count) {
+        return Feature.ORE
+                .configure(new OreFeatureConfig(
+                        OreFeatureConfig.Rules.BASE_STONE_NETHER,
                         block.getDefaultState(),
                         size))
                 .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(

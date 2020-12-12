@@ -30,4 +30,11 @@ public class DefaultBiomeFeaturesMixin {
 
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_QUARRY_OVERWORLD);
     }
+
+    @Inject(method = "addNetherMineables(Lnet/minecraft/world/biome/GenerationSettings$Builder;)V", at = @At("TAIL"))
+    private static void addNetherMineables(GenerationSettings.Builder builder, CallbackInfo ci) {
+        Blocks block = Blocks.getInstance();
+
+        builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_NETHER_SULPHUR_NETHER);
+    }
 }
