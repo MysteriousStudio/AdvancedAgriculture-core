@@ -116,103 +116,103 @@ public class Items {
         return thisItems;
     }
 
-    private Item FastAddItem(Integer maxCount) {
+    private Item AddItemTool(Integer maxCount) {
         return new Item(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(maxCount));
     }
 
-    private Item FastAddItem() {
+    private Item AddItemTool() {
         return new Item(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
     }
 
     public void InitAllItems() {
-        this.COM_FERT = this.FastAddItem();
-        this.BAMBOO_LEAVES = this.FastAddItem();
-        this.BAMBOO_SILK = this.FastAddItem();
-        this.BAMBOO_SILK_BOARD = this.FastAddItem();
-        this.BAMBOO_CHARCOAL = this.FastAddItem();
-        this.PLANT_ASH = this.FastAddItem();
-        this.POTASSIUM_SALT_POWDER = this.FastAddItem();
-        this.TUNG_OIL = this.FastAddItem(1);
-        this.BAMBOO_SHOOT = this.FastAddItem();
-        this.ZIRCON = this.FastAddItem();
-        this.PHOS = this.FastAddItem();
-        this.SULFUR = this.FastAddItem();
+        this.COM_FERT = this.AddItemTool();
+        this.BAMBOO_LEAVES = this.AddItemTool();
+        this.BAMBOO_SILK = this.AddItemTool();
+        this.BAMBOO_SILK_BOARD = this.AddItemTool();
+        this.BAMBOO_CHARCOAL = this.AddItemTool();
+        this.PLANT_ASH = this.AddItemTool();
+        this.POTASSIUM_SALT_POWDER = this.AddItemTool();
+        this.TUNG_OIL = this.AddItemTool(1);
+        this.BAMBOO_SHOOT = this.AddItemTool();
+        this.ZIRCON = this.AddItemTool();
+        this.PHOS = this.AddItemTool();
+        this.SULFUR = this.AddItemTool();
 
         //Ingot
-        this.COPPER_INGOT = this.FastAddItem();
-        this.ZINC_INGOT = this.FastAddItem();
-        this.TIN_INGOT = this.FastAddItem();
-        this.BRONZE_INGOT = this.FastAddItem();
-        this.ALUMINIUM_INGOT = this.FastAddItem();
-        this.LEAD_INGOT = this.FastAddItem();
-        this.SILVER_INGOT = this.FastAddItem();
-        this.STEEL_INGOT = this.FastAddItem();
-        this.NICKEL_INGOT = this.FastAddItem();
-        this.TUNGSTEN_INGOT = this.FastAddItem();
-        this.TITANIUM_INGOT = this.FastAddItem();
+        this.COPPER_INGOT = this.AddItemTool();
+        this.ZINC_INGOT = this.AddItemTool();
+        this.TIN_INGOT = this.AddItemTool();
+        this.BRONZE_INGOT = this.AddItemTool();
+        this.ALUMINIUM_INGOT = this.AddItemTool();
+        this.LEAD_INGOT = this.AddItemTool();
+        this.SILVER_INGOT = this.AddItemTool();
+        this.STEEL_INGOT = this.AddItemTool();
+        this.NICKEL_INGOT = this.AddItemTool();
+        this.TUNGSTEN_INGOT = this.AddItemTool();
+        this.TITANIUM_INGOT = this.AddItemTool();
 
         //Powder
-        this.COPPER_POWDER = this.FastAddItem();
-        this.ZINC_POWDER = this.FastAddItem();
-        this.TIN_POWDER = this.FastAddItem();
-        this.BRONZE_POWDER = this.FastAddItem();
-        this.ALUMINIUM_POWDER = this.FastAddItem();
-        this.LEAD_POWDER = this.FastAddItem();
-        this.SILVER_POWDER = this.FastAddItem();
-        this.STEEL_POWDER = this.FastAddItem();
-        this.NICKEL_POWDER = this.FastAddItem();
-        this.TUNGSTEN_POWDER = this.FastAddItem();
-        this.TITANIUM_POWDER = this.FastAddItem();
+        this.COPPER_POWDER = this.AddItemTool();
+        this.ZINC_POWDER = this.AddItemTool();
+        this.TIN_POWDER = this.AddItemTool();
+        this.BRONZE_POWDER = this.AddItemTool();
+        this.ALUMINIUM_POWDER = this.AddItemTool();
+        this.LEAD_POWDER = this.AddItemTool();
+        this.SILVER_POWDER = this.AddItemTool();
+        this.STEEL_POWDER = this.AddItemTool();
+        this.NICKEL_POWDER = this.AddItemTool();
+        this.TUNGSTEN_POWDER = this.AddItemTool();
+        this.TITANIUM_POWDER = this.AddItemTool();
 
         //Gear
-        this.COPPER_GEAR = this.FastAddItem();
-        this.ZINC_GEAR = this.FastAddItem();
-        this.TIN_GEAR = this.FastAddItem();
-        this.BRONZE_GEAR = this.FastAddItem();
-        this.ALUMINIUM_GEAR = this.FastAddItem();
-        this.LEAD_GEAR = this.FastAddItem();
-        this.SILVER_GEAR = this.FastAddItem();
-        this.STEEL_GEAR = this.FastAddItem();
-        this.NICKEL_GEAR = this.FastAddItem();
-        this.TUNGSTEN_GEAR = this.FastAddItem();
-        this.TITANIUM_GEAR = this.FastAddItem();
+        this.COPPER_GEAR = this.AddItemTool();
+        this.ZINC_GEAR = this.AddItemTool();
+        this.TIN_GEAR = this.AddItemTool();
+        this.BRONZE_GEAR = this.AddItemTool();
+        this.ALUMINIUM_GEAR = this.AddItemTool();
+        this.LEAD_GEAR = this.AddItemTool();
+        this.SILVER_GEAR = this.AddItemTool();
+        this.STEEL_GEAR = this.AddItemTool();
+        this.NICKEL_GEAR = this.AddItemTool();
+        this.TUNGSTEN_GEAR = this.AddItemTool();
+        this.TITANIUM_GEAR = this.AddItemTool();
 
         //Plate
-        this.COPPER_PLATE = this.FastAddItem();
-        this.ZINC_PLATE = this.FastAddItem();
-        this.TIN_PLATE = this.FastAddItem();
-        this.BRONZE_PLATE = this.FastAddItem();
-        this.ALUMINIUM_PLATE = this.FastAddItem();
-        this.LEAD_PLATE = this.FastAddItem();
-        this.SILVER_PLATE = this.FastAddItem();
-        this.STEEL_PLATE = this.FastAddItem();
-        this.NICKEL_PLATE = this.FastAddItem();
-        this.TUNGSTEN_PLATE = this.FastAddItem();
-        this.TITANIUM_PLATE = this.FastAddItem();
+        this.COPPER_PLATE = this.AddItemTool();
+        this.ZINC_PLATE = this.AddItemTool();
+        this.TIN_PLATE = this.AddItemTool();
+        this.BRONZE_PLATE = this.AddItemTool();
+        this.ALUMINIUM_PLATE = this.AddItemTool();
+        this.LEAD_PLATE = this.AddItemTool();
+        this.SILVER_PLATE = this.AddItemTool();
+        this.STEEL_PLATE = this.AddItemTool();
+        this.NICKEL_PLATE = this.AddItemTool();
+        this.TUNGSTEN_PLATE = this.AddItemTool();
+        this.TITANIUM_PLATE = this.AddItemTool();
 
         //Shard
-        this.COPPER_SHARD = this.FastAddItem();
-        this.ZINC_SHARD = this.FastAddItem();
-        this.TIN_SHARD = this.FastAddItem();
-        this.BRONZE_SHARD = this.FastAddItem();
-        this.ALUMINIUM_SHARD = this.FastAddItem();
-        this.LEAD_SHARD = this.FastAddItem();
-        this.SILVER_SHARD = this.FastAddItem();
-        this.STEEL_SHARD = this.FastAddItem();
-        this.NICKEL_SHARD = this.FastAddItem();
-        this.TUNGSTEN_SHARD = this.FastAddItem();
-        this.TITANIUM_SHARD = this.FastAddItem();
+        this.COPPER_SHARD = this.AddItemTool();
+        this.ZINC_SHARD = this.AddItemTool();
+        this.TIN_SHARD = this.AddItemTool();
+        this.BRONZE_SHARD = this.AddItemTool();
+        this.ALUMINIUM_SHARD = this.AddItemTool();
+        this.LEAD_SHARD = this.AddItemTool();
+        this.SILVER_SHARD = this.AddItemTool();
+        this.STEEL_SHARD = this.AddItemTool();
+        this.NICKEL_SHARD = this.AddItemTool();
+        this.TUNGSTEN_SHARD = this.AddItemTool();
+        this.TITANIUM_SHARD = this.AddItemTool();
 
         //Metal Dissolver
-        this.COPPER_DISSLOVER = this.FastAddItem();
-        this.ZINC_DISSLOVER = this.FastAddItem();
-        this.TIN_DISSLOVER = this.FastAddItem();
-        this.ALUMINIUM_DISSLOVER = this.FastAddItem();
-        this.LEAD_DISSLOVER = this.FastAddItem();
-        this.SILVER_DISSLOVER = this.FastAddItem();
-        this.NICKEL_DISSLOVER = this.FastAddItem();
-        this.TUNGSTEN_DISSLOVER = this.FastAddItem();
-        this.TITANIUM_DISSLOVER = this.FastAddItem();
+        this.COPPER_DISSLOVER = this.AddItemTool();
+        this.ZINC_DISSLOVER = this.AddItemTool();
+        this.TIN_DISSLOVER = this.AddItemTool();
+        this.ALUMINIUM_DISSLOVER = this.AddItemTool();
+        this.LEAD_DISSLOVER = this.AddItemTool();
+        this.SILVER_DISSLOVER = this.AddItemTool();
+        this.NICKEL_DISSLOVER = this.AddItemTool();
+        this.TUNGSTEN_DISSLOVER = this.AddItemTool();
+        this.TITANIUM_DISSLOVER = this.AddItemTool();
 
         this.FIRECRACKERS = new Firecracker(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
     }

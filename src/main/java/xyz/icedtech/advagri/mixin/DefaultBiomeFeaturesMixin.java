@@ -26,6 +26,7 @@ public class DefaultBiomeFeaturesMixin {
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_TUNGSTEN_OVERWORLD);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_HIGH_CARBON_IRON_OVERWORLD);
 
+        builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_PHOS_OVERWORLD);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_SULPHUR_OVERWORLD);
 
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_QUARRY_OVERWORLD);
