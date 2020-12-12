@@ -19,7 +19,7 @@ public class Firecracker extends Item {
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
         if (hand == Hand.MAIN_HAND) {
-            world.createExplosion(playerEntity, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), 10F, true, Explosion.DestructionType.BREAK);
+            world.createExplosion(playerEntity, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), 0.2F, false, Explosion.DestructionType.BREAK);
         }
         return super.use(world, playerEntity, hand);
     }
