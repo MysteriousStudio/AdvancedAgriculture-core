@@ -5,7 +5,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import xyz.icedtech.advagri.item.Items;
+import xyz.icedtech.advagri.item.AdvAgriItems;
 
 public class LeatherBambooMixedArmor implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
@@ -33,7 +33,7 @@ public class LeatherBambooMixedArmor implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.getInstance().BAMBOO_SILK_BOARD);
+        return Ingredient.ofItems(AdvAgriItems.getInstance().BAMBOO_SILK_BOARD);
     }
 
     @Override

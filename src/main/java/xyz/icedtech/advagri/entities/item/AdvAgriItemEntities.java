@@ -1,7 +1,6 @@
-package xyz.icedtech.advagri.entities;
+package xyz.icedtech.advagri.entities.item;
 
 
-import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -9,8 +8,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import xyz.icedtech.advagri.ModAta;
 
-public class Entities {
-    public static Entities entities = new Entities();
+public class AdvAgriItemEntities {
+    public static AdvAgriItemEntities advAgriItemEntities = new AdvAgriItemEntities();
 
     public EntityType FIRECRACKER_ENTITY;
 
@@ -25,11 +24,11 @@ public class Entities {
     }
 
 
-    private Entities() {
+    private AdvAgriItemEntities() {
     }
 
 
-    public static Entities getInstance() {
-        return entities;
+    public static AdvAgriItemEntities getInstance() {
+        return advAgriItemEntities;
     }
 }

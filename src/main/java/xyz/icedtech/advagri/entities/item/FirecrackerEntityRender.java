@@ -1,4 +1,4 @@
-package xyz.icedtech.advagri.entities;
+package xyz.icedtech.advagri.entities.item;
 
 import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.client.render.entity.EntityRenderer;

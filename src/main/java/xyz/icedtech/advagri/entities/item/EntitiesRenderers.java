@@ -1,4 +1,4 @@
-package xyz.icedtech.advagri.entities;
+package xyz.icedtech.advagri.entities.item;
 
 import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
 
@@ -10,7 +10,7 @@ public class EntitiesRenderers {
     }
 
     public void InitAllEntitiesRenderers() {
-        EntityRendererRegistry.INSTANCE.register(Entities.getInstance().FIRECRACKER_ENTITY, (dispatcher, context) -> {
+        EntityRendererRegistry.INSTANCE.register(AdvAgriItemEntities.getInstance().FIRECRACKER_ENTITY, (dispatcher, context) -> {
             return new FirecrackerEntityRender(dispatcher);
         });
     }

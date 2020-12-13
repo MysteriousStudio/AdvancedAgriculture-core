@@ -9,7 +9,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
-import xyz.icedtech.advagri.entities.FirecrackerEntity;
+import xyz.icedtech.advagri.entities.item.FirecrackerEntity;
 
 
 public class Firecracker extends Item {
@@ -22,14 +22,14 @@ public class Firecracker extends Item {
         ItemStack itemStack = playerEntity.getStackInHand(hand);
 
         world.playSound((PlayerEntity) null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_SNOWBALL_THROW, SoundCategory.NEUTRAL, 0.5F, 0.4F / (RANDOM.nextFloat() * 0.4F + 0.8F));
-
+        /*
         if (!world.isClient) {
             FirecrackerEntity fireCrackerEntity = new FirecrackerEntity(world, playerEntity);
             fireCrackerEntity.setItem(itemStack);
             fireCrackerEntity.setProperties(playerEntity, playerEntity.pitch, playerEntity.yaw, 0.0F, 1.5F, 1.0F);
             world.spawnEntity(fireCrackerEntity);
         }
-
+        */
         if (hand == Hand.MAIN_HAND) {
             world.createExplosion(playerEntity, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), 64F, false, Explosion.DestructionType.BREAK);
         }

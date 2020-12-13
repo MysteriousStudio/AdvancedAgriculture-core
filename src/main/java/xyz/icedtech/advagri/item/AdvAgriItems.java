@@ -8,8 +8,8 @@ import net.minecraft.util.registry.Registry;
 import xyz.icedtech.advagri.ModAta;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemCoreGroup;
 
-public class Items {
-    public static Items thisItems = new Items();
+public class AdvAgriItems {
+    public static AdvAgriItems thisAdvAgriItems = new AdvAgriItems();
 
     public static Integer MAX_ITEM_COUNT = 64;
     //Other
@@ -108,12 +108,12 @@ public class Items {
 
     public ItemGroup ITEM_GROUP;
 
-    private Items() {
+    private AdvAgriItems() {
         ITEM_GROUP = AdvAgriItemCoreGroup.getInstance().GetGroup();
     }
 
-    public static Items getInstance() {
-        return thisItems;
+    public static AdvAgriItems getInstance() {
+        return thisAdvAgriItems;
     }
 
     private Item AddItemTool(Integer maxCount) {

@@ -20,8 +20,8 @@ import xyz.icedtech.advagri.ModAta;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemCoreGroup;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemWorldGroup;
 
-public class Blocks {
-    public static Blocks thisBlocks = new Blocks();
+public class AdvAgriBlocks {
+    public static AdvAgriBlocks thisAdvAgriBlocks = new AdvAgriBlocks();
 
     public static ItemGroup CORE_ITEM_GROUP;
     public static ItemGroup WORLD_ITEM_GROUP;
@@ -116,14 +116,14 @@ public class Blocks {
     public ConfiguredFeature<?, ?> ORE_NETHER_SULPHUR_NETHER = NetherConfiguredFeature(this.NETHER_SULPHUR_ORE, BASE_ORE_GEN_SIZE, BASE_ORE_GEN_LINE + 32, BASE_ORE_GEN_COUNT + 16);
 
 
-    private Blocks() {
+    private AdvAgriBlocks() {
         CORE_ITEM_GROUP = AdvAgriItemCoreGroup.getInstance().GetGroup();
         WORLD_ITEM_GROUP = AdvAgriItemWorldGroup.getInstance().GetGroup();
     }
 
 
-    public static Blocks getInstance() {
-        return thisBlocks;
+    public static AdvAgriBlocks getInstance() {
+        return thisAdvAgriBlocks;
     }
 
     public void InitAllBlocks() {

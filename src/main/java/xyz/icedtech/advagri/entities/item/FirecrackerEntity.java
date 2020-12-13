@@ -1,4 +1,4 @@
-package xyz.icedtech.advagri.entities;
+package xyz.icedtech.advagri.entities.item;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -8,21 +8,20 @@ import net.minecraft.item.Item;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
-import xyz.icedtech.advagri.item.Firecracker;
-import xyz.icedtech.advagri.item.Items;
+import xyz.icedtech.advagri.item.AdvAgriItems;
 
 public class FirecrackerEntity extends ThrownItemEntity {
 
     public FirecrackerEntity(EntityType<? extends Entity> entityType, World world) {
-        super(Entities.getInstance().FIRECRACKER_ENTITY, world);
+        super(AdvAgriItemEntities.getInstance().FIRECRACKER_ENTITY, world);
     }
 
     public FirecrackerEntity(World world, LivingEntity owner) {
-        super(Entities.getInstance().FIRECRACKER_ENTITY, owner, world);
+        super(AdvAgriItemEntities.getInstance().FIRECRACKER_ENTITY, owner, world);
     }
 
     public FirecrackerEntity(World world, double x, double y, double z) {
-        super(Entities.getInstance().FIRECRACKER_ENTITY, x, y, z, world);
+        super(AdvAgriItemEntities.getInstance().FIRECRACKER_ENTITY, x, y, z, world);
     }
 
 
@@ -36,6 +35,6 @@ public class FirecrackerEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return Items.getInstance().FIRECRACKERS;
+        return AdvAgriItems.getInstance().FIRECRACKERS;
     }
 }
