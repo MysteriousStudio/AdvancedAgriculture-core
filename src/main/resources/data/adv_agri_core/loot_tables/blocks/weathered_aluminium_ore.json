@@ -1,0 +1,10 @@
+{
+  "type": "minecraft_block",
+  "pools": [
+    {
+
+      "rolls": 1
+
+    }
+  ]
+}
