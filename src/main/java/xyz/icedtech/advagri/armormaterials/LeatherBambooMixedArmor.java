@@ -38,7 +38,7 @@ public class LeatherBambooMixedArmor implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "BAMBOO_LEATHER_MIXED";
+        return "armor_bamboo_leather_mixed";
     }
 
     @Override

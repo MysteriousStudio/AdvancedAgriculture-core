@@ -21,7 +21,7 @@ public class AdvAgriItemCoreGroup {
         return advAgriItemCoreGroup;
     }
 
-    public ItemGroup GetGroup(){
+    public ItemGroup GetGroup() {
         return ITEM_GROUP;
     }
 }

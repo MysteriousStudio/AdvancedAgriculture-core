@@ -38,7 +38,7 @@ public class BambooArmor implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "BAMBOO";
+        return "armor_bamboo";
     }
 
     @Override
@@ -49,4 +49,5 @@ public class BambooArmor implements ArmorMaterial {
     @Override
     public float getKnockbackResistance() {
         return 0.0F;
-    }}
+    }
+}

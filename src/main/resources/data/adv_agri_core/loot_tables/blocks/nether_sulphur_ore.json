@@ -46,7 +46,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "adv_agri_core:nether_sulfur"
+              "name": "adv_agri_core:sulfur"
             }
           ]
         }

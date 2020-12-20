@@ -11,8 +11,8 @@ import xyz.icedtech.advagri.armormaterials.LeatherBambooMixedArmor;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemToolAndArmorsGroup;
 
 
-public class ArmorItems {
-    public static ArmorItems thisArmorItems = new ArmorItems();
+public class AdvAgriArmorItems {
+    public static AdvAgriArmorItems thisAdvAgriArmorItems = new AdvAgriArmorItems();
 
     public static String modata = ModAta.ModID;
 
@@ -30,11 +30,13 @@ public class ArmorItems {
     public Item LEATHER_BAMBOO_MIXED_LEGGINGS;
     public Item LEATHER_BAMBOO_MIXED_BOOTS;
 
-    public static ArmorItems getInstance() {
-        return thisArmorItems;
+    //Tools
+
+    public static AdvAgriArmorItems getInstance() {
+        return thisAdvAgriArmorItems;
     }
 
-    private ArmorItems() {
+    private AdvAgriArmorItems() {
 
     }
 

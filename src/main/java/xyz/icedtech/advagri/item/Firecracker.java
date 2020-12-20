@@ -9,7 +9,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
-import xyz.icedtech.advagri.entities.item.FirecrackerEntity;
 
 
 public class Firecracker extends Item {

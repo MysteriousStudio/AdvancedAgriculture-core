@@ -179,7 +179,7 @@ public class AdvAgriBlocks {
 
     }
 
-    public void RegistryGenOres() {
+    public void RegisteredGenOres() {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_copper_overworld"), ORE_COPPER_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_tin_overworld"), ORE_TIN_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_zinc_overworld"), ORE_ZINC_OVERWORLD);
