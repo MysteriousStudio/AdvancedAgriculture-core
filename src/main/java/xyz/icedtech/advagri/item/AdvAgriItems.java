@@ -76,7 +76,6 @@ public class AdvAgriItems {
     public Item SILVER_PLATE;
     public Item SILVER_DISSLOVER;
     //Steel
-    public Item STEEL_SHARD;
     public Item STEEL_INGOT;
     public Item STEEL_POWDER;
     public Item STEEL_GEAR;
@@ -105,6 +104,18 @@ public class AdvAgriItems {
 
     //Firecracker
     public Firecracker FIRECRACKERS;
+
+    //Machine-making
+    public Item COPPER_CONDUCTOR_CORE;
+    public Item SILVER_CONDUCTOR_CORE;
+    public Item TITANIUM_CONDUCTOR_CORE;
+    public Item PASSIVE_POWER_MODULE;
+    public Item POWER_MODULE;
+    public Item ADVANCED_POWER_MODULE;
+
+    //Ore By-products
+    public Item MINERAL_MUD;
+    public Item CORASE_ORE_POWDER;
 
     public ItemGroup ITEM_GROUP;
 
@@ -198,7 +209,6 @@ public class AdvAgriItems {
         this.ALUMINIUM_SHARD = this.AddItemTool();
         this.LEAD_SHARD = this.AddItemTool();
         this.SILVER_SHARD = this.AddItemTool();
-        this.STEEL_SHARD = this.AddItemTool();
         this.NICKEL_SHARD = this.AddItemTool();
         this.TUNGSTEN_SHARD = this.AddItemTool();
         this.TITANIUM_SHARD = this.AddItemTool();
@@ -215,6 +225,18 @@ public class AdvAgriItems {
         this.TITANIUM_DISSLOVER = this.AddItemTool();
 
         this.FIRECRACKERS = new Firecracker(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
+
+        //Machine-making
+        this.COPPER_CONDUCTOR_CORE = this.AddItemTool();
+        this.SILVER_CONDUCTOR_CORE= this.AddItemTool();
+        this.TITANIUM_CONDUCTOR_CORE = this.AddItemTool();
+        this.PASSIVE_POWER_MODULE = this.AddItemTool();
+        this.POWER_MODULE = this.AddItemTool();
+        this.ADVANCED_POWER_MODULE = this.AddItemTool();
+
+        //Ore By-products
+        this.MINERAL_MUD = this.AddItemTool();
+        this.CORASE_ORE_POWDER = this.AddItemTool();
     }
 
     public void RegisteredItems() {
@@ -289,7 +311,6 @@ public class AdvAgriItems {
         this.RegistrationTool(this.ALUMINIUM_SHARD, "aluminium_shard");
         this.RegistrationTool(this.LEAD_SHARD, "lead_shard");
         this.RegistrationTool(this.SILVER_SHARD, "silver_shard");
-        this.RegistrationTool(this.STEEL_SHARD, "steel_shard");
         this.RegistrationTool(this.NICKEL_SHARD, "nickel_shard");
         this.RegistrationTool(this.TUNGSTEN_SHARD, "tungsten_shard");
         this.RegistrationTool(this.TITANIUM_SHARD, "titanium_shard");
@@ -306,6 +327,14 @@ public class AdvAgriItems {
         this.RegistrationTool(this.TITANIUM_DISSLOVER, "titanium_disslover");
 
         this.RegistrationTool(this.FIRECRACKERS, "firecrackers");
+
+        //Machine-making
+        this.RegistrationTool(this.COPPER_CONDUCTOR_CORE, "copper_conductor_core");
+        this.RegistrationTool(this.SILVER_CONDUCTOR_CORE, "silver_conductor_core");
+        this.RegistrationTool(this.TITANIUM_CONDUCTOR_CORE, "titanium_conductor_core");
+        this.RegistrationTool(this.PASSIVE_POWER_MODULE, "passive_power_module");
+        this.RegistrationTool(this.POWER_MODULE, "power_module");
+        this.RegistrationTool(this.ADVANCED_POWER_MODULE, "advanced_power_module");
     }
 
 
