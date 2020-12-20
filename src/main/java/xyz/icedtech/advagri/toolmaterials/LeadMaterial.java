@@ -7,11 +7,11 @@ public class LeadMaterial extends AdvAgriToolMaterials {
     public static final LeadMaterial INSTANCE=new LeadMaterial();
 
     public LeadMaterial() {
-        super.setDurability(0);
-        super.setMiningSpeedMultiplier(0F);
-        super.setAttackDamage(0F);
-        super.setMineLevel(0);
-        super.setEnchantability(0);
+        super.setDurability(100);
+        super.setMiningSpeedMultiplier(3F);
+        super.setAttackDamage(2F);
+        super.setMineLevel(1);
+        super.setEnchantability(6);
         super.setIngredient(AdvAgriItems.getInstance().LEAD_INGOT);
     }
 

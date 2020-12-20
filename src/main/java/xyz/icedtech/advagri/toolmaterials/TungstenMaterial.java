@@ -7,11 +7,11 @@ public class TungstenMaterial extends AdvAgriToolMaterials {
     public static final TungstenMaterial INSTANCE = new TungstenMaterial();
 
     public TungstenMaterial() {
-        super.setDurability(0);
-        super.setMiningSpeedMultiplier(0F);
-        super.setAttackDamage(0F);
-        super.setMineLevel(0);
-        super.setEnchantability(0);
+        super.setDurability(2200);
+        super.setMiningSpeedMultiplier(6F);
+        super.setAttackDamage(2F);
+        super.setMineLevel(3);
+        super.setEnchantability(9);
         super.setIngredient(AdvAgriItems.getInstance().TUNGSTEN_INGOT);
     }
 }

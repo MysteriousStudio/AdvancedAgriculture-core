@@ -7,11 +7,11 @@ public class ZincMaterial extends AdvAgriToolMaterials {
     public static final ZincMaterial INSTANCE = new ZincMaterial();
 
     public ZincMaterial() {
-        super.setDurability(0);
-        super.setMiningSpeedMultiplier(0F);
-        super.setAttackDamage(0F);
-        super.setMineLevel(0);
-        super.setEnchantability(0);
+        super.setDurability(150);
+        super.setMiningSpeedMultiplier(6F);
+        super.setAttackDamage(2F);
+        super.setMineLevel(2);
+        super.setEnchantability(6);
         super.setIngredient(AdvAgriItems.getInstance().ZINC_INGOT);
     }
 }

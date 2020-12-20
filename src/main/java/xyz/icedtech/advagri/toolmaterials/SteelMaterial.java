@@ -7,11 +7,11 @@ public class SteelMaterial extends AdvAgriToolMaterials {
     public final static SteelMaterial INSTANCE = new SteelMaterial();
 
     public SteelMaterial() {
-        super.setDurability(0);
-        super.setMiningSpeedMultiplier(0F);
-        super.setAttackDamage(0F);
-        super.setMineLevel(0);
-        super.setEnchantability(0);
+        super.setDurability(560);
+        super.setMiningSpeedMultiplier(6F);
+        super.setAttackDamage(2F);
+        super.setMineLevel(2);
+        super.setEnchantability(9);
         super.setIngredient(AdvAgriItems.getInstance().STEEL_INGOT);
     }
 }
