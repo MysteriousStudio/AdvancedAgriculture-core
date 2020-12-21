@@ -33,21 +33,21 @@ public class AdvAgriItems {
     public Item COPPER_POWDER;
     public Item COPPER_GEAR;
     public Item COPPER_PLATE;
-    public Item COPPER_DISSLOVER;
+    public Item COPPER_DISSOLVER;
     //Zinc
     public Item ZINC_SHARD;
     public Item ZINC_INGOT;
     public Item ZINC_POWDER;
     public Item ZINC_GEAR;
     public Item ZINC_PLATE;
-    public Item ZINC_DISSLOVER;
+    public Item ZINC_DISSOLVER;
     //Tin
     public Item TIN_SHARD;
     public Item TIN_INGOT;
     public Item TIN_POWDER;
     public Item TIN_GEAR;
     public Item TIN_PLATE;
-    public Item TIN_DISSLOVER;
+    public Item TIN_DISSOLVER;
     //Bronze
     public Item BRONZE_SHARD;
     public Item BRONZE_INGOT;
@@ -60,21 +60,21 @@ public class AdvAgriItems {
     public Item ALUMINIUM_POWDER;
     public Item ALUMINIUM_GEAR;
     public Item ALUMINIUM_PLATE;
-    public Item ALUMINIUM_DISSLOVER;
+    public Item ALUMINIUM_DISSOLVER;
     //Lead
     public Item LEAD_SHARD;
     public Item LEAD_INGOT;
     public Item LEAD_POWDER;
     public Item LEAD_GEAR;
     public Item LEAD_PLATE;
-    public Item LEAD_DISSLOVER;
+    public Item LEAD_DISSOLVER;
     //Silver
     public Item SILVER_SHARD;
     public Item SILVER_INGOT;
     public Item SILVER_POWDER;
     public Item SILVER_GEAR;
     public Item SILVER_PLATE;
-    public Item SILVER_DISSLOVER;
+    public Item SILVER_DISSOLVER;
     //Steel
     public Item STEEL_INGOT;
     public Item STEEL_POWDER;
@@ -86,21 +86,21 @@ public class AdvAgriItems {
     public Item NICKEL_POWDER;
     public Item NICKEL_GEAR;
     public Item NICKEL_PLATE;
-    public Item NICKEL_DISSLOVER;
+    public Item NICKEL_DISSOLVER;
     //Tungsten
     public Item TUNGSTEN_SHARD;
     public Item TUNGSTEN_INGOT;
     public Item TUNGSTEN_POWDER;
     public Item TUNGSTEN_GEAR;
     public Item TUNGSTEN_PLATE;
-    public Item TUNGSTEN_DISSLOVER;
+    public Item TUNGSTEN_DISSOLVER;
     //Titanium
     public Item TITANIUM_SHARD;
     public Item TITANIUM_INGOT;
     public Item TITANIUM_POWDER;
     public Item TITANIUM_GEAR;
     public Item TITANIUM_PLATE;
-    public Item TITANIUM_DISSLOVER;
+    public Item TITANIUM_DISSOLVER;
 
     //Firecracker
     public Firecracker FIRECRACKERS;
@@ -214,15 +214,15 @@ public class AdvAgriItems {
         this.TITANIUM_SHARD = this.AddItemTool();
 
         //Metal Dissolver
-        this.COPPER_DISSLOVER = this.AddItemTool();
-        this.ZINC_DISSLOVER = this.AddItemTool();
-        this.TIN_DISSLOVER = this.AddItemTool();
-        this.ALUMINIUM_DISSLOVER = this.AddItemTool();
-        this.LEAD_DISSLOVER = this.AddItemTool();
-        this.SILVER_DISSLOVER = this.AddItemTool();
-        this.NICKEL_DISSLOVER = this.AddItemTool();
-        this.TUNGSTEN_DISSLOVER = this.AddItemTool();
-        this.TITANIUM_DISSLOVER = this.AddItemTool();
+        this.COPPER_DISSOLVER = this.AddItemTool();
+        this.ZINC_DISSOLVER = this.AddItemTool();
+        this.TIN_DISSOLVER = this.AddItemTool();
+        this.ALUMINIUM_DISSOLVER = this.AddItemTool();
+        this.LEAD_DISSOLVER = this.AddItemTool();
+        this.SILVER_DISSOLVER = this.AddItemTool();
+        this.NICKEL_DISSOLVER = this.AddItemTool();
+        this.TUNGSTEN_DISSOLVER = this.AddItemTool();
+        this.TITANIUM_DISSOLVER = this.AddItemTool();
 
         this.FIRECRACKERS = new Firecracker(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
 
@@ -316,15 +316,15 @@ public class AdvAgriItems {
         this.RegistrationTool(this.TITANIUM_SHARD, "titanium_shard");
 
         //Metal Disslover
-        this.RegistrationTool(this.COPPER_DISSLOVER, "copper_disslover");
-        this.RegistrationTool(this.ZINC_DISSLOVER, "zinc_disslover");
-        this.RegistrationTool(this.TIN_DISSLOVER, "tin_disslover");
-        this.RegistrationTool(this.ALUMINIUM_DISSLOVER, "aluminium_disslover");
-        this.RegistrationTool(this.LEAD_DISSLOVER, "lead_disslover");
-        this.RegistrationTool(this.SILVER_DISSLOVER, "silver_disslover");
-        this.RegistrationTool(this.NICKEL_DISSLOVER, "nickel_disslover");
-        this.RegistrationTool(this.TUNGSTEN_DISSLOVER, "tungsten_disslover");
-        this.RegistrationTool(this.TITANIUM_DISSLOVER, "titanium_disslover");
+        this.RegistrationTool(this.COPPER_DISSOLVER, "copper_dissolver");
+        this.RegistrationTool(this.ZINC_DISSOLVER, "zinc_dissolver");
+        this.RegistrationTool(this.TIN_DISSOLVER, "tin_dissolver");
+        this.RegistrationTool(this.ALUMINIUM_DISSOLVER, "aluminium_dissolver");
+        this.RegistrationTool(this.LEAD_DISSOLVER, "lead_dissolver");
+        this.RegistrationTool(this.SILVER_DISSOLVER, "silver_dissolver");
+        this.RegistrationTool(this.NICKEL_DISSOLVER, "nickel_dissolver");
+        this.RegistrationTool(this.TUNGSTEN_DISSOLVER, "tungsten_dissolver");
+        this.RegistrationTool(this.TITANIUM_DISSOLVER, "titanium_dissolver");
 
         this.RegistrationTool(this.FIRECRACKERS, "firecrackers");
 
