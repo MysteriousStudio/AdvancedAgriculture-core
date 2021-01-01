@@ -101,6 +101,18 @@ public class AdvAgriItems {
     public Item TITANIUM_GEAR;
     public Item TITANIUM_PLATE;
     public Item TITANIUM_DISSOLVER;
+    //Iron
+    public Item IRON_SHARD;
+    public Item IRON_POWDER;
+    public Item IRON_GEAR;
+    public Item IRON_PLATE;
+    public Item IRON_DISSOLVER;
+    //Gold
+    public Item GOLD_SHARD;
+    public Item GOLD_POWDER;
+    public Item GOLD_GEAR;
+    public Item GOLD_PLATE;
+    public Item GOLD_DISSOLVER;
 
     //Firecracker
     public Firecracker FIRECRACKERS;
@@ -116,6 +128,10 @@ public class AdvAgriItems {
     //Ore By-products
     public Item MINERAL_MUD;
     public Item CORASE_ORE_POWDER;
+
+    //Metal Forging
+    public Item FORGING_HAMMER;
+    public Item ROLLING_TOOL;
 
     public ItemGroup ITEM_GROUP;
 
@@ -174,6 +190,8 @@ public class AdvAgriItems {
         this.NICKEL_POWDER = this.AddItemTool();
         this.TUNGSTEN_POWDER = this.AddItemTool();
         this.TITANIUM_POWDER = this.AddItemTool();
+        this.IRON_POWDER = this.AddItemTool();
+        this.GOLD_POWDER = this.AddItemTool();
 
         //Gear
         this.COPPER_GEAR = this.AddItemTool();
@@ -187,6 +205,8 @@ public class AdvAgriItems {
         this.NICKEL_GEAR = this.AddItemTool();
         this.TUNGSTEN_GEAR = this.AddItemTool();
         this.TITANIUM_GEAR = this.AddItemTool();
+        this.IRON_GEAR = this.AddItemTool();
+        this.GOLD_GEAR = this.AddItemTool();
 
         //Plate
         this.COPPER_PLATE = this.AddItemTool();
@@ -200,6 +220,8 @@ public class AdvAgriItems {
         this.NICKEL_PLATE = this.AddItemTool();
         this.TUNGSTEN_PLATE = this.AddItemTool();
         this.TITANIUM_PLATE = this.AddItemTool();
+        this.IRON_PLATE = this.AddItemTool();
+        this.GOLD_PLATE = this.AddItemTool();
 
         //Shard
         this.COPPER_SHARD = this.AddItemTool();
@@ -212,6 +234,8 @@ public class AdvAgriItems {
         this.NICKEL_SHARD = this.AddItemTool();
         this.TUNGSTEN_SHARD = this.AddItemTool();
         this.TITANIUM_SHARD = this.AddItemTool();
+        this.IRON_SHARD = this.AddItemTool();
+        this.GOLD_SHARD = this.AddItemTool();
 
         //Metal Dissolver
         this.COPPER_DISSOLVER = this.AddItemTool();
@@ -223,6 +247,8 @@ public class AdvAgriItems {
         this.NICKEL_DISSOLVER = this.AddItemTool();
         this.TUNGSTEN_DISSOLVER = this.AddItemTool();
         this.TITANIUM_DISSOLVER = this.AddItemTool();
+        this.GOLD_DISSOLVER = this.AddItemTool();
+        this.IRON_DISSOLVER = this.AddItemTool();
 
         this.FIRECRACKERS = new Firecracker(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
 
@@ -237,9 +263,15 @@ public class AdvAgriItems {
         //Ore By-products
         this.MINERAL_MUD = this.AddItemTool();
         this.CORASE_ORE_POWDER = this.AddItemTool();
+
+        //Metal FORGING
+        this.FORGING_HAMMER = this.AddItemTool();
+        this.ROLLING_TOOL = this.AddItemTool();
+
     }
 
     public void RegisteredItems() {
+        //this.RegistrationTool(this. ,"");
         this.RegistrationTool(this.COM_FERT, "com_fert");
         this.RegistrationTool(this.BAMBOO_LEAVES, "bamboo_leaves");
         this.RegistrationTool(this.BAMBOO_SILK, "bamboo_silk");
@@ -276,6 +308,8 @@ public class AdvAgriItems {
         this.RegistrationTool(this.NICKEL_POWDER, "nickel_powder");
         this.RegistrationTool(this.TUNGSTEN_POWDER, "tungsten_powder");
         this.RegistrationTool(this.TITANIUM_POWDER, "titanium_powder");
+        this.RegistrationTool(this.IRON_POWDER ,"iron_powder");
+        this.RegistrationTool(this.GOLD_POWDER ,"gold_powder");
 
         //Gear
         this.RegistrationTool(this.COPPER_GEAR, "copper_gear");
@@ -289,6 +323,8 @@ public class AdvAgriItems {
         this.RegistrationTool(this.NICKEL_GEAR, "nickel_gear");
         this.RegistrationTool(this.TUNGSTEN_GEAR, "tungsten_gear");
         this.RegistrationTool(this.TITANIUM_GEAR, "titanium_gear");
+        this.RegistrationTool(this.IRON_GEAR, "iron_gear");
+        this.RegistrationTool(this.GOLD_GEAR ,"gold_gear");
 
         //Plate
         this.RegistrationTool(this.COPPER_PLATE, "copper_plate");
@@ -302,6 +338,9 @@ public class AdvAgriItems {
         this.RegistrationTool(this.NICKEL_PLATE, "nickel_plate");
         this.RegistrationTool(this.TUNGSTEN_PLATE, "tungsten_plate");
         this.RegistrationTool(this.TITANIUM_PLATE, "titanium_plate");
+        this.RegistrationTool(this.IRON_PLATE, "iron_plate");
+        this.RegistrationTool(this.GOLD_PLATE ,"gold_plate");
+
 
         //Shard
         this.RegistrationTool(this.COPPER_SHARD, "copper_shard");
@@ -314,6 +353,8 @@ public class AdvAgriItems {
         this.RegistrationTool(this.NICKEL_SHARD, "nickel_shard");
         this.RegistrationTool(this.TUNGSTEN_SHARD, "tungsten_shard");
         this.RegistrationTool(this.TITANIUM_SHARD, "titanium_shard");
+        this.RegistrationTool(this.IRON_SHARD ,"iron_shard");
+        this.RegistrationTool(this.GOLD_SHARD ,"gold_shard");
 
         //Metal Disslover
         this.RegistrationTool(this.COPPER_DISSOLVER, "copper_dissolver");
@@ -325,6 +366,8 @@ public class AdvAgriItems {
         this.RegistrationTool(this.NICKEL_DISSOLVER, "nickel_dissolver");
         this.RegistrationTool(this.TUNGSTEN_DISSOLVER, "tungsten_dissolver");
         this.RegistrationTool(this.TITANIUM_DISSOLVER, "titanium_dissolver");
+        this.RegistrationTool(this.IRON_DISSOLVER ,"iron_dissolver");
+        this.RegistrationTool(this.GOLD_DISSOLVER ,"gold_dissolver");
 
         this.RegistrationTool(this.FIRECRACKERS, "firecrackers");
 
@@ -335,6 +378,16 @@ public class AdvAgriItems {
         this.RegistrationTool(this.PASSIVE_POWER_MODULE, "passive_power_module");
         this.RegistrationTool(this.POWER_MODULE, "power_module");
         this.RegistrationTool(this.ADVANCED_POWER_MODULE, "advanced_power_module");
+
+        //Ore By-products
+        this.RegistrationTool(this.CORASE_ORE_POWDER, "corase_ore_powder");
+        this.RegistrationTool(this.MINERAL_MUD, "mineral_mud");
+
+        //Metal Forging
+        this.RegistrationTool(this.FORGING_HAMMER, "forging_hammer");
+        this.RegistrationTool(this.ROLLING_TOOL, "rolling_tool");
+
+
     }
 
 
