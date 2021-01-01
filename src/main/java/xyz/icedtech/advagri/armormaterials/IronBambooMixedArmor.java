@@ -9,7 +9,7 @@ import xyz.icedtech.advagri.item.AdvAgriItems;
 
 public class IronBambooMixedArmor implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
-    private static final int[] PROTECTION_VALUES = new int[]{1, 3, 3, 2};
+    private static final int[] PROTECTION_VALUES = new int[]{1, 6, 6, 4};
 
     @Override
     public int getDurability(EquipmentSlot slot) {
