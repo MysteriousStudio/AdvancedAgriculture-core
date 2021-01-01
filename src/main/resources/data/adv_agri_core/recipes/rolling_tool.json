@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " H ",
+    "P P",
+    " I "
+  ],
+  "key": {
+    "H": {
+      "item": "adv_agri_core:forging_hammer"
+    },
+    "P": {
+      "item": "adv_agri_core:iron_plate"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "adv_agri_core:rolling_tool",
+    "count": 1
+  }
+}
