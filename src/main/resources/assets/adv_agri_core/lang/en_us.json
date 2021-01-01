@@ -214,5 +214,11 @@
   "item.adv_agri_core.zinc_axe": "Zinc Axe",
   "item.adv_agri_core.zinc_shovel": "Zinc Shovel",
   "item.adv_agri_core.zinc_hoe": "Zinc Hoe",
-  "item.adv_agri_core.zinc_pickaxe": "Zinc Pickaxe"
+  "item.adv_agri_core.zinc_pickaxe": "Zinc Pickaxe",
+  "item.adv_agri_core.gold_powder": "",
+  "item.adv_agri_core.iron_shard": "",
+  "item.adv_agri_core.corase_powder": "",
+  "item.adv_agri_core.mineral_mud": "",
+  "item.adv_agri_core.forging_hammer": "",
+  "item.adv_agri_core.rolling_tool": ""
 }

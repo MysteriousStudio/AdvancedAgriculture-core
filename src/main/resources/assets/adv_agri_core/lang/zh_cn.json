@@ -220,5 +220,11 @@
   "item.adv_agri_core.zinc_axe": "锌斧",
   "item.adv_agri_core.zinc_shovel": "锌锹",
   "item.adv_agri_core.zinc_hoe": "锌锄",
-  "item.adv_agri_core.zinc_pickaxe": "锌镐"
+  "item.adv_agri_core.zinc_pickaxe": "锌镐",
+  "item.adv_agri_core.gold_powder": "金粉",
+  "item.adv_agri_core.iron_shard": "铁碎片",
+  "item.adv_agri_core.corase_powder": "粗矿粉",
+  "item.adv_agri_core.mineral_mud": "矿泥",
+  "item.adv_agri_core.forging_hammer": "锻造锤",
+  "item.adv_agri_core.rolling_tool": "辊压工具"
 }
