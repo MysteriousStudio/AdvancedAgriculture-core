@@ -17,16 +17,18 @@ public class AdvAgriArmorItems {
     public static AdvAgriArmorItems thisAdvAgriArmorItems = new AdvAgriArmorItems();
 
     public static String modata = ModAta.ModID;
+    public  ArmorMaterial BAMBOO = new LeatherBambooMixedArmor();
+    public ArmorMaterial LEATHER_BAMBOO_MIXED = new LeatherBambooMixedArmor();
+
+    ///GENERATE START:ARMOR
 
     //Bamboo armor
-    public static final ArmorMaterial BAMBOO = new LeatherBambooMixedArmor();
     public Item BAMBOO_HELMET;
     public Item BAMBOO_CHESTPLATE;
     public Item BAMBOO_LEGGINGS;
     public Item BAMBOO_BOOTS;
 
     //Leather-bamboo armor
-    public ArmorMaterial LEATHER_BAMBOO_MIXED = new LeatherBambooMixedArmor();
     public Item LEATHER_BAMBOO_MIXED_HELMET;
     public Item LEATHER_BAMBOO_MIXED_CHESTPLATE;
     public Item LEATHER_BAMBOO_MIXED_LEGGINGS;
@@ -39,7 +41,7 @@ public class AdvAgriArmorItems {
     public Item IRON_BAMBOO_MIXED_LEGGINGS;
     public Item IRON_BAMBOO_MIXED_BOOTS;
 
-    //Tools
+    ///GENERATE END:ARMOR
 
     public static AdvAgriArmorItems getInstance() {
         return thisAdvAgriArmorItems;
@@ -60,7 +62,7 @@ public class AdvAgriArmorItems {
         LEATHER_BAMBOO_MIXED_LEGGINGS = FastAddTool(3, LEATHER_BAMBOO_MIXED);
         LEATHER_BAMBOO_MIXED_BOOTS = FastAddTool(4, LEATHER_BAMBOO_MIXED);
 
-        IRON_BAMBOO_MIXED_HELMET = FastAddTool(1,IRON_BAMBOO_MIXED);
+        IRON_BAMBOO_MIXED_HELMET = FastAddTool(1, IRON_BAMBOO_MIXED);
         IRON_BAMBOO_MIXED_CHESTPLATE = FastAddTool(2, IRON_BAMBOO_MIXED);
         IRON_BAMBOO_MIXED_LEGGINGS = FastAddTool(3, IRON_BAMBOO_MIXED);
         IRON_BAMBOO_MIXED_BOOTS = FastAddTool(4, IRON_BAMBOO_MIXED);

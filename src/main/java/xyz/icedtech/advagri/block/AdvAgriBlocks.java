@@ -37,6 +37,8 @@ public class AdvAgriBlocks {
     public Integer BASE_ORE_GEN_SIZE = 8;
     public Integer BASE_ORE_GEN_COUNT = 16;
 
+    ///GENERATE START:BLOCK
+
     //MetalOre
     public Block COPPER_ORE = this.AddStoneTypeBlockTool(1);
     public Block ZINC_ORE = this.AddStoneTypeBlockTool(1);
@@ -84,6 +86,8 @@ public class AdvAgriBlocks {
     public Block BAMBOO_BLOCK;
 
     public Block QUARRY = this.AddStoneTypeBlockTool(DIRT_TYPE_HARDNESS);
+
+    ///GENERATE END:BLOCK
 
     //OverWorld ores
     @NotNull

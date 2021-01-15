@@ -12,6 +12,8 @@ public class AdvAgriItems {
     public static AdvAgriItems thisAdvAgriItems = new AdvAgriItems();
 
     public static Integer MAX_ITEM_COUNT = 64;
+
+    ///GENERATE START:ITEM
     //Other
     public Item COM_FERT;
     public Item TUNG_OIL;
@@ -132,6 +134,8 @@ public class AdvAgriItems {
     //Metal Forging
     public Item FORGING_HAMMER;
     public Item ROLLING_TOOL;
+
+    ///GENERATE END:ITEM
 
     public ItemGroup ITEM_GROUP;
 

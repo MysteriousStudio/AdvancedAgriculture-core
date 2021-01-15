@@ -12,6 +12,7 @@ import xyz.icedtech.advagri.toolmaterials.*;
 public class AdvAgriToolsAndWeapons {
     private static final AdvAgriToolsAndWeapons advAgriToolsAndWeapons = new AdvAgriToolsAndWeapons();
 
+    ///GENERATE START:TOOL
     public ToolItem COPPER_SHOVEL;
     public ToolItem COPPER_PICKAXE;
     public ToolItem COPPER_AXE;
@@ -78,6 +79,8 @@ public class AdvAgriToolsAndWeapons {
     public ToolItem TITANIUM_AXE;
     public ToolItem TITANIUM_HOE;
     public ToolItem TITANIUM_SWORD;
+
+    ///GENERATE END:TOOL
 
     public final Float BASE_SHOVEL_ATTACK_DAMAGE = 0F;
     public final Integer BASE_PICKAXE_ATTACK_DAMAGE = 0;
