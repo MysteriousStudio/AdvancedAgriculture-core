@@ -4,3 +4,6 @@
 [submodule "src/main/resources/assets/adv_agri_core/textures"]
 	path = src/main/resources/assets/adv_agri_core/textures
 	url = https://github.com/MysteriousStudio/AdvancedAgriculture-core-textures.git
+[submodule "src/main/resources/data/adv_agri_core"]
+	path = src/main/resources/data/adv_agri_core
+	url = https://github.com/MysteriousStudio/AdvancedAgriculture-core-data.git
