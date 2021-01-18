@@ -44,6 +44,8 @@ _[Wiki](https://github.com/MysteriousStudio/AdvancedAgriculture-core/wiki)_ 正�
 由于高级农业-核心采用分体开发策略，所以我们使用了子仓库。目前处于子仓库态的有以下内容
 
 - [Lang 文件](https://github.com/MysteriousStudio/AdvancedAgriculture-core-lang)
+- [合成表，战利品列表](https://github.com/MysteriousStudio/AdvancedAgriculture-core-data)
+- [材质](https://github.com/MysteriousStudio/AdvancedAgriculture-core-textures)
 
 因此，需要在克隆后刷新子模块才可以完整的构建高级农业-核心。
 
