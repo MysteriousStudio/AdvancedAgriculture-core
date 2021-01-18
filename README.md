@@ -1,10 +1,13 @@
+
 <h1 align="center"> 高级农业-核心 | Advanced_Agriculture-core </h1> 
 
 ![Logo](others/AdvAgri.png)
 
 <h2 align="center"> 一个旨在拓展 Minecraft 原版与农业相关的体验的模组 </h2>
 
-<h3 align="center">构建状态以及项目状态</br> ![CircleCI](https://circleci.com/gh/MysteriousStudio/AdvancedAgriculture-core.svg?style=svg) | ![License](https://img.shields.io/badge/License-GPLv3-brightgreen) | ![Language](https://img.shields.io/badge/Language-Java-blue) </h3>
+<h3 align="center">构建状态以及项目信息</br> </h3>
+
+<div align="center"> <img src="https://circleci.com/gh/MysteriousStudio/AdvancedAgriculture-core.svg?style=svg" alt="Circle CI"/> <img src="https://action-badges.now.sh/MysteriousStudio/AdvancedAgriculture-core"> <img src="https://img.shields.io/badge/License-GPLv3-brightgreen" alt="License"> <img src="https://img.shields.io/badge/Language-Java-blue" alt="Language"> </div>
 
 ### 特别感谢
 
