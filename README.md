@@ -10,7 +10,8 @@
 
 ### 特别感谢
 
-- Fabric
+- Fabric Team
+- All the contributors no matter translator or programmer or painter and so on
 - All the developer and who love this mod
 
 ### 注意!
@@ -38,6 +39,8 @@ _[Wiki](https://github.com/MysteriousStudio/AdvancedAgriculture-core/wiki)_ 正�
 
 ## 如何构建
 
+### 手动构建
+
 由于高级农业-核心采用分体开发策略，所以我们使用了子仓库。目前处于子仓库态的有以下内容
 
 - [Lang 文件](https://github.com/MysteriousStudio/AdvancedAgriculture-core-lang)
@@ -55,6 +58,23 @@ gradlew build
 ```
 
 在工作完成后，最终的构建结果会出现在`./build/libs/`中。
+
+### 自动构建
+
+我们启动了 `Github Action`，`Circle CI` 两种 CI 来为我们的项目执行构建。每当主仓库有更新后他们都会自动执行一次。您可以通过 StatusCheck 来进入我们的 CI，在 CI 结束工作后都会提交最终构建结果，您可以下载他们来运行。
+
+## 作出贡献
+
+您可以通过以下的方法为模组进行贡献：
+
+- 为模组主仓库提 PR
+- 为模组子仓库提 PR
+- 为模组编写 Wiki
+- 为模组进行一定程度的推广
+- 为模组的语言全球化进行贡献
+- 为模组所需求的模型，材质等进行设计
+- 为我们资助一些经费
+- 成为模组开发者的一员
 
 ---
 
