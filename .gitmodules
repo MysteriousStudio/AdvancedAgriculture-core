@@ -1,3 +1,3 @@
-[submodule "AdvancedAgriculture-core-lang"]
-	path = AdvancedAgriculture-core-lang
+[submodule "src/main/resources/assets/adv_agri_core/lang"]
+	path = src/main/resources/assets/adv_agri_core/lang/
 	url = https://github.com/MysteriousStudio/AdvancedAgriculture-core-lang
