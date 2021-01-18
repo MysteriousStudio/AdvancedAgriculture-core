@@ -13,6 +13,6 @@ public class AdvAgriEvents {
     }
 
     public void InitAllEvents() {
-        GrassBreakEvent.getInstance().Init();
+        GrassBrokenEvent.getInstance().Init();
     }
 }

@@ -99,6 +99,13 @@ public class AdvAgriToolsAndWeapons {
     }
 
     public void InitAllToolAndWeapons() {
+
+        //Todo: 1/18/21 12:52 PM
+        // User: suibing
+        // Aims: Redesign all arguments of all tools and weapons
+        // Desc: Almost all of them are using the default arguments
+        // Stat: False
+
         COPPER_SHOVEL = new AdvAgriShovelItem(CopperMaterial.INSTANCE, BASE_SHOVEL_ATTACK_DAMAGE, BASE_SHOVEL_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
         COPPER_PICKAXE = new AdvAgriPickaxeItem(CopperMaterial.INSTANCE, BASE_PICKAXE_ATTACK_DAMAGE, BASE_PICKAXE_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
         COPPER_AXE = new AdvAgriAxeItem(CopperMaterial.INSTANCE, BASE_AXE_ATTACK_DAMAGE, BASE_AXE_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));

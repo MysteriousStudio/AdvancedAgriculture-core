@@ -81,7 +81,7 @@ public class AdvAgriToolMaterials implements ToolMaterial {
         AdvAgriToolMaterials.INSTANCE = INSTANCE;
     }
 
-    public  AdvAgriToolMaterials getINSTANCE() {
+    public AdvAgriToolMaterials getINSTANCE() {
         return INSTANCE;
     }
 }

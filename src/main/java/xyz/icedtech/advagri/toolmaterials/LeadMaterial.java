@@ -4,7 +4,7 @@ import xyz.icedtech.advagri.item.AdvAgriItems;
 
 public class LeadMaterial extends AdvAgriToolMaterials {
 
-    public static final LeadMaterial INSTANCE=new LeadMaterial();
+    public static final LeadMaterial INSTANCE = new LeadMaterial();
 
     public LeadMaterial() {
         super.setDurability(100);

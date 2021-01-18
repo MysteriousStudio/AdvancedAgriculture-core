@@ -1,6 +1,5 @@
 package xyz.icedtech.advagri.item;
 
-import com.ibm.icu.util.CodePointTrie;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -17,7 +16,7 @@ public class AdvAgriArmorItems {
     public static AdvAgriArmorItems thisAdvAgriArmorItems = new AdvAgriArmorItems();
 
     public static String modata = ModAta.ModID;
-    public  ArmorMaterial BAMBOO = new LeatherBambooMixedArmor();
+    public ArmorMaterial BAMBOO = new LeatherBambooMixedArmor();
     public ArmorMaterial LEATHER_BAMBOO_MIXED = new LeatherBambooMixedArmor();
 
     ///GENERATE START:ARMOR

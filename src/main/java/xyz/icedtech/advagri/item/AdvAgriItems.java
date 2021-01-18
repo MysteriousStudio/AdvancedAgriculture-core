@@ -258,7 +258,7 @@ public class AdvAgriItems {
 
         //Machine-making
         this.COPPER_CONDUCTOR_CORE = this.AddItemTool();
-        this.SILVER_CONDUCTOR_CORE= this.AddItemTool();
+        this.SILVER_CONDUCTOR_CORE = this.AddItemTool();
         this.TITANIUM_CONDUCTOR_CORE = this.AddItemTool();
         this.PASSIVE_POWER_MODULE = this.AddItemTool();
         this.POWER_MODULE = this.AddItemTool();
@@ -312,8 +312,8 @@ public class AdvAgriItems {
         this.RegistrationTool(this.NICKEL_POWDER, "nickel_powder");
         this.RegistrationTool(this.TUNGSTEN_POWDER, "tungsten_powder");
         this.RegistrationTool(this.TITANIUM_POWDER, "titanium_powder");
-        this.RegistrationTool(this.IRON_POWDER ,"iron_powder");
-        this.RegistrationTool(this.GOLD_POWDER ,"gold_powder");
+        this.RegistrationTool(this.IRON_POWDER, "iron_powder");
+        this.RegistrationTool(this.GOLD_POWDER, "gold_powder");
 
         //Gear
         this.RegistrationTool(this.COPPER_GEAR, "copper_gear");
@@ -328,7 +328,7 @@ public class AdvAgriItems {
         this.RegistrationTool(this.TUNGSTEN_GEAR, "tungsten_gear");
         this.RegistrationTool(this.TITANIUM_GEAR, "titanium_gear");
         this.RegistrationTool(this.IRON_GEAR, "iron_gear");
-        this.RegistrationTool(this.GOLD_GEAR ,"gold_gear");
+        this.RegistrationTool(this.GOLD_GEAR, "gold_gear");
 
         //Plate
         this.RegistrationTool(this.COPPER_PLATE, "copper_plate");
@@ -343,7 +343,7 @@ public class AdvAgriItems {
         this.RegistrationTool(this.TUNGSTEN_PLATE, "tungsten_plate");
         this.RegistrationTool(this.TITANIUM_PLATE, "titanium_plate");
         this.RegistrationTool(this.IRON_PLATE, "iron_plate");
-        this.RegistrationTool(this.GOLD_PLATE ,"gold_plate");
+        this.RegistrationTool(this.GOLD_PLATE, "gold_plate");
 
 
         //Shard
@@ -357,8 +357,8 @@ public class AdvAgriItems {
         this.RegistrationTool(this.NICKEL_SHARD, "nickel_shard");
         this.RegistrationTool(this.TUNGSTEN_SHARD, "tungsten_shard");
         this.RegistrationTool(this.TITANIUM_SHARD, "titanium_shard");
-        this.RegistrationTool(this.IRON_SHARD ,"iron_shard");
-        this.RegistrationTool(this.GOLD_SHARD ,"gold_shard");
+        this.RegistrationTool(this.IRON_SHARD, "iron_shard");
+        this.RegistrationTool(this.GOLD_SHARD, "gold_shard");
 
         //Metal Disslover
         this.RegistrationTool(this.COPPER_DISSOLVER, "copper_dissolver");
@@ -370,8 +370,8 @@ public class AdvAgriItems {
         this.RegistrationTool(this.NICKEL_DISSOLVER, "nickel_dissolver");
         this.RegistrationTool(this.TUNGSTEN_DISSOLVER, "tungsten_dissolver");
         this.RegistrationTool(this.TITANIUM_DISSOLVER, "titanium_dissolver");
-        this.RegistrationTool(this.IRON_DISSOLVER ,"iron_dissolver");
-        this.RegistrationTool(this.GOLD_DISSOLVER ,"gold_dissolver");
+        this.RegistrationTool(this.IRON_DISSOLVER, "iron_dissolver");
+        this.RegistrationTool(this.GOLD_DISSOLVER, "gold_dissolver");
 
         this.RegistrationTool(this.FIRECRACKERS, "firecrackers");
 

@@ -36,7 +36,8 @@ public class AdvancedAgriculture implements ModInitializer {
 
         advAgriEvents.InitAllEvents();
 
-        //entitiesRenderers.InitAllEntitiesRenderers();
-        //entities.InitAllEntity();
+        advAgriItemEntities.InitAllEntity();
+        entitiesRenderers.InitAllEntitiesRenderers();
+
     }
 }

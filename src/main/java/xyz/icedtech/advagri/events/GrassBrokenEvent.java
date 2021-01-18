@@ -7,15 +7,15 @@ import net.minecraft.entity.ItemEntity;
 import java.util.Random;
 
 
-public class GrassBreakEvent implements EventInterface {
-    private static GrassBreakEvent grassBreakEvent = new GrassBreakEvent();
+public class GrassBrokenEvent implements EventInterface {
+    private static GrassBrokenEvent grassBrokenEvent = new GrassBrokenEvent();
 
-    private GrassBreakEvent() {
+    private GrassBrokenEvent() {
 
     }
 
-    public static GrassBreakEvent getInstance() {
-        return grassBreakEvent;
+    public static GrassBrokenEvent getInstance() {
+        return grassBrokenEvent;
     }
 
     @Override

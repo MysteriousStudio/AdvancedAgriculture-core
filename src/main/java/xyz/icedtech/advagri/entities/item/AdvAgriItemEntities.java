@@ -21,6 +21,7 @@ public class AdvAgriItemEntities {
                 new Identifier(ModAta.ModEntityNamespace, "firecracker_entity"),
                 FabricEntityTypeBuilder.create(SpawnGroup.MISC, FirecrackerEntity::new).build()
         );
+
     }
 
 
