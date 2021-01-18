@@ -1,5 +1,4 @@
-
-<h1 align="center"> 高级农业-核心 | Advanced_Agriculture-core </h1> 
+<h1 align="center"> 高级农业-核心 | Advanced_Agriculture-core </h1>
 
 ![Logo](others/AdvAgri.png)
 
@@ -18,13 +17,46 @@
 
 _[Wiki](https://github.com/MysteriousStudio/AdvancedAgriculture-core/wiki)_ 正在施工中.
 
-[Commit消息规范](./markdowns/Commit.md)
+[Commit 消息规范](./markdowns/Commit.md)
 
-项目中的实现逻辑以及发展逻辑大多数可以从wiki中获知.
+项目中的实现逻辑以及发展逻辑大多数可以从 wiki 中获知.
+
+---
+
+## 当前状态
+
+截至 2021 年 1 月 18 日，本项目仍然处于开发状态，没有产生任何可以用于游玩的版本。但是相信在团队人员辛勤的工作下有望在 2021 年 8 月前发布可用于游玩的版本
 
 ## 开发进度
 
-可以通过查看 _[项目看板](https://github.com/MysteriousStudio/AdvancedAgriculture-core/projects/1)_ 来查看进度
+- [x] Dev
+- [ ] Alpha
+- [ ] Beta
+- [ ] 正式版
+
+可以通过查看 _[项目看板](https://github.com/MysteriousStudio/AdvancedAgriculture-core/projects/1)_ 来查看具体的开发进度与我们的工作
+
+## 如何构建
+
+由于高级农业-核心采用分体开发策略，所以我们使用了子仓库。目前处于子仓库态的有以下内容
+
+- [Lang 文件](https://github.com/MysteriousStudio/AdvancedAgriculture-core-lang)
+
+因此，需要在克隆后刷新子模块才可以完整的构建高级农业-核心。
+
+```
+git submodule update --init --recursive
+```
+
+在这之后，就可以使用 Gradle 进行构建了
+
+```shell
+gradlew build
+```
+
+在工作完成后，最终的构建结果会出现在`./build/libs/`中。
+
+---
 
 ## 资助我们，让我们有外在动力持续开发
 
