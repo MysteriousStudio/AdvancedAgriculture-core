@@ -26,10 +26,10 @@ public class GrassBrokenEvent implements EventInterface {
         // Aims: For getting bamboo from grass, only can take the bamboo from BREAKING grass by hand. Not any plan to add some way to get bamboo by using water to get the bamboo.
         // Desc: The new way to get bamboo.
         // Stat: True
-        
+
         PlayerBlockBreakEvents.AFTER.register((world, player, pos, state, entity) -> {
+            //ADD ANY EVENTS ABOUT BREAKING GRASS
             if (state.getBlock() == Blocks.GRASS || state.getBlock() == Blocks.TALL_GRASS) {
-                //ADD ANY EVENTS ABOUT BREAKING GRASS
                 if (new Random().nextInt(50) == 0) {
                     new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ()).dropItem(Blocks.BAMBOO);
                 }
