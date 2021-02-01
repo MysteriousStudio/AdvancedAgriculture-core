@@ -80,8 +80,8 @@ public class AdvAgriBlocks {
     public Block GOLD_CABLE;
     //OtherOre
     public Block PHOS_ORE = this.AddStoneTypeBlockTool();
-    public Block SULPHUR_ORE = this.AddStoneTypeBlockTool();
-    public Block NETHER_SULPHUR_ORE = this.AddStoneTypeBlockTool();
+    public SulphurOre SULPHUR_ORE = new SulphurOre(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(3.0F));
+    public NetherSulphurOre NETHER_SULPHUR_ORE = new NetherSulphurOre(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(3.0F));
 
     public Block BAMBOO_BLOCK;
 

@@ -2,9 +2,8 @@ package xyz.icedtech.advagri;
 
 import net.fabricmc.api.ModInitializer;
 import xyz.icedtech.advagri.block.AdvAgriBlocks;
-import xyz.icedtech.advagri.enchantments.AdvAgriEnchantments;
-import xyz.icedtech.advagri.entities.item.AdvAgriItemEntities;
 import xyz.icedtech.advagri.entities.item.AdvAgriEntitiesRenderers;
+import xyz.icedtech.advagri.entities.item.AdvAgriItemEntities;
 import xyz.icedtech.advagri.events.AdvAgriEvents;
 import xyz.icedtech.advagri.item.AdvAgriArmorItems;
 import xyz.icedtech.advagri.item.AdvAgriItems;
