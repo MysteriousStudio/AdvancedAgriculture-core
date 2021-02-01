@@ -29,7 +29,7 @@ public class GrassBrokenEvent implements EventInterface {
 
         PlayerBlockBreakEvents.AFTER.register((world, player, pos, state, entity) -> {
             //ADD ANY EVENTS ABOUT BREAKING GRASS
-            if (state.getBlock() == Blocks.GRASS || state.getBlock() == Blocks.TALL_GRASS) {
+            if (state.getBlock() == Blocks.GRASS || state.getBlock() == Blocks.TALL_GRASS || state.getBlock() == Blocks.FERN || state.getBlock() == Blocks.LARGE_FERN || state.getBlock() == Blocks.POTTED_FERN) {
                 if (new Random().nextInt(50) == 0) {
                     new ItemEntity(world, pos.getX(), pos.getY(), pos.getZ()).dropItem(Blocks.BAMBOO);
                 }
