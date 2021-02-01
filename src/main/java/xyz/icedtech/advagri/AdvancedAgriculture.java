@@ -2,8 +2,9 @@ package xyz.icedtech.advagri;
 
 import net.fabricmc.api.ModInitializer;
 import xyz.icedtech.advagri.block.AdvAgriBlocks;
+import xyz.icedtech.advagri.enchantments.AdvAgriEnchantments;
 import xyz.icedtech.advagri.entities.item.AdvAgriItemEntities;
-import xyz.icedtech.advagri.entities.item.EntitiesRenderers;
+import xyz.icedtech.advagri.entities.item.AdvAgriEntitiesRenderers;
 import xyz.icedtech.advagri.events.AdvAgriEvents;
 import xyz.icedtech.advagri.item.AdvAgriArmorItems;
 import xyz.icedtech.advagri.item.AdvAgriItems;
@@ -17,8 +18,10 @@ public class AdvancedAgriculture implements ModInitializer {
         AdvAgriArmorItems advAgriArmorItems = AdvAgriArmorItems.getInstance();
         AdvAgriToolsAndWeapons advAgriToolsAndWeapons = AdvAgriToolsAndWeapons.getInstance();
 
-        EntitiesRenderers entitiesRenderers = EntitiesRenderers.getInstance();
+        AdvAgriEntitiesRenderers advAgriEntitiesRenderers = AdvAgriEntitiesRenderers.getInstance();
         AdvAgriItemEntities advAgriItemEntities = AdvAgriItemEntities.getInstance();
+
+//        AdvAgriEnchantments advAgriEnchantments = AdvAgriEnchantments.getINSTANCE();
 
         AdvAgriEvents advAgriEvents = AdvAgriEvents.getInstance();
 
@@ -37,7 +40,8 @@ public class AdvancedAgriculture implements ModInitializer {
         advAgriEvents.InitAllEvents();
 
         advAgriItemEntities.InitAllEntity();
-        entitiesRenderers.InitAllEntitiesRenderers();
+        advAgriEntitiesRenderers.InitAllEntitiesRenderers();
 
+//        advAgriEnchantments.InitAllEnchantment();
     }
 }
