@@ -2,10 +2,10 @@ package xyz.icedtech.advagri.entities.item;
 
 import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
 
-public class EntitiesRenderers {
-    private static EntitiesRenderers entitiesRenderers = new EntitiesRenderers();
+public class AdvAgriEntitiesRenderers {
+    private static AdvAgriEntitiesRenderers advAgriEntitiesRenderers = new AdvAgriEntitiesRenderers();
 
-    private EntitiesRenderers() {
+    private AdvAgriEntitiesRenderers() {
 
     }
 
@@ -15,7 +15,7 @@ public class EntitiesRenderers {
         });
     }
 
-    public static EntitiesRenderers getInstance() {
-        return entitiesRenderers;
+    public static AdvAgriEntitiesRenderers getInstance() {
+        return advAgriEntitiesRenderers;
     }
 }
