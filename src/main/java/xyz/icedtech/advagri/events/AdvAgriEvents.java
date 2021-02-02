@@ -2,7 +2,7 @@ package xyz.icedtech.advagri.events;
 
 public class AdvAgriEvents {
 
-    private static AdvAgriEvents advAgriEvents = new AdvAgriEvents();
+    private static final AdvAgriEvents advAgriEvents = new AdvAgriEvents();
 
     private AdvAgriEvents() {
 

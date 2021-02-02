@@ -38,7 +38,8 @@ public class Firecracker extends Item {
                     playerEntity.getZ(),
                     0.1F,
                     false,
-                    Explosion.DestructionType.BREAK);
+                    Explosion.DestructionType.BREAK
+            );
 
         }
 

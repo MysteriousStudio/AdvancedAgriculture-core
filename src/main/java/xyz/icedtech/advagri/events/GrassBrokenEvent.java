@@ -8,7 +8,7 @@ import java.util.Random;
 
 
 public class GrassBrokenEvent implements EventInterface {
-    private static GrassBrokenEvent grassBrokenEvent = new GrassBrokenEvent();
+    private static final GrassBrokenEvent grassBrokenEvent = new GrassBrokenEvent();
 
     private GrassBrokenEvent() {
 
@@ -21,7 +21,7 @@ public class GrassBrokenEvent implements EventInterface {
     @Override
     public void Init() {
 
-        //Todo: 1/18/21 1:01 PM 
+        //Todo: 1/18/21 1:01 PM
         // User: suibing
         // Aims: For getting bamboo from grass, only can take the bamboo from BREAKING grass by hand. Not any plan to add some way to get bamboo by using water to get the bamboo.
         // Desc: The new way to get bamboo.

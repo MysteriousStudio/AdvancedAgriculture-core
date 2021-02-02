@@ -25,13 +25,12 @@ public class SulphurOre extends Block {
     public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
 
         super.onBreak(world, pos, state, player);
-        Integer rad = new Random().nextInt(100);
+        int rad = new Random().nextInt(100);
 
         if (!player.isCreative()) {
             if (rad <= max) {
                 world.createExplosion(player, pos.getX(), pos.getY(), pos.getZ(), 2F, Explosion.DestructionType.BREAK);
             }
         }
-
     }
 }
