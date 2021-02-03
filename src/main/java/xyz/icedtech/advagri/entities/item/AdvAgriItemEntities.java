@@ -14,7 +14,7 @@ public class AdvAgriItemEntities {
     public EntityType FIRECRACKER_ENTITY;
 
 
-    public void InitAllEntity() {
+    public void InitAllItemEntity() {
 
         FIRECRACKER_ENTITY = Registry.register(
                 Registry.ENTITY_TYPE,
