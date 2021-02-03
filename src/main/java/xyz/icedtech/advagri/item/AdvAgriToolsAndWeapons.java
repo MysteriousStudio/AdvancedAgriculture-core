@@ -60,6 +60,7 @@ public class AdvAgriToolsAndWeapons {
     public ToolItem STEEL_AXE;
     public ToolItem STEEL_HOE;
     public ToolItem STEEL_SWORD;
+    public ToolItem STEEL_PAXEL;
 
     public ToolItem NICKEL_SHOVEL;
     public ToolItem NICKEL_PICKAXE;
@@ -87,12 +88,14 @@ public class AdvAgriToolsAndWeapons {
     public final Float BASE_AXE_ATTACK_DAMAGE = 0F;
     public final Integer BASE_HOE_ATTACK_DAMAGE = 0;
     public final Integer BASE_SWORD_ATTACK_DAMAGE = 0;
+    public final Integer BASE_PAXEL_ATTACK_DAMAGE = 0;
 
     public final Float BASE_SHOVEL_ATTACK_SPEED = 0F;
     public final Float BASE_PICKAXE_ATTACK_SPEED = 0F;
     public final Float BASE_AXE_ATTACK_SPEED = 0F;
     public final Float BASE_HOE_ATTACK_SPEED = 0F;
     public final Float BASE_SWORD_ATTACK_SPEED = 0F;
+    public final Float BASE_PAXEL_ATTACK_SPEED = 0F;
 
     private AdvAgriToolsAndWeapons() {
 
@@ -172,6 +175,7 @@ public class AdvAgriToolsAndWeapons {
         TITANIUM_HOE = new AdvAgriHoeItem(TitaniumMaterial.INSTANCE, BASE_HOE_ATTACK_DAMAGE, BASE_HOE_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
         TITANIUM_SWORD = new AdvAgriSwordItem(TitaniumMaterial.INSTANCE, BASE_SWORD_ATTACK_DAMAGE, BASE_SWORD_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
 
+        STEEL_PAXEL = new AdvAgriPaxelItem(SteelMaterial.INSTANCE, BASE_PAXEL_ATTACK_DAMAGE, BASE_PAXEL_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
     }
 
     public void RegisteredAllToolAndWeapons() {
@@ -240,6 +244,8 @@ public class AdvAgriToolsAndWeapons {
         RegistrationTool(TITANIUM_AXE, "titanium_axe");
         RegistrationTool(TITANIUM_HOE, "titanium_hoe");
         RegistrationTool(TITANIUM_SWORD, "titanium_sword");
+
+        RegistrationTool(STEEL_PAXEL, "paxel");
     }
 
     private void RegistrationTool(Item ITEM, String PATH) {
