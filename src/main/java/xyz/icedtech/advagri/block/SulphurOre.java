@@ -3,9 +3,11 @@ package xyz.icedtech.advagri.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
+import xyz.icedtech.advagri.item.AdvAgriToolsAndWeapons;
 
 import java.util.Random;
 
@@ -29,7 +31,9 @@ public class SulphurOre extends Block {
 
         if (!player.isCreative()) {
             if (rad <= max) {
-                world.createExplosion(player, pos.getX(), pos.getY(), pos.getZ(), 2F, Explosion.DestructionType.BREAK);
+                if (!player.getMainHandStack().isItemEqual(new ItemStack(AdvAgriToolsAndWeapons.getInstance().BAMBOO_DRILL_ROD))) {
+                    world.createExplosion(player, pos.getX(), pos.getY(), pos.getZ(), 2F, Explosion.DestructionType.BREAK);
+                }
             }
         }
     }

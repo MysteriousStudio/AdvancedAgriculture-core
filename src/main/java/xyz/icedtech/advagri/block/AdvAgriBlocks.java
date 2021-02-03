@@ -80,10 +80,10 @@ public class AdvAgriBlocks {
     public Block GOLD_CABLE;
     //OtherOre
     public Block PHOS_ORE = this.AddStoneTypeBlockTool();
-    public SulphurOre SULPHUR_ORE = new SulphurOre(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(3.0F));
-    public NetherSulphurOre NETHER_SULPHUR_ORE = new NetherSulphurOre(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(3.0F));
+    public SulphurOre SULPHUR_ORE = new SulphurOre(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(1.0F));
+    public NetherSulphurOre NETHER_SULPHUR_ORE = new NetherSulphurOre(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(1.0F));
 
-    public Block BAMBOO_BLOCK;
+    public BambooBlock BAMBOO_BLOCK;
 
     public Block QUARRY = this.AddStoneTypeBlockTool(DIRT_TYPE_HARDNESS);
 
@@ -177,7 +177,7 @@ public class AdvAgriBlocks {
         this.AllInOneStep(GOLD_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "gold_cable");
 
 
-        this.AllInOneStep(BAMBOO_BLOCK = this.AddStoneTypeBlockTool(BAMBOO_HARDNESS), "bamboo_block");
+        this.AllInOneStep(BAMBOO_BLOCK = new BambooBlock(FabricBlockSettings.of(Material.BAMBOO).hardness(BAMBOO_HARDNESS)), "bamboo_block");
 
         this.AllInOneStep(QUARRY, "quarry");
 

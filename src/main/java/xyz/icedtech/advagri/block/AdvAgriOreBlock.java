@@ -42,7 +42,7 @@ public class AdvAgriOreBlock extends OreBlock {
     // Aims: When break SulphurOre,WeatheredOre, there should be some ExperienceBall spawned.
     // Desc: Like Minecraft's CalOre,DiamondOre and so on.
     // Stat: False
-    
+
     @Override
     protected int getExperienceWhenMined(Random random) {
         return super.getExperienceWhenMined(random);
