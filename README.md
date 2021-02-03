@@ -18,7 +18,7 @@
 
 _[Wiki](https://github.com/MysteriousStudio/AdvancedAgriculture-core/wiki)_ 正在施工中.
 
-[Commit 消息规范](./markdowns/Commit.md)
+[Commit 规范](./markdowns/CommitStandardCN.md)
 
 项目中的实现逻辑以及发展逻辑大多数可以从 wiki 中获知.
 
