@@ -5,9 +5,6 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.Tickable;
 
-
-import java.util.Random;
-
 public class BambooBlockEntity extends BlockEntity implements Tickable {
     public BambooBlockEntity() {
         super(AdvAgriBlockEntities.BAMBOO_BLOCK_ENTITY);

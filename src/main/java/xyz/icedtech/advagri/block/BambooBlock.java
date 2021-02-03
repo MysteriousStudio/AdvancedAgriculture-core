@@ -4,7 +4,6 @@ package xyz.icedtech.advagri.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.util.Tickable;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 import xyz.icedtech.advagri.entities.block.BambooBlockEntity;

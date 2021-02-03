@@ -3,9 +3,6 @@ package xyz.icedtech.advagri.events;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.ItemEntity;
-import xyz.icedtech.advagri.block.AdvAgriBlocks;
-import xyz.icedtech.advagri.block.BambooBlock;
-import xyz.icedtech.advagri.entities.block.BambooBlockEntity;
 import xyz.icedtech.advagri.item.AdvAgriItems;
 
 import java.util.Random;
