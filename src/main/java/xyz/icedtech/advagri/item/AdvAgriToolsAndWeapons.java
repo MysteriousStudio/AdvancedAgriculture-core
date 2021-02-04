@@ -60,7 +60,6 @@ public class AdvAgriToolsAndWeapons {
     public ToolItem STEEL_AXE;
     public ToolItem STEEL_HOE;
     public ToolItem STEEL_SWORD;
-    public ToolItem STEEL_PAXEL;
 
     public ToolItem NICKEL_SHOVEL;
     public ToolItem NICKEL_PICKAXE;
@@ -91,7 +90,6 @@ public class AdvAgriToolsAndWeapons {
     public final Float BASE_AXE_ATTACK_DAMAGE = 4F;
     public final Integer BASE_HOE_ATTACK_DAMAGE = -2;
     public final Integer BASE_SWORD_ATTACK_DAMAGE = 3;
-    public final Integer BASE_PAXEL_ATTACK_DAMAGE = 0;
 
     public final Float BASE_SHOVEL_ATTACK_SPEED = -3F;
     public final Float BASE_PICKAXE_ATTACK_SPEED = -2.8F;
@@ -230,7 +228,6 @@ public class AdvAgriToolsAndWeapons {
         RegistrationTool(STEEL_AXE, "steel_axe");
         RegistrationTool(STEEL_HOE, "steel_hoe");
         RegistrationTool(STEEL_SWORD, "steel_sword");
-        RegistrationTool(STEEL_PAXEL, "paxel");
 
         RegistrationTool(NICKEL_SHOVEL, "nickel_shovel");
         RegistrationTool(NICKEL_PICKAXE, "nickel_pickaxe");

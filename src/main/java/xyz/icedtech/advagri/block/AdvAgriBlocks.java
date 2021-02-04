@@ -3,6 +3,7 @@ package xyz.icedtech.advagri.block;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -40,16 +41,16 @@ public class AdvAgriBlocks {
     ///GENERATE START:BLOCK
 
     //MetalOre
-    public Block COPPER_ORE = this.AddStoneTypeBlockTool(1);
-    public Block ZINC_ORE = this.AddStoneTypeBlockTool(1);
-    public Block TIN_ORE = this.AddStoneTypeBlockTool(1);
-    public Block ALUMINIUM_ORE = this.AddStoneTypeBlockTool(2);
-    public Block LEAD_ORE = this.AddStoneTypeBlockTool(2);
-    public Block SILVER_ORE = this.AddStoneTypeBlockTool(2);
-    public Block HIGH_CARBON_IRON_ORE = this.AddStoneTypeBlockTool(2);
-    public Block NICKEL_ORE = this.AddStoneTypeBlockTool(2);
-    public Block TUNGSTEN_ORE = this.AddStoneTypeBlockTool(3);
-    public Block TITANIUM_ORE = this.AddStoneTypeBlockTool(3);
+    public Block COPPER_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
+    public Block ZINC_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
+    public Block TIN_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
+    public Block ALUMINIUM_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
+    public Block LEAD_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
+    public Block SILVER_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
+    public Block HIGH_CARBON_IRON_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
+    public Block NICKEL_ORE = this.CopyBlockSettings(Blocks.DIAMOND_ORE);
+    public Block TUNGSTEN_ORE = this.CopyBlockSettings(Blocks.DIAMOND_ORE);
+    public Block TITANIUM_ORE = this.CopyBlockSettings(Blocks.DIAMOND_ORE);
     //WeatheredOre
     public Block WEATHERED_COPPER_ORE;
     public Block WEATHERED_ZINC_ORE;
@@ -79,9 +80,9 @@ public class AdvAgriBlocks {
     public Block SILVER_CABLE;
     public Block GOLD_CABLE;
     //OtherOre
-    public Block PHOS_ORE = this.AddStoneTypeBlockTool();
-    public SulphurOre SULPHUR_ORE = new SulphurOre(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(1.0F));
-    public NetherSulphurOre NETHER_SULPHUR_ORE = new NetherSulphurOre(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(1.0F));
+    public Block PHOS_ORE = this.CopyBlockSettings(Blocks.COAL_BLOCK);
+    public SulphurOre SULPHUR_ORE = new SulphurOre(FabricBlockSettings.copyOf(Blocks.COAL_ORE));
+    public NetherSulphurOre NETHER_SULPHUR_ORE = new NetherSulphurOre(FabricBlockSettings.copyOf(Blocks.COAL_ORE));
 
     public BambooBlock BAMBOO_BLOCK;
 
@@ -147,29 +148,29 @@ public class AdvAgriBlocks {
         this.AllInOneStepForOre(SULPHUR_ORE, "sulphur_ore");
         this.AllInOneStepForOre(NETHER_SULPHUR_ORE, "nether_sulphur_ore");
 
-        this.AllInOneStepForOre(WEATHERED_COPPER_ORE = this.AddStoneTypeBlockTool(), "weathered_copper_ore");
-        this.AllInOneStepForOre(WEATHERED_ZINC_ORE = this.AddStoneTypeBlockTool(), "weathered_zinc_ore");
-        this.AllInOneStepForOre(WEATHERED_TIN_ORE = this.AddStoneTypeBlockTool(), "weathered_tin_ore");
-        this.AllInOneStepForOre(WEATHERED_ALUMINIUM_ORE = this.AddStoneTypeBlockTool(), "weathered_aluminium_ore");
-        this.AllInOneStepForOre(WEATHERED_LEAD_ORE = this.AddStoneTypeBlockTool(), "weathered_lead_ore");
-        this.AllInOneStepForOre(WEATHERED_SILVER_ORE = this.AddStoneTypeBlockTool(), "weathered_silver_ore");
-        this.AllInOneStepForOre(WEATHERED_HIGH_CARBON_IRON_ORE = this.AddStoneTypeBlockTool(), "weathered_high_carbon_iron_ore");
-        this.AllInOneStepForOre(WEATHERED_NICKEL_ORE = this.AddStoneTypeBlockTool(), "weathered_nickel_ore");
-        this.AllInOneStepForOre(WEATHERED_TUNGSTEN_ORE = this.AddStoneTypeBlockTool(), "weathered_tungsten_ore");
-        this.AllInOneStepForOre(WEATHERED_TITANIUM_ORE = this.AddStoneTypeBlockTool(), "weathered_titanium_ore");
+        this.AllInOneStepForOre(WEATHERED_COPPER_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_copper_ore");
+        this.AllInOneStepForOre(WEATHERED_ZINC_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_zinc_ore");
+        this.AllInOneStepForOre(WEATHERED_TIN_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_tin_ore");
+        this.AllInOneStepForOre(WEATHERED_ALUMINIUM_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_aluminium_ore");
+        this.AllInOneStepForOre(WEATHERED_LEAD_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_lead_ore");
+        this.AllInOneStepForOre(WEATHERED_SILVER_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_silver_ore");
+        this.AllInOneStepForOre(WEATHERED_HIGH_CARBON_IRON_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_high_carbon_iron_ore");
+        this.AllInOneStepForOre(WEATHERED_NICKEL_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_nickel_ore");
+        this.AllInOneStepForOre(WEATHERED_TUNGSTEN_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_tungsten_ore");
+        this.AllInOneStepForOre(WEATHERED_TITANIUM_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_titanium_ore");
 
 
-        this.AllInOneStep(COPPER_BLOCK = this.AddStoneTypeBlockTool(), "copper_block");
-        this.AllInOneStep(ZINC_BLOCK = this.AddStoneTypeBlockTool(), "zinc_block");
-        this.AllInOneStep(TIN_BLOCK = this.AddStoneTypeBlockTool(), "tin_block");
-        this.AllInOneStep(BRONZE_BLOCK = this.AddStoneTypeBlockTool(), "bronze_block");
-        this.AllInOneStep(ALUMINIUM_BLOCK = this.AddStoneTypeBlockTool(), "aluminium_block");
-        this.AllInOneStep(LEAD_BLOCK = this.AddStoneTypeBlockTool(), "lead_block");
-        this.AllInOneStep(SILVER_BLOCK = this.AddStoneTypeBlockTool(), "silver_block");
-        this.AllInOneStep(STEEL_BLOCK = this.AddStoneTypeBlockTool(), "steel_block");
-        this.AllInOneStep(NICKEL_BLOCK = this.AddStoneTypeBlockTool(), "nickel_block");
-        this.AllInOneStep(TUNGSTEN_BLOCK = this.AddStoneTypeBlockTool(), "tungsten_block");
-        this.AllInOneStep(TITANIUM_BLOCK = this.AddStoneTypeBlockTool(), "titanium_block");
+        this.AllInOneStep(COPPER_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "copper_block");
+        this.AllInOneStep(ZINC_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "zinc_block");
+        this.AllInOneStep(TIN_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "tin_block");
+        this.AllInOneStep(BRONZE_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "bronze_block");
+        this.AllInOneStep(ALUMINIUM_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "aluminium_block");
+        this.AllInOneStep(LEAD_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "lead_block");
+        this.AllInOneStep(SILVER_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "silver_block");
+        this.AllInOneStep(STEEL_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "steel_block");
+        this.AllInOneStep(NICKEL_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "nickel_block");
+        this.AllInOneStep(TUNGSTEN_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "tungsten_block");
+        this.AllInOneStep(TITANIUM_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "titanium_block");
 
         this.AllInOneStep(COPPER_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "copper_cable");
         this.AllInOneStep(TIN_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "tin_cable");
@@ -218,6 +219,10 @@ public class AdvAgriBlocks {
 
     private Block AddStoneTypeBlockTool(Integer level) {
         return new AdvAgriOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, level).hardness(3.0F));
+    }
+
+    private AdvAgriOreBlock CopyBlockSettings(Block block) {
+        return new AdvAgriOreBlock(FabricBlockSettings.copyOf(block));
     }
 
     private void AllInOneStep(Block block, String path) {
