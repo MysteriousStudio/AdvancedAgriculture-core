@@ -18,7 +18,7 @@
 
 当您使用本模组时, 即代表您已阅读[用户须知](./markdowns/UserNotice.md)
 
-_[Wiki](https://github.com/MysteriousStudio/AdvancedAgriculture-core/wiki)_ 正在施工中.  
+_[Wiki](https://github.com/MysteriousStudio/AdvancedAgriculture-core/wiki)_ 正在施工中.
 
 [Commit 规范](./markdowns/CommitStandardCN.md)
 
@@ -38,6 +38,8 @@ _[Wiki](https://github.com/MysteriousStudio/AdvancedAgriculture-core/wiki)_ 正�
 - [ ] 正式版
 
 可以通过查看 _[项目看板](https://github.com/MysteriousStudio/AdvancedAgriculture-core/projects/1)_ 来查看具体的开发进度与我们的工作
+
+版本命名规则请移步 [](markdowns/VersionName.md)
 
 ## 如何构建
 
@@ -65,7 +67,8 @@ gradlew build
 
 ### 自动构建
 
-我们启动了 `Github Action`，`Circle CI` 两种 CI 来为我们的项目执行构建。每当主仓库有更新后他们都会自动执行一次。您可以通过 StatusCheck 来进入我们的 CI，在 CI 结束工作后都会提交最终构建结果，您可以下载他们来运行。
+我们启动了 `Github Action`，`Circle CI` 两种 CI 来为我们的项目执行构建。每当主仓库有更新后他们都会自动执行一次。您可以通过 StatusCheck 来进入我们的 CI，在 CI
+结束工作后都会提交最终构建结果，您可以下载他们来运行。
 
 ## 作出贡献
 
