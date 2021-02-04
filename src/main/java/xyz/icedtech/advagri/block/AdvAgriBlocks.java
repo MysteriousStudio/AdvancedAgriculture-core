@@ -86,7 +86,7 @@ public class AdvAgriBlocks {
 
     public BambooBlock BAMBOO_BLOCK;
 
-    public Block QUARRY = this.AddStoneTypeBlockTool(DIRT_TYPE_HARDNESS);
+    public Block QUARRY = this.CopyBlockSettings(Blocks.DIRT);
 
     ///GENERATE END:BLOCK
 

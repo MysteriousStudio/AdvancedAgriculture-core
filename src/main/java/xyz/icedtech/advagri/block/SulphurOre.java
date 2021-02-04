@@ -1,6 +1,5 @@
 package xyz.icedtech.advagri.block;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -11,7 +10,7 @@ import xyz.icedtech.advagri.item.AdvAgriToolsAndWeapons;
 
 import java.util.Random;
 
-public class SulphurOre extends Block {
+public class SulphurOre extends AdvAgriOreBlock {
 
     public Integer max = 15;
 
