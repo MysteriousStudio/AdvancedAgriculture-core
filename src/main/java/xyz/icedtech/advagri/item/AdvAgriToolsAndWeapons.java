@@ -98,7 +98,7 @@ public class AdvAgriToolsAndWeapons {
     public final Float BASE_AXE_ATTACK_SPEED = -3.2F;
     public final Float BASE_HOE_ATTACK_SPEED = -3F;
     public final Float BASE_SWORD_ATTACK_SPEED = -2.4F;
-    public final Float BASE_PAXEL_ATTACK_SPEED = 0F;
+
 
     private AdvAgriToolsAndWeapons() {
 
@@ -159,7 +159,6 @@ public class AdvAgriToolsAndWeapons {
         STEEL_AXE = new AdvAgriAxeItem(SteelMaterial.INSTANCE, BASE_AXE_ATTACK_DAMAGE + 2F, BASE_AXE_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
         STEEL_HOE = new AdvAgriHoeItem(SteelMaterial.INSTANCE, BASE_HOE_ATTACK_DAMAGE, BASE_HOE_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
         STEEL_SWORD = new AdvAgriSwordItem(SteelMaterial.INSTANCE, BASE_SWORD_ATTACK_DAMAGE, BASE_SWORD_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
-        STEEL_PAXEL = new AdvAgriPaxelItem(SteelMaterial.INSTANCE, BASE_PAXEL_ATTACK_DAMAGE, BASE_PAXEL_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
 
         NICKEL_SHOVEL = new AdvAgriShovelItem(NickelMaterial.INSTANCE, BASE_SHOVEL_ATTACK_DAMAGE, BASE_SHOVEL_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
         NICKEL_PICKAXE = new AdvAgriPickaxeItem(NickelMaterial.INSTANCE, BASE_PICKAXE_ATTACK_DAMAGE, BASE_PICKAXE_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
