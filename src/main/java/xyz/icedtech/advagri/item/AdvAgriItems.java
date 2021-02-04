@@ -119,13 +119,18 @@ public class AdvAgriItems {
     //Firecracker
     public Firecracker FIRECRACKERS;
 
-    //Machine-making
+    //Conductor Core
     public Item COPPER_CONDUCTOR_CORE;
     public Item SILVER_CONDUCTOR_CORE;
     public Item TITANIUM_CONDUCTOR_CORE;
-    public Item PASSIVE_POWER_MODULE;
-    public Item POWER_MODULE;
-    public Item ADVANCED_POWER_MODULE;
+
+    //Power Module
+    //public Item PASSIVE_POWER_MODULE;
+    //public Item POWER_MODULE_L1;
+    //public Item POWER_MODULE_L2;
+    //public Item POWER_MODULE_L3;
+    //public Item POWER_MODULE_L4;
+    //public Item POWER_MODULE_L5;
 
     //Ore By-products
     public Item MINERAL_MUD;
@@ -133,7 +138,7 @@ public class AdvAgriItems {
 
     //Metal Forging
     public Item FORGING_HAMMER;
-    public Item ROLLING_TOOL;
+
 
     ///GENERATE END:ITEM
 
@@ -256,13 +261,18 @@ public class AdvAgriItems {
 
         this.FIRECRACKERS = new Firecracker(new FabricItemSettings().group(this.ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
 
-        //Machine-making
+        //Conductor Core
         this.COPPER_CONDUCTOR_CORE = this.AddItemTool();
         this.SILVER_CONDUCTOR_CORE = this.AddItemTool();
         this.TITANIUM_CONDUCTOR_CORE = this.AddItemTool();
-        this.PASSIVE_POWER_MODULE = this.AddItemTool();
-        this.POWER_MODULE = this.AddItemTool();
-        this.ADVANCED_POWER_MODULE = this.AddItemTool();
+
+        //Power Module
+        //this.PASSIVE_POWER_MODULE = this.AddItemTool();
+        //this.POWER_MODULE_L1 = this.AddItemTool();
+        //this.POWER_MODULE_L2 = this.AddItemTool();
+        //this.POWER_MODULE_L3 = this.AddItemTool();
+        //this.POWER_MODULE_L4 = this.AddItemTool();
+        //this.POWER_MODULE_L5 = this.AddItemTool();
 
         //Ore By-products
         this.MINERAL_MUD = this.AddItemTool();
@@ -270,7 +280,6 @@ public class AdvAgriItems {
 
         //Metal FORGING
         this.FORGING_HAMMER = this.AddItemTool();
-        this.ROLLING_TOOL = this.AddItemTool();
 
     }
 
@@ -379,9 +388,11 @@ public class AdvAgriItems {
         this.RegistrationTool(this.COPPER_CONDUCTOR_CORE, "copper_conductor_core");
         this.RegistrationTool(this.SILVER_CONDUCTOR_CORE, "silver_conductor_core");
         this.RegistrationTool(this.TITANIUM_CONDUCTOR_CORE, "titanium_conductor_core");
-        this.RegistrationTool(this.PASSIVE_POWER_MODULE, "passive_power_module");
-        this.RegistrationTool(this.POWER_MODULE, "power_module");
-        this.RegistrationTool(this.ADVANCED_POWER_MODULE, "advanced_power_module");
+        //this.RegistrationTool(this.PASSIVE_POWER_MODULE, "passive_power_module");
+        //this.RegistrationTool(this.POWER_MODULE_L1, "power_module_lv1");
+        //this.RegistrationTool(this.POWER_MODULE_L2, "power_module_lv2");
+        //this.RegistrationTool(this.POWER_MODULE_L3, "power_module_lv3");
+
 
         //Ore By-products
         this.RegistrationTool(this.CORASE_ORE_POWDER, "corase_ore_powder");
@@ -389,7 +400,7 @@ public class AdvAgriItems {
 
         //Metal Forging
         this.RegistrationTool(this.FORGING_HAMMER, "forging_hammer");
-        this.RegistrationTool(this.ROLLING_TOOL, "rolling_tool");
+
 
 
     }
