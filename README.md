@@ -16,7 +16,9 @@
 
 ### 注意!
 
-_[Wiki](https://github.com/MysteriousStudio/AdvancedAgriculture-core/wiki)_ 正在施工中.
+当您使用本模组时, 即代表您已阅读[用户须知](./markdowns/UserNotice.md)
+
+_[Wiki](https://github.com/MysteriousStudio/AdvancedAgriculture-core/wiki)_ 正在施工中.  
 
 [Commit 规范](./markdowns/CommitStandardCN.md)
 
