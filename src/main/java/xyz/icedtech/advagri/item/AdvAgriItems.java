@@ -8,6 +8,8 @@ import net.minecraft.util.registry.Registry;
 import xyz.icedtech.advagri.ModAta;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemCoreGroup;
 
+import java.util.ResourceBundle;
+
 public class AdvAgriItems {
     public static AdvAgriItems thisAdvAgriItems = new AdvAgriItems();
 
@@ -19,6 +21,9 @@ public class AdvAgriItems {
     public static Item TUNG_OIL;
     public static Item POTASSIUM_SALT_POWDER;
     public static Item PLANT_ASH;
+    public static Item LIQUID_SUN_BOTTOM_BIG;
+    public static Item LIQUID_SUN_BOTTOM_MEDIUM;
+    public static Item LIQUID_SUN_BOTTOM_SMALL;
     //Bamboo
     public static Item BAMBOO_LEAVES;
     public static Item BAMBOO_SILK;
@@ -173,6 +178,9 @@ public class AdvAgriItems {
         ZIRCON = AddItemTool();
         PHOS = AddItemTool();
         SULFUR = AddItemTool();
+        LIQUID_SUN_BOTTOM_BIG = AddItemTool();
+        LIQUID_SUN_BOTTOM_MEDIUM = AddItemTool();
+        LIQUID_SUN_BOTTOM_SMALL = AddItemTool();
 
         //Ingot
         COPPER_INGOT = AddItemTool();
@@ -295,6 +303,9 @@ public class AdvAgriItems {
         RegistrationTool(ZIRCON, "zircon");
         RegistrationTool(SULFUR, "sulfur");
         RegistrationTool(PHOS, "phos");
+        RegistrationTool(LIQUID_SUN_BOTTOM_BIG, "liquid_sun_bottom_big");
+        RegistrationTool(LIQUID_SUN_BOTTOM_MEDIUM, "liquid_sun_bottom_medium");
+        RegistrationTool(LIQUID_SUN_BOTTOM_SMALL, "liquid_sun_bottom_small");
 
         //Ingot
         RegistrationTool(COPPER_INGOT, "copper_ingot");
