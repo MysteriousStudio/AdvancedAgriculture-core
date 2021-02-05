@@ -74,12 +74,21 @@ public class ForgingHammer extends Item {
 
     public ItemStack dropPlate(Block block) {
         AdvAgriBlocks advAgriBlocks = AdvAgriBlocks.getInstance();
-        AdvAgriItems advAgriItems = AdvAgriItems.getInstance();
 
-        if (Objects.equals(advAgriBlocks.ALUMINIUM_BLOCK.toString(), block.toString())) {
-            return new ItemStack(advAgriItems.ALUMINIUM_PLATE, 9);
-        } else if (Objects.equals(advAgriBlocks.BRONZE_BLOCK.toString(), block.toString())) {
-            return new ItemStack(advAgriItems.BRONZE_PLATE, 9);
+        if (Objects.equals(advAgriBlocks.ALUMINIUM_BLOCK, block)) {
+            return new ItemStack(AdvAgriItems.ALUMINIUM_PLATE, 9);
+        } else if (Objects.equals(advAgriBlocks.BRONZE_BLOCK, block)) {
+            return new ItemStack(AdvAgriItems.BRONZE_PLATE, 9);
+        } else if (Objects.equals(advAgriBlocks.COPPER_BLOCK, block)) {
+            return new ItemStack(AdvAgriItems.COPPER_PLATE, 9);
+        } else if (Objects.equals(advAgriBlocks.LEAD_BLOCK, block)) {
+            return new ItemStack(AdvAgriItems.LEAD_PLATE, 9);
+        } else if (Objects.equals(advAgriBlocks.SILVER_BLOCK, block)) {
+            return new ItemStack(AdvAgriItems.SILVER_PLATE, 9);
+        } else if (Objects.equals(advAgriBlocks.NICKEL_BLOCK, block)) {
+            return new ItemStack(AdvAgriItems.NICKEL_PLATE, 9);
+        } else if (Objects.equals(advAgriBlocks.ZINC_BLOCK, block)) {
+            return new ItemStack(AdvAgriItems.ZINC_PLATE, 9);
         } else {
             throw new IllegalStateException("Unexpected value: " + block.toString());
         }
