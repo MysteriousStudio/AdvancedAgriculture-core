@@ -8,8 +8,6 @@ import net.minecraft.util.registry.Registry;
 import xyz.icedtech.advagri.ModAta;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemCoreGroup;
 
-import java.util.ResourceBundle;
-
 public class AdvAgriItems {
     public static AdvAgriItems thisAdvAgriItems = new AdvAgriItems();
 
@@ -21,9 +19,10 @@ public class AdvAgriItems {
     public static Item TUNG_OIL;
     public static Item POTASSIUM_SALT_POWDER;
     public static Item PLANT_ASH;
-    public static Item LIQUID_SUN_BOTTOM_BIG;
-    public static Item LIQUID_SUN_BOTTOM_MEDIUM;
-    public static Item LIQUID_SUN_BOTTOM_SMALL;
+    //Liquid Sun
+    public static Item LIQUID_SUN_BOTTLE_BIG;
+    public static Item LIQUID_SUN_BOTTLE_MIDDLE;
+    public static Item LIQUID_SUN_BOTTLE_SMALL;
     //Bamboo
     public static Item BAMBOO_LEAVES;
     public static Item BAMBOO_SILK;
@@ -144,6 +143,7 @@ public class AdvAgriItems {
     //Metal Forging
     public static Item FORGING_HAMMER;
 
+    public static Item BAMBOO_CHOPPER;
 
     ///GENERATE END:ITEM
 
@@ -178,9 +178,11 @@ public class AdvAgriItems {
         ZIRCON = AddItemTool();
         PHOS = AddItemTool();
         SULFUR = AddItemTool();
-        LIQUID_SUN_BOTTOM_BIG = AddItemTool();
-        LIQUID_SUN_BOTTOM_MEDIUM = AddItemTool();
-        LIQUID_SUN_BOTTOM_SMALL = AddItemTool();
+
+        LIQUID_SUN_BOTTLE_SMALL = AddItemTool();
+        LIQUID_SUN_BOTTLE_MIDDLE = AddItemTool();
+        LIQUID_SUN_BOTTLE_BIG = AddItemTool();
+
 
         //Ingot
         COPPER_INGOT = AddItemTool();
@@ -287,7 +289,9 @@ public class AdvAgriItems {
         CORASE_ORE_POWDER = AddItemTool();
 
         //Metal FORGING
-        FORGING_HAMMER = new ForgingHammer(new FabricItemSettings().group(ITEM_GROUP).maxCount(MAX_ITEM_COUNT).recipeRemainder(FORGING_HAMMER));
+        FORGING_HAMMER = new ForgingHammer(new FabricItemSettings().group(ITEM_GROUP).maxCount(1).recipeRemainder(FORGING_HAMMER));
+
+        BAMBOO_CHOPPER = new BambooChopper(new FabricItemSettings().group(ITEM_GROUP).maxCount(1));
 
     }
 
@@ -303,9 +307,11 @@ public class AdvAgriItems {
         RegistrationTool(ZIRCON, "zircon");
         RegistrationTool(SULFUR, "sulfur");
         RegistrationTool(PHOS, "phos");
-        RegistrationTool(LIQUID_SUN_BOTTOM_BIG, "liquid_sun_bottom_big");
-        RegistrationTool(LIQUID_SUN_BOTTOM_MEDIUM, "liquid_sun_bottom_medium");
-        RegistrationTool(LIQUID_SUN_BOTTOM_SMALL, "liquid_sun_bottom_small");
+
+        RegistrationTool(LIQUID_SUN_BOTTLE_SMALL, "liquid_sun_bottle_small");
+        RegistrationTool(LIQUID_SUN_BOTTLE_MIDDLE, "liquid_sun_bottle_middle");
+        RegistrationTool(LIQUID_SUN_BOTTLE_BIG, "liquid_sun_bottle_big");
+
 
         //Ingot
         RegistrationTool(COPPER_INGOT, "copper_ingot");
@@ -411,7 +417,7 @@ public class AdvAgriItems {
 
         //Metal Forging
         RegistrationTool(FORGING_HAMMER, "forging_hammer");
-
+        RegistrationTool(BAMBOO_CHOPPER, "bamboo_chopper");
 
     }
 

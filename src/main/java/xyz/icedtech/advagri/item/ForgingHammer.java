@@ -9,6 +9,7 @@ import net.minecraft.item.ItemUsageContext;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import xyz.icedtech.advagri.block.AdvAgriBlocks;
 
 import java.util.HashMap;
@@ -35,15 +36,18 @@ public class ForgingHammer extends Item {
         Block block = context.getWorld().getBlockState(context.getBlockPos()).getBlock();
         BlockPos blockPos = context.getBlockPos();
 
+        if (!isUnderBlockAnvil(blockPos, context.getWorld()) && matchMetalBlock(block)) {
+            return ActionResult.PASS;
+        }
 
         if (matchMetalBlock(block)) {
 
-            context.getPlayer().playSound(SoundEvents.BLOCK_ANVIL_LAND, 1F, 1F);
+            context.getPlayer().playSound(SoundEvents.BLOCK_ANVIL_LAND, 0.7F, 1F);
 
             if (!blockArrayList.containsKey(context.getBlockPos())) {//不存在但是是可敲打方块
                 blockArrayList.put(context.getBlockPos(), 1);
                 return ActionResult.SUCCESS;
-            } else if (blockArrayList.get(context.getBlockPos()) >= 18) {//存在但是敲打次数超过了9次
+            } else if (blockArrayList.get(context.getBlockPos()) > 18) {//存在但是敲打次数超过了9次
                 blockArrayList.remove(blockPos);
                 if (matchMetalBlock(block)) {
                     new ItemEntity(context.getWorld(), blockPos.getX(), blockPos.getY(), blockPos.getZ()).dropStack(dropPlate(block));
@@ -109,5 +113,12 @@ public class ForgingHammer extends Item {
         } else {
             throw new IllegalStateException("Unexpected value: " + block.toString());
         }
+    }
+
+    public boolean isUnderBlockAnvil(BlockPos blockPos, World world) {
+        Block getBlock = world.getBlockState(new BlockPos(blockPos.getX(), blockPos.getY() - 1, blockPos.getZ())).getBlock();
+        if (getBlock.equals(Blocks.ANVIL) || getBlock.equals(Blocks.CHIPPED_ANVIL) || getBlock.equals(Blocks.DAMAGED_ANVIL))
+            return true;
+        return false;
     }
 }
