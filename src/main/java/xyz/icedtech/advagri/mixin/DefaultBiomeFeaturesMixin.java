@@ -22,7 +22,7 @@ public class DefaultBiomeFeaturesMixin {
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_TITANIUM_OVERWORLD);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_LEAD_OVERWORLD);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_ZINC_OVERWORLD);
-        builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_ALUMINIUM_OVERWORLD);
+        builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_ALUMINUM_OVERWORLD);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_TUNGSTEN_OVERWORLD);
         builder.feature(GenerationStep.Feature.UNDERGROUND_ORES, block.ORE_HIGH_CARBON_IRON_OVERWORLD);
 

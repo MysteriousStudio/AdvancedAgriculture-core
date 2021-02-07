@@ -60,13 +60,13 @@ public class AdvAgriItems {
     public static Item BRONZE_POWDER;
     public static Item BRONZE_GEAR;
     public static Item BRONZE_PLATE;
-    //Aluminium
-    public static Item ALUMINIUM_SHARD;
-    public static Item ALUMINIUM_INGOT;
-    public static Item ALUMINIUM_POWDER;
-    public static Item ALUMINIUM_GEAR;
-    public static Item ALUMINIUM_PLATE;
-    public static Item ALUMINIUM_DISSOLVER;
+    //Aluminum
+    public static Item ALUMINUM_SHARD;
+    public static Item ALUMINUM_INGOT;
+    public static Item ALUMINUM_POWDER;
+    public static Item ALUMINUM_GEAR;
+    public static Item ALUMINUM_PLATE;
+    public static Item ALUMINUM_DISSOLVER;
     //Lead
     public static Item LEAD_SHARD;
     public static Item LEAD_INGOT;
@@ -189,7 +189,7 @@ public class AdvAgriItems {
         ZINC_INGOT = AddItemTool();
         TIN_INGOT = AddItemTool();
         BRONZE_INGOT = AddItemTool();
-        ALUMINIUM_INGOT = AddItemTool();
+        ALUMINUM_INGOT = AddItemTool();
         LEAD_INGOT = AddItemTool();
         SILVER_INGOT = AddItemTool();
         STEEL_INGOT = AddItemTool();
@@ -202,7 +202,7 @@ public class AdvAgriItems {
         ZINC_POWDER = AddItemTool();
         TIN_POWDER = AddItemTool();
         BRONZE_POWDER = AddItemTool();
-        ALUMINIUM_POWDER = AddItemTool();
+        ALUMINUM_POWDER = AddItemTool();
         LEAD_POWDER = AddItemTool();
         SILVER_POWDER = AddItemTool();
         STEEL_POWDER = AddItemTool();
@@ -217,7 +217,7 @@ public class AdvAgriItems {
         ZINC_GEAR = AddItemTool();
         TIN_GEAR = AddItemTool();
         BRONZE_GEAR = AddItemTool();
-        ALUMINIUM_GEAR = AddItemTool();
+        ALUMINUM_GEAR = AddItemTool();
         LEAD_GEAR = AddItemTool();
         SILVER_GEAR = AddItemTool();
         STEEL_GEAR = AddItemTool();
@@ -232,7 +232,7 @@ public class AdvAgriItems {
         ZINC_PLATE = AddItemTool();
         TIN_PLATE = AddItemTool();
         BRONZE_PLATE = AddItemTool();
-        ALUMINIUM_PLATE = AddItemTool();
+        ALUMINUM_PLATE = AddItemTool();
         LEAD_PLATE = AddItemTool();
         SILVER_PLATE = AddItemTool();
         STEEL_PLATE = AddItemTool();
@@ -247,7 +247,7 @@ public class AdvAgriItems {
         ZINC_SHARD = AddItemTool();
         TIN_SHARD = AddItemTool();
         BRONZE_SHARD = AddItemTool();
-        ALUMINIUM_SHARD = AddItemTool();
+        ALUMINUM_SHARD = AddItemTool();
         LEAD_SHARD = AddItemTool();
         SILVER_SHARD = AddItemTool();
         NICKEL_SHARD = AddItemTool();
@@ -260,7 +260,7 @@ public class AdvAgriItems {
         COPPER_DISSOLVER = AddItemTool();
         ZINC_DISSOLVER = AddItemTool();
         TIN_DISSOLVER = AddItemTool();
-        ALUMINIUM_DISSOLVER = AddItemTool();
+        ALUMINUM_DISSOLVER = AddItemTool();
         LEAD_DISSOLVER = AddItemTool();
         SILVER_DISSOLVER = AddItemTool();
         NICKEL_DISSOLVER = AddItemTool();
@@ -318,7 +318,7 @@ public class AdvAgriItems {
         RegistrationTool(ZINC_INGOT, "zinc_ingot");
         RegistrationTool(TIN_INGOT, "tin_ingot");
         RegistrationTool(BRONZE_INGOT, "bronze_ingot");
-        RegistrationTool(ALUMINIUM_INGOT, "aluminium_ingot");
+        RegistrationTool(ALUMINUM_INGOT, "aluminum_ingot");
         RegistrationTool(LEAD_INGOT, "lead_ingot");
         RegistrationTool(SILVER_INGOT, "silver_ingot");
         RegistrationTool(STEEL_INGOT, "steel_ingot");
@@ -331,7 +331,7 @@ public class AdvAgriItems {
         RegistrationTool(ZINC_POWDER, "zinc_powder");
         RegistrationTool(TIN_POWDER, "tin_powder");
         RegistrationTool(BRONZE_POWDER, "bronze_powder");
-        RegistrationTool(ALUMINIUM_POWDER, "aluminium_powder");
+        RegistrationTool(ALUMINUM_POWDER, "aluminum_powder");
         RegistrationTool(LEAD_POWDER, "lead_powder");
         RegistrationTool(SILVER_POWDER, "silver_powder");
         RegistrationTool(STEEL_POWDER, "steel_powder");
@@ -346,7 +346,7 @@ public class AdvAgriItems {
         RegistrationTool(ZINC_GEAR, "zinc_gear");
         RegistrationTool(TIN_GEAR, "tin_gear");
         RegistrationTool(BRONZE_GEAR, "bronze_gear");
-        RegistrationTool(ALUMINIUM_GEAR, "aluminium_gear");
+        RegistrationTool(ALUMINUM_GEAR, "aluminum_gear");
         RegistrationTool(LEAD_GEAR, "lead_gear");
         RegistrationTool(SILVER_GEAR, "silver_gear");
         RegistrationTool(STEEL_GEAR, "steel_gear");
@@ -361,7 +361,7 @@ public class AdvAgriItems {
         RegistrationTool(ZINC_PLATE, "zinc_plate");
         RegistrationTool(TIN_PLATE, "tin_plate");
         RegistrationTool(BRONZE_PLATE, "bronze_plate");
-        RegistrationTool(ALUMINIUM_PLATE, "aluminium_plate");
+        RegistrationTool(ALUMINUM_PLATE, "aluminum_plate");
         RegistrationTool(LEAD_PLATE, "lead_plate");
         RegistrationTool(SILVER_PLATE, "silver_plate");
         RegistrationTool(STEEL_PLATE, "steel_plate");
@@ -377,7 +377,7 @@ public class AdvAgriItems {
         RegistrationTool(ZINC_SHARD, "zinc_shard");
         RegistrationTool(TIN_SHARD, "tin_shard");
         RegistrationTool(BRONZE_SHARD, "bronze_shard");
-        RegistrationTool(ALUMINIUM_SHARD, "aluminium_shard");
+        RegistrationTool(ALUMINUM_SHARD, "aluminum_shard");
         RegistrationTool(LEAD_SHARD, "lead_shard");
         RegistrationTool(SILVER_SHARD, "silver_shard");
         RegistrationTool(NICKEL_SHARD, "nickel_shard");
@@ -390,7 +390,7 @@ public class AdvAgriItems {
         RegistrationTool(COPPER_DISSOLVER, "copper_dissolver");
         RegistrationTool(ZINC_DISSOLVER, "zinc_dissolver");
         RegistrationTool(TIN_DISSOLVER, "tin_dissolver");
-        RegistrationTool(ALUMINIUM_DISSOLVER, "aluminium_dissolver");
+        RegistrationTool(ALUMINUM_DISSOLVER, "aluminum_dissolver");
         RegistrationTool(LEAD_DISSOLVER, "lead_dissolver");
         RegistrationTool(SILVER_DISSOLVER, "silver_dissolver");
         RegistrationTool(NICKEL_DISSOLVER, "nickel_dissolver");

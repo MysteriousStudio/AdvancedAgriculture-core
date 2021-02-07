@@ -44,7 +44,7 @@ public class AdvAgriBlocks {
     public Block COPPER_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
     public Block ZINC_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
     public Block TIN_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
-    public Block ALUMINIUM_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
+    public Block ALUMINUM_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
     public Block LEAD_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
     public Block SILVER_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
     public Block HIGH_CARBON_IRON_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
@@ -55,7 +55,7 @@ public class AdvAgriBlocks {
     public Block WEATHERED_COPPER_ORE;
     public Block WEATHERED_ZINC_ORE;
     public Block WEATHERED_TIN_ORE;
-    public Block WEATHERED_ALUMINIUM_ORE;
+    public Block WEATHERED_ALUMINUM_ORE;
     public Block WEATHERED_LEAD_ORE;
     public Block WEATHERED_SILVER_ORE;
     public Block WEATHERED_HIGH_CARBON_IRON_ORE;
@@ -67,7 +67,7 @@ public class AdvAgriBlocks {
     public Block ZINC_BLOCK;
     public Block TIN_BLOCK;
     public Block BRONZE_BLOCK;
-    public Block ALUMINIUM_BLOCK;
+    public Block ALUMINUM_BLOCK;
     public Block LEAD_BLOCK;
     public Block SILVER_BLOCK;
     public Block STEEL_BLOCK;
@@ -100,7 +100,7 @@ public class AdvAgriBlocks {
     @NotNull
     public ConfiguredFeature<?, ?> ORE_ZINC_OVERWORLD = ConfiguredFeature(this.ZINC_ORE, BASE_ORE_GEN_SIZE, BASE_ORE_GEN_LINE + 2, BASE_ORE_GEN_COUNT + 2);
     @NotNull
-    public ConfiguredFeature<?, ?> ORE_ALUMINIUM_OVERWORLD = ConfiguredFeature(this.ALUMINIUM_ORE, BASE_ORE_GEN_SIZE + 4, BASE_ORE_GEN_LINE + 8, BASE_ORE_GEN_COUNT + 4);
+    public ConfiguredFeature<?, ?> ORE_ALUMINUM_OVERWORLD = ConfiguredFeature(this.ALUMINUM_ORE, BASE_ORE_GEN_SIZE + 4, BASE_ORE_GEN_LINE + 8, BASE_ORE_GEN_COUNT + 4);
     @NotNull
     public ConfiguredFeature<?, ?> ORE_LEAD_OVERWORLD = ConfiguredFeature(this.LEAD_ORE, BASE_ORE_GEN_SIZE + 2, BASE_ORE_GEN_LINE + 4, BASE_ORE_GEN_COUNT + 2);
     @NotNull
@@ -136,7 +136,7 @@ public class AdvAgriBlocks {
         this.AllInOneStepForOre(COPPER_ORE, "copper_ore");
         this.AllInOneStepForOre(ZINC_ORE, "zinc_ore");
         this.AllInOneStepForOre(TIN_ORE, "tin_ore");
-        this.AllInOneStepForOre(ALUMINIUM_ORE, "aluminium_ore");
+        this.AllInOneStepForOre(ALUMINUM_ORE, "aluminum_ore");
         this.AllInOneStepForOre(LEAD_ORE, "lead_ore");
         this.AllInOneStepForOre(SILVER_ORE, "silver_ore");
         this.AllInOneStepForOre(HIGH_CARBON_IRON_ORE, "high_carbon_iron_ore");
@@ -151,7 +151,7 @@ public class AdvAgriBlocks {
         this.AllInOneStepForOre(WEATHERED_COPPER_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_copper_ore");
         this.AllInOneStepForOre(WEATHERED_ZINC_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_zinc_ore");
         this.AllInOneStepForOre(WEATHERED_TIN_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_tin_ore");
-        this.AllInOneStepForOre(WEATHERED_ALUMINIUM_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_aluminium_ore");
+        this.AllInOneStepForOre(WEATHERED_ALUMINUM_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_aluminum_ore");
         this.AllInOneStepForOre(WEATHERED_LEAD_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_lead_ore");
         this.AllInOneStepForOre(WEATHERED_SILVER_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_silver_ore");
         this.AllInOneStepForOre(WEATHERED_HIGH_CARBON_IRON_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_high_carbon_iron_ore");
@@ -164,7 +164,7 @@ public class AdvAgriBlocks {
         this.AllInOneStep(ZINC_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "zinc_block");
         this.AllInOneStep(TIN_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "tin_block");
         this.AllInOneStep(BRONZE_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "bronze_block");
-        this.AllInOneStep(ALUMINIUM_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "aluminium_block");
+        this.AllInOneStep(ALUMINUM_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "aluminum_block");
         this.AllInOneStep(LEAD_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "lead_block");
         this.AllInOneStep(SILVER_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "silver_block");
         this.AllInOneStep(STEEL_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "steel_block");
@@ -188,7 +188,7 @@ public class AdvAgriBlocks {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_copper_overworld"), ORE_COPPER_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_tin_overworld"), ORE_TIN_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_zinc_overworld"), ORE_ZINC_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_aluminium_overworld"), ORE_ALUMINIUM_OVERWORLD);
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_aluminum_overworld"), ORE_ALUMINUM_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_silver_overworld"), ORE_SILVER_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_lead_overworld"), ORE_LEAD_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_high_carbon_iron_overworld"), ORE_HIGH_CARBON_IRON_OVERWORLD);

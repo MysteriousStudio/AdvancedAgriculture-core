@@ -37,11 +37,11 @@ public class AdvAgriToolsAndWeapons {
     public ToolItem BRONZE_HOE;
     public ToolItem BRONZE_SWORD;
 
-    public ToolItem ALUMINIUM_SHOVEL;
-    public ToolItem ALUMINIUM_PICKAXE;
-    public ToolItem ALUMINIUM_AXE;
-    public ToolItem ALUMINIUM_HOE;
-    public ToolItem ALUMINIUM_SWORD;
+    public ToolItem ALUMINUM_SHOVEL;
+    public ToolItem ALUMINUM_PICKAXE;
+    public ToolItem ALUMINUM_AXE;
+    public ToolItem ALUMINUM_HOE;
+    public ToolItem ALUMINUM_SWORD;
 
     public ToolItem LEAD_SHOVEL;
     public ToolItem LEAD_PICKAXE;
@@ -134,11 +134,11 @@ public class AdvAgriToolsAndWeapons {
         BRONZE_HOE = new AdvAgriHoeItem(BronzeMaterial.INSTANCE, BASE_HOE_ATTACK_DAMAGE, BASE_HOE_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
         BRONZE_SWORD = new AdvAgriSwordItem(BronzeMaterial.INSTANCE, BASE_SWORD_ATTACK_DAMAGE, BASE_SWORD_ATTACK_SPEED, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
 
-        ALUMINIUM_SHOVEL = new AdvAgriShovelItem(AluminiumMaterial.INSTANCE, BASE_SHOVEL_ATTACK_DAMAGE, BASE_SHOVEL_ATTACK_SPEED + 0.1F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
-        ALUMINIUM_PICKAXE = new AdvAgriPickaxeItem(AluminiumMaterial.INSTANCE, BASE_PICKAXE_ATTACK_DAMAGE, BASE_PICKAXE_ATTACK_SPEED + 0.1F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
-        ALUMINIUM_AXE = new AdvAgriAxeItem(AluminiumMaterial.INSTANCE, BASE_AXE_ATTACK_DAMAGE + 2F, BASE_AXE_ATTACK_SPEED + 0.2F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
-        ALUMINIUM_HOE = new AdvAgriHoeItem(AluminiumMaterial.INSTANCE, BASE_HOE_ATTACK_DAMAGE, BASE_HOE_ATTACK_SPEED + 0.1F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
-        ALUMINIUM_SWORD = new AdvAgriSwordItem(AluminiumMaterial.INSTANCE, BASE_SWORD_ATTACK_DAMAGE - 1, BASE_SWORD_ATTACK_SPEED + 0.3F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
+        ALUMINUM_SHOVEL = new AdvAgriShovelItem(AluminumMaterial.INSTANCE, BASE_SHOVEL_ATTACK_DAMAGE, BASE_SHOVEL_ATTACK_SPEED + 0.1F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
+        ALUMINUM_PICKAXE = new AdvAgriPickaxeItem(AluminumMaterial.INSTANCE, BASE_PICKAXE_ATTACK_DAMAGE, BASE_PICKAXE_ATTACK_SPEED + 0.1F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
+        ALUMINUM_AXE = new AdvAgriAxeItem(AluminumMaterial.INSTANCE, BASE_AXE_ATTACK_DAMAGE + 2F, BASE_AXE_ATTACK_SPEED + 0.2F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
+        ALUMINUM_HOE = new AdvAgriHoeItem(AluminumMaterial.INSTANCE, BASE_HOE_ATTACK_DAMAGE, BASE_HOE_ATTACK_SPEED + 0.1F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
+        ALUMINUM_SWORD = new AdvAgriSwordItem(AluminumMaterial.INSTANCE, BASE_SWORD_ATTACK_DAMAGE - 1, BASE_SWORD_ATTACK_SPEED + 0.3F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
 
         LEAD_SHOVEL = new AdvAgriShovelItem(LeadMaterial.INSTANCE, BASE_SHOVEL_ATTACK_DAMAGE, BASE_SHOVEL_ATTACK_SPEED - 0.1F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
         LEAD_PICKAXE = new AdvAgriPickaxeItem(LeadMaterial.INSTANCE, BASE_PICKAXE_ATTACK_DAMAGE, BASE_PICKAXE_ATTACK_SPEED - 0.2F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
@@ -205,11 +205,11 @@ public class AdvAgriToolsAndWeapons {
         RegistrationTool(BRONZE_HOE, "bronze_hoe");
         RegistrationTool(BRONZE_SWORD, "bronze_sword");
 
-        RegistrationTool(ALUMINIUM_SHOVEL, "aluminium_shovel");
-        RegistrationTool(ALUMINIUM_PICKAXE, "aluminium_pickaxe");
-        RegistrationTool(ALUMINIUM_AXE, "aluminium_axe");
-        RegistrationTool(ALUMINIUM_HOE, "aluminium_hoe");
-        RegistrationTool(ALUMINIUM_SWORD, "aluminium_sword");
+        RegistrationTool(ALUMINUM_SHOVEL, "aluminum_shovel");
+        RegistrationTool(ALUMINUM_PICKAXE, "aluminum_pickaxe");
+        RegistrationTool(ALUMINUM_AXE, "aluminum_axe");
+        RegistrationTool(ALUMINUM_HOE, "aluminum_hoe");
+        RegistrationTool(ALUMINUM_SWORD, "aluminum_sword");
 
         RegistrationTool(LEAD_SHOVEL, "lead_shovel");
         RegistrationTool(LEAD_PICKAXE, "lead_pickaxe");

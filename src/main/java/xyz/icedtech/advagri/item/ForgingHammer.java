@@ -66,7 +66,7 @@ public class ForgingHammer extends Item {
 
 
     public boolean matchMetalBlock(Block block) {
-        return block == AdvAgriBlocks.getInstance().ALUMINIUM_BLOCK
+        return block == AdvAgriBlocks.getInstance().ALUMINUM_BLOCK
                 || block == AdvAgriBlocks.getInstance().BRONZE_BLOCK
                 || block == AdvAgriBlocks.getInstance().COPPER_BLOCK
                 || block == AdvAgriBlocks.getInstance().LEAD_BLOCK
@@ -84,8 +84,8 @@ public class ForgingHammer extends Item {
     public ItemStack dropPlate(Block block) {
         AdvAgriBlocks advAgriBlocks = AdvAgriBlocks.getInstance();
 
-        if (Objects.equals(advAgriBlocks.ALUMINIUM_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.ALUMINIUM_PLATE, 9);
+        if (Objects.equals(advAgriBlocks.ALUMINUM_BLOCK, block)) {
+            return new ItemStack(AdvAgriItems.ALUMINUM_PLATE, 9);
         } else if (Objects.equals(advAgriBlocks.BRONZE_BLOCK, block)) {
             return new ItemStack(AdvAgriItems.BRONZE_PLATE, 9);
         } else if (Objects.equals(advAgriBlocks.COPPER_BLOCK, block)) {
