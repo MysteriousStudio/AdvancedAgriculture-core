@@ -71,13 +71,11 @@ jobs:
         with:
           webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
           webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          message: |-
-          "SHA of `${{github.sha}}` is built successfully"
+          message: "SHA of `${{github.sha}}` is built successfully"
 
       - name: SendChinese
         uses: appleboy/discord-action@master
         with:
           webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
           webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          message: |-
-          "SHA为 `${{github.sha}}` 的构建成功了"
+          message: "SHA为 `${{github.sha}}` 的构建成功了"
