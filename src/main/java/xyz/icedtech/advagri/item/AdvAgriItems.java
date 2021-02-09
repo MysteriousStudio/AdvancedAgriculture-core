@@ -319,7 +319,7 @@ public class AdvAgriItems {
         RegistrationTool(BOTTLE_LARGE, "bottle_large");
 
         RegistrationTool(SOLARIUM_BOTTLE_LARGE, "solarium_bottle_large");
-        RegistrationTool(SOLARIUM_BOTTLE_MEDIUM, "solarium_bottle_medium");
+        RegistrationTool(SOLARIUM_BOTTLE_MEDIUM, "solarium_bottle");
         RegistrationTool(SOLARIUM_BOTTLE_SMALL, "solarium_bottle_small");
 
 
