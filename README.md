@@ -6,7 +6,7 @@
 
 <h3 align="center">构建状态以及项目信息</br> </h3>
 
-<div align="center"> <img src="https://circleci.com/gh/MysteriousStudio/AdvancedAgriculture-core.svg?style=svg" alt="Circle CI"/> <img src="https://action-badges.now.sh/MysteriousStudio/AdvancedAgriculture-core"> <img src="https://img.shields.io/badge/License-GPLv3-brightgreen" alt="License"> <img src="https://img.shields.io/badge/Language-Java-blue" alt="Language"> </div>
+<div align="center"> <img src="https://circleci.com/gh/MysteriousStudio/AdvancedAgriculture-core.svg?style=svg" alt="Circle CI"/> <img src="https://github.com/MysteriousStudio/AdvancedAgriculture-core/workflows/build/badge.svg"> <img src="https://img.shields.io/badge/License-GPLv3-brightgreen" alt="License"> <img src="https://img.shields.io/badge/Language-Java-blue" alt="Language"> </div>
 
 ### 特别感谢
 
