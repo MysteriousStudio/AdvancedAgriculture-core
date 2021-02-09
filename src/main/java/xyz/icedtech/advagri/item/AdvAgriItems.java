@@ -5,7 +5,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import org.graalvm.compiler.core.common.type.ArithmeticOpTable;
 import xyz.icedtech.advagri.ModAta;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemCoreGroup;
 
