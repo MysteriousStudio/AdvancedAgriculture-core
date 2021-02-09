@@ -41,11 +41,36 @@ jobs:
         with:
           name: Artifacts
           path: build/libs/
-      - name: send message
+      - name: send message1
+        if: ${{ runner.os != 'Windows' && matrix.java == '11'}}
         uses: appleboy/discord-action@master
         with:
           webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
           webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
           color: "#48f442"
           username: "GitHub Bot"
-          message: "DISCORD TEST.AND THE BUILD WAS SUCCEED"
+          message: "The build was succeed on ubuntu-latest, JDK version is 11\n"
+      - name: send message2
+        if: ${{ runner.os != 'Windows' && matrix.java == '15'}}
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
+          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+          color: "#48f442"
+          username: "GitHub Bot"
+          message: "The build was succeed on ubuntu-latest, JDK version is 15\n"
+      - name: send message3
+        if: ${{ runner.os != 'Windows' && matrix.java == '1.8'}}
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
+          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+          color: "#48f442"
+          username: "GitHub Bot"
+          message: "The build was succeed on ubuntu-latest, JDK version is 1.8\n"
+      - name: Discord Commits
+        uses: Sniddl/discord-commits@v1.2
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          message: "Successful commit to **{{ github.context.payload.repository.owner.name }}/{{ github.context.payload.repository.name}}**.\nDiff: {{ github.context.payload.compare }}"
+          embed: '{ "title": "{{ commit.title }}", "description": "{{ commit.description }}", "url": "{{ commit.url }}", "author": { "name": "{{ commit.author.name }} ({{ commit.author.username }})", "icon_url": "https://avatars.io/gravatar/{{ commit.author.email }}"} }'
