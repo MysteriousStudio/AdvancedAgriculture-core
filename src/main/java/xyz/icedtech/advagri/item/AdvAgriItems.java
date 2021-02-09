@@ -5,6 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.graalvm.compiler.core.common.type.ArithmeticOpTable;
 import xyz.icedtech.advagri.ModAta;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemCoreGroup;
 
@@ -19,10 +20,13 @@ public class AdvAgriItems {
     public static Item TUNG_OIL;
     public static Item POTASSIUM_SALT_POWDER;
     public static Item PLANT_ASH;
-    //Liquid Sun
-    public static Item LIQUID_SUN_BOTTLE_BIG;
-    public static Item LIQUID_SUN_BOTTLE_MIDDLE;
-    public static Item LIQUID_SUN_BOTTLE_SMALL;
+    //Bottle
+    public static Item BOTTLE_SMALL;
+    public static Item BOTTLE_LARGE;
+    //Solarium Bottle
+    public static Item SOLARIUM_BOTTLE_LARGE;
+    public static Item SOLARIUM_BOTTLE_MEDIUM;
+    public static Item SOLARIUM_BOTTLE_SMALL;
     //Bamboo
     public static Item BAMBOO_LEAVES;
     public static Item BAMBOO_SILK;
@@ -179,9 +183,12 @@ public class AdvAgriItems {
         PHOS = AddItemTool();
         SULFUR = AddItemTool();
 
-        LIQUID_SUN_BOTTLE_SMALL = AddItemTool();
-        LIQUID_SUN_BOTTLE_MIDDLE = AddItemTool();
-        LIQUID_SUN_BOTTLE_BIG = AddItemTool();
+        BOTTLE_LARGE = AddItemTool();
+        BOTTLE_SMALL = AddItemTool();
+
+        SOLARIUM_BOTTLE_LARGE = AddItemTool();
+        SOLARIUM_BOTTLE_MEDIUM = AddItemTool();
+        SOLARIUM_BOTTLE_SMALL = AddItemTool();
 
 
         //Ingot
@@ -308,9 +315,12 @@ public class AdvAgriItems {
         RegistrationTool(SULFUR, "sulfur");
         RegistrationTool(PHOS, "phos");
 
-        RegistrationTool(LIQUID_SUN_BOTTLE_SMALL, "liquid_sun_bottle_small");
-        RegistrationTool(LIQUID_SUN_BOTTLE_MIDDLE, "liquid_sun_bottle_middle");
-        RegistrationTool(LIQUID_SUN_BOTTLE_BIG, "liquid_sun_bottle_big");
+        RegistrationTool(BOTTLE_SMALL, "bottle_small");
+        RegistrationTool(BOTTLE_LARGE, "bottle_large");
+
+        RegistrationTool(SOLARIUM_BOTTLE_LARGE, "solarium_bottle_large");
+        RegistrationTool(SOLARIUM_BOTTLE_MEDIUM, "solarium_bottle_medium");
+        RegistrationTool(SOLARIUM_BOTTLE_SMALL, "solarium_bottle_small");
 
 
         //Ingot
