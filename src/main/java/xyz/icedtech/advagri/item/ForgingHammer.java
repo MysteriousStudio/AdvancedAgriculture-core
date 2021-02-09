@@ -42,7 +42,7 @@ public class ForgingHammer extends Item {
 
         if (matchMetalBlock(block)) {
 
-            context.getPlayer().playSound(SoundEvents.BLOCK_ANVIL_LAND, 0.7F, 1F);
+            Objects.requireNonNull(context.getPlayer()).playSound(SoundEvents.BLOCK_ANVIL_LAND, 0.7F, 1F);
 
             if (!blockArrayList.containsKey(context.getBlockPos())) {//不存在但是是可敲打方块
                 blockArrayList.put(context.getBlockPos(), 1);
