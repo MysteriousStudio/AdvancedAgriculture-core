@@ -36,12 +36,12 @@
 ### 竹
 
 - [x] 竹叶 (Bamboo leaves) (材质 OK)
-- [ ] 竹编 (Bamboo silk)
+- [x] 竹编 (Bamboo silk)
 - [x] 竹编板 (Bamboo silk board)(材质 OK)
 - [ ] 细致竹编板(Fine Bamboo silk board)
 - [ ] 桐油(Indus oil)
-- [ ] 竹炭(Bamboo charcoal)
-- [ ] 爆竹 (Firecrackers)
+- [x] 竹炭(Bamboo charcoal)
+- [x] 爆竹 (Firecrackers)
 - [x] 硫磺 (Sulfur) (材质 OK)
 - [ ] 竹滤网
 
@@ -50,8 +50,8 @@
 - [ ] 木屑(Sawdust)
 - [ ] 复合肥(Com fert)
 - [x] 草木灰(Grass ash)(材质 OK)
-- [ ] 磷(Phur)
-- [ ] 蛭石(Zircon)
+- [x] 磷(Phur)
+- [x] 蛭石(Zircon)
 
 ### 作物类
 
@@ -104,20 +104,16 @@
 
 ## 添加新的装备
 
-- [ ] 竹头盔 (Bamboo helmet)
-- [ ] 竹胸甲 (Bamboo chestplate)
-- [ ] 竹护腿 (Bamboo leggings)
-- [ ] 竹靴子 (Bamboo boots)
+- [x] 竹头盔 (Bamboo helmet)
+- [x] 竹胸甲 (Bamboo chestplate)
+- [x] 竹护腿 (Bamboo leggings)
+- [x] 竹靴子 (Bamboo boots)
 - [ ] 竹手杖 (Bamboo cane)
 - [ ] 竹盾 (Bamboo Shield)
-- [ ] 竹铁混合头盔
-- [ ] 竹铁混合胸甲
-- [ ] 竹铁混合护腿
-- [ ] 竹铁混合靴子
-- [ ] 竹钻混合头盔
-- [ ] 竹钻混合胸甲
-- [ ] 竹钻混合护腿
-- [ ] 竹钻混合靴子
+- [x] 竹铁混合头盔
+- [x] 竹铁混合胸甲
+- [x] 竹铁混合护腿
+- [x] 竹铁混合靴子
 
 ## 添加新的武器
 
@@ -133,29 +129,3 @@
 ## 添加新的载具
 
 - [ ] 竹筏(Raft)
-
-## 添加新的机器
-
-### 发电机
-
-- [ ] 动能发电机
-- [ ] 温差发电机
-- [ ] 太阳能电池板
-
-
-### 用于发电的设备
-
-- [ ] 手摇杆
-- [ ] 水车
-- [ ] 风力叶轮
-- [ ] 齿轮箱
-- [ ] 蒸汽锅炉
-- [ ] 蒸汽涡轮
-- [ ] 集热组件
-- [ ] 反光镜
-
-### 电力机器
-- [ ] 电动粉碎机
-- [ ] 电动搅拌机
-- [ ] 电动挤压机
-- [ ] 电动锤
