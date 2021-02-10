@@ -10,19 +10,6 @@ jobs:
   sendMsgForStart:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: SendEnglish
-        uses: appleboy/discord-action@master
-        with:
-          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
-          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          message: "One commit has started working and its SHA is `${{github.sha}}`"
-      - name: SendChinese
-        uses: appleboy/discord-action@master
-        with:
-          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
-          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          message: "有一个提交开始工作了，它的SHA是 `${{github.sha}}`"
   build:
     strategy:
       matrix:
@@ -35,8 +22,6 @@ jobs:
         # and run on both Linux and Windows
         os: [ ubuntu-latest ]
     runs-on: ${{ matrix.os }}
-    needs:
-      - sendMsgForStart
     steps:
       - name: checkout repository
         uses: actions/checkout@v2
