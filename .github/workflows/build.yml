@@ -66,16 +66,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: SendEnglish
-        uses: appleboy/discord-action@master
-        with:
-          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
-          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          message: "SHA of `${{github.sha}}` is built successfully"
-
-      - name: SendChinese
-        uses: appleboy/discord-action@master
-        with:
-          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
-          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          message: "SHA为 `${{github.sha}}` 的构建成功了"
+      - name: Send status to Discord
+        uses: nebularg/actions-discord-webhook@v1
+          with:
+            webhook_url: ${{ secrets.discord_webhook_url }} # required
+            status: ${{ job.status }} # optional, this is the default
+      if: always() # or failure() or success()
