@@ -67,7 +67,7 @@ jobs:
     needs: build
     steps:
       - name: Send status to Discord
-        uses: nebularg/actions-discord-webhook@v1
+        uses: MysteriousStudio/actions-discord-webhook@master
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }} # required
           status: ${{ job.status }} # optional, this is the default
