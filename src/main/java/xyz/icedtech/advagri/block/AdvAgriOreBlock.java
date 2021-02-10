@@ -21,7 +21,7 @@ public class AdvAgriOreBlock extends OreBlock {
     // User: suibing
     // Aims: When break SulphurOre,WeatheredOre, there should be some ExperienceBall spawned.
     // Desc: Like Minecraft's CalOre,DiamondOre and so on.
-    // Stat: False
+    // Stat: True
     @Override
     public void onBroken(WorldAccess world, BlockPos pos, BlockState state) {
         super.onBroken(world, pos, state);
