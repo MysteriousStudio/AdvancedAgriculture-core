@@ -7,8 +7,6 @@ name: build
 on: [ push ]
 
 jobs:
-  sendMsgForStart:
-    runs-on: ubuntu-latest
 
   build:
     strategy:
