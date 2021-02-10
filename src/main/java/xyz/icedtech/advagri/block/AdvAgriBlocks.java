@@ -81,8 +81,8 @@ public class AdvAgriBlocks {
     public Block GOLD_CABLE;
     //OtherOre
     public Block PHOS_ORE = this.CopyBlockSettings(Blocks.COAL_BLOCK);
-    public SulphurOre SULPHUR_ORE = new SulphurOre(FabricBlockSettings.copyOf(Blocks.COAL_ORE));
-    public NetherSulphurOre NETHER_SULPHUR_ORE = new NetherSulphurOre(FabricBlockSettings.copyOf(Blocks.COAL_ORE));
+    public SulphurOre SULPHUR_ORE = new SulphurOre(FabricBlockSettings.copyOf(Blocks.COAL_ORE).luminance(10));
+    public NetherSulphurOre NETHER_SULPHUR_ORE = new NetherSulphurOre(FabricBlockSettings.copyOf(Blocks.COAL_ORE).luminance(10));
 
     public BambooBlock BAMBOO_BLOCK;
 
