@@ -12,6 +12,6 @@ public class TinMaterial extends AdvAgriToolMaterials {
         super.setAttackDamage(2F);
         super.setMineLevel(1);
         super.setEnchantability(6);
-        super.setIngredient(AdvAgriItems.getInstance().TIN_INGOT);
+        super.setIngredient(AdvAgriItems.TIN_INGOT);
     }
 }

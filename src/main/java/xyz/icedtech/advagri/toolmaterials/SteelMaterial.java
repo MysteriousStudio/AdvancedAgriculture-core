@@ -12,6 +12,6 @@ public class SteelMaterial extends AdvAgriToolMaterials {
         super.setAttackDamage(2F);
         super.setMineLevel(2);
         super.setEnchantability(9);
-        super.setIngredient(AdvAgriItems.getInstance().STEEL_INGOT);
+        super.setIngredient(AdvAgriItems.STEEL_INGOT);
     }
 }

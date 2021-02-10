@@ -12,6 +12,6 @@ public class TungstenMaterial extends AdvAgriToolMaterials {
         super.setAttackDamage(2F);
         super.setMineLevel(3);
         super.setEnchantability(9);
-        super.setIngredient(AdvAgriItems.getInstance().TUNGSTEN_INGOT);
+        super.setIngredient(AdvAgriItems.TUNGSTEN_INGOT);
     }
 }

@@ -12,6 +12,6 @@ public class CopperMaterial extends AdvAgriToolMaterials {
         super.setAttackDamage(2F);
         super.setMineLevel(1);
         super.setEnchantability(8);
-        super.setIngredient(AdvAgriItems.getInstance().COPPER_INGOT);
+        super.setIngredient(AdvAgriItems.COPPER_INGOT);
     }
 }

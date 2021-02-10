@@ -12,7 +12,7 @@ public class LeadMaterial extends AdvAgriToolMaterials {
         super.setAttackDamage(2F);
         super.setMineLevel(1);
         super.setEnchantability(6);
-        super.setIngredient(AdvAgriItems.getInstance().LEAD_INGOT);
+        super.setIngredient(AdvAgriItems.LEAD_INGOT);
     }
 
 }

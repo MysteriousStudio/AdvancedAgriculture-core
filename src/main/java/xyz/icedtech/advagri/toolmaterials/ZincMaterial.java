@@ -12,6 +12,6 @@ public class ZincMaterial extends AdvAgriToolMaterials {
         super.setAttackDamage(2F);
         super.setMineLevel(2);
         super.setEnchantability(6);
-        super.setIngredient(AdvAgriItems.getInstance().ZINC_INGOT);
+        super.setIngredient(AdvAgriItems.ZINC_INGOT);
     }
 }

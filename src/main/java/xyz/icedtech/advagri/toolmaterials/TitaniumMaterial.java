@@ -12,6 +12,6 @@ public class TitaniumMaterial extends AdvAgriToolMaterials {
         super.setAttackDamage(2F);
         super.setMineLevel(3);
         super.setEnchantability(15);
-        super.setIngredient(AdvAgriItems.getInstance().TITANIUM_INGOT);
+        super.setIngredient(AdvAgriItems.TITANIUM_INGOT);
     }
 }

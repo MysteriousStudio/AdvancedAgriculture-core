@@ -12,6 +12,6 @@ public class SilverMaterial extends AdvAgriToolMaterials {
         super.setAttackDamage(2F);
         super.setMineLevel(1);
         super.setEnchantability(12);
-        super.setIngredient(AdvAgriItems.getInstance().SILVER_INGOT);
+        super.setIngredient(AdvAgriItems.SILVER_INGOT);
     }
 }

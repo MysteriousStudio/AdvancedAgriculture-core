@@ -12,6 +12,6 @@ public class NickelMaterial extends AdvAgriToolMaterials {
         super.setAttackDamage(2F);
         super.setMineLevel(2);
         super.setEnchantability(8);
-        super.setIngredient(AdvAgriItems.getInstance().NICKEL_INGOT);
+        super.setIngredient(AdvAgriItems.NICKEL_INGOT);
     }
 }

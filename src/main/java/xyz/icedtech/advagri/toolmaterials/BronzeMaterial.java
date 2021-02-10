@@ -12,6 +12,6 @@ public class BronzeMaterial extends AdvAgriToolMaterials {
         super.setAttackDamage(2F);
         super.setMineLevel(2);
         super.setEnchantability(8);
-        super.setIngredient(AdvAgriItems.getInstance().BRONZE_INGOT);
+        super.setIngredient(AdvAgriItems.BRONZE_INGOT);
     }
 }

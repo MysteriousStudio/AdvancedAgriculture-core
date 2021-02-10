@@ -12,7 +12,7 @@ public class AluminumMaterial extends AdvAgriToolMaterials {
         super.setAttackDamage(2F);
         super.setMineLevel(1);
         super.setEnchantability(22);
-        super.setIngredient(AdvAgriItems.getInstance().ALUMINUM_INGOT);
+        super.setIngredient(AdvAgriItems.ALUMINUM_INGOT);
     }
 
 }
