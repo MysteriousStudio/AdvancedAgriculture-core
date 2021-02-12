@@ -43,6 +43,7 @@ public class AdvAgriItems {
     public static Item COPPER_GEAR;
     public static Item COPPER_PLATE;
     public static Item COPPER_DISSOLVER;
+    public static Item CRUSHED_COPPER_ORE;
     //Zinc
     public static Item ZINC_SHARD;
     public static Item ZINC_INGOT;
@@ -50,6 +51,7 @@ public class AdvAgriItems {
     public static Item ZINC_GEAR;
     public static Item ZINC_PLATE;
     public static Item ZINC_DISSOLVER;
+    public static Item CRUSHED_ZINC_ORE;
     //Tin
     public static Item TIN_SHARD;
     public static Item TIN_INGOT;
@@ -57,6 +59,7 @@ public class AdvAgriItems {
     public static Item TIN_GEAR;
     public static Item TIN_PLATE;
     public static Item TIN_DISSOLVER;
+    public static Item CRUSHED_TIN_ORE;
     //Bronze
     public static Item BRONZE_SHARD;
     public static Item BRONZE_INGOT;
@@ -70,6 +73,7 @@ public class AdvAgriItems {
     public static Item ALUMINUM_GEAR;
     public static Item ALUMINUM_PLATE;
     public static Item ALUMINUM_DISSOLVER;
+    public static Item CRUSHED_ALUMINUM_ORE;
     //Lead
     public static Item LEAD_SHARD;
     public static Item LEAD_INGOT;
@@ -77,6 +81,7 @@ public class AdvAgriItems {
     public static Item LEAD_GEAR;
     public static Item LEAD_PLATE;
     public static Item LEAD_DISSOLVER;
+    public static Item CRUSHED_LEAD_ORE;
     //Silver
     public static Item SILVER_SHARD;
     public static Item SILVER_INGOT;
@@ -84,6 +89,7 @@ public class AdvAgriItems {
     public static Item SILVER_GEAR;
     public static Item SILVER_PLATE;
     public static Item SILVER_DISSOLVER;
+    public static Item CRUSHED_SILVER_ORE;
     //Steel
     public static Item STEEL_INGOT;
     public static Item STEEL_POWDER;
@@ -96,6 +102,7 @@ public class AdvAgriItems {
     public static Item NICKEL_GEAR;
     public static Item NICKEL_PLATE;
     public static Item NICKEL_DISSOLVER;
+    public static Item CRUSHED_NICKEL_ORE;
     //Tungsten
     public static Item TUNGSTEN_SHARD;
     public static Item TUNGSTEN_INGOT;
@@ -103,6 +110,7 @@ public class AdvAgriItems {
     public static Item TUNGSTEN_GEAR;
     public static Item TUNGSTEN_PLATE;
     public static Item TUNGSTEN_DISSOLVER;
+    public static Item CRUSHED_TUNGSTEN_ORE;
     //Titanium
     public static Item TITANIUM_SHARD;
     public static Item TITANIUM_INGOT;
@@ -110,18 +118,21 @@ public class AdvAgriItems {
     public static Item TITANIUM_GEAR;
     public static Item TITANIUM_PLATE;
     public static Item TITANIUM_DISSOLVER;
+    public static Item CRUSHED_TITANIUM_ORE;
     //Iron
     public static Item IRON_SHARD;
     public static Item IRON_POWDER;
     public static Item IRON_GEAR;
     public static Item IRON_PLATE;
     public static Item IRON_DISSOLVER;
+    public static Item CRUSHED_IRON_ORE;
     //Gold
     public static Item GOLD_SHARD;
     public static Item GOLD_POWDER;
     public static Item GOLD_GEAR;
     public static Item GOLD_PLATE;
     public static Item GOLD_DISSOLVER;
+    public static Item CRUSHED_GOLD_ORE;
 
     //Firecracker
     public static Firecracker FIRECRACKERS;
@@ -275,6 +286,19 @@ public class AdvAgriItems {
         GOLD_DISSOLVER = AddItemTool();
         IRON_DISSOLVER = AddItemTool();
 
+        //Crushed Ore
+        CRUSHED_ALUMINUM_ORE = AddItemTool();
+        CRUSHED_COPPER_ORE = AddItemTool();
+        CRUSHED_GOLD_ORE = AddItemTool();
+        CRUSHED_IRON_ORE = AddItemTool();
+        CRUSHED_LEAD_ORE = AddItemTool();
+        CRUSHED_NICKEL_ORE = AddItemTool();
+        CRUSHED_SILVER_ORE = AddItemTool();
+        CRUSHED_TIN_ORE = AddItemTool();
+        CRUSHED_TITANIUM_ORE = AddItemTool();
+        CRUSHED_TUNGSTEN_ORE = AddItemTool();
+        CRUSHED_ZINC_ORE = AddItemTool();
+
         FIRECRACKERS = new Firecracker(new FabricItemSettings().group(ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
 
         //Conductor Core
@@ -407,6 +431,19 @@ public class AdvAgriItems {
         RegistrationTool(TITANIUM_DISSOLVER, "titanium_dissolver");
         RegistrationTool(IRON_DISSOLVER, "iron_dissolver");
         RegistrationTool(GOLD_DISSOLVER, "gold_dissolver");
+
+        //Crushed Ore
+        RegistrationTool(CRUSHED_ALUMINUM_ORE, "crushed_aluminum_ore");
+        RegistrationTool(CRUSHED_COPPER_ORE, "crushed_copper_ore");
+        RegistrationTool(CRUSHED_GOLD_ORE, "crushed_gold_ore");
+        RegistrationTool(CRUSHED_IRON_ORE, "crushed_iron_ore");
+        RegistrationTool(CRUSHED_LEAD_ORE, "crushed_lead_ore");
+        RegistrationTool(CRUSHED_NICKEL_ORE, "crushed_nickel_ore");
+        RegistrationTool(CRUSHED_SILVER_ORE, "crushed_silver_ore");
+        RegistrationTool(CRUSHED_TIN_ORE, "crushed_tin_ore");
+        RegistrationTool(CRUSHED_TITANIUM_ORE, "crushed_titanium_ore");
+        RegistrationTool(CRUSHED_TUNGSTEN_ORE, "crushed_tungsten_ore");
+        RegistrationTool(CRUSHED_ZINC_ORE, "crushed_zinc_ore");
 
         RegistrationTool(FIRECRACKERS, "firecrackers");
 

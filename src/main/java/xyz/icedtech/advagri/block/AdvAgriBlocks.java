@@ -48,20 +48,20 @@ public class AdvAgriBlocks {
     public Block LEAD_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
     public Block SILVER_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
     public Block HIGH_CARBON_IRON_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
-    public Block NICKEL_ORE = this.CopyBlockSettings(Blocks.DIAMOND_ORE);
+    public Block NICKEL_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
     public Block TUNGSTEN_ORE = this.CopyBlockSettings(Blocks.DIAMOND_ORE);
     public Block TITANIUM_ORE = this.CopyBlockSettings(Blocks.DIAMOND_ORE);
     //WeatheredOre
-    public Block WEATHERED_COPPER_ORE;
-    public Block WEATHERED_ZINC_ORE;
-    public Block WEATHERED_TIN_ORE;
-    public Block WEATHERED_ALUMINUM_ORE;
-    public Block WEATHERED_LEAD_ORE;
-    public Block WEATHERED_SILVER_ORE;
-    public Block WEATHERED_HIGH_CARBON_IRON_ORE;
-    public Block WEATHERED_NICKEL_ORE;
-    public Block WEATHERED_TUNGSTEN_ORE;
-    public Block WEATHERED_TITANIUM_ORE;
+    public static Block WEATHERED_COPPER_ORE;
+    public static Block WEATHERED_ZINC_ORE;
+    public static Block WEATHERED_TIN_ORE;
+    public static Block WEATHERED_ALUMINUM_ORE;
+    public static Block WEATHERED_LEAD_ORE;
+    public static Block WEATHERED_SILVER_ORE;
+    public static Block WEATHERED_HIGH_CARBON_IRON_ORE;
+    public static Block WEATHERED_NICKEL_ORE;
+    public static Block WEATHERED_TUNGSTEN_ORE;
+    public static Block WEATHERED_TITANIUM_ORE;
     //Block
     public Block COPPER_BLOCK;
     public Block ZINC_BLOCK;
@@ -148,16 +148,16 @@ public class AdvAgriBlocks {
         this.AllInOneStepForOre(SULPHUR_ORE, "sulphur_ore");
         this.AllInOneStepForOre(NETHER_SULPHUR_ORE, "nether_sulphur_ore");
 
-        this.AllInOneStepForOre(WEATHERED_COPPER_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_copper_ore");
-        this.AllInOneStepForOre(WEATHERED_ZINC_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_zinc_ore");
-        this.AllInOneStepForOre(WEATHERED_TIN_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_tin_ore");
-        this.AllInOneStepForOre(WEATHERED_ALUMINUM_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_aluminum_ore");
-        this.AllInOneStepForOre(WEATHERED_LEAD_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_lead_ore");
-        this.AllInOneStepForOre(WEATHERED_SILVER_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_silver_ore");
-        this.AllInOneStepForOre(WEATHERED_HIGH_CARBON_IRON_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_high_carbon_iron_ore");
-        this.AllInOneStepForOre(WEATHERED_NICKEL_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_nickel_ore");
-        this.AllInOneStepForOre(WEATHERED_TUNGSTEN_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_tungsten_ore");
-        this.AllInOneStepForOre(WEATHERED_TITANIUM_ORE = this.CopyBlockSettings(Blocks.COAL_ORE), "weathered_titanium_ore");
+        this.AllInOneStepForOre(WEATHERED_COPPER_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_copper_ore");
+        this.AllInOneStepForOre(WEATHERED_ZINC_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_zinc_ore");
+        this.AllInOneStepForOre(WEATHERED_TIN_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_tin_ore");
+        this.AllInOneStepForOre(WEATHERED_ALUMINUM_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_aluminum_ore");
+        this.AllInOneStepForOre(WEATHERED_LEAD_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_lead_ore");
+        this.AllInOneStepForOre(WEATHERED_SILVER_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_silver_ore");
+        this.AllInOneStepForOre(WEATHERED_HIGH_CARBON_IRON_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_high_carbon_iron_ore");
+        this.AllInOneStepForOre(WEATHERED_NICKEL_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_nickel_ore");
+        this.AllInOneStepForOre(WEATHERED_TUNGSTEN_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_tungsten_ore");
+        this.AllInOneStepForOre(WEATHERED_TITANIUM_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_titanium_ore");
 
 
         this.AllInOneStep(COPPER_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "copper_block");
