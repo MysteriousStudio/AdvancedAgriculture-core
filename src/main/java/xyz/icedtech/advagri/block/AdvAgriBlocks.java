@@ -18,6 +18,10 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import org.jetbrains.annotations.NotNull;
 import xyz.icedtech.advagri.ModAta;
+import xyz.icedtech.advagri.block.machines.BurningTank;
+import xyz.icedtech.advagri.block.machines.FermentTank;
+import xyz.icedtech.advagri.block.machines.SolarHighTemperatureElectrolyzeMachine;
+import xyz.icedtech.advagri.block.machines.SunshineLiquefiesMachine;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemCoreGroup;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemWorldGroup;
 
@@ -87,6 +91,13 @@ public class AdvAgriBlocks {
     public BambooBlock BAMBOO_BLOCK;
 
     public Block QUARRY = this.CopyBlockSettings(Blocks.DIRT);
+
+    //Machine blocks
+    public Block MACHINE_SHELL;
+    public FermentTank FERMENT_TANK;
+    public BurningTank BURNING_TANK;
+    public SunshineLiquefiesMachine SUNSHINE_LIQUEFIES_MACHINE;
+    public SolarHighTemperatureElectrolyzeMachine SOLAR_HIGH_TEMPERATURE_ELECTROLYZE_MACHINE;
 
     ///GENERATE END:BLOCK
 
