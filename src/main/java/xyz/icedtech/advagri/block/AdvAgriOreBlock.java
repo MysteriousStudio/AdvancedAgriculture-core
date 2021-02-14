@@ -30,9 +30,9 @@ public class AdvAgriOreBlock extends OreBlock {
     @Override
     protected int getExperienceWhenMined(Random random) {
         if (this == AdvAgriBlocks.getInstance().SULPHUR_ORE || this == AdvAgriBlocks.getInstance().NETHER_SULPHUR_ORE) {
-            return MathHelper.nextInt(random, 3, 7);
+            return MathHelper.nextInt(random, 0, 2);
         } else if (this == AdvAgriBlocks.getInstance().PHOS_ORE) {
-            return MathHelper.nextInt(random, 0, 3);
+            return MathHelper.nextInt(random, 0, 2);
         } else {
             return 0;
         }
