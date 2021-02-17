@@ -27,7 +27,7 @@ public class ForgingHammer extends Item {
 
     //Todo: 2/4/21 11:34 PM
     // User: suibing
-    // Aims: Use forging hammer 9 times,then the block will change into 9 plates
+    // Aims: Use forging hammer 9 times,then the block will change into 18 plates
     // Desc: As aims
     // Stat: False
     @Override
@@ -85,31 +85,31 @@ public class ForgingHammer extends Item {
         AdvAgriBlocks advAgriBlocks = AdvAgriBlocks.getInstance();
 
         if (Objects.equals(advAgriBlocks.ALUMINUM_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.ALUMINUM_PLATE, 9);
+            return new ItemStack(AdvAgriItems.ALUMINUM_PLATE, 18);
         } else if (Objects.equals(advAgriBlocks.BRONZE_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.BRONZE_PLATE, 9);
+            return new ItemStack(AdvAgriItems.BRONZE_PLATE, 18);
         } else if (Objects.equals(advAgriBlocks.COPPER_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.COPPER_PLATE, 9);
+            return new ItemStack(AdvAgriItems.COPPER_PLATE, 18);
         } else if (Objects.equals(advAgriBlocks.LEAD_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.LEAD_PLATE, 9);
+            return new ItemStack(AdvAgriItems.LEAD_PLATE, 18);
         } else if (Objects.equals(advAgriBlocks.SILVER_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.SILVER_PLATE, 9);
+            return new ItemStack(AdvAgriItems.SILVER_PLATE, 18);
         } else if (Objects.equals(advAgriBlocks.NICKEL_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.NICKEL_PLATE, 9);
+            return new ItemStack(AdvAgriItems.NICKEL_PLATE, 18);
         } else if (Objects.equals(advAgriBlocks.ZINC_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.ZINC_PLATE, 9);
+            return new ItemStack(AdvAgriItems.ZINC_PLATE, 18);
         } else if (Objects.equals(advAgriBlocks.STEEL_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.STEEL_PLATE, 9);
+            return new ItemStack(AdvAgriItems.STEEL_PLATE, 18);
         } else if (Objects.equals(advAgriBlocks.TUNGSTEN_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.TUNGSTEN_PLATE, 9);
+            return new ItemStack(AdvAgriItems.TUNGSTEN_PLATE, 18);
         } else if (Objects.equals(advAgriBlocks.TITANIUM_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.TITANIUM_PLATE, 9);
+            return new ItemStack(AdvAgriItems.TITANIUM_PLATE, 18);
         } else if (Objects.equals(advAgriBlocks.TIN_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.TITANIUM_PLATE, 9);
+            return new ItemStack(AdvAgriItems.TITANIUM_PLATE, 18);
         } else if (Objects.equals(Blocks.IRON_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.IRON_PLATE, 9);
+            return new ItemStack(AdvAgriItems.IRON_PLATE, 18);
         } else if (Objects.equals(Blocks.GOLD_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.GOLD_PLATE, 9);
+            return new ItemStack(AdvAgriItems.GOLD_PLATE, 18);
         } else {
             throw new IllegalStateException("Unexpected value: " + block.toString());
         }
