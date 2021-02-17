@@ -96,6 +96,7 @@ public class AdvAgriItems {
     public static Item STEEL_POWDER;
     public static Item STEEL_GEAR;
     public static Item STEEL_PLATE;
+    public static Item CRUSHED_HIGH_CARBON_IRON_ORE;
     // Nickel
     public static Item NICKEL_SHARD;
     public static Item NICKEL_INGOT;
@@ -317,6 +318,7 @@ public class AdvAgriItems {
         CRUSHED_NICKEL_ORE = AddItemTool();
         CRUSHED_SILVER_ORE = AddItemTool();
         CRUSHED_TIN_ORE = AddItemTool();
+        CRUSHED_HIGH_CARBON_IRON_ORE = AddItemTool();
         CRUSHED_TITANIUM_ORE = AddItemTool();
         CRUSHED_TUNGSTEN_ORE = AddItemTool();
         CRUSHED_ZINC_ORE = AddItemTool();
@@ -485,6 +487,7 @@ public class AdvAgriItems {
         RegistrationTool(CRUSHED_TITANIUM_ORE, "crushed_titanium_ore");
         RegistrationTool(CRUSHED_TUNGSTEN_ORE, "crushed_tungsten_ore");
         RegistrationTool(CRUSHED_ZINC_ORE, "crushed_zinc_ore");
+        RegistrationTool(CRUSHED_HIGH_CARBON_IRON_ORE, "crushed_high_carbon_iron_ore");
 
         RegistrationTool(FIRECRACKERS, "firecrackers");
 
