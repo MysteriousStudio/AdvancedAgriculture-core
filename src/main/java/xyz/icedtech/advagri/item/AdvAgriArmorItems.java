@@ -19,7 +19,7 @@ public class AdvAgriArmorItems {
     public ArmorMaterial BAMBOO = new LeatherBambooMixedArmor();
     public ArmorMaterial LEATHER_BAMBOO_MIXED = new LeatherBambooMixedArmor();
 
-    ///GENERATE START:ARMOR
+    ///GENERATE
 
     //Bamboo armor
     public Item BAMBOO_HELMET;
@@ -40,7 +40,7 @@ public class AdvAgriArmorItems {
     public Item IRON_BAMBOO_MIXED_LEGGINGS;
     public Item IRON_BAMBOO_MIXED_BOOTS;
 
-    ///GENERATE END:ARMOR
+    ///GENERATE
 
     public static AdvAgriArmorItems getInstance() {
         return thisAdvAgriArmorItems;

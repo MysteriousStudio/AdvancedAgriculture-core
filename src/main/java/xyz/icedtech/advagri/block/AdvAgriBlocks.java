@@ -35,14 +35,14 @@ public class AdvAgriBlocks {
 
     public Float BAMBOO_HARDNESS = 2.0F;
     public Float CABLE_HARDNESS = 1.0F;
-    public Float DIRT_TYPE_HARDNESS = 0.5F;
+    public Float DIRT_HARDNESS = 0.5F;
 
 
     public Integer BASE_ORE_GEN_LINE = 48;
     public Integer BASE_ORE_GEN_SIZE = 8;
     public Integer BASE_ORE_GEN_COUNT = 16;
 
-    ///GENERATE START:BLOCK
+    ///GENERATE
 
     //MetalOre
     public Block COPPER_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
@@ -99,7 +99,7 @@ public class AdvAgriBlocks {
     public SunshineLiquefiesMachine SUNSHINE_LIQUEFIES_MACHINE;
     public SolarHighTemperatureElectrolyzeMachine SOLAR_HIGH_TEMPERATURE_ELECTROLYZE_MACHINE;
 
-    ///GENERATE END:BLOCK
+    ///GENERATE
 
     //OverWorld ores
     @NotNull
