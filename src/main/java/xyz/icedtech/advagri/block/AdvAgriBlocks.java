@@ -183,15 +183,13 @@ public class AdvAgriBlocks {
         this.AllInOneStep(TUNGSTEN_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "tungsten_block");
         this.AllInOneStep(TITANIUM_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "titanium_block");
 
+        this.AllInOneStep(BAMBOO_BLOCK = new BambooBlock(FabricBlockSettings.of(Material.BAMBOO).hardness(BAMBOO_HARDNESS)), "bamboo_block");
+        this.AllInOneStep(QUARRY, "quarry");
+
         this.AllInOneStep(COPPER_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "copper_cable");
         this.AllInOneStep(TIN_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "tin_cable");
         this.AllInOneStep(SILVER_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "silver_cable");
         this.AllInOneStep(GOLD_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "gold_cable");
-
-
-        this.AllInOneStep(BAMBOO_BLOCK = new BambooBlock(FabricBlockSettings.of(Material.BAMBOO).hardness(BAMBOO_HARDNESS)), "bamboo_block");
-
-        this.AllInOneStep(QUARRY, "quarry");
 
     }
 
