@@ -6,7 +6,7 @@ import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
 public class BurningTank extends BlockWithEntity {
-    protected BurningTank(Settings settings) {
+    public BurningTank(Settings settings) {
         super(settings);
     }
 

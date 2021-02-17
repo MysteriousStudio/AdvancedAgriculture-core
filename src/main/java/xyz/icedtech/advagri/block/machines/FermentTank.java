@@ -6,7 +6,7 @@ import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
 public class FermentTank extends BlockWithEntity {
-    protected FermentTank(Settings settings) {
+    public FermentTank(Settings settings) {
         super(settings);
     }
 

@@ -6,7 +6,7 @@ import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
 public class SolarHighTemperatureElectrolyzeMachine extends BlockWithEntity {
-    protected SolarHighTemperatureElectrolyzeMachine(Settings settings) {
+    public SolarHighTemperatureElectrolyzeMachine(Settings settings) {
         super(settings);
     }
 
