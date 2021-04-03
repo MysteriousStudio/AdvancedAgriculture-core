@@ -4,15 +4,13 @@ package xyz.icedtech.advagri.itemfuncutil;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import org.lwjgl.system.CallbackI;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class BambooChopper {
     private static final BambooChopper INSTANCE = new BambooChopper();
 
-    private ArrayList<Block> blocksArrayList = new ArrayList<>();
+    private final ArrayList<Block> blocksArrayList = new ArrayList<>();
 
     private BambooChopper() {
         blocksArrayList.add(Blocks.BAMBOO);

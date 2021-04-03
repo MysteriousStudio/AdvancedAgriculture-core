@@ -1,10 +1,6 @@
 package xyz.icedtech.advagri.item;
 
-import net.fabricmc.fabric.api.tag.FabricTag;
-import net.fabricmc.fabric.impl.tag.extension.FabricTagHooks;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

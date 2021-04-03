@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "xyz.icedtech.advagri.AdvancedAgriculture"
+    ],
+    "client": [
+      "xyz.icedtech.advagri.ClientAdvancedAgriculture"
     ]
   },
   "mixins": [

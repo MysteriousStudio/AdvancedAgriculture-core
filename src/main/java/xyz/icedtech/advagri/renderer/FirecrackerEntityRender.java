@@ -1,8 +1,9 @@
-package xyz.icedtech.advagri.entities.item;
+package xyz.icedtech.advagri.renderer;
 
 import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.util.Identifier;
+import xyz.icedtech.advagri.entities.item.FirecrackerEntity;
 
 public class FirecrackerEntityRender extends EntityRenderer<FirecrackerEntity> {
     protected FirecrackerEntityRender(EntityRenderDispatcher dispatcher) {
