@@ -20,6 +20,7 @@ public class BambooChopper extends Item {
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         Direction minerFacing = miner.getHorizontalFacing();
+        System.out.println(state.getBlock().toString());
         if (minerFacing.equals(Direction.EAST)) {
             //Z-2,X
             breakIfEAST(pos, state, world);
@@ -73,16 +74,6 @@ public class BambooChopper extends Item {
     }
 
     private boolean matchBlock(BlockState blockState) {
-        if (blockState.getBlock().toString().equals(Blocks.BAMBOO.toString())) return true;
-        if (blockState.getBlock().toString().equals(Blocks.TALL_GRASS.toString())) return true;
-        if (blockState.getBlock().toString().equals(Blocks.GRASS.toString())) return true;
-        if (blockState.getBlock().toString().equals(Blocks.FERN.toString())) return true;
-        if (blockState.getBlock().toString().equals(Blocks.LARGE_FERN.toString())) return true;
-        if (blockState.getBlock().toString().equals(Blocks.SUGAR_CANE.toString())) return true;
-        if (blockState.getBlock().toString().equals(Blocks.VINE.toString())) return true;
-        if (blockState.getBlock().toString().equals(Blocks.WEEPING_VINES_PLANT.toString())) return true;
-        if (blockState.getBlock().toString().equals(Blocks.TWISTING_VINES_PLANT.toString())) return true;
-
-        return false;
+        return xyz.icedtech.advagri.itemfuncutil.BambooChopper.getInstance().findElement(blockState);
     }
 }
