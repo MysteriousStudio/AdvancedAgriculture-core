@@ -9,8 +9,8 @@ import xyz.icedtech.advagri.item.AdvAgriArmorItems;
 import xyz.icedtech.advagri.item.AdvAgriItems;
 import xyz.icedtech.advagri.item.AdvAgriToolsAndWeapons;
 
-    public class AdvancedAgriculture implements ModInitializer {
-        @Override
+public class AdvancedAgriculture implements ModInitializer {
+    @Override
     public void onInitialize() {
         AdvAgriItems advAgriItems = AdvAgriItems.getInstance();
         AdvAgriBlocks advAgriBlocks = AdvAgriBlocks.getInstance();
@@ -86,5 +86,5 @@ import xyz.icedtech.advagri.item.AdvAgriToolsAndWeapons;
 
         //        advAgriEnchantments.InitAllEnchantment();
 
-        }    
     }
+}

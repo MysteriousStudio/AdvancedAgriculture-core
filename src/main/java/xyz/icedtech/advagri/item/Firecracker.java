@@ -23,12 +23,12 @@ public class Firecracker extends Item {
         world.playSound(null, playerEntity.getX(), playerEntity.getY(), playerEntity.getZ(), SoundEvents.ENTITY_SNOWBALL_THROW, SoundCategory.NEUTRAL, 0.5F, 0.4F / (RANDOM.nextFloat() * 0.4F + 0.8F));
 
         if (!world.isClient) {
-			FirecrackerEntity snowballEntity = new FirecrackerEntity(world, playerEntity);
-			snowballEntity.setItem(itemStack);
-			snowballEntity.setProperties(playerEntity, playerEntity.pitch, playerEntity.yaw, 0.0F, 1.5F, 0F);
-			world.spawnEntity(snowballEntity); // spawns entity
-		}
- 
+            FirecrackerEntity snowballEntity = new FirecrackerEntity(world, playerEntity);
+            snowballEntity.setItem(itemStack);
+            snowballEntity.setProperties(playerEntity, playerEntity.pitch, playerEntity.yaw, 0.0F, 1.5F, 0F);
+            world.spawnEntity(snowballEntity); // spawns entity
+        }
+
         playerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
         if (!playerEntity.abilities.creativeMode) {
             itemStack.decrement(1);

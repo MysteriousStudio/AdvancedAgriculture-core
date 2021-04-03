@@ -31,26 +31,26 @@ public class FirecrackerEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return AdvAgriItems.getInstance().FIRECRACKERS;
+        return AdvAgriItems.FIRECRACKERS;
     }
 
 
     @Override
     protected void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
-            Entity entity = entityHitResult.getEntity(); 
-            int i = entity instanceof LivingEntity ? 1 : 0; 
-            entity.damage(DamageSource.thrownProjectile(this, this.getOwner()), (float)i); 
-            entity.playSound(SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, 0.5F, 1F);
+        Entity entity = entityHitResult.getEntity();
+        int i = entity instanceof LivingEntity ? 1 : 0;
+        entity.damage(DamageSource.thrownProjectile(this, this.getOwner()), (float) i);
+        entity.playSound(SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, 0.5F, 1F);
     }
 
     @Override
     protected void onBlockHit(BlockHitResult blockHitResult) {
         super.onBlockHit(blockHitResult);
-            if (this.world.isClient()) {
-                world.createExplosion(this, this.getX(), this.getY(), this.getZ(), 0.5F, false, Explosion.DestructionType.NONE);
-            };
-            playSound(SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, 1F, 1F);
+        if (this.world.isClient()) {
+            world.createExplosion(this, this.getX(), this.getY(), this.getZ(), 0.5F, false, Explosion.DestructionType.NONE);
+        }
+        playSound(SoundEvents.ENTITY_FIREWORK_ROCKET_BLAST, 1F, 1F);
     }
 
     @Override
