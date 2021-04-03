@@ -5,12 +5,13 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.Tickable;
 
+import java.util.Random;
+
 public class BambooBlockEntity extends BlockEntity implements Tickable {
     public BambooBlockEntity() {
         super(AdvAgriBlockEntities.BAMBOO_BLOCK_ENTITY);
     }
 
-    public static int randomNumber = 1;
     public static int age = 1;
     public static int life = 0;
 
@@ -32,14 +33,24 @@ public class BambooBlockEntity extends BlockEntity implements Tickable {
 
     @Override
     public void fromTag(BlockState state, CompoundTag tag) {
-        super.fromTag(state, tag);
-
         age = tag.getInt("age");
         life = tag.getInt("life");
+        super.fromTag(state, tag);
     }
 
     @Override
     public void tick() {
 
+        if (life >= 3) {
+            return;
+        }
+        if (age >= 100000) {
+            age = 0;
+            life += 1;
+            return;
+        }
+        if (new Random().nextInt(10) == 0) {
+            age += 1;
+        }
     }
 }
