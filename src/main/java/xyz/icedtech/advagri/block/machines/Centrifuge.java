@@ -5,16 +5,15 @@ import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
-import xyz.icedtech.advagri.entities.block.SolarHighTemperatureElectrolyzeMachineEntity;
 
-public class SolarHighTemperatureElectrolyzeMachine extends Block implements BlockEntityProvider {
-    public SolarHighTemperatureElectrolyzeMachine(Settings settings) {
+public class Centrifuge extends Block implements BlockEntityProvider {
+    public Centrifuge(Settings settings) {
         super(settings);
     }
 
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockView world) {
-        return new SolarHighTemperatureElectrolyzeMachineEntity();
+        return null;
     }
 }

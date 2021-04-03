@@ -18,10 +18,7 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import org.jetbrains.annotations.NotNull;
 import xyz.icedtech.advagri.ModAta;
-import xyz.icedtech.advagri.block.machines.BurningTank;
-import xyz.icedtech.advagri.block.machines.FermentTank;
-import xyz.icedtech.advagri.block.machines.SolarHighTemperatureElectrolyzeMachine;
-import xyz.icedtech.advagri.block.machines.SunshineLiquefiesMachine;
+import xyz.icedtech.advagri.block.machines.*;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemCoreGroup;
 import xyz.icedtech.advagri.itemgroup.AdvAgriItemWorldGroup;
 
@@ -98,6 +95,11 @@ public class AdvAgriBlocks {
     public BurningTank BURNING_TANK;
     public SunshineLiquefiesMachine SUNSHINE_LIQUEFIES_MACHINE;
     public SolarHighTemperatureElectrolyzeMachine SOLAR_HIGH_TEMPERATURE_ELECTROLYZE_MACHINE;
+    public Crusher CRUSHER;
+    public Extractor EXTRACTOR;
+    public Centrifuge CENTRIFUGE;
+    public OreWashingMachine ORE_WASHING_MACHINE;
+    public ResinExtractor RESIN_EXTRACTOR;
 
     ///GENERATE
 
@@ -196,6 +198,11 @@ public class AdvAgriBlocks {
         this.AllInOneStep(BURNING_TANK = new BurningTank(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "burning_tank");
         this.AllInOneStep(SUNSHINE_LIQUEFIES_MACHINE = new SunshineLiquefiesMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "sunshine_liquefies_machine");
         this.AllInOneStep(SOLAR_HIGH_TEMPERATURE_ELECTROLYZE_MACHINE = new SolarHighTemperatureElectrolyzeMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "solar_high_temperature_electrolyze_machine");
+        this.AllInOneStep(CRUSHER = new Crusher(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "crusher");
+        this.AllInOneStep(EXTRACTOR = new Extractor(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "extractor");
+        this.AllInOneStep(CENTRIFUGE = new Centrifuge(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "centrifuge");
+        this.AllInOneStep(ORE_WASHING_MACHINE = new OreWashingMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "ore_washing_machine");
+        this.AllInOneStep(RESIN_EXTRACTOR = new ResinExtractor(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "resin_extractor");
     }
 
     public void RegisteredGenOres() {
