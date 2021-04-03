@@ -1,11 +1,13 @@
 package xyz.icedtech.advagri.block.machines;
 
-import net.minecraft.block.BlockWithEntity;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
+import xyz.icedtech.advagri.entities.block.FermentTankEntity;
 
-public class FermentTank extends BlockWithEntity {
+public class FermentTank extends Block implements BlockEntityProvider {
     public FermentTank(Settings settings) {
         super(settings);
     }
@@ -13,6 +15,6 @@ public class FermentTank extends BlockWithEntity {
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockView world) {
-        return null;
+        return new FermentTankEntity();
     }
 }

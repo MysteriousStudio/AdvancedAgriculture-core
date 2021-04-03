@@ -41,16 +41,5 @@ public class BambooBlockEntity extends BlockEntity implements Tickable {
     @Override
     public void tick() {
 
-/*
-        if (age > 3) {
-            return;
-        }
-        life++;
-        if (life >= randomNumber * 100 + 100) {
-            age++;
-            System.out.println(age);
-        }
-*/
-
     }
 }
