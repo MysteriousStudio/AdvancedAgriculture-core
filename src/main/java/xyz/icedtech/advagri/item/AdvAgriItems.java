@@ -156,8 +156,8 @@ public class AdvAgriItems {
 
     // Metal Forging
     public static Item FORGING_HAMMER;
-
     public static Item BAMBOO_CHOPPER;
+    public static Wench WENCH;
 
     // Plant "Seed"
     public static Item RICE_SEED_BAG;
@@ -346,6 +346,7 @@ public class AdvAgriItems {
                 new FabricItemSettings().group(ITEM_GROUP).maxCount(1).recipeRemainder(FORGING_HAMMER));
 
         BAMBOO_CHOPPER = new BambooChopper(new FabricItemSettings().group(ITEM_GROUP).maxCount(1));
+        WENCH = new Wench(new FabricItemSettings().group(ITEM_GROUP).maxCount(1));
 
         //Plant "Seed"
         RICE_SEED_BAG = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
@@ -507,6 +508,7 @@ public class AdvAgriItems {
         // Metal Forging
         RegistrationTool(FORGING_HAMMER, "forging_hammer");
         RegistrationTool(BAMBOO_CHOPPER, "bamboo_chopper");
+        RegistrationTool(WENCH, "wench");
 
         //Plant "Seed"
         RegistrationTool(RICE_SEED_BAG, "rice_seed_bag");
