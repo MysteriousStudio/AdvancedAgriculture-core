@@ -1,6 +1,7 @@
-package xyz.icedtech.advagri.entities.item;
+package xyz.icedtech.advagri.renderer;
 
 import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
+import xyz.icedtech.advagri.entities.item.AdvAgriItemEntities;
 
 public class AdvAgriItemEntitiesRenderers {
     private static AdvAgriItemEntitiesRenderers advAgriItemEntitiesRenderers = new AdvAgriItemEntitiesRenderers();

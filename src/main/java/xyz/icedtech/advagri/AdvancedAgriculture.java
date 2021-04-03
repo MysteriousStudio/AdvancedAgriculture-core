@@ -4,26 +4,24 @@ import net.fabricmc.api.ModInitializer;
 import xyz.icedtech.advagri.block.AdvAgriBlocks;
 import xyz.icedtech.advagri.entities.block.AdvAgriBlockEntities;
 import xyz.icedtech.advagri.entities.item.AdvAgriItemEntities;
-import xyz.icedtech.advagri.entities.item.AdvAgriItemEntitiesRenderers;
 import xyz.icedtech.advagri.events.AdvAgriEvents;
 import xyz.icedtech.advagri.item.AdvAgriArmorItems;
 import xyz.icedtech.advagri.item.AdvAgriItems;
 import xyz.icedtech.advagri.item.AdvAgriToolsAndWeapons;
 
-public class AdvancedAgriculture implements ModInitializer {
-    @Override
+    public class AdvancedAgriculture implements ModInitializer {
+        @Override
     public void onInitialize() {
         AdvAgriItems advAgriItems = AdvAgriItems.getInstance();
         AdvAgriBlocks advAgriBlocks = AdvAgriBlocks.getInstance();
         AdvAgriArmorItems advAgriArmorItems = AdvAgriArmorItems.getInstance();
         AdvAgriToolsAndWeapons advAgriToolsAndWeapons = AdvAgriToolsAndWeapons.getInstance();
 
-        AdvAgriItemEntitiesRenderers advAgriItemEntitiesRenderers = AdvAgriItemEntitiesRenderers.getInstance();
         AdvAgriItemEntities advAgriItemEntities = AdvAgriItemEntities.getInstance();
 
         AdvAgriBlockEntities advAgriBlockEntities = AdvAgriBlockEntities.getInstance();
 
-//        AdvAgriEnchantments advAgriEnchantments = AdvAgriEnchantments.getINSTANCE();
+        //AdvAgriEnchantments advAgriEnchantments = AdvAgriEnchantments.getINSTANCE();
 
         AdvAgriEvents advAgriEvents = AdvAgriEvents.getInstance();
 
@@ -72,7 +70,6 @@ public class AdvancedAgriculture implements ModInitializer {
         // Desc: If there need any functions about init item entities,code them here.
         // Stat: True
         advAgriItemEntities.InitAllItemEntity();
-        advAgriItemEntitiesRenderers.InitAllItemEntitiesRenderers();
 
         //Todo: 2/3/21 8:25 PM
         // User: suibing
@@ -88,5 +85,6 @@ public class AdvancedAgriculture implements ModInitializer {
         // Stat: False
 
         //        advAgriEnchantments.InitAllEnchantment();
+
+        }    
     }
-}
