@@ -31,7 +31,7 @@ public class AdvAgriBlockEntities {
 
     public void InitAllBlockEntities() {
         BAMBOO_BLOCK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, ModAta.ModID + ":bamboo_block", BlockEntityType.Builder.create(BambooBlockEntity::new, AdvAgriBlocks.getInstance().BAMBOO_BLOCK).build(null));
-        FERMENT_TANK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, ModAta.ModID + ":ferment_tank", BlockEntityType.Builder.create(FermentTankEntity::new, AdvAgriBlocks.getInstance().FERMENT_TANK).build(null));
+        FERMENT_TANK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, ModAta.ModID + ":ferment_tank.json", BlockEntityType.Builder.create(FermentTankEntity::new, AdvAgriBlocks.getInstance().FERMENT_TANK).build(null));
         BURNING_TANK_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, ModAta.ModID + ":burning_tank", BlockEntityType.Builder.create(BurningTankEntity::new, AdvAgriBlocks.getInstance().BURNING_TANK).build(null));
         SHTE_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, ModAta.ModID + ":shte", BlockEntityType.Builder.create(SolarHighTemperatureElectrolyzeMachineEntity::new, AdvAgriBlocks.getInstance().SOLAR_HIGH_TEMPERATURE_ELECTROLYZE_MACHINE).build(null));
         SL_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, ModAta.ModID + ":sl", BlockEntityType.Builder.create(SunshineLiquefiesMachineEntity::new, AdvAgriBlocks.getInstance().SUNSHINE_LIQUEFIES_MACHINE).build(null));
