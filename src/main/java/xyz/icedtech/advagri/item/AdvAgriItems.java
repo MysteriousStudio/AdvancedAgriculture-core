@@ -180,6 +180,9 @@ public class AdvAgriItems {
     public static Item GARLIC;
     public static Item CHUFA;
 
+    // Trees
+
+
     /// GENERATE
 
     public static ItemGroup ITEM_GROUP;
@@ -530,6 +533,9 @@ public class AdvAgriItems {
         RegistrationTool(STRAWBERRY, "strawberry");
         RegistrationTool(GARLIC, "garlic");
         RegistrationTool(CHUFA, "chufa");
+
+
+        //Trees
 
     }
 

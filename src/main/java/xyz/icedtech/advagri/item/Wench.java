@@ -5,6 +5,8 @@ import net.minecraft.item.ItemUsageContext;
 import net.minecraft.util.ActionResult;
 import xyz.icedtech.advagri.block.machines.Machine;
 
+import java.util.Objects;
+
 public class Wench extends Item {
     public Wench(Settings settings) {
         super(settings);
@@ -12,7 +14,7 @@ public class Wench extends Item {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-        if (Machine.class.isAssignableFrom(context.getWorld().getBlockState(context.getBlockPos()).getBlock().getClass()) && context.getPlayer().isInSneakingPose()) {
+        if (Machine.class.isAssignableFrom(context.getWorld().getBlockState(context.getBlockPos()).getBlock().getClass()) && Objects.requireNonNull(context.getPlayer()).isInSneakingPose()) {
             context.getWorld().breakBlock(context.getBlockPos(), true);
             return ActionResult.SUCCESS;
         }

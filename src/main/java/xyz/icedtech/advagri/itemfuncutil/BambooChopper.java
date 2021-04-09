@@ -26,6 +26,8 @@ public class BambooChopper {
         blocksArrayList.add(Blocks.TWISTING_VINES_PLANT);
         blocksArrayList.add(Blocks.WEEPING_VINES);
         blocksArrayList.add(Blocks.TWISTING_VINES);
+        blocksArrayList.add(Blocks.KELP);
+        blocksArrayList.add(Blocks.KELP_PLANT);
     }
 
     public boolean findElement(BlockState blockState) {
