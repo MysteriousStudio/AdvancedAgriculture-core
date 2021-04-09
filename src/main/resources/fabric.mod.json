@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "xyz.icedtech.advagri.AdvancedAgriculture"
+      "tech.icedlab.advagri.AdvancedAgriculture"
     ],
     "client": [
-      "xyz.icedtech.advagri.ClientAdvancedAgriculture"
+      "tech.icedlab.advagri.ClientAdvancedAgriculture"
     ]
   },
   "mixins": [
