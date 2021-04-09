@@ -42,11 +42,11 @@ jobs:
         with:
           name: Artifacts
           path: build/libs/
-      - name: Send status to Discord
-        if: ${{ runner.os == 'Linux' && matrix.java == '11' }} # Only upload artifacts built from LTS java on one OS
-        uses: MysteriousStudio/actions-discord-webhook@master
-        with:
-          webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }} # required
-          status: ${{ job.status }} # optional, this is the default
+      #     - name: Send status to Discord
+      #      if: ${{ runner.os == 'Linux' && matrix.java == '11' }} # Only upload artifacts built from LTS java on one OS
+      #     uses: MysteriousStudio/actions-discord-webhook@master
+      #    with:
+      #     webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }} # required
+      #    status: ${{ job.status }} # optional, this is the default
       # if: always() # or failure() or success()
 
