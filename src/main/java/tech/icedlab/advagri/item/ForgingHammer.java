@@ -11,14 +11,14 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import tech.icedlab.advagri.block.AdvAgriBlocks;
+import tech.icedlab.advagri.itemfuncutil.ForgingHammerStorage;
 
-import java.util.HashMap;
 import java.util.Objects;
 
 
 public class ForgingHammer extends Item {
 
-    public HashMap<BlockPos, Integer> blockArrayList = new HashMap<>();
+
 
     public ForgingHammer(Settings settings) {
         super(settings);
@@ -33,6 +33,8 @@ public class ForgingHammer extends Item {
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
 
+        ForgingHammerStorage blockHashMap = ForgingHammerStorage.getINSTANCE();
+
         Block block = context.getWorld().getBlockState(context.getBlockPos()).getBlock();
         BlockPos blockPos = context.getBlockPos();
 
@@ -44,11 +46,11 @@ public class ForgingHammer extends Item {
 
             Objects.requireNonNull(context.getPlayer()).playSound(SoundEvents.BLOCK_ANVIL_LAND, 0.7F, 1F);
 
-            if (!blockArrayList.containsKey(context.getBlockPos())) {//不存在但是是可敲打方块
-                blockArrayList.put(context.getBlockPos(), 1);
+            if (!blockHashMap.containsKey(context.getBlockPos())) {//不存在但是是可敲打方块
+                blockHashMap.put(context.getBlockPos(), 1);
                 return ActionResult.SUCCESS;
-            } else if (blockArrayList.get(context.getBlockPos()) > 18) {//存在但是敲打次数超过了9次
-                blockArrayList.remove(blockPos);
+            } else if (blockHashMap.get(context.getBlockPos()) > 18) {//存在但是敲打次数超过了9次
+                blockHashMap.remove(blockPos);
                 if (matchMetalBlock(block)) {
                     new ItemEntity(context.getWorld(), blockPos.getX(), blockPos.getY(), blockPos.getZ()).dropStack(dropPlate(block));
                     context.getWorld().breakBlock(blockPos, false);
@@ -56,7 +58,7 @@ public class ForgingHammer extends Item {
                 }
                 return ActionResult.SUCCESS;
             } else {//敲打累增
-                blockArrayList.put(blockPos, blockArrayList.get(context.getBlockPos()) + 1);
+                blockHashMap.put(blockPos, blockHashMap.get(context.getBlockPos()) + 1);
                 return ActionResult.SUCCESS;
             }
         }
