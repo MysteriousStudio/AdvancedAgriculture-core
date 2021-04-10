@@ -7,6 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import tech.icedlab.advagri.itemfuncutil.BambooChopperUtil;
 
 public class BambooChopper extends Item {
     public BambooChopper(Settings settings) {
@@ -70,6 +71,6 @@ public class BambooChopper extends Item {
     }
 
     private boolean matchBlock(BlockState blockState) {
-        return tech.icedlab.advagri.itemfuncutil.BambooChopper.getInstance().findElement(blockState);
+        return BambooChopperUtil.getInstance().findElement(blockState);
     }
 }

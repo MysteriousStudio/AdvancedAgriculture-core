@@ -10,8 +10,8 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import tech.icedlab.advagri.block.AdvAgriBlocks;
 import tech.icedlab.advagri.itemfuncutil.ForgingHammerStorage;
+import tech.icedlab.advagri.itemfuncutil.ForgingHammerUtil;
 
 import java.util.Objects;
 
@@ -68,53 +68,11 @@ public class ForgingHammer extends Item {
 
 
     public boolean matchMetalBlock(Block block) {
-        return block == AdvAgriBlocks.getInstance().ALUMINUM_BLOCK
-                || block == AdvAgriBlocks.getInstance().BRONZE_BLOCK
-                || block == AdvAgriBlocks.getInstance().COPPER_BLOCK
-                || block == AdvAgriBlocks.getInstance().LEAD_BLOCK
-                || block == AdvAgriBlocks.getInstance().SILVER_BLOCK
-                || block == AdvAgriBlocks.getInstance().NICKEL_BLOCK
-                || block == AdvAgriBlocks.getInstance().ZINC_BLOCK
-                || block == AdvAgriBlocks.getInstance().STEEL_BLOCK
-                || block == AdvAgriBlocks.getInstance().TUNGSTEN_BLOCK
-                || block == AdvAgriBlocks.getInstance().TITANIUM_BLOCK
-                || block == AdvAgriBlocks.getInstance().TIN_BLOCK
-                || block == Blocks.GOLD_BLOCK
-                || block == Blocks.IRON_BLOCK;
+        return ForgingHammerUtil.isBlockContained(block);
     }
 
     public ItemStack dropPlate(Block block) {
-        AdvAgriBlocks advAgriBlocks = AdvAgriBlocks.getInstance();
-
-        if (Objects.equals(advAgriBlocks.ALUMINUM_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.ALUMINUM_PLATE, 18);
-        } else if (Objects.equals(advAgriBlocks.BRONZE_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.BRONZE_PLATE, 18);
-        } else if (Objects.equals(advAgriBlocks.COPPER_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.COPPER_PLATE, 18);
-        } else if (Objects.equals(advAgriBlocks.LEAD_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.LEAD_PLATE, 18);
-        } else if (Objects.equals(advAgriBlocks.SILVER_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.SILVER_PLATE, 18);
-        } else if (Objects.equals(advAgriBlocks.NICKEL_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.NICKEL_PLATE, 18);
-        } else if (Objects.equals(advAgriBlocks.ZINC_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.ZINC_PLATE, 18);
-        } else if (Objects.equals(advAgriBlocks.STEEL_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.STEEL_PLATE, 18);
-        } else if (Objects.equals(advAgriBlocks.TUNGSTEN_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.TUNGSTEN_PLATE, 18);
-        } else if (Objects.equals(advAgriBlocks.TITANIUM_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.TITANIUM_PLATE, 18);
-        } else if (Objects.equals(advAgriBlocks.TIN_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.TITANIUM_PLATE, 18);
-        } else if (Objects.equals(Blocks.IRON_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.IRON_PLATE, 18);
-        } else if (Objects.equals(Blocks.GOLD_BLOCK, block)) {
-            return new ItemStack(AdvAgriItems.GOLD_PLATE, 18);
-        } else {
-            throw new IllegalStateException("Unexpected value: " + block.toString());
-        }
+        return new ItemStack(ForgingHammerUtil.getPlate(block), 18);
     }
 
     public boolean isUnderBlockAnvil(BlockPos blockPos, World world) {

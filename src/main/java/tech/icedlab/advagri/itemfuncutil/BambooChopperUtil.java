@@ -7,12 +7,12 @@ import net.minecraft.block.Blocks;
 
 import java.util.ArrayList;
 
-public class BambooChopper {
-    private static final BambooChopper INSTANCE = new BambooChopper();
+public class BambooChopperUtil {
+    private static final BambooChopperUtil INSTANCE = new BambooChopperUtil();
 
     private final ArrayList<Block> blocksArrayList = new ArrayList<>();
 
-    private BambooChopper() {
+    private BambooChopperUtil() {
         blocksArrayList.add(Blocks.BAMBOO);
         blocksArrayList.add(Blocks.TALL_GRASS);
         blocksArrayList.add(Blocks.GRASS);
@@ -34,7 +34,7 @@ public class BambooChopper {
         return blocksArrayList.contains(blockState.getBlock());
     }
 
-    public static BambooChopper getInstance() {
+    public static BambooChopperUtil getInstance() {
         return INSTANCE;
     }
 
