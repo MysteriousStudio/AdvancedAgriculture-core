@@ -66,13 +66,12 @@ public class ForgingHammer extends Item {
         return ActionResult.PASS;
     }
 
-
     public boolean matchMetalBlock(Block block) {
-        return ForgingHammerUtil.isBlockContained(block);
+        return ForgingHammerUtil.getINSTANCE().isBlockContained(block);
     }
 
     public ItemStack dropPlate(Block block) {
-        return new ItemStack(ForgingHammerUtil.getPlate(block), 18);
+        return new ItemStack(ForgingHammerUtil.getINSTANCE().getPlate(block), 18);
     }
 
     public boolean isUnderBlockAnvil(BlockPos blockPos, World world) {

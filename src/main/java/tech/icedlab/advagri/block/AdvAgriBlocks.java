@@ -194,7 +194,7 @@ public class AdvAgriBlocks {
         this.AllInOneStep(GOLD_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "gold_cable");
 
         this.AllInOneStep(MACHINE_SHELL = new MachineShell(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "machine_shell");
-        this.AllInOneStep(FERMENT_TANK = new FermentTank(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "ferment_tank.json");
+        this.AllInOneStep(FERMENT_TANK = new FermentTank(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "ferment_tank");
         this.AllInOneStep(BURNING_TANK = new BurningTank(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "burning_tank");
         this.AllInOneStep(SUNSHINE_LIQUEFIES_MACHINE = new SunshineLiquefiesMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "sunshine_liquefies_machine");
         this.AllInOneStep(SOLAR_HIGH_TEMPERATURE_ELECTROLYZE_MACHINE = new SolarHighTemperatureElectrolyzeMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "solar_high_temperature_electrolyze_machine");

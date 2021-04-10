@@ -11,8 +11,8 @@ import java.util.HashMap;
 public class ForgingHammerUtil {
 
     private static final ForgingHammerUtil INSTANCE = new ForgingHammerUtil();
-    private static HashMap<Block, Integer> blockIntegerHashMap = new HashMap<>();
-    private static HashMap<Block, Item> blockItemHashMap = new HashMap<>();
+    private final HashMap<Block, Integer> blockIntegerHashMap = new HashMap<>();
+    private final HashMap<Block, Item> blockItemHashMap = new HashMap<>();
 
     private ForgingHammerUtil() {
         blockIntegerHashMap.put(AdvAgriBlocks.getInstance().ALUMINUM_BLOCK, 1);
@@ -47,11 +47,11 @@ public class ForgingHammerUtil {
         blockItemHashMap.put(Blocks.IRON_BLOCK, AdvAgriItems.IRON_PLATE);
     }
 
-    public static boolean isBlockContained(Block block) {
+    public boolean isBlockContained(Block block) {
         return blockIntegerHashMap.containsKey(block);
     }
 
-    public static Item getPlate(Block block) {
+    public Item getPlate(Block block) {
         return blockItemHashMap.get(block);
     }
 
