@@ -10,15 +10,26 @@ public class AdvAgriBlockEntities {
 
     @NotNull
     public static BlockEntityType<BambooBlockEntity> BAMBOO_BLOCK_ENTITY;
+    @NotNull
     public static BlockEntityType<FermentTankEntity> FERMENT_TANK_ENTITY;
+    @NotNull
     public static BlockEntityType<BurningTankEntity> BURNING_TANK_ENTITY;
+    @NotNull
     public static BlockEntityType<SolarHighTemperatureElectrolyzeMachineEntity> SHTE_ENTITY;
+    @NotNull
     public static BlockEntityType<SunshineLiquefiesMachineEntity> SL_ENTITY;
+    @NotNull
     public static BlockEntityType<CrusherEntity> CRUSHER_ENTITY;
+    @NotNull
     public static BlockEntityType<ExtractorEntity> EXTRACTOR_ENTITY;
+    @NotNull
     public static BlockEntityType<CentrifugeEntity> CENTRIFUGE_ENTITY;
+    @NotNull
     public static BlockEntityType<OreWashingMachineEntity> ORE_WASHING_MACHINE_ENTITY;
+    @NotNull
     public static BlockEntityType<ResinExtractorEntity> RESIN_EXTRACTOR_ENTITY;
+    @NotNull
+    public static BlockEntityType<AdvancedCraftingTableEntity> ADVANCED_CRAFTING_TABLE_ENTITY;
 
     private static final AdvAgriBlockEntities INSTANCE = new AdvAgriBlockEntities();
 
@@ -40,6 +51,8 @@ public class AdvAgriBlockEntities {
         CENTRIFUGE_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, ModAta.ModID + ":centrifuge", BlockEntityType.Builder.create(CentrifugeEntity::new, AdvAgriBlocks.getInstance().CENTRIFUGE).build(null));
         ORE_WASHING_MACHINE_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, ModAta.ModID + ":ore_washing_machine", BlockEntityType.Builder.create(OreWashingMachineEntity::new, AdvAgriBlocks.getInstance().ORE_WASHING_MACHINE).build(null));
         RESIN_EXTRACTOR_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, ModAta.ModID + ":resin_extractor", BlockEntityType.Builder.create(ResinExtractorEntity::new, AdvAgriBlocks.getInstance().RESIN_EXTRACTOR).build(null));
+        ADVANCED_CRAFTING_TABLE_ENTITY = Registry.register(Registry.BLOCK_ENTITY_TYPE, ModAta.ModID + ":advanced_crafting_table", BlockEntityType.Builder.create(AdvancedCraftingTableEntity::new, AdvAgriBlocks.getInstance().ADVANCED_CRAFTING_TABLE).build(null));
+
     }
 
 }

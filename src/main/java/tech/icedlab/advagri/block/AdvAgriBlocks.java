@@ -90,7 +90,9 @@ public class AdvAgriBlocks {
     public Block QUARRY = this.CopyBlockSettings(Blocks.DIRT);
 
     //Machine blocks
+
     public MachineShell MACHINE_SHELL;
+    public AdvancedCraftingTable ADVANCED_CRAFTING_TABLE;
     public FermentTank FERMENT_TANK;
     public BurningTank BURNING_TANK;
     public SunshineLiquefiesMachine SUNSHINE_LIQUEFIES_MACHINE;
@@ -100,7 +102,6 @@ public class AdvAgriBlocks {
     public Centrifuge CENTRIFUGE;
     public OreWashingMachine ORE_WASHING_MACHINE;
     public ResinExtractor RESIN_EXTRACTOR;
-
     ///GENERATE
 
     //OverWorld ores
@@ -194,6 +195,7 @@ public class AdvAgriBlocks {
         this.AllInOneStep(GOLD_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "gold_cable");
 
         this.AllInOneStep(MACHINE_SHELL = new MachineShell(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "machine_shell");
+        this.AllInOneStep(ADVANCED_CRAFTING_TABLE = new AdvancedCraftingTable(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "advanced_crafting_table");
         this.AllInOneStep(FERMENT_TANK = new FermentTank(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "ferment_tank");
         this.AllInOneStep(BURNING_TANK = new BurningTank(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "burning_tank");
         this.AllInOneStep(SUNSHINE_LIQUEFIES_MACHINE = new SunshineLiquefiesMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "sunshine_liquefies_machine");
