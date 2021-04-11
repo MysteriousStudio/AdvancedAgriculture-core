@@ -7,28 +7,29 @@ import tech.icedlab.advagri.block.AdvAgriBlocks;
 import tech.icedlab.advagri.item.AdvAgriItems;
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class ForgingHammerUtil {
 
     private static final ForgingHammerUtil INSTANCE = new ForgingHammerUtil();
-    private final HashMap<Block, Integer> blockIntegerHashMap = new HashMap<>();
+    private final HashSet<Block> blockHashSet = new HashSet<>();
     private final HashMap<Block, Item> blockItemHashMap = new HashMap<>();
 
     private ForgingHammerUtil() {
-        blockIntegerHashMap.put(AdvAgriBlocks.getInstance().ALUMINUM_BLOCK, 1);
-        blockIntegerHashMap.put(AdvAgriBlocks.getInstance().BRONZE_BLOCK, 1);
-        blockIntegerHashMap.put(AdvAgriBlocks.getInstance().COPPER_BLOCK, 1);
-        blockIntegerHashMap.put(AdvAgriBlocks.getInstance().LEAD_BLOCK, 1);
-        blockIntegerHashMap.put(AdvAgriBlocks.getInstance().SILVER_BLOCK, 1);
-        blockIntegerHashMap.put(AdvAgriBlocks.getInstance().NICKEL_BLOCK, 1);
-        blockIntegerHashMap.put(AdvAgriBlocks.getInstance().ZINC_BLOCK, 1);
-        blockIntegerHashMap.put(AdvAgriBlocks.getInstance().STEEL_BLOCK, 1);
-        blockIntegerHashMap.put(AdvAgriBlocks.getInstance().TUNGSTEN_BLOCK, 1);
-        blockIntegerHashMap.put(AdvAgriBlocks.getInstance().TITANIUM_BLOCK, 1);
-        blockIntegerHashMap.put(AdvAgriBlocks.getInstance().TIN_BLOCK, 1);
+        blockHashSet.add(AdvAgriBlocks.getInstance().ALUMINUM_BLOCK);
+        blockHashSet.add(AdvAgriBlocks.getInstance().BRONZE_BLOCK);
+        blockHashSet.add(AdvAgriBlocks.getInstance().COPPER_BLOCK);
+        blockHashSet.add(AdvAgriBlocks.getInstance().LEAD_BLOCK);
+        blockHashSet.add(AdvAgriBlocks.getInstance().SILVER_BLOCK);
+        blockHashSet.add(AdvAgriBlocks.getInstance().NICKEL_BLOCK);
+        blockHashSet.add(AdvAgriBlocks.getInstance().ZINC_BLOCK);
+        blockHashSet.add(AdvAgriBlocks.getInstance().STEEL_BLOCK);
+        blockHashSet.add(AdvAgriBlocks.getInstance().TUNGSTEN_BLOCK);
+        blockHashSet.add(AdvAgriBlocks.getInstance().TITANIUM_BLOCK);
+        blockHashSet.add(AdvAgriBlocks.getInstance().TIN_BLOCK);
 
-        blockIntegerHashMap.put(Blocks.GOLD_BLOCK, 1);
-        blockIntegerHashMap.put(Blocks.IRON_BLOCK, 1);
+        blockHashSet.add(Blocks.GOLD_BLOCK);
+        blockHashSet.add(Blocks.IRON_BLOCK);
 
 
         blockItemHashMap.put(AdvAgriBlocks.getInstance().ALUMINUM_BLOCK, AdvAgriItems.ALUMINUM_PLATE);
@@ -48,7 +49,7 @@ public class ForgingHammerUtil {
     }
 
     public boolean isBlockContained(Block block) {
-        return blockIntegerHashMap.containsKey(block);
+        return blockHashSet.contains(block);
     }
 
     public Item getPlate(Block block) {

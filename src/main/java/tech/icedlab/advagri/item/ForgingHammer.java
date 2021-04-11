@@ -58,7 +58,6 @@ public class ForgingHammer extends Item {
                     return ActionResult.SUCCESS;
                 } else {//敲打累增
                     blockList.put(blockPos, blockList.get(context.getBlockPos()) + 1);
-                    System.out.println(blockList.get(context.getBlockPos()));
                     return ActionResult.SUCCESS;
                 }
             }
