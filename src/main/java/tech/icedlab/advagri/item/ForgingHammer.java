@@ -1,5 +1,7 @@
 package tech.icedlab.advagri.item;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.ItemEntity;
@@ -31,38 +33,38 @@ public class ForgingHammer extends Item {
     // Desc: As aims
     // Stat: False
     @Override
+    @Environment(EnvType.CLIENT)
     public ActionResult useOnBlock(ItemUsageContext context) {
 
-        ForgingHammerStorage blockHashMap = ForgingHammerStorage.getINSTANCE();
+        if (!context.getWorld().isClient) {
 
-        Block block = context.getWorld().getBlockState(context.getBlockPos()).getBlock();
-        BlockPos blockPos = context.getBlockPos();
+            ForgingHammerStorage blockList = ForgingHammerStorage.getINSTANCE();
+            Block block = context.getWorld().getBlockState(context.getBlockPos()).getBlock();
+            BlockPos blockPos = context.getBlockPos();
 
-        if (!isUnderBlockAnvil(blockPos, context.getWorld()) && matchMetalBlock(block)) {
-            return ActionResult.PASS;
-        }
+            if (!isUnderBlockAnvil(blockPos, context.getWorld()) && matchMetalBlock(block)) {
+                return ActionResult.PASS;
+            }
 
-        if (matchMetalBlock(block)) {
-
-            Objects.requireNonNull(context.getPlayer()).playSound(SoundEvents.BLOCK_ANVIL_LAND, 0.7F, 1F);
-
-            if (!blockHashMap.containsKey(context.getBlockPos())) {//不存在但是是可敲打方块
-                blockHashMap.put(context.getBlockPos(), 1);
-                return ActionResult.SUCCESS;
-            } else if (blockHashMap.get(context.getBlockPos()) > 18) {//存在但是敲打次数超过了9次
-                blockHashMap.remove(blockPos);
-                if (matchMetalBlock(block)) {
-                    new ItemEntity(context.getWorld(), blockPos.getX(), blockPos.getY(), blockPos.getZ()).dropStack(dropPlate(block));
-                    context.getWorld().breakBlock(blockPos, false);
-                    context.getPlayer().playSound(SoundEvents.BLOCK_ANVIL_DESTROY, 1F, 1F);
+            if (matchMetalBlock(block)) {
+                Objects.requireNonNull(context.getPlayer()).playSound(SoundEvents.BLOCK_ANVIL_LAND, 0.7F, 1F);
+                if (!blockList.containsKey(context.getBlockPos())) {//不存在但是是可敲打方块
+                    blockList.put(context.getBlockPos(), 1);
+                    return ActionResult.SUCCESS;
+                } else if (blockList.get(context.getBlockPos()) > 8) {//存在但是敲打次数超过了9次
+                    blockList.remove(blockPos);
+                    if (matchMetalBlock(block)) {
+                        dropPlate(block, context.getBlockPos(), context.getWorld());
+                        context.getPlayer().playSound(SoundEvents.BLOCK_ANVIL_DESTROY, 0.7F, 1F);
+                    }
+                    return ActionResult.SUCCESS;
+                } else {//敲打累增
+                    blockList.put(blockPos, blockList.get(context.getBlockPos()) + 1);
+                    System.out.println(blockList.get(context.getBlockPos()));
+                    return ActionResult.SUCCESS;
                 }
-                return ActionResult.SUCCESS;
-            } else {//敲打累增
-                blockHashMap.put(blockPos, blockHashMap.get(context.getBlockPos()) + 1);
-                return ActionResult.SUCCESS;
             }
         }
-
         return ActionResult.PASS;
     }
 
@@ -70,8 +72,11 @@ public class ForgingHammer extends Item {
         return ForgingHammerUtil.getINSTANCE().isBlockContained(block);
     }
 
-    public ItemStack dropPlate(Block block) {
-        return new ItemStack(ForgingHammerUtil.getINSTANCE().getPlate(block), 18);
+    public void dropPlate(Block block, BlockPos blockPos, World world) {
+        if (!world.isClient) {
+            world.breakBlock(blockPos, false);
+            new ItemEntity(world, blockPos.getX(), blockPos.getY(), blockPos.getZ()).dropStack(new ItemStack(ForgingHammerUtil.getINSTANCE().getPlate(block), 18));
+        }
     }
 
     public boolean isUnderBlockAnvil(BlockPos blockPos, World world) {
