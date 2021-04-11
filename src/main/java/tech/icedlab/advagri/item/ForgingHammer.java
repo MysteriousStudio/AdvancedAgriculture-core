@@ -31,17 +31,15 @@ public class ForgingHammer extends Item {
     // User: suibing
     // Aims: Use forging hammer 9 times,then the block will change into 18 plates
     // Desc: As aims
-    // Stat: False
+    // Stat: True
     @Override
     @Environment(EnvType.CLIENT)
     public ActionResult useOnBlock(ItemUsageContext context) {
 
         if (!context.getWorld().isClient) {
-
             ForgingHammerStorage blockList = ForgingHammerStorage.getINSTANCE();
             Block block = context.getWorld().getBlockState(context.getBlockPos()).getBlock();
             BlockPos blockPos = context.getBlockPos();
-
             if (!isUnderBlockAnvil(blockPos, context.getWorld()) && matchMetalBlock(block)) {
                 return ActionResult.PASS;
             }
