@@ -20,12 +20,9 @@ import java.util.Objects;
 
 public class ForgingHammer extends Item {
 
-
-
     public ForgingHammer(Settings settings) {
         super(settings);
     }
-
 
     //Todo: 2/4/21 11:34 PM
     // User: suibing

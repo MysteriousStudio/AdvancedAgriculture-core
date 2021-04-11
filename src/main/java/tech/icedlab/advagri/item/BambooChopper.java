@@ -2,22 +2,24 @@ package tech.icedlab.advagri.item;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import tech.icedlab.advagri.itemfuncutil.BambooChopperUtil;
+import tech.icedlab.advagri.toolitem.AdvAgriSwordItem;
 
-public class BambooChopper extends Item {
-    public BambooChopper(Settings settings) {
-        super(settings);
+public class BambooChopper extends AdvAgriSwordItem {
+
+
+    public BambooChopper(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+        super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         Direction minerFacing = miner.getHorizontalFacing();
-        System.out.println(state.getBlock().toString());
         if (minerFacing.equals(Direction.EAST)) {
             //Z-2,X
             breakIfEAST(pos, state, world);
@@ -73,4 +75,5 @@ public class BambooChopper extends Item {
     private boolean matchBlock(BlockState blockState) {
         return BambooChopperUtil.getInstance().findElement(blockState);
     }
+
 }

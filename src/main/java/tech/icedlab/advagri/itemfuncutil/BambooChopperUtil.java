@@ -5,12 +5,12 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class BambooChopperUtil {
     private static final BambooChopperUtil INSTANCE = new BambooChopperUtil();
 
-    private final ArrayList<Block> blocksArrayList = new ArrayList<>();
+    private final HashSet<Block> blocksArrayList = new HashSet<>();
 
     private BambooChopperUtil() {
         blocksArrayList.add(Blocks.BAMBOO);

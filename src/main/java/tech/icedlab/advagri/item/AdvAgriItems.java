@@ -3,10 +3,12 @@ package tech.icedlab.advagri.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import tech.icedlab.advagri.ModAta;
 import tech.icedlab.advagri.itemgroup.AdvAgriItemCoreGroup;
+import tech.icedlab.advagri.itemgroup.AdvAgriItemToolAndArmorsGroup;
 import tech.icedlab.advagri.itemgroup.AdvAgriItemWorldGroup;
 
 public class AdvAgriItems {
@@ -348,7 +350,7 @@ public class AdvAgriItems {
         FORGING_HAMMER = new ForgingHammer(
                 new FabricItemSettings().group(ITEM_GROUP).maxCount(1).recipeRemainder(FORGING_HAMMER));
 
-        BAMBOO_CHOPPER = new BambooChopper(new FabricItemSettings().group(ITEM_GROUP).maxCount(1));
+        BAMBOO_CHOPPER = new BambooChopper(ToolMaterials.IRON, 1, 0F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
         WENCH = new Wench(new FabricItemSettings().group(ITEM_GROUP).maxCount(1));
 
         //Plant "Seed"
