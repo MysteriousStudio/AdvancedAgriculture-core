@@ -19,6 +19,9 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
+    // Thorium lib
+    include 'com.github.MysteriousStudio:Thorium:dev-SNAPSHOT'
+
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.
 
@@ -84,5 +87,10 @@ publishing {
     // To publish to maven local, no extra repositories are necessary. Just use the task `publishToMavenLocal`.
     repositories {
         // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+    }
+}
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
     }
 }
