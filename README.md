@@ -16,7 +16,7 @@
 
 ### 注意!
 
-当您使用本模组时, 即代表您已阅读[用户须知](./markdowns/UserNotice.md)
+当您使用本模组时, 即代表您已阅读[用户须知](./markdowns/UserNoticeCN.md)
 
 _[Wiki](https://github.com/MysteriousStudio/AdvancedAgriculture-core/wiki)_ 正在施工中.
 
