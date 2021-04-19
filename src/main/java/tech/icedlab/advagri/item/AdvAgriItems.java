@@ -10,6 +10,7 @@ import tech.icedlab.advagri.ModAta;
 import tech.icedlab.advagri.itemgroup.AdvAgriItemCoreGroup;
 import tech.icedlab.advagri.itemgroup.AdvAgriItemToolAndArmorsGroup;
 import tech.icedlab.advagri.itemgroup.AdvAgriItemWorldGroup;
+import tech.icedlab.thorium.itemregistration.ItemRegistrationUtil;
 
 public class AdvAgriItems {
     public static AdvAgriItems thisAdvAgriItems = new AdvAgriItems();
