@@ -16,6 +16,8 @@ public class AdvAgriItems {
 
     public static Integer MAX_ITEM_COUNT = 64;
 
+    private ItemRegistrationUtil i = new ItemRegistrationUtil();
+
     /// GENERATE
 // Other
     public static Item COM_FERT;
@@ -210,6 +212,8 @@ public class AdvAgriItems {
     }
 
     public void InitAllItems() {
+
+
         COM_FERT = AddItemTool();
         BAMBOO_LEAVES = AddItemTool();
         BAMBOO_SILK = AddItemTool();
@@ -378,163 +382,135 @@ public class AdvAgriItems {
 
     public void RegisteredItems() {
         // RegistrationTool( ,"");
-        RegistrationTool(COM_FERT, "com_fert");
-        RegistrationTool(BAMBOO_LEAVES, "bamboo_leaves");
-        RegistrationTool(BAMBOO_SILK, "bamboo_silk");
-        RegistrationTool(BAMBOO_SILK_BOARD, "bamboo_silk_board");
-        RegistrationTool(BAMBOO_CHARCOAL, "bamboo_charcoal");
-        RegistrationTool(PLANT_ASH, "plant_ash");
-        RegistrationTool(POTASSIUM_SALT_POWDER, "potassium_salt_powder");
-        RegistrationTool(ZIRCON, "zircon");
-        RegistrationTool(SULFUR, "sulfur");
-        RegistrationTool(PHOS, "phos");
 
-        RegistrationTool(BOTTLE_SMALL, "bottle_small");
-        RegistrationTool(BOTTLE_LARGE, "bottle_large");
-
-        RegistrationTool(SOLARIUM_BOTTLE_SMALL, "solarium_bottle_small");
-        RegistrationTool(SOLARIUM_BOTTLE_MEDIUM, "solarium_bottle");
-        RegistrationTool(SOLARIUM_BOTTLE_LARGE, "solarium_bottle_large");
-
-        // Ingot
-        RegistrationTool(COPPER_INGOT, "copper_ingot");
-        RegistrationTool(ZINC_INGOT, "zinc_ingot");
-        RegistrationTool(TIN_INGOT, "tin_ingot");
-        RegistrationTool(BRONZE_INGOT, "bronze_ingot");
-        RegistrationTool(ALUMINUM_INGOT, "aluminum_ingot");
-        RegistrationTool(LEAD_INGOT, "lead_ingot");
-        RegistrationTool(SILVER_INGOT, "silver_ingot");
-        RegistrationTool(STEEL_INGOT, "steel_ingot");
-        RegistrationTool(NICKEL_INGOT, "nickel_ingot");
-        RegistrationTool(TUNGSTEN_INGOT, "tungsten_ingot");
-        RegistrationTool(TITANIUM_INGOT, "titanium_ingot");
-
-        // Powder
-        RegistrationTool(COPPER_POWDER, "copper_powder");
-        RegistrationTool(ZINC_POWDER, "zinc_powder");
-        RegistrationTool(TIN_POWDER, "tin_powder");
-        RegistrationTool(BRONZE_POWDER, "bronze_powder");
-        RegistrationTool(ALUMINUM_POWDER, "aluminum_powder");
-        RegistrationTool(LEAD_POWDER, "lead_powder");
-        RegistrationTool(SILVER_POWDER, "silver_powder");
-        RegistrationTool(STEEL_POWDER, "steel_powder");
-        RegistrationTool(NICKEL_POWDER, "nickel_powder");
-        RegistrationTool(TUNGSTEN_POWDER, "tungsten_powder");
-        RegistrationTool(TITANIUM_POWDER, "titanium_powder");
-        RegistrationTool(IRON_POWDER, "iron_powder");
-        RegistrationTool(GOLD_POWDER, "gold_powder");
-
-        // Gear
-        RegistrationTool(COPPER_GEAR, "copper_gear");
-        RegistrationTool(ZINC_GEAR, "zinc_gear");
-        RegistrationTool(TIN_GEAR, "tin_gear");
-        RegistrationTool(BRONZE_GEAR, "bronze_gear");
-        RegistrationTool(ALUMINUM_GEAR, "aluminum_gear");
-        RegistrationTool(LEAD_GEAR, "lead_gear");
-        RegistrationTool(SILVER_GEAR, "silver_gear");
-        RegistrationTool(STEEL_GEAR, "steel_gear");
-        RegistrationTool(NICKEL_GEAR, "nickel_gear");
-        RegistrationTool(TUNGSTEN_GEAR, "tungsten_gear");
-        RegistrationTool(TITANIUM_GEAR, "titanium_gear");
-        RegistrationTool(IRON_GEAR, "iron_gear");
-        RegistrationTool(GOLD_GEAR, "gold_gear");
-
-        // Plate
-        RegistrationTool(COPPER_PLATE, "copper_plate");
-        RegistrationTool(ZINC_PLATE, "zinc_plate");
-        RegistrationTool(TIN_PLATE, "tin_plate");
-        RegistrationTool(BRONZE_PLATE, "bronze_plate");
-        RegistrationTool(ALUMINUM_PLATE, "aluminum_plate");
-        RegistrationTool(LEAD_PLATE, "lead_plate");
-        RegistrationTool(SILVER_PLATE, "silver_plate");
-        RegistrationTool(STEEL_PLATE, "steel_plate");
-        RegistrationTool(NICKEL_PLATE, "nickel_plate");
-        RegistrationTool(TUNGSTEN_PLATE, "tungsten_plate");
-        RegistrationTool(TITANIUM_PLATE, "titanium_plate");
-        RegistrationTool(IRON_PLATE, "iron_plate");
-        RegistrationTool(GOLD_PLATE, "gold_plate");
-
-        // Shard
-        RegistrationTool(COPPER_SHARD, "copper_shard");
-        RegistrationTool(ZINC_SHARD, "zinc_shard");
-        RegistrationTool(TIN_SHARD, "tin_shard");
-        RegistrationTool(BRONZE_SHARD, "bronze_shard");
-        RegistrationTool(ALUMINUM_SHARD, "aluminum_shard");
-        RegistrationTool(LEAD_SHARD, "lead_shard");
-        RegistrationTool(SILVER_SHARD, "silver_shard");
-        RegistrationTool(NICKEL_SHARD, "nickel_shard");
-        RegistrationTool(TUNGSTEN_SHARD, "tungsten_shard");
-        RegistrationTool(TITANIUM_SHARD, "titanium_shard");
-        RegistrationTool(IRON_SHARD, "iron_shard");
-        RegistrationTool(GOLD_SHARD, "gold_shard");
-
-        // Metal Disslover
-        RegistrationTool(COPPER_DISSOLVER, "copper_dissolver");
-        RegistrationTool(ZINC_DISSOLVER, "zinc_dissolver");
-        RegistrationTool(TIN_DISSOLVER, "tin_dissolver");
-        RegistrationTool(ALUMINUM_DISSOLVER, "aluminum_dissolver");
-        RegistrationTool(LEAD_DISSOLVER, "lead_dissolver");
-        RegistrationTool(SILVER_DISSOLVER, "silver_dissolver");
-        RegistrationTool(NICKEL_DISSOLVER, "nickel_dissolver");
-        RegistrationTool(TUNGSTEN_DISSOLVER, "tungsten_dissolver");
-        RegistrationTool(TITANIUM_DISSOLVER, "titanium_dissolver");
-        RegistrationTool(IRON_DISSOLVER, "iron_dissolver");
-        RegistrationTool(GOLD_DISSOLVER, "gold_dissolver");
-
-        // Crushed Ore
-        RegistrationTool(CRUSHED_ALUMINUM_ORE, "crushed_aluminum_ore");
-        RegistrationTool(CRUSHED_COPPER_ORE, "crushed_copper_ore");
-        RegistrationTool(CRUSHED_GOLD_ORE, "crushed_gold_ore");
-        RegistrationTool(CRUSHED_IRON_ORE, "crushed_iron_ore");
-        RegistrationTool(CRUSHED_LEAD_ORE, "crushed_lead_ore");
-        RegistrationTool(CRUSHED_NICKEL_ORE, "crushed_nickel_ore");
-        RegistrationTool(CRUSHED_SILVER_ORE, "crushed_silver_ore");
-        RegistrationTool(CRUSHED_TIN_ORE, "crushed_tin_ore");
-        RegistrationTool(CRUSHED_TITANIUM_ORE, "crushed_titanium_ore");
-        RegistrationTool(CRUSHED_TUNGSTEN_ORE, "crushed_tungsten_ore");
-        RegistrationTool(CRUSHED_ZINC_ORE, "crushed_zinc_ore");
-        RegistrationTool(CRUSHED_HIGH_CARBON_IRON_ORE, "crushed_high_carbon_iron_ore");
-
-        RegistrationTool(FIRECRACKERS, "firecrackers");
-
-        // Machine-making
-        RegistrationTool(COPPER_CONDUCTOR_CORE, "copper_conductor_core");
-        RegistrationTool(SILVER_CONDUCTOR_CORE, "silver_conductor_core");
-        RegistrationTool(TITANIUM_CONDUCTOR_CORE, "titanium_conductor_core");
-        // RegistrationTool(PASSIVE_POWER_MODULE, "passive_power_module");
-        // RegistrationTool(POWER_MODULE_L1, "power_module_lv1");
-        // RegistrationTool(POWER_MODULE_L2, "power_module_lv2");
-        // RegistrationTool(POWER_MODULE_L3, "power_module_lv3");
-
-        // Ore By-products
-        RegistrationTool(CORASE_ORE_POWDER, "corase_ore_powder");
-        RegistrationTool(MINERAL_MUD, "mineral_mud");
-
-        // Metal Forging
-        RegistrationTool(FORGING_HAMMER, "forging_hammer");
-        RegistrationTool(BAMBOO_CHOPPER, "bamboo_chopper");
-        RegistrationTool(WENCH, "wench");
-
-        //Plant "Seed"
-        RegistrationTool(RICE_SEED_BAG, "rice_seed_bag");
-        RegistrationTool(CHILI_SEED_BAG, "chili_seed_bag");
-        RegistrationTool(CELERY_SEED_BAG, "celery_seed_bag");
-        RegistrationTool(LETTUCE_SEED_BAG, "lettuce_seed_bag");
-        RegistrationTool(STRAWBERRY_SEED_BAG, "strawberry_seed_bag");
-        RegistrationTool(CORN_SEED_BAG, "corn_seed_bag");
-        RegistrationTool(SWEET_POTATO_VINE, "sweet_potato_vine");
-
-        //Plant Product
-        RegistrationTool(RICE_UNHUSKED, "rice_unhusked");
-        RegistrationTool(RICE, "rice");
-        RegistrationTool(PLANT_STRAW, "plant_straw");
-        RegistrationTool(SWEET_POTATO, "sweet_potato");
-        RegistrationTool(CHILI, "chili");
-        RegistrationTool(CELERY, "celery");
-        RegistrationTool(LETTUCE, "lettuce");
-        RegistrationTool(STRAWBERRY, "strawberry");
-        RegistrationTool(GARLIC, "garlic");
-        RegistrationTool(CHUFA, "chufa");
+        i.setModID(ModAta.ModID);
+        i.add(COM_FERT, "com_fert").
+                add(BAMBOO_LEAVES, "bamboo_leaves").
+                add(BAMBOO_SILK, "bamboo_silk").
+                add(BAMBOO_SILK_BOARD, "bamboo_silk_board").
+                add(BAMBOO_CHARCOAL, "bamboo_charcoal").
+                add(PLANT_ASH, "plant_ash").
+                add(POTASSIUM_SALT_POWDER, "potassium_salt_powder").
+                add(ZIRCON, "zircon").
+                add(SULFUR, "sulfur").
+                add(PHOS, "phos").
+                add(BOTTLE_SMALL, "bottle_small").
+                add(BOTTLE_LARGE, "bottle_large").
+                add(SOLARIUM_BOTTLE_SMALL, "solarium_bottle_small").
+                add(SOLARIUM_BOTTLE_MEDIUM, "solarium_bottle").
+                add(SOLARIUM_BOTTLE_LARGE, "solarium_bottle_large").
+                add(COPPER_INGOT, "copper_ingot").
+                add(ZINC_INGOT, "zinc_ingot").
+                add(TIN_INGOT, "tin_ingot").
+                add(BRONZE_INGOT, "bronze_ingot").
+                add(ALUMINUM_INGOT, "aluminum_ingot").
+                add(LEAD_INGOT, "lead_ingot").
+                add(SILVER_INGOT, "silver_ingot").
+                add(STEEL_INGOT, "steel_ingot").
+                add(NICKEL_INGOT, "nickel_ingot").
+                add(TUNGSTEN_INGOT, "tungsten_ingot").
+                add(TITANIUM_INGOT, "titanium_ingot").
+                add(COPPER_POWDER, "copper_powder").
+                add(ZINC_POWDER, "zinc_powder").
+                add(TIN_POWDER, "tin_powder").
+                add(BRONZE_POWDER, "bronze_powder").
+                add(ALUMINUM_POWDER, "aluminum_powder").
+                add(LEAD_POWDER, "lead_powder").
+                add(SILVER_POWDER, "silver_powder").
+                add(STEEL_POWDER, "steel_powder").
+                add(NICKEL_POWDER, "nickel_powder").
+                add(TUNGSTEN_POWDER, "tungsten_powder").
+                add(TITANIUM_POWDER, "titanium_powder").
+                add(IRON_POWDER, "iron_powder").
+                add(GOLD_POWDER, "gold_powder").
+                add(COPPER_GEAR, "copper_gear").
+                add(ZINC_GEAR, "zinc_gear").
+                add(TIN_GEAR, "tin_gear").
+                add(BRONZE_GEAR, "bronze_gear").
+                add(ALUMINUM_GEAR, "aluminum_gear").
+                add(LEAD_GEAR, "lead_gear").
+                add(SILVER_GEAR, "silver_gear").
+                add(STEEL_GEAR, "steel_gear").
+                add(NICKEL_GEAR, "nickel_gear").
+                add(TUNGSTEN_GEAR, "tungsten_gear").
+                add(TITANIUM_GEAR, "titanium_gear").
+                add(IRON_GEAR, "iron_gear").
+                add(GOLD_GEAR, "gold_gear").
+                add(COPPER_PLATE, "copper_plate").
+                add(ZINC_PLATE, "zinc_plate").
+                add(TIN_PLATE, "tin_plate").
+                add(BRONZE_PLATE, "bronze_plate").
+                add(ALUMINUM_PLATE, "aluminum_plate").
+                add(LEAD_PLATE, "lead_plate").
+                add(SILVER_PLATE, "silver_plate").
+                add(STEEL_PLATE, "steel_plate").
+                add(NICKEL_PLATE, "nickel_plate").
+                add(TUNGSTEN_PLATE, "tungsten_plate").
+                add(TITANIUM_PLATE, "titanium_plate").
+                add(IRON_PLATE, "iron_plate").
+                add(GOLD_PLATE, "gold_plate").
+                add(COPPER_SHARD, "copper_shard").
+                add(ZINC_SHARD, "zinc_shard").
+                add(TIN_SHARD, "tin_shard").
+                add(BRONZE_SHARD, "bronze_shard").
+                add(ALUMINUM_SHARD, "aluminum_shard").
+                add(LEAD_SHARD, "lead_shard").
+                add(SILVER_SHARD, "silver_shard").
+                add(NICKEL_SHARD, "nickel_shard").
+                add(TUNGSTEN_SHARD, "tungsten_shard").
+                add(TITANIUM_SHARD, "titanium_shard").
+                add(IRON_SHARD, "iron_shard").
+                add(GOLD_SHARD, "gold_shard").
+                add(COPPER_DISSOLVER, "copper_dissolver").
+                add(ZINC_DISSOLVER, "zinc_dissolver").
+                add(TIN_DISSOLVER, "tin_dissolver").
+                add(ALUMINUM_DISSOLVER, "aluminum_dissolver").
+                add(LEAD_DISSOLVER, "lead_dissolver").
+                add(SILVER_DISSOLVER, "silver_dissolver").
+                add(NICKEL_DISSOLVER, "nickel_dissolver").
+                add(TUNGSTEN_DISSOLVER, "tungsten_dissolver").
+                add(TITANIUM_DISSOLVER, "titanium_dissolver").
+                add(IRON_DISSOLVER, "iron_dissolver").
+                add(GOLD_DISSOLVER, "gold_dissolver").
+                add(CRUSHED_ALUMINUM_ORE, "crushed_aluminum_ore").
+                add(CRUSHED_COPPER_ORE, "crushed_copper_ore").
+                add(CRUSHED_GOLD_ORE, "crushed_gold_ore").
+                add(CRUSHED_IRON_ORE, "crushed_iron_ore").
+                add(CRUSHED_LEAD_ORE, "crushed_lead_ore").
+                add(CRUSHED_NICKEL_ORE, "crushed_nickel_ore").
+                add(CRUSHED_SILVER_ORE, "crushed_silver_ore").
+                add(CRUSHED_TIN_ORE, "crushed_tin_ore").
+                add(CRUSHED_TITANIUM_ORE, "crushed_titanium_ore").
+                add(CRUSHED_TUNGSTEN_ORE, "crushed_tungsten_ore").
+                add(CRUSHED_ZINC_ORE, "crushed_zinc_ore").
+                add(CRUSHED_HIGH_CARBON_IRON_ORE, "crushed_high_carbon_iron_ore").
+                add(FIRECRACKERS, "firecrackers").
+                add(COPPER_CONDUCTOR_CORE, "copper_conductor_core").
+                add(SILVER_CONDUCTOR_CORE, "silver_conductor_core").
+                add(TITANIUM_CONDUCTOR_CORE, "titanium_conductor_core").
+                add(CORASE_ORE_POWDER, "corase_ore_powder").
+                add(MINERAL_MUD, "mineral_mud").
+                add(FORGING_HAMMER, "forging_hammer").
+                add(BAMBOO_CHOPPER, "bamboo_chopper").
+                add(WENCH, "wench").
+                add(RICE_SEED_BAG, "rice_seed_bag").
+                add(CHILI_SEED_BAG, "chili_seed_bag").
+                add(CELERY_SEED_BAG, "celery_seed_bag").
+                add(LETTUCE_SEED_BAG, "lettuce_seed_bag").
+                add(STRAWBERRY_SEED_BAG, "strawberry_seed_bag").
+                add(CORN_SEED_BAG, "corn_seed_bag").
+                add(SWEET_POTATO_VINE, "sweet_potato_vine").
+                add(RICE_UNHUSKED, "rice_unhusked").
+                add(RICE, "rice").
+                add(PLANT_STRAW, "plant_straw").
+                add(SWEET_POTATO, "sweet_potato").
+                add(CHILI, "chili").
+                add(CELERY, "celery").
+                add(LETTUCE, "lettuce").
+                add(STRAWBERRY, "strawberry").
+                add(GARLIC, "garlic").
+                add(CHUFA, "chufa")
+                .registration();
 
 
         //Trees
