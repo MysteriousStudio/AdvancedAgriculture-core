@@ -10,14 +10,14 @@ import tech.icedlab.advagri.ModAta;
 import tech.icedlab.advagri.itemgroup.AdvAgriItemCoreGroup;
 import tech.icedlab.advagri.itemgroup.AdvAgriItemToolAndArmorsGroup;
 import tech.icedlab.advagri.itemgroup.AdvAgriItemWorldGroup;
-import tech.icedlab.thorium.itemregistration.ItemRegistrationUtil;
+import tech.icedlab.thorium.registration.RegistrationUtilForItem;
 
 public class AdvAgriItems {
     public static AdvAgriItems thisAdvAgriItems = new AdvAgriItems();
 
     public static Integer MAX_ITEM_COUNT = 64;
 
-    private ItemRegistrationUtil i = new ItemRegistrationUtil();
+    private RegistrationUtilForItem i = new RegistrationUtilForItem();
 
     /// GENERATE
 // Other
