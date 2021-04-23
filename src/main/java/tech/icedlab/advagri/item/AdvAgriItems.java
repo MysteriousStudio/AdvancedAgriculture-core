@@ -4,8 +4,6 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ToolMaterials;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import tech.icedlab.advagri.ModAta;
 import tech.icedlab.advagri.itemgroup.AdvAgriItemCoreGroup;
 import tech.icedlab.advagri.itemgroup.AdvAgriItemToolAndArmorsGroup;
@@ -49,7 +47,9 @@ public class AdvAgriItems {
     public static Item COPPER_GEAR;
     public static Item COPPER_PLATE;
     public static Item COPPER_DISSOLVER;
-    public static Item CRUSHED_COPPER_ORE;
+    public static Item CRUSHED_RAW_COPPER;
+    public static Item COPPER_ROD;
+    public static Item COPPER_WIRE;
     // Zinc
     public static Item ZINC_SHARD;
     public static Item ZINC_INGOT;
@@ -57,7 +57,10 @@ public class AdvAgriItems {
     public static Item ZINC_GEAR;
     public static Item ZINC_PLATE;
     public static Item ZINC_DISSOLVER;
-    public static Item CRUSHED_ZINC_ORE;
+    public static Item CRUSHED_RAW_ZINC;
+    public static Item ZINC_ROD;
+    public static Item ZINC_FOIL;
+    public static Item RAW_ZINC;
     // Tin
     public static Item TIN_SHARD;
     public static Item TIN_INGOT;
@@ -65,13 +68,16 @@ public class AdvAgriItems {
     public static Item TIN_GEAR;
     public static Item TIN_PLATE;
     public static Item TIN_DISSOLVER;
-    public static Item CRUSHED_TIN_ORE;
+    public static Item CRUSHED_RAW_TIN;
+    public static Item TIN_ROD;
+    public static Item RAW_TIN;
     // Bronze
     public static Item BRONZE_SHARD;
     public static Item BRONZE_INGOT;
     public static Item BRONZE_POWDER;
     public static Item BRONZE_GEAR;
     public static Item BRONZE_PLATE;
+    public static Item BRONZE_ROD;
     // Aluminum
     public static Item ALUMINUM_SHARD;
     public static Item ALUMINUM_INGOT;
@@ -79,7 +85,10 @@ public class AdvAgriItems {
     public static Item ALUMINUM_GEAR;
     public static Item ALUMINUM_PLATE;
     public static Item ALUMINUM_DISSOLVER;
-    public static Item CRUSHED_ALUMINUM_ORE;
+    public static Item CRUSHED_RAW_ALUMINUM;
+    public static Item ALUMINUM_ROD;
+    public static Item ALUMINUM_FOIL;
+    public static Item RAW_ALUMINUM;
     // Lead
     public static Item LEAD_SHARD;
     public static Item LEAD_INGOT;
@@ -87,7 +96,8 @@ public class AdvAgriItems {
     public static Item LEAD_GEAR;
     public static Item LEAD_PLATE;
     public static Item LEAD_DISSOLVER;
-    public static Item CRUSHED_LEAD_ORE;
+    public static Item CRUSHED_RAW_LEAD;
+    public static Item RAW_LEAD;
     // Silver
     public static Item SILVER_SHARD;
     public static Item SILVER_INGOT;
@@ -95,13 +105,19 @@ public class AdvAgriItems {
     public static Item SILVER_GEAR;
     public static Item SILVER_PLATE;
     public static Item SILVER_DISSOLVER;
-    public static Item CRUSHED_SILVER_ORE;
+    public static Item CRUSHED_RAW_SILVER;
+    public static Item SILVER_ROD;
+    public static Item SILVER_FOIL;
+    public static Item SILVER_WIRE;
+    public static Item RAW_SILVER;
     // Steel
     public static Item STEEL_INGOT;
     public static Item STEEL_POWDER;
     public static Item STEEL_GEAR;
     public static Item STEEL_PLATE;
-    public static Item CRUSHED_HIGH_CARBON_IRON_ORE;
+    public static Item CRUSHED_RAW_HIGH_CARBON_IRON;
+    public static Item STEEL_ROD;
+    public static Item RAW_HIGH_CARBON_IRON;
     // Nickel
     public static Item NICKEL_SHARD;
     public static Item NICKEL_INGOT;
@@ -109,7 +125,10 @@ public class AdvAgriItems {
     public static Item NICKEL_GEAR;
     public static Item NICKEL_PLATE;
     public static Item NICKEL_DISSOLVER;
-    public static Item CRUSHED_NICKEL_ORE;
+    public static Item CRUSHED_RAW_NICKEL;
+    public static Item NICKEL_ROD;
+    public static Item NICKEL_FOIL;
+    public static Item RAW_NICKEL;
     // Tungsten
     public static Item TUNGSTEN_SHARD;
     public static Item TUNGSTEN_INGOT;
@@ -117,7 +136,9 @@ public class AdvAgriItems {
     public static Item TUNGSTEN_GEAR;
     public static Item TUNGSTEN_PLATE;
     public static Item TUNGSTEN_DISSOLVER;
-    public static Item CRUSHED_TUNGSTEN_ORE;
+    public static Item CRUSHED_RAW_TUNGSTEN;
+    public static Item TUNGSTEN_ROD;
+    public static Item RAW_TUNGSTEN;
     // Titanium
     public static Item TITANIUM_SHARD;
     public static Item TITANIUM_INGOT;
@@ -125,21 +146,26 @@ public class AdvAgriItems {
     public static Item TITANIUM_GEAR;
     public static Item TITANIUM_PLATE;
     public static Item TITANIUM_DISSOLVER;
-    public static Item CRUSHED_TITANIUM_ORE;
+    public static Item CRUSHED_RAW_TITANIUM;
+    public static Item TITANIUM_ROD;
+    public static Item RAW_TITANIUM;
     // Iron
     public static Item IRON_SHARD;
     public static Item IRON_POWDER;
     public static Item IRON_GEAR;
     public static Item IRON_PLATE;
     public static Item IRON_DISSOLVER;
-    public static Item CRUSHED_IRON_ORE;
+    public static Item CRUSHED_RAW_IRON;
+    public static Item IRON_ROD;
     // Gold
     public static Item GOLD_SHARD;
     public static Item GOLD_POWDER;
     public static Item GOLD_GEAR;
     public static Item GOLD_PLATE;
     public static Item GOLD_DISSOLVER;
-    public static Item CRUSHED_GOLD_ORE;
+    public static Item CRUSHED_RAW_GOLD;
+    public static Item GOLD_ROD;
+    public static Item GOLD_FOIL;
 
     // Firecracker
     public static Firecracker FIRECRACKERS;
@@ -149,17 +175,16 @@ public class AdvAgriItems {
     public static Item SILVER_CONDUCTOR_CORE;
     public static Item TITANIUM_CONDUCTOR_CORE;
 
-    /*
-     * Power Module public Item PASSIVE_POWER_MODULE; public Item POWER_MODULE_L1;
-     * public Item POWER_MODULE_L2; public Item POWER_MODULE_L3; public Item
-     * POWER_MODULE_L4; public Item POWER_MODULE_L5;
-     */
+    //Machine Manufacturing Materials
+    public static Item COPPER_COIL;
+    public static Item ELECTRIC_MOTOR_SMALL;
+    public static Item ELECTRIC_MOTOR_BIG;
 
     // Ore By-products
     public static Item MINERAL_MUD;
     public static Item CORASE_ORE_POWDER;
 
-    // Metal Forging
+    // Tools
     public static Item FORGING_HAMMER;
     public static Item BAMBOO_CHOPPER;
     public static Wench WENCH;
@@ -173,7 +198,7 @@ public class AdvAgriItems {
     public static Item CORN_SEED_BAG;
     public static Item SWEET_POTATO_VINE;
 
-    // Plant Product
+    // Farming Product
     public static Item RICE_UNHUSKED;
     public static Item RICE;
     public static Item PLANT_STRAW;
@@ -186,6 +211,9 @@ public class AdvAgriItems {
     public static Item CHUFA;
 
     // Trees
+
+    //Solar Bush
+    public static Item SOLAR_BERRY;
 
 
     /// GENERATE
@@ -262,6 +290,7 @@ public class AdvAgriItems {
         TITANIUM_POWDER = AddItemTool();
         IRON_POWDER = AddItemTool();
         GOLD_POWDER = AddItemTool();
+        
         // Gear
         COPPER_GEAR = AddItemTool();
         ZINC_GEAR = AddItemTool();
@@ -306,6 +335,30 @@ public class AdvAgriItems {
         IRON_SHARD = AddItemTool();
         GOLD_SHARD = AddItemTool();
 
+        //Rod
+        ALUMINUM_ROD = AddItemTool();
+        BRONZE_ROD = AddItemTool();
+        COPPER_ROD = AddItemTool();
+        GOLD_ROD = AddItemTool();
+        IRON_ROD = AddItemTool();
+        NICKEL_ROD = AddItemTool();
+        STEEL_ROD = AddItemTool();
+        TIN_ROD = AddItemTool();
+        TITANIUM_ROD = AddItemTool();
+        TUNGSTEN_ROD = AddItemTool();
+        ZINC_ROD =AddItemTool();
+
+        // Foil
+        ALUMINUM_FOIL = AddItemTool();
+        SILVER_FOIL = AddItemTool();
+        GOLD_FOIL = AddItemTool();
+        NICKEL_FOIL = AddItemTool();
+        ZINC_FOIL = AddItemTool();
+
+        //Wire
+        COPPER_WIRE = AddItemTool();
+        SILVER_WIRE = AddItemTool();
+
         // Metal Dissolver
         COPPER_DISSOLVER = AddItemTool();
         ZINC_DISSOLVER = AddItemTool();
@@ -320,18 +373,18 @@ public class AdvAgriItems {
         IRON_DISSOLVER = AddItemTool();
 
         // Crushed Ore
-        CRUSHED_ALUMINUM_ORE = AddItemTool();
-        CRUSHED_COPPER_ORE = AddItemTool();
-        CRUSHED_GOLD_ORE = AddItemTool();
-        CRUSHED_IRON_ORE = AddItemTool();
-        CRUSHED_LEAD_ORE = AddItemTool();
-        CRUSHED_NICKEL_ORE = AddItemTool();
-        CRUSHED_SILVER_ORE = AddItemTool();
-        CRUSHED_TIN_ORE = AddItemTool();
-        CRUSHED_HIGH_CARBON_IRON_ORE = AddItemTool();
-        CRUSHED_TITANIUM_ORE = AddItemTool();
-        CRUSHED_TUNGSTEN_ORE = AddItemTool();
-        CRUSHED_ZINC_ORE = AddItemTool();
+        CRUSHED_RAW_ALUMINUM = AddItemTool();
+        CRUSHED_RAW_COPPER = AddItemTool();
+        CRUSHED_RAW_GOLD = AddItemTool();
+        CRUSHED_RAW_IRON = AddItemTool();
+        CRUSHED_RAW_LEAD = AddItemTool();
+        CRUSHED_RAW_NICKEL = AddItemTool();
+        CRUSHED_RAW_SILVER = AddItemTool();
+        CRUSHED_RAW_TIN = AddItemTool();
+        CRUSHED_RAW_HIGH_CARBON_IRON = AddItemTool();
+        CRUSHED_RAW_TITANIUM = AddItemTool();
+        CRUSHED_RAW_TUNGSTEN = AddItemTool();
+        CRUSHED_RAW_ZINC = AddItemTool();
 
         FIRECRACKERS = new Firecracker(new FabricItemSettings().group(ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
 
@@ -340,12 +393,10 @@ public class AdvAgriItems {
         SILVER_CONDUCTOR_CORE = AddItemTool();
         TITANIUM_CONDUCTOR_CORE = AddItemTool();
 
-        /*
-         * Power Module PASSIVE_POWER_MODULE = AddItemTool(); POWER_MODULE_L1 =
-         * AddItemTool(); POWER_MODULE_L2 = AddItemTool(); POWER_MODULE_L3 =
-         * AddItemTool(); POWER_MODULE_L4 = AddItemTool(); POWER_MODULE_L5 =
-         * AddItemTool();
-         */
+        //Machine Manufacturing Materials
+        COPPER_COIL = AddItemTool();
+        ELECTRIC_MOTOR_SMALL = AddItemTool();
+        ELECTRIC_MOTOR_BIG = AddItemTool();
 
         // Ore By-products
         MINERAL_MUD = AddItemTool();
@@ -473,18 +524,39 @@ public class AdvAgriItems {
                 add(TITANIUM_DISSOLVER, "titanium_dissolver").
                 add(IRON_DISSOLVER, "iron_dissolver").
                 add(GOLD_DISSOLVER, "gold_dissolver").
-                add(CRUSHED_ALUMINUM_ORE, "crushed_aluminum_ore").
-                add(CRUSHED_COPPER_ORE, "crushed_copper_ore").
-                add(CRUSHED_GOLD_ORE, "crushed_gold_ore").
-                add(CRUSHED_IRON_ORE, "crushed_iron_ore").
-                add(CRUSHED_LEAD_ORE, "crushed_lead_ore").
-                add(CRUSHED_NICKEL_ORE, "crushed_nickel_ore").
-                add(CRUSHED_SILVER_ORE, "crushed_silver_ore").
-                add(CRUSHED_TIN_ORE, "crushed_tin_ore").
-                add(CRUSHED_TITANIUM_ORE, "crushed_titanium_ore").
-                add(CRUSHED_TUNGSTEN_ORE, "crushed_tungsten_ore").
-                add(CRUSHED_ZINC_ORE, "crushed_zinc_ore").
-                add(CRUSHED_HIGH_CARBON_IRON_ORE, "crushed_high_carbon_iron_ore").
+                add(CRUSHED_RAW_ALUMINUM, "crushed_raw_aluminum").
+                add(CRUSHED_RAW_COPPER, "crushed_raw_copper").
+                add(CRUSHED_RAW_GOLD, "crushed_raw_gold").
+                add(CRUSHED_RAW_IRON, "crushed_raw_iron").
+                add(CRUSHED_RAW_LEAD, "crushed_raw_lead").
+                add(CRUSHED_RAW_NICKEL, "crushed_raw_nickel").
+                add(CRUSHED_RAW_SILVER, "crushed_raw_silver").
+                add(CRUSHED_RAW_TIN, "crushed_raw_tin").
+                add(CRUSHED_RAW_TITANIUM, "crushed_raw_titanium").
+                add(CRUSHED_RAW_TUNGSTEN, "crushed_raw_tungsten").
+                add(CRUSHED_RAW_ZINC, "crushed_raw_zinc").
+                add(CRUSHED_RAW_HIGH_CARBON_IRON, "crushed_raw_high_carbon_iron").
+                add(ALUMINUM_ROD, "aluminum_rod").
+                add(BRONZE_ROD, "bronze_rod").
+                add(COPPER_ROD,"copper_rod").
+                add(GOLD_ROD, "gold_rod").
+                add(IRON_ROD,"iron_rod").
+                add(NICKEL_ROD, "nickel_rod").
+                add(STEEL_ROD, "steel_rod").
+                add(TIN_ROD, "tin_rod").
+                add(TUNGSTEN_ROD, "tungsten_rod").
+                add(TITANIUM_ROD, "titanium_rod").
+                add(ZINC_ROD, "zinc_rod").
+                add(ALUMINUM_FOIL, "aluminum_foil").
+                add(GOLD_FOIL, "gold_foil").
+                add(SILVER_FOIL, "silver_foil").
+                add(NICKEL_FOIL, "nickel_foil").
+                add(ZINC_FOIL, "zinc_foil").
+                add(COPPER_WIRE, "copper_wire").
+                add(SILVER_WIRE, "silver_wire").
+                add(COPPER_COIL, "copper_coil").
+                add(ELECTRIC_MOTOR_SMALL, "electric_motor_small").
+                add(ELECTRIC_MOTOR_BIG, "electric_motor_big").
                 add(FIRECRACKERS, "firecrackers").
                 add(COPPER_CONDUCTOR_CORE, "copper_conductor_core").
                 add(SILVER_CONDUCTOR_CORE, "silver_conductor_core").
@@ -510,15 +582,12 @@ public class AdvAgriItems {
                 add(LETTUCE, "lettuce").
                 add(STRAWBERRY, "strawberry").
                 add(GARLIC, "garlic").
-                add(CHUFA, "chufa")
+                add(CHUFA, "chufa").
+                add(SOLAR_BERRY, "solar_berry")
                 .registration();
 
 
         //Trees
 
-    }
-
-    private void RegistrationTool(Item ITEM, String PATH) {
-        Registry.register(Registry.ITEM, new Identifier(ModAta.ModID, PATH), ITEM);
     }
 }
