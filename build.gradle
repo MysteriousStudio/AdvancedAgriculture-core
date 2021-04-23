@@ -92,6 +92,7 @@ publishing {
 }
 allprojects {
     repositories {
+        mavenLocal()
         maven { url 'https://jitpack.io' }
     }
 }
