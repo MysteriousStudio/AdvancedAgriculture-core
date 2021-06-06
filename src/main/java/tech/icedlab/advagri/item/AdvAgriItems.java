@@ -10,6 +10,7 @@ import tech.icedlab.advagri.itemgroup.AdvAgriItemToolAndArmorsGroup;
 import tech.icedlab.advagri.itemgroup.AdvAgriItemWorldGroup;
 import tech.icedlab.thorium.registration.RegistrationUtilForItem;
 
+
 public class AdvAgriItems {
     public static AdvAgriItems thisAdvAgriItems = new AdvAgriItems();
 
@@ -290,7 +291,7 @@ public class AdvAgriItems {
         TITANIUM_POWDER = AddItemTool();
         IRON_POWDER = AddItemTool();
         GOLD_POWDER = AddItemTool();
-        
+
         // Gear
         COPPER_GEAR = AddItemTool();
         ZINC_GEAR = AddItemTool();
@@ -346,7 +347,7 @@ public class AdvAgriItems {
         TIN_ROD = AddItemTool();
         TITANIUM_ROD = AddItemTool();
         TUNGSTEN_ROD = AddItemTool();
-        ZINC_ROD =AddItemTool();
+        ZINC_ROD = AddItemTool();
 
         // Foil
         ALUMINUM_FOIL = AddItemTool();
@@ -435,7 +436,7 @@ public class AdvAgriItems {
     public void RegisteredItems() {
         // RegistrationTool( ,"");
 
-        i.setModID(ModAta.ModID);
+        i.setMODID(ModAta.ModID);
         i.add(COM_FERT, "com_fert").
                 add(BAMBOO_LEAVES, "bamboo_leaves").
                 add(BAMBOO_SILK, "bamboo_silk").
@@ -538,9 +539,9 @@ public class AdvAgriItems {
                 add(CRUSHED_RAW_HIGH_CARBON_IRON, "crushed_raw_high_carbon_iron").
                 add(ALUMINUM_ROD, "aluminum_rod").
                 add(BRONZE_ROD, "bronze_rod").
-                add(COPPER_ROD,"copper_rod").
+                add(COPPER_ROD, "copper_rod").
                 add(GOLD_ROD, "gold_rod").
-                add(IRON_ROD,"iron_rod").
+                add(IRON_ROD, "iron_rod").
                 add(NICKEL_ROD, "nickel_rod").
                 add(STEEL_ROD, "steel_rod").
                 add(TIN_ROD, "tin_rod").
@@ -583,8 +584,8 @@ public class AdvAgriItems {
                 add(STRAWBERRY, "strawberry").
                 add(GARLIC, "garlic").
                 add(CHUFA, "chufa").
-                add(SOLAR_BERRY, "solar_berry")
-                .registration();
+//                add(SOLAR_BERRY, "solar_berry").
+        registration();
 
 
         //Trees

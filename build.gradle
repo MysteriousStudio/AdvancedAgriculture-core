@@ -20,8 +20,8 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // Thorium lib
-    include 'com.github.MysteriousStudio:Thorium:dev-SNAPSHOT'
-    modImplementation 'com.github.MysteriousStudio:Thorium:dev-SNAPSHOT'
+    include 'tech.icedlab:Thorium:dev-SNAPSHOT'
+    modImplementation 'tech.icedlab:Thorium:dev-SNAPSHOT'
 
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.
@@ -94,5 +94,6 @@ allprojects {
     repositories {
         mavenLocal()
         maven { url 'https://jitpack.io' }
+        maven { url 'http://localhost:8082/repository/MinecraftDevelop/' }
     }
 }
