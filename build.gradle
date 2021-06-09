@@ -94,6 +94,5 @@ allprojects {
     repositories {
         mavenLocal()
         maven { url 'https://jitpack.io' }
-        maven { url 'http://localhost:8082/repository/MinecraftDevelop/' }
     }
 }

@@ -60,7 +60,7 @@ git submodule update --init --recursive
 在这之后，就可以使用 Gradle 进行构建了
 
 ```shell
-gradlew build
+gradle build
 ```
 
 在工作完成后，最终的构建结果会出现在`./build/libs/`中。
