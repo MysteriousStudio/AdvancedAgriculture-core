@@ -12,16 +12,16 @@ import tech.icedlab.advagri.item.AdvAgriToolsAndWeapons;
 public class AdvancedAgriculture implements ModInitializer {
     @Override
     public void onInitialize() {
-        System.out.println("============================================");
+        System.out.println("==========================================");
         System.out.println("    _       _        _              _");
         System.out.println("   / \\   __| |_   __/ \\   __ _ _ __(_)");
         System.out.println("  / _ \\ / _` \\ \\ / / _ \\ / _` | '__| |");
         System.out.println(" / ___ \\ (_| |\\ V / ___ \\ (_| | |  | |");
         System.out.println("/_/   \\_\\__,_| \\_/_/   \\_\\__, |_|  |_|");
         System.out.println("                         |___/");
-        System.out.println("============================================");
+        System.out.println("==========================================");
         System.out.println("Powered by AdvancedAgriculture Developers");
-        System.out.println("============================================");
+        System.out.println("==========================================");
 
         AdvAgriItems advAgriItems = AdvAgriItems.getInstance();
         AdvAgriBlocks advAgriBlocks = AdvAgriBlocks.getInstance();
