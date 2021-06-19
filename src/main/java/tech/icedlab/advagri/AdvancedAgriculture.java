@@ -3,11 +3,10 @@ package tech.icedlab.advagri;
 import net.fabricmc.api.ModInitializer;
 import tech.icedlab.advagri.block.AdvAgriBlocks;
 import tech.icedlab.advagri.entities.block.AdvAgriBlockEntities;
-import tech.icedlab.advagri.entities.item.AdvAgriItemEntities;
 import tech.icedlab.advagri.events.AdvAgriEvents;
-import tech.icedlab.advagri.item.AdvAgriArmorItems;
 import tech.icedlab.advagri.item.AdvAgriItems;
 import tech.icedlab.advagri.item.AdvAgriToolsAndWeapons;
+import tech.icedlab.advagri.item.armors.AdvAgriArmors;
 
 public class AdvancedAgriculture implements ModInitializer {
     @Override
@@ -25,14 +24,11 @@ public class AdvancedAgriculture implements ModInitializer {
 
         AdvAgriItems advAgriItems = AdvAgriItems.getInstance();
         AdvAgriBlocks advAgriBlocks = AdvAgriBlocks.getInstance();
-        AdvAgriArmorItems advAgriArmorItems = AdvAgriArmorItems.getInstance();
+        AdvAgriArmors advAgriArmors = AdvAgriArmors.getInstance();
         AdvAgriToolsAndWeapons advAgriToolsAndWeapons = AdvAgriToolsAndWeapons.getInstance();
 
-        AdvAgriItemEntities advAgriItemEntities = AdvAgriItemEntities.getInstance();
 
         AdvAgriBlockEntities advAgriBlockEntities = AdvAgriBlockEntities.getInstance();
-
-        //AdvAgriEnchantments advAgriEnchantments = AdvAgriEnchantments.getINSTANCE();
 
         AdvAgriEvents advAgriEvents = AdvAgriEvents.getInstance();
 
@@ -41,8 +37,6 @@ public class AdvancedAgriculture implements ModInitializer {
         // Aims: Init items here.
         // Desc: If there need ant functions about init items,code them here.
         // Stat: True
-        advAgriItems.InitAllItems();
-        advAgriItems.RegisteredItems();
 
         //Todo: 2/3/21 8:32 PM
         // User: suibing
@@ -57,8 +51,8 @@ public class AdvancedAgriculture implements ModInitializer {
         // Aims: Init armors here.
         // Desc: If there need any functions about init armors,code them here.
         // Stat: True
-        advAgriArmorItems.InitAllArmors();
-        advAgriArmorItems.RegisteredArmors();
+        advAgriArmors.InitAllArmors();
+        advAgriArmors.RegisteredArmors();
 
         //Todo: 2/3/21 8:30 PM
         // User: suibing
@@ -80,7 +74,7 @@ public class AdvancedAgriculture implements ModInitializer {
         // Aims: Init item entities here.
         // Desc: If there need any functions about init item entities,code them here.
         // Stat: True
-        advAgriItemEntities.InitAllItemEntity();
+
 
         //Todo: 2/3/21 8:25 PM
         // User: suibing

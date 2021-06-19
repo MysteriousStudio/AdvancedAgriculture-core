@@ -4,591 +4,363 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ToolMaterials;
-import tech.icedlab.advagri.ModAta;
-import tech.icedlab.advagri.itemgroup.AdvAgriItemCoreGroup;
-import tech.icedlab.advagri.itemgroup.AdvAgriItemToolAndArmorsGroup;
-import tech.icedlab.advagri.itemgroup.AdvAgriItemWorldGroup;
-import tech.icedlab.thorium.registration.RegistrationUtilForItem;
+import tech.icedlab.advagri.annotation.ItemR;
+import tech.icedlab.advagri.groups.AdvAgriItemCoreGroup;
+import tech.icedlab.advagri.groups.AdvAgriItemToolsAndArmorsGroup;
+import tech.icedlab.advagri.item.itemclass.BambooChopper;
+import tech.icedlab.advagri.item.itemclass.ForgingHammer;
+import tech.icedlab.advagri.item.itemclass.Wench;
+import tech.icedlab.thorium.registration.RegistrationMetaData;
+
+import java.lang.reflect.Field;
+import java.util.LinkedList;
 
 
 public class AdvAgriItems {
-    public static AdvAgriItems thisAdvAgriItems = new AdvAgriItems();
-
-    public static Integer MAX_ITEM_COUNT = 64;
-
-    private RegistrationUtilForItem i = new RegistrationUtilForItem();
-
-    /// GENERATE
-// Other
-    public static Item COM_FERT;
-    public static Item TUNG_OIL;
-    public static Item POTASSIUM_SALT_POWDER;
-    public static Item PLANT_ASH;
-    // Bottle
-    public static Item BOTTLE_SMALL;
-    public static Item BOTTLE_LARGE;
-    // Solarium Bottle
-    public static Item SOLARIUM_BOTTLE_LARGE;
-    public static Item SOLARIUM_BOTTLE_MEDIUM;
-    public static Item SOLARIUM_BOTTLE_SMALL;
-    // Bamboo
-    public static Item BAMBOO_LEAVES;
-    public static Item BAMBOO_SILK;
-    public static Item BAMBOO_SILK_BOARD;
-    public static Item BAMBOO_CHARCOAL;
-    public static Item BAMBOO_SHOOT;
-    // Non-metal resources
-    public static Item PHOS;
-    public static Item ZIRCON;
-    public static Item SULFUR;
-    // Copper
-    public static Item COPPER_SHARD;
-    public static Item COPPER_INGOT;
-    public static Item COPPER_POWDER;
-    public static Item COPPER_GEAR;
-    public static Item COPPER_PLATE;
-    public static Item COPPER_DISSOLVER;
-    public static Item CRUSHED_RAW_COPPER;
-    public static Item COPPER_ROD;
-    public static Item COPPER_WIRE;
-    // Zinc
-    public static Item ZINC_SHARD;
-    public static Item ZINC_INGOT;
-    public static Item ZINC_POWDER;
-    public static Item ZINC_GEAR;
-    public static Item ZINC_PLATE;
-    public static Item ZINC_DISSOLVER;
-    public static Item CRUSHED_RAW_ZINC;
-    public static Item ZINC_ROD;
-    public static Item ZINC_FOIL;
-    public static Item RAW_ZINC;
-    // Tin
-    public static Item TIN_SHARD;
-    public static Item TIN_INGOT;
-    public static Item TIN_POWDER;
-    public static Item TIN_GEAR;
-    public static Item TIN_PLATE;
-    public static Item TIN_DISSOLVER;
-    public static Item CRUSHED_RAW_TIN;
-    public static Item TIN_ROD;
-    public static Item RAW_TIN;
-    // Bronze
-    public static Item BRONZE_SHARD;
-    public static Item BRONZE_INGOT;
-    public static Item BRONZE_POWDER;
-    public static Item BRONZE_GEAR;
-    public static Item BRONZE_PLATE;
-    public static Item BRONZE_ROD;
-    // Aluminum
-    public static Item ALUMINUM_SHARD;
-    public static Item ALUMINUM_INGOT;
-    public static Item ALUMINUM_POWDER;
-    public static Item ALUMINUM_GEAR;
-    public static Item ALUMINUM_PLATE;
-    public static Item ALUMINUM_DISSOLVER;
-    public static Item CRUSHED_RAW_ALUMINUM;
-    public static Item ALUMINUM_ROD;
-    public static Item ALUMINUM_FOIL;
-    public static Item RAW_ALUMINUM;
-    // Lead
-    public static Item LEAD_SHARD;
-    public static Item LEAD_INGOT;
-    public static Item LEAD_POWDER;
-    public static Item LEAD_GEAR;
-    public static Item LEAD_PLATE;
-    public static Item LEAD_DISSOLVER;
-    public static Item CRUSHED_RAW_LEAD;
-    public static Item RAW_LEAD;
-    // Silver
-    public static Item SILVER_SHARD;
-    public static Item SILVER_INGOT;
-    public static Item SILVER_POWDER;
-    public static Item SILVER_GEAR;
-    public static Item SILVER_PLATE;
-    public static Item SILVER_DISSOLVER;
-    public static Item CRUSHED_RAW_SILVER;
-    public static Item SILVER_ROD;
-    public static Item SILVER_FOIL;
-    public static Item SILVER_WIRE;
-    public static Item RAW_SILVER;
-    // Steel
-    public static Item STEEL_INGOT;
-    public static Item STEEL_POWDER;
-    public static Item STEEL_GEAR;
-    public static Item STEEL_PLATE;
-    public static Item CRUSHED_RAW_HIGH_CARBON_IRON;
-    public static Item STEEL_ROD;
-    public static Item RAW_HIGH_CARBON_IRON;
-    // Nickel
-    public static Item NICKEL_SHARD;
-    public static Item NICKEL_INGOT;
-    public static Item NICKEL_POWDER;
-    public static Item NICKEL_GEAR;
-    public static Item NICKEL_PLATE;
-    public static Item NICKEL_DISSOLVER;
-    public static Item CRUSHED_RAW_NICKEL;
-    public static Item NICKEL_ROD;
-    public static Item NICKEL_FOIL;
-    public static Item RAW_NICKEL;
-    // Tungsten
-    public static Item TUNGSTEN_SHARD;
-    public static Item TUNGSTEN_INGOT;
-    public static Item TUNGSTEN_POWDER;
-    public static Item TUNGSTEN_GEAR;
-    public static Item TUNGSTEN_PLATE;
-    public static Item TUNGSTEN_DISSOLVER;
-    public static Item CRUSHED_RAW_TUNGSTEN;
-    public static Item TUNGSTEN_ROD;
-    public static Item RAW_TUNGSTEN;
-    // Titanium
-    public static Item TITANIUM_SHARD;
-    public static Item TITANIUM_INGOT;
-    public static Item TITANIUM_POWDER;
-    public static Item TITANIUM_GEAR;
-    public static Item TITANIUM_PLATE;
-    public static Item TITANIUM_DISSOLVER;
-    public static Item CRUSHED_RAW_TITANIUM;
-    public static Item TITANIUM_ROD;
-    public static Item RAW_TITANIUM;
-    // Iron
-    public static Item IRON_SHARD;
-    public static Item IRON_POWDER;
-    public static Item IRON_GEAR;
-    public static Item IRON_PLATE;
-    public static Item IRON_DISSOLVER;
-    public static Item CRUSHED_RAW_IRON;
-    public static Item IRON_ROD;
-    // Gold
-    public static Item GOLD_SHARD;
-    public static Item GOLD_POWDER;
-    public static Item GOLD_GEAR;
-    public static Item GOLD_PLATE;
-    public static Item GOLD_DISSOLVER;
-    public static Item CRUSHED_RAW_GOLD;
-    public static Item GOLD_ROD;
-    public static Item GOLD_FOIL;
-
-    // Firecracker
-    public static Firecracker FIRECRACKERS;
-
-    // Conductor Core
-    public static Item COPPER_CONDUCTOR_CORE;
-    public static Item SILVER_CONDUCTOR_CORE;
-    public static Item TITANIUM_CONDUCTOR_CORE;
-
-    //Machine Manufacturing Materials
-    public static Item COPPER_COIL;
-    public static Item ELECTRIC_MOTOR_SMALL;
-    public static Item ELECTRIC_MOTOR_BIG;
-
-    // Ore By-products
-    public static Item MINERAL_MUD;
-    public static Item CORASE_ORE_POWDER;
-
-    // Tools
-    public static Item FORGING_HAMMER;
-    public static Item BAMBOO_CHOPPER;
-    public static Wench WENCH;
-
-    // Plant "Seed"
-    public static Item RICE_SEED_BAG;
-    public static Item CHILI_SEED_BAG;
-    public static Item CELERY_SEED_BAG;
-    public static Item LETTUCE_SEED_BAG;
-    public static Item STRAWBERRY_SEED_BAG;
-    public static Item CORN_SEED_BAG;
-    public static Item SWEET_POTATO_VINE;
-
-    // Farming Product
-    public static Item RICE_UNHUSKED;
-    public static Item RICE;
-    public static Item PLANT_STRAW;
-    public static Item SWEET_POTATO;
-    public static Item CHILI;
-    public static Item CELERY;
-    public static Item LETTUCE;
-    public static Item STRAWBERRY;
-    public static Item GARLIC;
-    public static Item CHUFA;
-
-    // Trees
-
-    //Solar Bush
-    public static Item SOLAR_BERRY;
-
-
-    /// GENERATE
+    private static final AdvAgriItems Instance = new AdvAgriItems();
 
     public static ItemGroup ITEM_GROUP;
+    public static Integer MAX_ITEM_COUNT = 64;
+
+    @ItemR(Path = AdvAgriItemsEnum.COM_FERT)
+    public Item COM_FERT;
+    @ItemR(Path = AdvAgriItemsEnum.TUNG_OIL)
+    public Item TUNG_OIL;
+    @ItemR(Path = AdvAgriItemsEnum.POTASSIUM_SALT_POWDER)
+    public Item POTASSIUM_SALT_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.PLANT_ASH)
+    public Item PLANT_ASH;
+    @ItemR(Path = AdvAgriItemsEnum.BOTTLE_SMALL)
+    public Item BOTTLE_SMALL;
+    @ItemR(Path = AdvAgriItemsEnum.BOTTLE_LARGE)
+    public Item BOTTLE_LARGE;
+    @ItemR(Path = AdvAgriItemsEnum.SOLARIUM_BOTTLE_LARGE)
+    public Item SOLARIUM_BOTTLE_LARGE;
+    @ItemR(Path = AdvAgriItemsEnum.SOLARIUM_BOTTLE_MEDIUM)
+    public Item SOLARIUM_BOTTLE_MEDIUM;
+    @ItemR(Path = AdvAgriItemsEnum.SOLARIUM_BOTTLE_MEDIUM)
+    public Item SOLARIUM_BOTTLE_SMALL;
+    @ItemR(Path = AdvAgriItemsEnum.BAMBOO_LEAVES)
+    public Item BAMBOO_LEAVES;
+    @ItemR(Path = AdvAgriItemsEnum.BAMBOO_SILK)
+    public Item BAMBOO_SILK;
+    @ItemR(Path = AdvAgriItemsEnum.BAMBOO_SILK_BOARD)
+    public Item BAMBOO_SILK_BOARD;
+    @ItemR(Path = AdvAgriItemsEnum.BAMBOO_CHARCOAL)
+    public Item BAMBOO_CHARCOAL;
+    @ItemR(Path = AdvAgriItemsEnum.BAMBOO_SHOOT)
+    public Item BAMBOO_SHOOT;
+    @ItemR(Path = AdvAgriItemsEnum.PHOS)
+    public Item PHOS;
+    @ItemR(Path = AdvAgriItemsEnum.ZIRCON)
+    public Item ZIRCON;
+    @ItemR(Path = AdvAgriItemsEnum.SULFUR)
+    public Item SULFUR;
+
+    @ItemR(Path = AdvAgriItemsEnum.COPPER_SHARD)
+    public Item COPPER_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.COPPER_INGOT)
+    public Item COPPER_INGOT;
+    @ItemR(Path = AdvAgriItemsEnum.COPPER_POWDER)
+    public Item COPPER_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.COPPER_GEAR)
+    public Item COPPER_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.COPPER_PLATE)
+    public Item COPPER_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.COPPER_DISSOLVER)
+    public Item COPPER_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.COPPER_ROD)
+    public Item COPPER_ROD;
+    @ItemR(Path = AdvAgriItemsEnum.COPPER_WIRE)
+    public Item COPPER_WIRE;
+
+    @ItemR(Path = AdvAgriItemsEnum.ZINC_SHARD)
+    public Item ZINC_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.ZINC_INGOT)
+    public Item ZINC_INGOT;
+    @ItemR(Path = AdvAgriItemsEnum.ZINC_POWDER)
+    public Item ZINC_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.ZINC_GEAR)
+    public Item ZINC_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.ZINC_PLATE)
+    public Item ZINC_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.ZINC_DISSOLVER)
+    public Item ZINC_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.ZINC_ROD)
+    public Item ZINC_ROD;
+    @ItemR(Path = AdvAgriItemsEnum.ZINC_WIRE)
+    public Item ZINC_WIRE;
+
+    @ItemR(Path = AdvAgriItemsEnum.TIN_SHARD)
+    public Item TIN_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.TIN_INGOT)
+    public Item TIN_INGOT;
+    @ItemR(Path = AdvAgriItemsEnum.TIN_POWDER)
+    public Item TIN_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.TIN_GEAR)
+    public Item TIN_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.TIN_PLATE)
+    public Item TIN_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.TIN_DISSOLVER)
+    public Item TIN_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.TIN_ROD)
+    public Item TIN_ROD;
+    @ItemR(Path = AdvAgriItemsEnum.TIN_WIRE)
+    public Item TIN_WIRE;
+
+    @ItemR(Path = AdvAgriItemsEnum.BRONZE_SHARD)
+    public Item BRONZE_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.BRONZE_INGOT)
+    public Item BRONZE_INGOT;
+    @ItemR(Path = AdvAgriItemsEnum.BRONZE_POWDER)
+    public Item BRONZE_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.BRONZE_GEAR)
+    public Item BRONZE_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.BRONZE_PLATE)
+    public Item BRONZE_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.BRONZE_DISSOLVER)
+    public Item BRONZE_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.BRONZE_ROD)
+    public Item BRONZE_ROD;
+    @ItemR(Path = AdvAgriItemsEnum.BRONZE_WIRE)
+    public Item BRONZE_WIRE;
+
+    @ItemR(Path = AdvAgriItemsEnum.ALUMINUM_SHARD)
+    public Item ALUMINUM_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.ALUMINUM_INGOT)
+    public Item ALUMINUM_INGOT;
+    @ItemR(Path = AdvAgriItemsEnum.ALUMINUM_POWDER)
+    public Item ALUMINUM_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.ALUMINUM_GEAR)
+    public Item ALUMINUM_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.ALUMINUM_PLATE)
+    public Item ALUMINUM_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.ALUMINUM_DISSOLVER)
+    public Item ALUMINUM_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.ALUMINUM_ROD)
+    public Item ALUMINUM_ROD;
+    @ItemR(Path = AdvAgriItemsEnum.ALUMINUM_WIRE)
+    public Item ALUMINUM_WIRE;
+
+    @ItemR(Path = AdvAgriItemsEnum.LEAD_SHARD)
+    public Item LEAD_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.LEAD_INGOT)
+    public Item LEAD_INGOT;
+    @ItemR(Path = AdvAgriItemsEnum.LEAD_POWDER)
+    public Item LEAD_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.LEAD_GEAR)
+    public Item LEAD_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.LEAD_PLATE)
+    public Item LEAD_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.LEAD_DISSOLVER)
+    public Item LEAD_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.LEAD_ROD)
+    public Item LEAD_ROD;
+    @ItemR(Path = AdvAgriItemsEnum.LEAD_WIRE)
+    public Item LEAD_WIRE;
+
+    @ItemR(Path = AdvAgriItemsEnum.SILVER_SHARD)
+    public Item SILVER_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.SILVER_INGOT)
+    public Item SILVER_INGOT;
+    @ItemR(Path = AdvAgriItemsEnum.SILVER_POWDER)
+    public Item SILVER_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.SILVER_GEAR)
+    public Item SILVER_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.SILVER_PLATE)
+    public Item SILVER_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.SILVER_DISSOLVER)
+    public Item SILVER_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.SILVER_ROD)
+    public Item SILVER_ROD;
+    @ItemR(Path = AdvAgriItemsEnum.SILVER_WIRE)
+    public Item SILVER_WIRE;
+
+    @ItemR(Path = AdvAgriItemsEnum.STEEL_INGOT)
+    public Item STEEL_INGOT;
+    @ItemR(Path = AdvAgriItemsEnum.STEEL_POWDER)
+    public Item STEEL_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.STEEL_GEAR)
+    public Item STEEL_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.STEEL_PLATE)
+    public Item STEEL_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.STEEL_ROD)
+    public Item STEEL_ROD;
+
+    @ItemR(Path = AdvAgriItemsEnum.NICKEL_SHARD)
+    public Item NICKEL_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.NICKEL_INGOT)
+    public Item NICKEL_INGOT;
+    @ItemR(Path = AdvAgriItemsEnum.NICKEL_POWDER)
+    public Item NICKEL_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.NICKEL_GEAR)
+    public Item NICKEL_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.NICKEL_PLATE)
+    public Item NICKEL_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.NICKEL_DISSOLVER)
+    public Item NICKEL_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.NICKEL_ROD)
+    public Item NICKEL_ROD;
+
+
+    @ItemR(Path = AdvAgriItemsEnum.TUNGSTEN_SHARD)
+    public Item TUNGSTEN_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.TUNGSTEN_INGOT)
+    public Item TUNGSTEN_INGOT;
+    @ItemR(Path = AdvAgriItemsEnum.TUNGSTEN_POWDER)
+    public Item TUNGSTEN_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.TUNGSTEN_GEAR)
+    public Item TUNGSTEN_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.TUNGSTEN_PLATE)
+    public Item TUNGSTEN_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.TUNGSTEN_DISSOLVER)
+    public Item TUNGSTEN_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.TUNGSTEN_ROD)
+    public Item TUNGSTEN_ROD;
+    @ItemR(Path = AdvAgriItemsEnum.TUNGSTEN_WIRE)
+    public Item TUNGSTEN_WIRE;
+
+    @ItemR(Path = AdvAgriItemsEnum.TITANIUM_SHARD)
+    public Item TITANIUM_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.TITANIUM_INGOT)
+    public Item TITANIUM_INGOT;
+    @ItemR(Path = AdvAgriItemsEnum.TITANIUM_POWDER)
+    public Item TITANIUM_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.TITANIUM_GEAR)
+    public Item TITANIUM_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.TITANIUM_PLATE)
+    public Item TITANIUM_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.TITANIUM_DISSOLVER)
+    public Item TITANIUM_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.TITANIUM_ROD)
+    public Item TITANIUM_ROD;
+    @ItemR(Path = AdvAgriItemsEnum.TITANIUM_WIRE)
+    public Item TITANIUM_WIRE;
+
+    @ItemR(Path = AdvAgriItemsEnum.IRON_SHARD)
+    public Item IRON_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.IRON_POWDER)
+    public Item IRON_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.IRON_GEAR)
+    public Item IRON_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.IRON_PLATE)
+    public Item IRON_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.IRON_DISSOLVER)
+    public Item IRON_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.IRON_ROD)
+    public Item IRON_ROD;
+
+    @ItemR(Path = AdvAgriItemsEnum.GOLD_SHARD)
+    public Item GOLD_SHARD;
+    @ItemR(Path = AdvAgriItemsEnum.GOLD_POWDER)
+    public Item GOLD_POWDER;
+    @ItemR(Path = AdvAgriItemsEnum.GOLD_GEAR)
+    public Item GOLD_GEAR;
+    @ItemR(Path = AdvAgriItemsEnum.GOLD_PLATE)
+    public Item GOLD_PLATE;
+    @ItemR(Path = AdvAgriItemsEnum.GOLD_DISSOLVER)
+    public Item GOLD_DISSOLVER;
+    @ItemR(Path = AdvAgriItemsEnum.GOLD_ROD)
+    public Item GOLD_ROD;
+    @ItemR(Path = AdvAgriItemsEnum.GOLD_FOIL)
+    public Item GOLD_FOIL;
+
+    // Conductor Core
+    @ItemR(Path = AdvAgriItemsEnum.COPPER_CONDUCTOR_CORE)
+    public Item COPPER_CONDUCTOR_CORE;
+    @ItemR(Path = AdvAgriItemsEnum.SILVER_CONDUCTOR_CORE)
+    public Item SILVER_CONDUCTOR_CORE;
+    @ItemR(Path = AdvAgriItemsEnum.TITANIUM_CONDUCTOR_CORE)
+    public Item TITANIUM_CONDUCTOR_CORE;
+
+    //Machine Manufacturing Materials
+    @ItemR(Path = AdvAgriItemsEnum.COPPER_COIL)
+    public Item COPPER_COIL;
+    @ItemR(Path = AdvAgriItemsEnum.ELECTRIC_MOTOR_SMALL)
+    public Item ELECTRIC_MOTOR_SMALL;
+    @ItemR(Path = AdvAgriItemsEnum.ELECTRIC_MOTOR_BIG)
+    public Item ELECTRIC_MOTOR_BIG;
+
+    // Ore By-products
+    @ItemR(Path = AdvAgriItemsEnum.MINERAL_MUD)
+    public Item MINERAL_MUD;
+    @ItemR(Path = AdvAgriItemsEnum.CORASE_ORE_POWDER)
+    public Item CORASE_ORE_POWDER;
+
+    // Tools
+    @ItemR(Path = AdvAgriItemsEnum.FORGING_HAMMER)
+    public ForgingHammer FORGING_HAMMER = new ForgingHammer(new FabricItemSettings().group(ITEM_GROUP).maxCount(1).recipeRemainder(this.FORGING_HAMMER));
+    @ItemR(Path = AdvAgriItemsEnum.BAMBOO_CHOPPER)
+    public BambooChopper BAMBOO_CHOPPER = new BambooChopper(ToolMaterials.IRON, 1, 0F, new FabricItemSettings().group(AdvAgriItemToolsAndArmorsGroup.ITEM_GROUP));
+    @ItemR(Path = AdvAgriItemsEnum.WENCH)
+    public Wench WENCH = new Wench(new FabricItemSettings().group(ITEM_GROUP).maxCount(1));
+
+    // Plant "Seed"
+    @ItemR(Path = AdvAgriItemsEnum.RICE_SEED_BAG)
+    public Item RICE_SEED_BAG;
+    @ItemR(Path = AdvAgriItemsEnum.CHILI_SEED_BAG)
+    public Item CHILI_SEED_BAG;
+    @ItemR(Path = AdvAgriItemsEnum.CELERY_SEED_BAG)
+    public Item CELERY_SEED_BAG;
+    @ItemR(Path = AdvAgriItemsEnum.LETTUCE_SEED_BAG)
+    public Item LETTUCE_SEED_BAG;
+    @ItemR(Path = AdvAgriItemsEnum.STRAWBERRY_SEED_BAG)
+    public Item STRAWBERRY_SEED_BAG;
+    @ItemR(Path = AdvAgriItemsEnum.CORN_SEED_BAG)
+    public Item CORN_SEED_BAG;
+    @ItemR(Path = AdvAgriItemsEnum.SWEET_POTATO_VINE)
+    public Item SWEET_POTATO_VINE;
+
+    // Farming Product
+    @ItemR(Path = AdvAgriItemsEnum.RICE_UNHUSKED)
+    public Item RICE_UNHUSKED;
+    @ItemR(Path = AdvAgriItemsEnum.RICE)
+    public Item RICE;
+    @ItemR(Path = AdvAgriItemsEnum.PLANT_STRAW)
+    public Item PLANT_STRAW;
+    @ItemR(Path = AdvAgriItemsEnum.SWEET_POTATO)
+    public Item SWEET_POTATO;
+    @ItemR(Path = AdvAgriItemsEnum.CHILI)
+    public Item CHILI;
+    @ItemR(Path = AdvAgriItemsEnum.CELERY)
+    public Item CELERY;
+    @ItemR(Path = AdvAgriItemsEnum.LETTUCE)
+    public Item LETTUCE;
+    @ItemR(Path = AdvAgriItemsEnum.STRAWBERRY)
+    public Item STRAWBERRY;
+    @ItemR(Path = AdvAgriItemsEnum.GARLIC)
+    public Item GARLIC;
+    @ItemR(Path = AdvAgriItemsEnum.CHUFA)
+    public Item CHUFA;
+
+    //Solar Bush
+    @ItemR(Path = AdvAgriItemsEnum.SOLAR_BERRY)
+    public Item SOLAR_BERRY;
+
 
     private AdvAgriItems() {
         ITEM_GROUP = AdvAgriItemCoreGroup.getInstance().GetGroup();
+        Field[] fields = AdvAgriItems.class.getFields();
+        LinkedList<RegistrationMetaData<net.minecraft.item.Item>> itemLinkedList = new LinkedList<>();
+        Class<?> clazz = Item.class;
+        for (Field f : fields) {
+            ItemR a = f.getAnnotation(ItemR.class);
+            if (a != null) {
+                f.setAccessible(true);
+                try {
+                    if (f.getName() == null) {
+
+                    }
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
+
 
     public static AdvAgriItems getInstance() {
-        return thisAdvAgriItems;
+        return Instance;
     }
 
-    private static Item AddItemTool(ItemGroup itemGroup, Integer maxCount) {
-        return new Item(new FabricItemSettings().group(itemGroup).maxCount(maxCount));
-    }
-
-    private static Item AddItemTool() {
-        return new Item(new FabricItemSettings().group(ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
-    }
-
-    private static Item AddItemTool(ItemGroup itemGroup) {
-        return new Item(new FabricItemSettings().group(itemGroup).maxCount(MAX_ITEM_COUNT));
-    }
-
-    public void InitAllItems() {
-
-
-        COM_FERT = AddItemTool();
-        BAMBOO_LEAVES = AddItemTool();
-        BAMBOO_SILK = AddItemTool();
-        BAMBOO_SILK_BOARD = AddItemTool();
-        BAMBOO_CHARCOAL = AddItemTool();
-        PLANT_ASH = AddItemTool();
-        POTASSIUM_SALT_POWDER = AddItemTool();
-        TUNG_OIL = AddItemTool(AdvAgriItemCoreGroup.getInstance().GetGroup(), 1);
-        BAMBOO_SHOOT = AddItemTool();
-        ZIRCON = AddItemTool();
-        PHOS = AddItemTool();
-        SULFUR = AddItemTool();
-
-        BOTTLE_LARGE = AddItemTool();
-        BOTTLE_SMALL = AddItemTool();
-
-        SOLARIUM_BOTTLE_LARGE = AddItemTool();
-        SOLARIUM_BOTTLE_MEDIUM = AddItemTool();
-        SOLARIUM_BOTTLE_SMALL = AddItemTool();
-
-        // Ingot
-        COPPER_INGOT = AddItemTool();
-        ZINC_INGOT = AddItemTool();
-        TIN_INGOT = AddItemTool();
-        BRONZE_INGOT = AddItemTool();
-        ALUMINUM_INGOT = AddItemTool();
-        LEAD_INGOT = AddItemTool();
-        SILVER_INGOT = AddItemTool();
-        STEEL_INGOT = AddItemTool();
-        NICKEL_INGOT = AddItemTool();
-        TUNGSTEN_INGOT = AddItemTool();
-        TITANIUM_INGOT = AddItemTool();
-
-        // Powder
-        COPPER_POWDER = AddItemTool();
-        ZINC_POWDER = AddItemTool();
-        TIN_POWDER = AddItemTool();
-        BRONZE_POWDER = AddItemTool();
-        ALUMINUM_POWDER = AddItemTool();
-        LEAD_POWDER = AddItemTool();
-        SILVER_POWDER = AddItemTool();
-        STEEL_POWDER = AddItemTool();
-        NICKEL_POWDER = AddItemTool();
-        TUNGSTEN_POWDER = AddItemTool();
-        TITANIUM_POWDER = AddItemTool();
-        IRON_POWDER = AddItemTool();
-        GOLD_POWDER = AddItemTool();
-
-        // Gear
-        COPPER_GEAR = AddItemTool();
-        ZINC_GEAR = AddItemTool();
-        TIN_GEAR = AddItemTool();
-        BRONZE_GEAR = AddItemTool();
-        ALUMINUM_GEAR = AddItemTool();
-        LEAD_GEAR = AddItemTool();
-        SILVER_GEAR = AddItemTool();
-        STEEL_GEAR = AddItemTool();
-        NICKEL_GEAR = AddItemTool();
-        TUNGSTEN_GEAR = AddItemTool();
-        TITANIUM_GEAR = AddItemTool();
-        IRON_GEAR = AddItemTool();
-        GOLD_GEAR = AddItemTool();
-
-        // Plate
-        COPPER_PLATE = AddItemTool();
-        ZINC_PLATE = AddItemTool();
-        TIN_PLATE = AddItemTool();
-        BRONZE_PLATE = AddItemTool();
-        ALUMINUM_PLATE = AddItemTool();
-        LEAD_PLATE = AddItemTool();
-        SILVER_PLATE = AddItemTool();
-        STEEL_PLATE = AddItemTool();
-        NICKEL_PLATE = AddItemTool();
-        TUNGSTEN_PLATE = AddItemTool();
-        TITANIUM_PLATE = AddItemTool();
-        IRON_PLATE = AddItemTool();
-        GOLD_PLATE = AddItemTool();
-
-        // Shard
-        COPPER_SHARD = AddItemTool();
-        ZINC_SHARD = AddItemTool();
-        TIN_SHARD = AddItemTool();
-        BRONZE_SHARD = AddItemTool();
-        ALUMINUM_SHARD = AddItemTool();
-        LEAD_SHARD = AddItemTool();
-        SILVER_SHARD = AddItemTool();
-        NICKEL_SHARD = AddItemTool();
-        TUNGSTEN_SHARD = AddItemTool();
-        TITANIUM_SHARD = AddItemTool();
-        IRON_SHARD = AddItemTool();
-        GOLD_SHARD = AddItemTool();
-
-        //Rod
-        ALUMINUM_ROD = AddItemTool();
-        BRONZE_ROD = AddItemTool();
-        COPPER_ROD = AddItemTool();
-        GOLD_ROD = AddItemTool();
-        IRON_ROD = AddItemTool();
-        NICKEL_ROD = AddItemTool();
-        STEEL_ROD = AddItemTool();
-        TIN_ROD = AddItemTool();
-        TITANIUM_ROD = AddItemTool();
-        TUNGSTEN_ROD = AddItemTool();
-        ZINC_ROD = AddItemTool();
-
-        // Foil
-        ALUMINUM_FOIL = AddItemTool();
-        SILVER_FOIL = AddItemTool();
-        GOLD_FOIL = AddItemTool();
-        NICKEL_FOIL = AddItemTool();
-        ZINC_FOIL = AddItemTool();
-
-        //Wire
-        COPPER_WIRE = AddItemTool();
-        SILVER_WIRE = AddItemTool();
-
-        // Metal Dissolver
-        COPPER_DISSOLVER = AddItemTool();
-        ZINC_DISSOLVER = AddItemTool();
-        TIN_DISSOLVER = AddItemTool();
-        ALUMINUM_DISSOLVER = AddItemTool();
-        LEAD_DISSOLVER = AddItemTool();
-        SILVER_DISSOLVER = AddItemTool();
-        NICKEL_DISSOLVER = AddItemTool();
-        TUNGSTEN_DISSOLVER = AddItemTool();
-        TITANIUM_DISSOLVER = AddItemTool();
-        GOLD_DISSOLVER = AddItemTool();
-        IRON_DISSOLVER = AddItemTool();
-
-        // Crushed Ore
-        CRUSHED_RAW_ALUMINUM = AddItemTool();
-        CRUSHED_RAW_COPPER = AddItemTool();
-        CRUSHED_RAW_GOLD = AddItemTool();
-        CRUSHED_RAW_IRON = AddItemTool();
-        CRUSHED_RAW_LEAD = AddItemTool();
-        CRUSHED_RAW_NICKEL = AddItemTool();
-        CRUSHED_RAW_SILVER = AddItemTool();
-        CRUSHED_RAW_TIN = AddItemTool();
-        CRUSHED_RAW_HIGH_CARBON_IRON = AddItemTool();
-        CRUSHED_RAW_TITANIUM = AddItemTool();
-        CRUSHED_RAW_TUNGSTEN = AddItemTool();
-        CRUSHED_RAW_ZINC = AddItemTool();
-
-        FIRECRACKERS = new Firecracker(new FabricItemSettings().group(ITEM_GROUP).maxCount(MAX_ITEM_COUNT));
-
-        // Conductor Core
-        COPPER_CONDUCTOR_CORE = AddItemTool();
-        SILVER_CONDUCTOR_CORE = AddItemTool();
-        TITANIUM_CONDUCTOR_CORE = AddItemTool();
-
-        //Machine Manufacturing Materials
-        COPPER_COIL = AddItemTool();
-        ELECTRIC_MOTOR_SMALL = AddItemTool();
-        ELECTRIC_MOTOR_BIG = AddItemTool();
-
-        // Ore By-products
-        MINERAL_MUD = AddItemTool();
-        CORASE_ORE_POWDER = AddItemTool();
-
-        // Metal FORGING
-        FORGING_HAMMER = new ForgingHammer(
-                new FabricItemSettings().group(ITEM_GROUP).maxCount(1).recipeRemainder(FORGING_HAMMER));
-
-        BAMBOO_CHOPPER = new BambooChopper(ToolMaterials.IRON, 1, 0F, new Item.Settings().group(AdvAgriItemToolAndArmorsGroup.ITEM_GROUP));
-        WENCH = new Wench(new FabricItemSettings().group(ITEM_GROUP).maxCount(1));
-
-        //Plant "Seed"
-        RICE_SEED_BAG = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        CHILI_SEED_BAG = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        CELERY_SEED_BAG = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        LETTUCE_SEED_BAG = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        STRAWBERRY_SEED_BAG = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        CORN_SEED_BAG = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        SWEET_POTATO_VINE = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-
-        //Plant Product
-        RICE_UNHUSKED = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        RICE = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        PLANT_STRAW = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        SWEET_POTATO = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        CHILI = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        CELERY = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        LETTUCE = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        STRAWBERRY = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        GARLIC = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-        CHUFA = AddItemTool(AdvAgriItemWorldGroup.getInstance().GetGroup());
-
-    }
-
-    public void RegisteredItems() {
-        // RegistrationTool( ,"");
-
-        i.setMODID(ModAta.ModID);
-        i.add(COM_FERT, "com_fert").
-                add(BAMBOO_LEAVES, "bamboo_leaves").
-                add(BAMBOO_SILK, "bamboo_silk").
-                add(BAMBOO_SILK_BOARD, "bamboo_silk_board").
-                add(BAMBOO_CHARCOAL, "bamboo_charcoal").
-                add(PLANT_ASH, "plant_ash").
-                add(POTASSIUM_SALT_POWDER, "potassium_salt_powder").
-                add(ZIRCON, "zircon").
-                add(SULFUR, "sulfur").
-                add(PHOS, "phos").
-                add(BOTTLE_SMALL, "bottle_small").
-                add(BOTTLE_LARGE, "bottle_large").
-                add(SOLARIUM_BOTTLE_SMALL, "solarium_bottle_small").
-                add(SOLARIUM_BOTTLE_MEDIUM, "solarium_bottle").
-                add(SOLARIUM_BOTTLE_LARGE, "solarium_bottle_large").
-                add(COPPER_INGOT, "copper_ingot").
-                add(ZINC_INGOT, "zinc_ingot").
-                add(TIN_INGOT, "tin_ingot").
-                add(BRONZE_INGOT, "bronze_ingot").
-                add(ALUMINUM_INGOT, "aluminum_ingot").
-                add(LEAD_INGOT, "lead_ingot").
-                add(SILVER_INGOT, "silver_ingot").
-                add(STEEL_INGOT, "steel_ingot").
-                add(NICKEL_INGOT, "nickel_ingot").
-                add(TUNGSTEN_INGOT, "tungsten_ingot").
-                add(TITANIUM_INGOT, "titanium_ingot").
-                add(COPPER_POWDER, "copper_powder").
-                add(ZINC_POWDER, "zinc_powder").
-                add(TIN_POWDER, "tin_powder").
-                add(BRONZE_POWDER, "bronze_powder").
-                add(ALUMINUM_POWDER, "aluminum_powder").
-                add(LEAD_POWDER, "lead_powder").
-                add(SILVER_POWDER, "silver_powder").
-                add(STEEL_POWDER, "steel_powder").
-                add(NICKEL_POWDER, "nickel_powder").
-                add(TUNGSTEN_POWDER, "tungsten_powder").
-                add(TITANIUM_POWDER, "titanium_powder").
-                add(IRON_POWDER, "iron_powder").
-                add(GOLD_POWDER, "gold_powder").
-                add(COPPER_GEAR, "copper_gear").
-                add(ZINC_GEAR, "zinc_gear").
-                add(TIN_GEAR, "tin_gear").
-                add(BRONZE_GEAR, "bronze_gear").
-                add(ALUMINUM_GEAR, "aluminum_gear").
-                add(LEAD_GEAR, "lead_gear").
-                add(SILVER_GEAR, "silver_gear").
-                add(STEEL_GEAR, "steel_gear").
-                add(NICKEL_GEAR, "nickel_gear").
-                add(TUNGSTEN_GEAR, "tungsten_gear").
-                add(TITANIUM_GEAR, "titanium_gear").
-                add(IRON_GEAR, "iron_gear").
-                add(GOLD_GEAR, "gold_gear").
-                add(COPPER_PLATE, "copper_plate").
-                add(ZINC_PLATE, "zinc_plate").
-                add(TIN_PLATE, "tin_plate").
-                add(BRONZE_PLATE, "bronze_plate").
-                add(ALUMINUM_PLATE, "aluminum_plate").
-                add(LEAD_PLATE, "lead_plate").
-                add(SILVER_PLATE, "silver_plate").
-                add(STEEL_PLATE, "steel_plate").
-                add(NICKEL_PLATE, "nickel_plate").
-                add(TUNGSTEN_PLATE, "tungsten_plate").
-                add(TITANIUM_PLATE, "titanium_plate").
-                add(IRON_PLATE, "iron_plate").
-                add(GOLD_PLATE, "gold_plate").
-                add(COPPER_SHARD, "copper_shard").
-                add(ZINC_SHARD, "zinc_shard").
-                add(TIN_SHARD, "tin_shard").
-                add(BRONZE_SHARD, "bronze_shard").
-                add(ALUMINUM_SHARD, "aluminum_shard").
-                add(LEAD_SHARD, "lead_shard").
-                add(SILVER_SHARD, "silver_shard").
-                add(NICKEL_SHARD, "nickel_shard").
-                add(TUNGSTEN_SHARD, "tungsten_shard").
-                add(TITANIUM_SHARD, "titanium_shard").
-                add(IRON_SHARD, "iron_shard").
-                add(GOLD_SHARD, "gold_shard").
-                add(COPPER_DISSOLVER, "copper_dissolver").
-                add(ZINC_DISSOLVER, "zinc_dissolver").
-                add(TIN_DISSOLVER, "tin_dissolver").
-                add(ALUMINUM_DISSOLVER, "aluminum_dissolver").
-                add(LEAD_DISSOLVER, "lead_dissolver").
-                add(SILVER_DISSOLVER, "silver_dissolver").
-                add(NICKEL_DISSOLVER, "nickel_dissolver").
-                add(TUNGSTEN_DISSOLVER, "tungsten_dissolver").
-                add(TITANIUM_DISSOLVER, "titanium_dissolver").
-                add(IRON_DISSOLVER, "iron_dissolver").
-                add(GOLD_DISSOLVER, "gold_dissolver").
-                add(CRUSHED_RAW_ALUMINUM, "crushed_raw_aluminum").
-                add(CRUSHED_RAW_COPPER, "crushed_raw_copper").
-                add(CRUSHED_RAW_GOLD, "crushed_raw_gold").
-                add(CRUSHED_RAW_IRON, "crushed_raw_iron").
-                add(CRUSHED_RAW_LEAD, "crushed_raw_lead").
-                add(CRUSHED_RAW_NICKEL, "crushed_raw_nickel").
-                add(CRUSHED_RAW_SILVER, "crushed_raw_silver").
-                add(CRUSHED_RAW_TIN, "crushed_raw_tin").
-                add(CRUSHED_RAW_TITANIUM, "crushed_raw_titanium").
-                add(CRUSHED_RAW_TUNGSTEN, "crushed_raw_tungsten").
-                add(CRUSHED_RAW_ZINC, "crushed_raw_zinc").
-                add(CRUSHED_RAW_HIGH_CARBON_IRON, "crushed_raw_high_carbon_iron").
-                add(ALUMINUM_ROD, "aluminum_rod").
-                add(BRONZE_ROD, "bronze_rod").
-                add(COPPER_ROD, "copper_rod").
-                add(GOLD_ROD, "gold_rod").
-                add(IRON_ROD, "iron_rod").
-                add(NICKEL_ROD, "nickel_rod").
-                add(STEEL_ROD, "steel_rod").
-                add(TIN_ROD, "tin_rod").
-                add(TUNGSTEN_ROD, "tungsten_rod").
-                add(TITANIUM_ROD, "titanium_rod").
-                add(ZINC_ROD, "zinc_rod").
-                add(ALUMINUM_FOIL, "aluminum_foil").
-                add(GOLD_FOIL, "gold_foil").
-                add(SILVER_FOIL, "silver_foil").
-                add(NICKEL_FOIL, "nickel_foil").
-                add(ZINC_FOIL, "zinc_foil").
-                add(COPPER_WIRE, "copper_wire").
-                add(SILVER_WIRE, "silver_wire").
-                add(COPPER_COIL, "copper_coil").
-                add(ELECTRIC_MOTOR_SMALL, "electric_motor_small").
-                add(ELECTRIC_MOTOR_BIG, "electric_motor_big").
-                add(FIRECRACKERS, "firecrackers").
-                add(COPPER_CONDUCTOR_CORE, "copper_conductor_core").
-                add(SILVER_CONDUCTOR_CORE, "silver_conductor_core").
-                add(TITANIUM_CONDUCTOR_CORE, "titanium_conductor_core").
-                add(CORASE_ORE_POWDER, "corase_ore_powder").
-                add(MINERAL_MUD, "mineral_mud").
-                add(FORGING_HAMMER, "forging_hammer").
-                add(BAMBOO_CHOPPER, "bamboo_chopper").
-                add(WENCH, "wench").
-                add(RICE_SEED_BAG, "rice_seed_bag").
-                add(CHILI_SEED_BAG, "chili_seed_bag").
-                add(CELERY_SEED_BAG, "celery_seed_bag").
-                add(LETTUCE_SEED_BAG, "lettuce_seed_bag").
-                add(STRAWBERRY_SEED_BAG, "strawberry_seed_bag").
-                add(CORN_SEED_BAG, "corn_seed_bag").
-                add(SWEET_POTATO_VINE, "sweet_potato_vine").
-                add(RICE_UNHUSKED, "rice_unhusked").
-                add(RICE, "rice").
-                add(PLANT_STRAW, "plant_straw").
-                add(SWEET_POTATO, "sweet_potato").
-                add(CHILI, "chili").
-                add(CELERY, "celery").
-                add(LETTUCE, "lettuce").
-                add(STRAWBERRY, "strawberry").
-                add(GARLIC, "garlic").
-                add(CHUFA, "chufa").
-//                add(SOLAR_BERRY, "solar_berry").
-        registration();
-
-
-        //Trees
-
-    }
 }

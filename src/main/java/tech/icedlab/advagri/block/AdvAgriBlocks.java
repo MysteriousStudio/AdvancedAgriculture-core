@@ -19,8 +19,8 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 import org.jetbrains.annotations.NotNull;
 import tech.icedlab.advagri.ModAta;
 import tech.icedlab.advagri.block.machines.*;
-import tech.icedlab.advagri.itemgroup.AdvAgriItemCoreGroup;
-import tech.icedlab.advagri.itemgroup.AdvAgriItemWorldGroup;
+import tech.icedlab.advagri.groups.AdvAgriItemCoreGroup;
+import tech.icedlab.advagri.groups.AdvAgriItemWorldGroup;
 
 public class AdvAgriBlocks {
     public static AdvAgriBlocks thisAdvAgriBlocks = new AdvAgriBlocks();
@@ -218,12 +218,9 @@ public class AdvAgriBlocks {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_nickel_overworld"), ORE_NICKEL_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_titanium_overworld"), ORE_TITANIUM_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_tungsten_overworld"), ORE_TUNGSTEN_OVERWORLD);
-
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_phos_overworld"), ORE_PHOS_OVERWORLD);
-
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_sulphur_overworld"), ORE_SULPHUR_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_nether_sulphur_nether"), ORE_NETHER_SULPHUR_NETHER);
-
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_quarry_overworld"), ORE_QUARRY_OVERWORLD);
 
     }
