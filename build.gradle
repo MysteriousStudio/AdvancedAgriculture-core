@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.6-SNAPSHOT'
+    id 'fabric-loom' version '0.7-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -9,6 +9,21 @@ targetCompatibility = JavaVersion.VERSION_1_8
 archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
+
+repositories {
+    // Add repositories to retrieve artifacts from in here.
+    // You should only use this when depending on other mods because
+    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+    // See https://docs.gradle.org/current/userguide/declaring_repositories.html
+    // for more information about repositories.
+    maven {
+        url 'https://maven.aliyun.com/nexus/content/groups/public'
+    }
+
+    maven {
+        url 'https://repository.hanbings.io/proxy'
+    }
+}
 
 dependencies {
     // To change the versions see the gradle.properties file
@@ -20,8 +35,8 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // Thorium lib
-    include 'tech.icedlab:Thorium:54331f02e3'
-    modImplementation 'tech.icedlab:Thorium:54331f02e3'
+    include "tech.icedlab:Thorium:${project.thorium_version}"
+    modImplementation "tech.icedlab:Thorium:${project.thorium_version}"
 
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.

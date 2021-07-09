@@ -2,6 +2,7 @@ package tech.icedlab.advagri.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
+import net.fabricmc.fabric.impl.object.builder.FabricEntityType;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
@@ -21,12 +22,16 @@ import tech.icedlab.advagri.ModAta;
 import tech.icedlab.advagri.block.machines.*;
 import tech.icedlab.advagri.groups.AdvAgriItemCoreGroup;
 import tech.icedlab.advagri.groups.AdvAgriItemWorldGroup;
+import tech.icedlab.thorium.registration.DefaultBlock;
+import tech.icedlab.thorium.registration.RegistrationUtil;
+
+import java.lang.reflect.Field;
 
 public class AdvAgriBlocks {
     public static AdvAgriBlocks thisAdvAgriBlocks = new AdvAgriBlocks();
 
-    public static ItemGroup CORE_ITEM_GROUP;
-    public static ItemGroup WORLD_ITEM_GROUP;
+    public static ItemGroup CORE_ITEM_GROUP = AdvAgriItemCoreGroup.getInstance().GetGroup();
+    public static ItemGroup WORLD_ITEM_GROUP = AdvAgriItemWorldGroup.getInstance().GetGroup();
 
     public static Integer MAX_COUNT = 64;
 
@@ -39,69 +44,118 @@ public class AdvAgriBlocks {
     public Integer BASE_ORE_GEN_SIZE = 8;
     public Integer BASE_ORE_GEN_COUNT = 16;
 
-    ///GENERATE
-
     //MetalOre
-    public Block COPPER_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
-    public Block ZINC_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
-    public Block TIN_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
-    public Block ALUMINUM_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
-    public Block LEAD_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
-    public Block SILVER_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
-    public Block HIGH_CARBON_IRON_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
-    public Block NICKEL_ORE = this.CopyBlockSettings(Blocks.IRON_ORE);
-    public Block TUNGSTEN_ORE = this.CopyBlockSettings(Blocks.DIAMOND_ORE);
-    public Block TITANIUM_ORE = this.CopyBlockSettings(Blocks.DIAMOND_ORE);
+    @AutoBlock(Path = AdvAgriBlocksEnum.COPPER_ORE)
+    public Block COPPER_ORE = new Block(DefaultBlock.cloneSettings(Blocks.IRON_ORE));
+    @AutoBlock(Path = AdvAgriBlocksEnum.ZINC_ORE)
+    public Block ZINC_ORE = new Block(DefaultBlock.cloneSettings(Blocks.IRON_ORE));
+    @AutoBlock(Path = AdvAgriBlocksEnum.TIN_ORE)
+    public Block TIN_ORE = new Block(DefaultBlock.cloneSettings(Blocks.IRON_ORE));
+    @AutoBlock(Path = AdvAgriBlocksEnum.ALUMINUM_ORE)
+    public Block ALUMINUM_ORE = new Block(DefaultBlock.cloneSettings(Blocks.IRON_ORE));
+    @AutoBlock(Path = AdvAgriBlocksEnum.LEAD_ORE)
+    public Block LEAD_ORE = new Block(DefaultBlock.cloneSettings(Blocks.IRON_ORE));
+    @AutoBlock(Path = AdvAgriBlocksEnum.SILVER_ORE)
+    public Block SILVER_ORE = new Block(DefaultBlock.cloneSettings(Blocks.IRON_ORE));
+    @AutoBlock(Path = AdvAgriBlocksEnum.HIGH_CARBON_IRON_ORE)
+    public Block HIGH_CARBON_IRON_ORE = new Block(DefaultBlock.cloneSettings(Blocks.IRON_ORE));
+    @AutoBlock(Path = AdvAgriBlocksEnum.NICKEL_ORE)
+    public Block NICKEL_ORE = new Block(DefaultBlock.cloneSettings(Blocks.IRON_ORE));
+    @AutoBlock(Path = AdvAgriBlocksEnum.TUNGSTEN_ORE)
+    public Block TUNGSTEN_ORE = new Block(DefaultBlock.cloneSettings(Blocks.DIAMOND_ORE));
+    @AutoBlock(Path = AdvAgriBlocksEnum.TITANIUM_ORE)
+    public Block TITANIUM_ORE = new Block(DefaultBlock.cloneSettings(Blocks.DIAMOND_ORE));
     //WeatheredOre
-    public static Block WEATHERED_COPPER_ORE;
-    public static Block WEATHERED_ZINC_ORE;
-    public static Block WEATHERED_TIN_ORE;
-    public static Block WEATHERED_ALUMINUM_ORE;
-    public static Block WEATHERED_LEAD_ORE;
-    public static Block WEATHERED_SILVER_ORE;
-    public static Block WEATHERED_HIGH_CARBON_IRON_ORE;
-    public static Block WEATHERED_NICKEL_ORE;
-    public static Block WEATHERED_TUNGSTEN_ORE;
-    public static Block WEATHERED_TITANIUM_ORE;
-    //Block
-    public Block COPPER_BLOCK;
-    public Block ZINC_BLOCK;
-    public Block TIN_BLOCK;
-    public Block BRONZE_BLOCK;
-    public Block ALUMINUM_BLOCK;
-    public Block LEAD_BLOCK;
-    public Block SILVER_BLOCK;
-    public Block STEEL_BLOCK;
-    public Block NICKEL_BLOCK;
-    public Block TUNGSTEN_BLOCK;
-    public Block TITANIUM_BLOCK;
+    @AutoBlock(Path = AdvAgriBlocksEnum.WEATHERED_COPPER_ORE)
+    public Block WEATHERED_COPPER_ORE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.WEATHERED_ZINC_ORE)
+    public Block WEATHERED_ZINC_ORE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.WEATHERED_TIN_ORE)
+    public Block WEATHERED_TIN_ORE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.WEATHERED_ALUMINUM_ORE)
+    public Block WEATHERED_ALUMINUM_ORE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.WEATHERED_LEAD_ORE)
+    public Block WEATHERED_LEAD_ORE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.WEATHERED_SILVER_ORE)
+    public Block WEATHERED_SILVER_ORE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.WEATHERED_HIGH_CARBON_IRON_ORE)
+    public Block WEATHERED_HIGH_CARBON_IRON_ORE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.WEATHERED_NICKEL_ORE)
+    public Block WEATHERED_NICKEL_ORE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.WEATHERED_TUNGSTEN_ORE)
+    public Block WEATHERED_TUNGSTEN_ORE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.WEATHERED_TITANIUM_ORE)
+    public Block WEATHERED_TITANIUM_ORE;
 
+    @AutoBlock(Path = AdvAgriBlocksEnum.COPPER_BLOCK)
+    public Block COPPER_BLOCK = new Block(DefaultBlock.cloneSettings(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.ZINC_BLOCK)
+    public Block ZINC_BLOCK = new Block(DefaultBlock.cloneSettings(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.TIN_BLOCK)
+    public Block TIN_BLOCK = new Block(DefaultBlock.cloneSettings(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.ALUMINUM_BLOCK)
+    public Block ALUMINUM_BLOCK = new Block(DefaultBlock.cloneSettings(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.LEAD_BLOCK)
+    public Block LEAD_BLOCK = new Block(DefaultBlock.cloneSettings(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.SILVER_BLOCK)
+    public Block SILVER_BLOCK = new Block(DefaultBlock.cloneSettings(Blocks.IRON_BLOCK));
+
+    @AutoBlock(Path = AdvAgriBlocksEnum.BRONZE_BLOCK)
+    public Block BRONZE_BLOCK = new Block(DefaultBlock.cloneSettings(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.STEEL_BLOCK)
+    public Block STEEL_BLOCK = new Block(DefaultBlock.cloneSettings(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.NICKEL_BLOCK)
+    public Block NICKEL_BLOCK = new Block(DefaultBlock.cloneSettings(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.TUNGSTEN_BLOCK)
+    public Block TUNGSTEN_BLOCK = new Block(DefaultBlock.cloneSettings(Blocks.DIAMOND_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.TITANIUM_BLOCK)
+    public Block TITANIUM_BLOCK = new Block(DefaultBlock.cloneSettings(Blocks.DIAMOND_BLOCK));
+
+    @AutoBlock(Path = AdvAgriBlocksEnum.COPPER_CABLE)
     public Block COPPER_CABLE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.TIN_CABLE)
     public Block TIN_CABLE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.SILVER_CABLE)
     public Block SILVER_CABLE;
+    @AutoBlock(Path = AdvAgriBlocksEnum.GOLD_CABLE)
     public Block GOLD_CABLE;
+
     //OtherOre
-    public Block PHOS_ORE = this.CopyBlockSettings(Blocks.COAL_BLOCK);
+    @AutoBlock(Path = AdvAgriBlocksEnum.PHOS_ORE)
+    public Block PHOS_ORE = new Block(DefaultBlock.cloneSettings(Blocks.COAL_ORE));
+    @AutoBlock(Path = AdvAgriBlocksEnum.SULPHUR_ORE)
     public SulphurOre SULPHUR_ORE = new SulphurOre(FabricBlockSettings.copyOf(Blocks.COAL_ORE).luminance(10));
+    @AutoBlock(Path = AdvAgriBlocksEnum.NETHER_SULPHUR_ORE)
     public NetherSulphurOre NETHER_SULPHUR_ORE = new NetherSulphurOre(FabricBlockSettings.copyOf(Blocks.COAL_ORE).luminance(10));
+    @AutoBlock(Path = AdvAgriBlocksEnum.BAMBOO_BLOCK)
+    public BambooBlock BAMBOO_BLOCK = new BambooBlock(FabricBlockSettings.of(Material.BAMBOO).hardness(BAMBOO_HARDNESS));
 
-    public BambooBlock BAMBOO_BLOCK;
-
-    public Block QUARRY = this.CopyBlockSettings(Blocks.DIRT);
+    @AutoBlock(Path = AdvAgriBlocksEnum.QUARRY)
+    public Block QUARRY = new Block(DefaultBlock.cloneSettings(Blocks.DIRT));
 
     //Machine blocks
-
-    public MachineShell MACHINE_SHELL;
-    public AdvancedCraftingTable ADVANCED_CRAFTING_TABLE;
-    public FermentTank FERMENT_TANK;
-    public BurningTank BURNING_TANK;
-    public SunshineLiquefiesMachine SUNSHINE_LIQUEFIES_MACHINE;
-    public SolarHighTemperatureElectrolyzeMachine SOLAR_HIGH_TEMPERATURE_ELECTROLYZE_MACHINE;
-    public Crusher CRUSHER;
-    public Extractor EXTRACTOR;
-    public Centrifuge CENTRIFUGE;
-    public OreWashingMachine ORE_WASHING_MACHINE;
-    public ResinExtractor RESIN_EXTRACTOR;
+    @AutoBlock(Path = AdvAgriBlocksEnum.MACHINE_SHELL)
+    public MachineShell MACHINE_SHELL = new MachineShell(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.ADVANCED_CRAFTING_TABLE)
+    public AdvancedCraftingTable ADVANCED_CRAFTING_TABLE = new AdvancedCraftingTable(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.FERMENT_TANK)
+    public FermentTank FERMENT_TANK = new FermentTank(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.BURNING_TANK)
+    public BurningTank BURNING_TANK = new BurningTank(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.SUNSHINE_LIQUEFIES_MACHINE)
+    public SunshineLiquefiesMachine SUNSHINE_LIQUEFIES_MACHINE = new SunshineLiquefiesMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.SOLAR_HIGH_TEMPERATURE_ELECTROLYZE_MACHINE)
+    public SolarHighTemperatureElectrolyzeMachine SOLAR_HIGH_TEMPERATURE_ELECTROLYZE_MACHINE = new SolarHighTemperatureElectrolyzeMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.CRUSHER)
+    public Crusher CRUSHER = new Crusher(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.EXTRACTOR)
+    public Extractor EXTRACTOR = new Extractor(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.CENTRIFUGE)
+    public Centrifuge CENTRIFUGE = new Centrifuge(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.ORE_WASHING_MACHINE)
+    public OreWashingMachine ORE_WASHING_MACHINE = new OreWashingMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
+    @AutoBlock(Path = AdvAgriBlocksEnum.RESIN_EXTRACTOR)
+    public ResinExtractor RESIN_EXTRACTOR = new ResinExtractor(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK));
     ///GENERATE
 
     //OverWorld ores
@@ -136,8 +190,7 @@ public class AdvAgriBlocks {
 
 
     private AdvAgriBlocks() {
-        CORE_ITEM_GROUP = AdvAgriItemCoreGroup.getInstance().GetGroup();
-        WORLD_ITEM_GROUP = AdvAgriItemWorldGroup.getInstance().GetGroup();
+
     }
 
 
@@ -145,66 +198,26 @@ public class AdvAgriBlocks {
         return thisAdvAgriBlocks;
     }
 
-    public void InitAllBlocks() {
-
-        this.AllInOneStepForOre(COPPER_ORE, "copper_ore");
-        this.AllInOneStepForOre(ZINC_ORE, "zinc_ore");
-        this.AllInOneStepForOre(TIN_ORE, "tin_ore");
-        this.AllInOneStepForOre(ALUMINUM_ORE, "aluminum_ore");
-        this.AllInOneStepForOre(LEAD_ORE, "lead_ore");
-        this.AllInOneStepForOre(SILVER_ORE, "silver_ore");
-        this.AllInOneStepForOre(HIGH_CARBON_IRON_ORE, "high_carbon_iron_ore");
-        this.AllInOneStepForOre(NICKEL_ORE, "nickel_ore");
-        this.AllInOneStepForOre(TUNGSTEN_ORE, "tungsten_ore");
-        this.AllInOneStepForOre(TITANIUM_ORE, "titanium_ore");
-
-        this.AllInOneStepForOre(PHOS_ORE, "phos_ore");
-        this.AllInOneStepForOre(SULPHUR_ORE, "sulphur_ore");
-        this.AllInOneStepForOre(NETHER_SULPHUR_ORE, "nether_sulphur_ore");
-
-        this.AllInOneStepForOre(WEATHERED_COPPER_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_copper_ore");
-        this.AllInOneStepForOre(WEATHERED_ZINC_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_zinc_ore");
-        this.AllInOneStepForOre(WEATHERED_TIN_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_tin_ore");
-        this.AllInOneStepForOre(WEATHERED_ALUMINUM_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_aluminum_ore");
-        this.AllInOneStepForOre(WEATHERED_LEAD_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_lead_ore");
-        this.AllInOneStepForOre(WEATHERED_SILVER_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_silver_ore");
-        this.AllInOneStepForOre(WEATHERED_HIGH_CARBON_IRON_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_high_carbon_iron_ore");
-        this.AllInOneStepForOre(WEATHERED_NICKEL_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_nickel_ore");
-        this.AllInOneStepForOre(WEATHERED_TUNGSTEN_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_tungsten_ore");
-        this.AllInOneStepForOre(WEATHERED_TITANIUM_ORE = this.CopyBlockSettings(Blocks.GRAVEL), "weathered_titanium_ore");
-
-
-        this.AllInOneStep(COPPER_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "copper_block");
-        this.AllInOneStep(ZINC_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "zinc_block");
-        this.AllInOneStep(TIN_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "tin_block");
-        this.AllInOneStep(BRONZE_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "bronze_block");
-        this.AllInOneStep(ALUMINUM_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "aluminum_block");
-        this.AllInOneStep(LEAD_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "lead_block");
-        this.AllInOneStep(SILVER_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "silver_block");
-        this.AllInOneStep(STEEL_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "steel_block");
-        this.AllInOneStep(NICKEL_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "nickel_block");
-        this.AllInOneStep(TUNGSTEN_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "tungsten_block");
-        this.AllInOneStep(TITANIUM_BLOCK = this.CopyBlockSettings(Blocks.IRON_BLOCK), "titanium_block");
-
-        this.AllInOneStep(BAMBOO_BLOCK = new BambooBlock(FabricBlockSettings.of(Material.BAMBOO).hardness(BAMBOO_HARDNESS)), "bamboo_block");
-        this.AllInOneStep(QUARRY, "quarry");
-
-        this.AllInOneStep(COPPER_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "copper_cable");
-        this.AllInOneStep(TIN_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "tin_cable");
-        this.AllInOneStep(SILVER_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "silver_cable");
-        this.AllInOneStep(GOLD_CABLE = this.AddStoneTypeBlockTool(CABLE_HARDNESS), "gold_cable");
-
-        this.AllInOneStep(MACHINE_SHELL = new MachineShell(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "machine_shell");
-        this.AllInOneStep(ADVANCED_CRAFTING_TABLE = new AdvancedCraftingTable(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "advanced_crafting_table");
-        this.AllInOneStep(FERMENT_TANK = new FermentTank(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "ferment_tank");
-        this.AllInOneStep(BURNING_TANK = new BurningTank(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "burning_tank");
-        this.AllInOneStep(SUNSHINE_LIQUEFIES_MACHINE = new SunshineLiquefiesMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "sunshine_liquefies_machine");
-        this.AllInOneStep(SOLAR_HIGH_TEMPERATURE_ELECTROLYZE_MACHINE = new SolarHighTemperatureElectrolyzeMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "solar_high_temperature_electrolyze_machine");
-        this.AllInOneStep(CRUSHER = new Crusher(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "crusher");
-        this.AllInOneStep(EXTRACTOR = new Extractor(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "extractor");
-        this.AllInOneStep(CENTRIFUGE = new Centrifuge(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "centrifuge");
-        this.AllInOneStep(ORE_WASHING_MACHINE = new OreWashingMachine(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "ore_washing_machine");
-        this.AllInOneStep(RESIN_EXTRACTOR = new ResinExtractor(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), "resin_extractor");
+    public void registryBlock() {
+        Field[] fields = AdvAgriBlocks.class.getFields();
+        for (Field f : fields) {
+            try {
+                f.setAccessible(true);
+                if (f.isAnnotationPresent(AutoBlock.class) && f.get(AdvAgriBlocks.getInstance()) == null) {
+                    if (f.getAnnotation(AutoBlock.class).Path().toString().toLowerCase().contains("weathered")) {
+                        f.set(AdvAgriBlocks.getInstance(), new Block(DefaultBlock.cloneSettings(Blocks.GRAVEL)));
+                    } else if (f.getAnnotation(AutoBlock.class).Path().toString().toLowerCase().contains("cable")) {
+                        f.set(AdvAgriBlocks.getInstance(), new Machine(DefaultBlock.cloneSettings(Blocks.BAMBOO)));
+                    }
+                    new RegistrationUtil().reg((Block) f.get(AdvAgriBlocks.getInstance()), f.getAnnotation(AutoBlock.class).Path().toString().toLowerCase(), ModAta.ModID, WORLD_ITEM_GROUP);
+                } else if (f.isAnnotationPresent(AutoBlock.class)) {
+                    new RegistrationUtil().reg((Block) f.get(AdvAgriBlocks.getInstance()), f.getAnnotation(AutoBlock.class).Path().toString().toLowerCase(), ModAta.ModID, WORLD_ITEM_GROUP);
+                }
+                f.setAccessible(false);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public void RegisteredGenOres() {
@@ -222,37 +235,6 @@ public class AdvAgriBlocks {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_sulphur_overworld"), ORE_SULPHUR_OVERWORLD);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_nether_sulphur_nether"), ORE_NETHER_SULPHUR_NETHER);
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_quarry_overworld"), ORE_QUARRY_OVERWORLD);
-
-    }
-
-    private Block AddStoneTypeBlockTool() {
-        return new AdvAgriOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(3.0F));
-    }
-
-    private Block AddStoneTypeBlockTool(Float hardness) {
-        return new AdvAgriOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES).hardness(hardness));
-    }
-
-    private Block AddStoneTypeBlockTool(Integer level, Float hardness) {
-        return new AdvAgriOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, level).hardness(hardness));
-    }
-
-    private Block AddStoneTypeBlockTool(Integer level) {
-        return new AdvAgriOreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByTool(FabricToolTags.PICKAXES, level).hardness(3.0F));
-    }
-
-    private AdvAgriOreBlock CopyBlockSettings(Block block) {
-        return new AdvAgriOreBlock(FabricBlockSettings.copyOf(block));
-    }
-
-    private void AllInOneStep(Block block, String path) {
-        Registry.register(Registry.BLOCK, new Identifier(ModAta.ModID, path), block);
-        Registry.register(Registry.ITEM, new Identifier(ModAta.ModID, path), new BlockItem(block, new Item.Settings().group(CORE_ITEM_GROUP).maxCount(MAX_COUNT)));
-    }
-
-    private void AllInOneStepForOre(Block block, String path) {
-        Registry.register(Registry.BLOCK, new Identifier(ModAta.ModID, path), block);
-        Registry.register(Registry.ITEM, new Identifier(ModAta.ModID, path), new BlockItem(block, new Item.Settings().group(WORLD_ITEM_GROUP).maxCount(MAX_COUNT)));
     }
 
     private static ConfiguredFeature<?, ?> ConfiguredFeature(Block block, Integer size, Integer maximum, Integer count) {

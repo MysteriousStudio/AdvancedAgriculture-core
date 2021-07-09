@@ -1,7 +1,10 @@
 pluginManagement {
     repositories {
-        gradlePluginPortal()
         mavenLocal()
+        maven {
+            name = 'Fabric'
+            url = 'https://repository.hanbings.io/proxy'
+        }
         maven {
             name = 'JitPack'
             url 'https://jitpack.io/'
@@ -10,5 +13,6 @@ pluginManagement {
             name = 'Fabric'
             url = 'https://maven.fabricmc.net/'
         }
+        gradlePluginPortal()
     }
 }

@@ -24,7 +24,7 @@ public enum AdvAgriItemsEnum {
     ZIRCON,
     SULFUR,
 
-    ALUMINUM_SHARD,
+    CRUSHED_ALUMINUM_ORE,
     ALUMINUM_INGOT,
     ALUMINUM_POWDER,
     ALUMINUM_GEAR,
@@ -32,8 +32,8 @@ public enum AdvAgriItemsEnum {
     ALUMINUM_DISSOLVER,
     ALUMINUM_ROD,
     ALUMINUM_WIRE,
-    
-    COPPER_SHARD,
+
+    CRUSHED_COPPER_ORE,
     COPPER_INGOT,
     COPPER_POWDER,
     COPPER_GEAR,
@@ -42,7 +42,7 @@ public enum AdvAgriItemsEnum {
     COPPER_ROD,
     COPPER_WIRE,
 
-    ZINC_SHARD,
+    CRUSHED_ZINC_ORE,
     ZINC_INGOT,
     ZINC_POWDER,
     ZINC_GEAR,
@@ -51,7 +51,7 @@ public enum AdvAgriItemsEnum {
     ZINC_ROD,
     ZINC_WIRE,
 
-    TIN_SHARD,
+    CRUSHED_TIN_ORE,
     TIN_INGOT,
     TIN_POWDER,
     TIN_GEAR,
@@ -69,7 +69,7 @@ public enum AdvAgriItemsEnum {
     BRONZE_ROD,
     BRONZE_WIRE,
 
-    LEAD_SHARD,
+    CRUSHED_LEAD_ORE,
     LEAD_INGOT,
     LEAD_POWDER,
     LEAD_GEAR,
@@ -77,14 +77,15 @@ public enum AdvAgriItemsEnum {
     LEAD_DISSOLVER,
     LEAD_ROD,
     LEAD_WIRE,
-    
+
+    CRUSHED_HIGH_CARBON_IRON_ORE,
     STEEL_INGOT,
     STEEL_POWDER,
     STEEL_GEAR,
     STEEL_PLATE,
     STEEL_ROD,
 
-    NICKEL_SHARD,
+    CRUSHED_NICKEL_ORE,
     NICKEL_INGOT,
     NICKEL_POWDER,
     NICKEL_GEAR,
@@ -93,7 +94,7 @@ public enum AdvAgriItemsEnum {
     NICKEL_ROD,
     NICKEL_WIRE,
 
-    SILVER_SHARD,
+    CRUSHED_SILVER_ORE,
     SILVER_INGOT,
     SILVER_POWDER,
     SILVER_GEAR,
@@ -101,8 +102,8 @@ public enum AdvAgriItemsEnum {
     SILVER_DISSOLVER,
     SILVER_ROD,
     SILVER_WIRE,
-    
-    TUNGSTEN_SHARD,
+
+    CRUSHED_TUNGSTEN_ORE,
     TUNGSTEN_INGOT,
     TUNGSTEN_POWDER,
     TUNGSTEN_GEAR,
@@ -111,7 +112,7 @@ public enum AdvAgriItemsEnum {
     TUNGSTEN_ROD,
     TUNGSTEN_WIRE,
 
-    TITANIUM_SHARD,
+    CRUSHED_TITANIUM_ORE,
     TITANIUM_INGOT,
     TITANIUM_POWDER,
     TITANIUM_GEAR,

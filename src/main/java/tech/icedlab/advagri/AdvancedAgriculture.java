@@ -37,13 +37,14 @@ public class AdvancedAgriculture implements ModInitializer {
         // Aims: Init items here.
         // Desc: If there need ant functions about init items,code them here.
         // Stat: True
+        advAgriItems.registryItem();
 
         //Todo: 2/3/21 8:32 PM
         // User: suibing
         // Aims: Init blocks and registration ore generation here.
         // Desc: If there need any functions about init blocks,code them here.
         // Stat: True
-        advAgriBlocks.InitAllBlocks();
+        advAgriBlocks.registryBlock();
         advAgriBlocks.RegisteredGenOres();
 
         //Todo: 2/3/21 8:31 PM
