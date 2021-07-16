@@ -1,17 +1,20 @@
 pluginManagement {
     repositories {
-        mavenLocal()
         maven {
-            name = 'Fabric'
-            url = 'https://repository.hanbings.io/proxy'
+            name = 'Iced\'s fabric mirror'
+            url = 'https://maven.icedlab.tech/proxy'
         }
         maven {
-            name = 'JitPack'
-            url 'https://jitpack.io/'
+            name = 'Hanbings\' fabric mirror'
+            url = 'https://repository.hanbings.io/proxy'
         }
         maven {
             name = 'Fabric'
             url = 'https://maven.fabricmc.net/'
+        }
+        maven {
+            name = 'JitPack'
+            url 'https://jitpack.io/'
         }
         gradlePluginPortal()
     }

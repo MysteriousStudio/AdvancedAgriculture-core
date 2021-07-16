@@ -1,17 +1,10 @@
 package tech.icedlab.advagri.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
-import net.fabricmc.fabric.impl.object.builder.FabricEntityType;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.BuiltinRegistries;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.world.gen.decorator.Decorator;
 import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
@@ -22,6 +15,7 @@ import tech.icedlab.advagri.ModAta;
 import tech.icedlab.advagri.block.machines.*;
 import tech.icedlab.advagri.groups.AdvAgriItemCoreGroup;
 import tech.icedlab.advagri.groups.AdvAgriItemWorldGroup;
+import tech.icedlab.thorium.datas.RegistrationType;
 import tech.icedlab.thorium.registration.DefaultBlock;
 import tech.icedlab.thorium.registration.RegistrationUtil;
 
@@ -221,20 +215,21 @@ public class AdvAgriBlocks {
     }
 
     public void RegisteredGenOres() {
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_copper_overworld"), ORE_COPPER_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_tin_overworld"), ORE_TIN_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_zinc_overworld"), ORE_ZINC_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_aluminum_overworld"), ORE_ALUMINUM_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_silver_overworld"), ORE_SILVER_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_lead_overworld"), ORE_LEAD_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_high_carbon_iron_overworld"), ORE_HIGH_CARBON_IRON_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_nickel_overworld"), ORE_NICKEL_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_titanium_overworld"), ORE_TITANIUM_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_tungsten_overworld"), ORE_TUNGSTEN_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_phos_overworld"), ORE_PHOS_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_sulphur_overworld"), ORE_SULPHUR_OVERWORLD);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_nether_sulphur_nether"), ORE_NETHER_SULPHUR_NETHER);
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(ModAta.ModID, "ore_quarry_overworld"), ORE_QUARRY_OVERWORLD);
+        new RegistrationUtil()
+                .reg(ORE_COPPER_OVERWORLD, "ore_copper_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_TIN_OVERWORLD, "ore_tin_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_ZINC_OVERWORLD, "ore_zinc_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_ALUMINUM_OVERWORLD, "ore_aluminum_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_SILVER_OVERWORLD, "ore_silver_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_LEAD_OVERWORLD, "ore_lead_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_HIGH_CARBON_IRON_OVERWORLD, "ore_high_carbon_iron_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_NICKEL_OVERWORLD, "ore_nickel_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_TITANIUM_OVERWORLD, "ore_titanium_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_TUNGSTEN_OVERWORLD, "ore_tungsten_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_PHOS_OVERWORLD, "ore_phos_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_SULPHUR_OVERWORLD, "ore_sulphur_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE)
+                .reg(ORE_NETHER_SULPHUR_NETHER, "ore_nether_sulphur_nether", ModAta.ModID, RegistrationType.NETHER_ORE)
+                .reg(ORE_QUARRY_OVERWORLD, "ore_quarry_overworld", ModAta.ModID, RegistrationType.OVERWORLD_ORE);
     }
 
     private static ConfiguredFeature<?, ?> ConfiguredFeature(Block block, Integer size, Integer maximum, Integer count) {

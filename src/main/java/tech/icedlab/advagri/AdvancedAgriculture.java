@@ -1,26 +1,31 @@
 package tech.icedlab.advagri;
 
 import net.fabricmc.api.ModInitializer;
+import org.apache.logging.log4j.Logger;
 import tech.icedlab.advagri.block.AdvAgriBlocks;
 import tech.icedlab.advagri.entities.block.AdvAgriBlockEntities;
 import tech.icedlab.advagri.events.AdvAgriEvents;
 import tech.icedlab.advagri.item.AdvAgriItems;
 import tech.icedlab.advagri.item.AdvAgriToolsAndWeapons;
 import tech.icedlab.advagri.item.armors.AdvAgriArmors;
+import tech.icedlab.thorium.Thorium;
 
 public class AdvancedAgriculture implements ModInitializer {
+
+    Logger LOGGER = Thorium.getLogger("AdvAgri");
+
     @Override
     public void onInitialize() {
-        System.out.println("==========================================");
-        System.out.println("    _       _        _              _");
-        System.out.println("   / \\   __| |_   __/ \\   __ _ _ __(_)");
-        System.out.println("  / _ \\ / _` \\ \\ / / _ \\ / _` | '__| |");
-        System.out.println(" / ___ \\ (_| |\\ V / ___ \\ (_| | |  | |");
-        System.out.println("/_/   \\_\\__,_| \\_/_/   \\_\\__, |_|  |_|");
-        System.out.println("                         |___/");
-        System.out.println("==========================================");
-        System.out.println("Powered by AdvancedAgriculture Developers");
-        System.out.println("==========================================");
+        LOGGER.info("==========================================");
+        LOGGER.info("    _       _        _              _");
+        LOGGER.info("   / \\   __| |_   __/ \\   __ _ _ __(_)");
+        LOGGER.info("  / _ \\ / _` \\ \\ / / _ \\ / _` | '__| |");
+        LOGGER.info(" / ___ \\ (_| |\\ V / ___ \\ (_| | |  | |");
+        LOGGER.info("/_/   \\_\\__,_| \\_/_/   \\_\\__, |_|  |_|");
+        LOGGER.info("                         |___/");
+        LOGGER.info("==========================================");
+        LOGGER.info("Powered by AdvancedAgriculture Developers");
+        LOGGER.info("==========================================");
 
         AdvAgriItems advAgriItems = AdvAgriItems.getInstance();
         AdvAgriBlocks advAgriBlocks = AdvAgriBlocks.getInstance();

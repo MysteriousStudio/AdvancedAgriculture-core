@@ -17,11 +17,16 @@ repositories {
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
     maven {
-        url 'https://maven.aliyun.com/nexus/content/groups/public'
+        name = 'Iced\'s fabric mirror'
+        url = 'https://maven.icedlab.tech/proxy'
     }
-
     maven {
-        url 'https://repository.hanbings.io/proxy'
+        name = 'Hanbings\' fabric mirror'
+        url = 'https://repository.hanbings.io/proxy'
+    }
+    maven {
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
     }
 }
 
